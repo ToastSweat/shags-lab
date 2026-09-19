@@ -4,6 +4,7 @@ date: 2026-09-19
 project: Obsidian Vault to Website
 publish: true
 ---
+
 # Shag's Lab: The Doomsday Rebuild Guide
 
 This is the file for Future Me, Curious You, or Whoever Is Looking At A Dead PC Wondering Why A Personal Wiki Needed A Build Pipeline.

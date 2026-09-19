@@ -831,6 +831,109 @@ Otherwise you may discover the certificate expired only when your browser starts
 
 ---
 
+
+# 19.5. Make Quartz Clean URLs Work on Apache
+
+Quartz normally generates links without `.html`.
+
+For example, the browser may request:
+
+```text
+https://example.com/mysite/updates/my-post
+```
+
+while the generated file is physically:
+
+```text
+C:\xampp\htdocs\mysite\updates\my-post.html
+```
+
+Quartz's development server handles this automatically.
+
+Plain Apache usually needs a rewrite rule.
+
+Create an `.htaccess` file in the parent web root or another directory that will **not** be overwritten by your deployment process.
+
+For example, if the live generated site is mirrored into:
+
+```text
+C:\xampp\htdocs\example\mysite
+```
+
+you can store the rewrite file at:
+
+```text
+C:\xampp\htdocs\example\.htaccess
+```
+
+with:
+
+```apache
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+```
+
+This means:
+
+```text
+/mysite/updates/my-post
+```
+
+will internally serve:
+
+```text
+/mysite/updates/my-post.html
+```
+
+without changing the visible URL.
+
+Check that `mod_rewrite` is loaded:
+
+```powershell
+C:\xampp\apache\bin\httpd.exe -M | findstr rewrite
+```
+
+Expected:
+
+```text
+rewrite_module (shared)
+```
+
+## The HTTPS vhost must allow `.htaccess`
+
+A common gotcha is having `AllowOverride All` on the port-80 virtual host but not on the port-443 SSL virtual host.
+
+If HTTP works but HTTPS clean links still return 404s, inspect the SSL vhost.
+
+Inside the relevant `<VirtualHost *:443>` block, make sure the web root has a matching directory section:
+
+```apache
+<Directory "C:/xampp/htdocs/example">
+    AllowOverride All
+    Require all granted
+</Directory>
+```
+
+Then validate:
+
+```powershell
+C:\xampp\apache\bin\httpd.exe -t
+```
+
+and restart Apache.
+
+A useful diagnostic is:
+
+```powershell
+Test-Path -LiteralPath "C:\xampp\htdocs\example\mysite\updates\my-post.html"
+```
+
+If the `.html` file exists but the extensionless URL returns 404, the static build is probably fine and the problem is Apache routing.
+
 # 20. Normal Daily Workflow
 
 Once everything is configured, this should be boring.
@@ -1148,6 +1251,8 @@ A healthy setup should have all of these:
 - The web server copies `.site/public` into the Apache directory.
 - Apache serves the site.
 - HTTPS works.
+- Quartz extensionless links resolve correctly through Apache.
+- The HTTPS vhost allows `.htaccess` overrides when rewrite rules are used.
 - Automatic certificate renewal is configured.
 
 Once all of that works:
