@@ -1,6 +1,10 @@
-Welcome to my Lab.
+---
+title: Welcome
+publish: true
+---
+# Welcome to my Lab.
 
-This is part blog, part wiki. All me.
+**This is part blog, part wiki. All me.**
 
 Browse [[Updates Home]] to see what I am currently working or wondering on.
 
