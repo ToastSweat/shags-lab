@@ -1,0 +1,574 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1218" height="1218" viewBox="0 0 1218 1218">
+  <title>Keychron C100 Symbol Pad Template</title>
+  <desc>10 by 10 Unicode symbol keyboard legend template, editable in Illustrator and Photoshop.</desc>
+  <style>
+    .title { font: 700 34px "Segoe UI Symbol","Noto Sans Symbols 2","Arial Unicode MS","DejaVu Sans",sans-serif; fill:#1F2430; }
+    .subtitle { font: 400 16px "Segoe UI","Arial",sans-serif; fill:#596273; }
+    .rowlabel { font: 600 14px "Segoe UI","Arial",sans-serif; fill:#273142; }
+    .sym { font: 700 32px "Segoe UI Symbol","Noto Sans Symbols 2","Arial Unicode MS","DejaVu Sans",sans-serif; fill:#111827; dominant-baseline: middle; text-anchor: middle; }
+    .smallnote { font: 400 12px "Segoe UI","Arial",sans-serif; fill:#6B7280; }
+  </style>
+  <rect x="0" y="0" width="1218" height="1218" fill="#FFFFFF"/>
+  <text x="190" y="60" class="title">Keychron C100 100-Key Symbol Pad</text>
+  <text x="190" y="100" class="subtitle">Editable SVG template • 10×10 legend • imports into Illustrator and Photoshop</text>
+  <rect x="166" y="146" width="996" height="996" rx="28" fill="#FFFFFF" stroke="#E4E8EF" stroke-width="2"/>
+
+  <g id="row-label-1">
+    <rect x="20" y="170" width="150" height="84" rx="16" fill="#F3F4F6" stroke="#D6DCE5" stroke-width="1.5"/>
+    <text x="95.0" y="204.0" class="rowlabel" text-anchor="middle">Legal</text>
+    <text x="95.0" y="224.0" class="rowlabel" text-anchor="middle">/ Publishing</text>
+  </g>
+
+  <g id="key-r1-c1" data-row="1" data-col="1" data-symbol="©">
+    <rect x="190" y="170" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="232.0" y="214.0" class="sym">©</text>
+  </g>
+
+  <g id="key-r1-c2" data-row="1" data-col="2" data-symbol="®">
+    <rect x="286" y="170" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="328.0" y="214.0" class="sym">®</text>
+  </g>
+
+  <g id="key-r1-c3" data-row="1" data-col="3" data-symbol="™">
+    <rect x="382" y="170" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="424.0" y="214.0" class="sym">™</text>
+  </g>
+
+  <g id="key-r1-c4" data-row="1" data-col="4" data-symbol="℠">
+    <rect x="478" y="170" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="520.0" y="214.0" class="sym">℠</text>
+  </g>
+
+  <g id="key-r1-c5" data-row="1" data-col="5" data-symbol="℗">
+    <rect x="574" y="170" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="616.0" y="214.0" class="sym">℗</text>
+  </g>
+
+  <g id="key-r1-c6" data-row="1" data-col="6" data-symbol="§">
+    <rect x="670" y="170" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="712.0" y="214.0" class="sym">§</text>
+  </g>
+
+  <g id="key-r1-c7" data-row="1" data-col="7" data-symbol="¶">
+    <rect x="766" y="170" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="808.0" y="214.0" class="sym">¶</text>
+  </g>
+
+  <g id="key-r1-c8" data-row="1" data-col="8" data-symbol="№">
+    <rect x="862" y="170" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="904.0" y="214.0" class="sym">№</text>
+  </g>
+
+  <g id="key-r1-c9" data-row="1" data-col="9" data-symbol="†">
+    <rect x="958" y="170" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1000.0" y="214.0" class="sym">†</text>
+  </g>
+
+  <g id="key-r1-c10" data-row="1" data-col="10" data-symbol="‡">
+    <rect x="1054" y="170" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1096.0" y="214.0" class="sym">‡</text>
+  </g>
+
+  <g id="row-label-2">
+    <rect x="20" y="266" width="150" height="84" rx="16" fill="#F3F4F6" stroke="#D6DCE5" stroke-width="1.5"/>
+    <text x="95.0" y="300.0" class="rowlabel" text-anchor="middle">Currency</text>
+  </g>
+
+  <g id="key-r2-c1" data-row="2" data-col="1" data-symbol="¢">
+    <rect x="190" y="266" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="232.0" y="310.0" class="sym">¢</text>
+  </g>
+
+  <g id="key-r2-c2" data-row="2" data-col="2" data-symbol="£">
+    <rect x="286" y="266" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="328.0" y="310.0" class="sym">£</text>
+  </g>
+
+  <g id="key-r2-c3" data-row="2" data-col="3" data-symbol="€">
+    <rect x="382" y="266" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="424.0" y="310.0" class="sym">€</text>
+  </g>
+
+  <g id="key-r2-c4" data-row="2" data-col="4" data-symbol="¥">
+    <rect x="478" y="266" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="520.0" y="310.0" class="sym">¥</text>
+  </g>
+
+  <g id="key-r2-c5" data-row="2" data-col="5" data-symbol="₹">
+    <rect x="574" y="266" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="616.0" y="310.0" class="sym">₹</text>
+  </g>
+
+  <g id="key-r2-c6" data-row="2" data-col="6" data-symbol="₩">
+    <rect x="670" y="266" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="712.0" y="310.0" class="sym">₩</text>
+  </g>
+
+  <g id="key-r2-c7" data-row="2" data-col="7" data-symbol="₽">
+    <rect x="766" y="266" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="808.0" y="310.0" class="sym">₽</text>
+  </g>
+
+  <g id="key-r2-c8" data-row="2" data-col="8" data-symbol="₺">
+    <rect x="862" y="266" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="904.0" y="310.0" class="sym">₺</text>
+  </g>
+
+  <g id="key-r2-c9" data-row="2" data-col="9" data-symbol="₴">
+    <rect x="958" y="266" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1000.0" y="310.0" class="sym">₴</text>
+  </g>
+
+  <g id="key-r2-c10" data-row="2" data-col="10" data-symbol="₿">
+    <rect x="1054" y="266" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1096.0" y="310.0" class="sym">₿</text>
+  </g>
+
+  <g id="row-label-3">
+    <rect x="20" y="362" width="150" height="84" rx="16" fill="#F3F4F6" stroke="#D6DCE5" stroke-width="1.5"/>
+    <text x="95.0" y="396.0" class="rowlabel" text-anchor="middle">Math Operators</text>
+  </g>
+
+  <g id="key-r3-c1" data-row="3" data-col="1" data-symbol="±">
+    <rect x="190" y="362" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="232.0" y="406.0" class="sym">±</text>
+  </g>
+
+  <g id="key-r3-c2" data-row="3" data-col="2" data-symbol="×">
+    <rect x="286" y="362" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="328.0" y="406.0" class="sym">×</text>
+  </g>
+
+  <g id="key-r3-c3" data-row="3" data-col="3" data-symbol="÷">
+    <rect x="382" y="362" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="424.0" y="406.0" class="sym">÷</text>
+  </g>
+
+  <g id="key-r3-c4" data-row="3" data-col="4" data-symbol="≠">
+    <rect x="478" y="362" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="520.0" y="406.0" class="sym">≠</text>
+  </g>
+
+  <g id="key-r3-c5" data-row="3" data-col="5" data-symbol="≈">
+    <rect x="574" y="362" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="616.0" y="406.0" class="sym">≈</text>
+  </g>
+
+  <g id="key-r3-c6" data-row="3" data-col="6" data-symbol="≤">
+    <rect x="670" y="362" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="712.0" y="406.0" class="sym">≤</text>
+  </g>
+
+  <g id="key-r3-c7" data-row="3" data-col="7" data-symbol="≥">
+    <rect x="766" y="362" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="808.0" y="406.0" class="sym">≥</text>
+  </g>
+
+  <g id="key-r3-c8" data-row="3" data-col="8" data-symbol="∞">
+    <rect x="862" y="362" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="904.0" y="406.0" class="sym">∞</text>
+  </g>
+
+  <g id="key-r3-c9" data-row="3" data-col="9" data-symbol="√">
+    <rect x="958" y="362" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1000.0" y="406.0" class="sym">√</text>
+  </g>
+
+  <g id="key-r3-c10" data-row="3" data-col="10" data-symbol="∫">
+    <rect x="1054" y="362" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1096.0" y="406.0" class="sym">∫</text>
+  </g>
+
+  <g id="row-label-4">
+    <rect x="20" y="458" width="150" height="84" rx="16" fill="#F3F4F6" stroke="#D6DCE5" stroke-width="1.5"/>
+    <text x="95.0" y="492.0" class="rowlabel" text-anchor="middle">Math</text>
+    <text x="95.0" y="512.0" class="rowlabel" text-anchor="middle">/ Science</text>
+  </g>
+
+  <g id="key-r4-c1" data-row="4" data-col="1" data-symbol="∑">
+    <rect x="190" y="458" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="232.0" y="502.0" class="sym">∑</text>
+  </g>
+
+  <g id="key-r4-c2" data-row="4" data-col="2" data-symbol="∏">
+    <rect x="286" y="458" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="328.0" y="502.0" class="sym">∏</text>
+  </g>
+
+  <g id="key-r4-c3" data-row="4" data-col="3" data-symbol="∂">
+    <rect x="382" y="458" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="424.0" y="502.0" class="sym">∂</text>
+  </g>
+
+  <g id="key-r4-c4" data-row="4" data-col="4" data-symbol="∆">
+    <rect x="478" y="458" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="520.0" y="502.0" class="sym">∆</text>
+  </g>
+
+  <g id="key-r4-c5" data-row="4" data-col="5" data-symbol="π">
+    <rect x="574" y="458" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="616.0" y="502.0" class="sym">π</text>
+  </g>
+
+  <g id="key-r4-c6" data-row="4" data-col="6" data-symbol="µ">
+    <rect x="670" y="458" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="712.0" y="502.0" class="sym">µ</text>
+  </g>
+
+  <g id="key-r4-c7" data-row="4" data-col="7" data-symbol="Ω">
+    <rect x="766" y="458" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="808.0" y="502.0" class="sym">Ω</text>
+  </g>
+
+  <g id="key-r4-c8" data-row="4" data-col="8" data-symbol="λ">
+    <rect x="862" y="458" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="904.0" y="502.0" class="sym">λ</text>
+  </g>
+
+  <g id="key-r4-c9" data-row="4" data-col="9" data-symbol="α">
+    <rect x="958" y="458" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1000.0" y="502.0" class="sym">α</text>
+  </g>
+
+  <g id="key-r4-c10" data-row="4" data-col="10" data-symbol="β">
+    <rect x="1054" y="458" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1096.0" y="502.0" class="sym">β</text>
+  </g>
+
+  <g id="row-label-5">
+    <rect x="20" y="554" width="150" height="84" rx="16" fill="#F3F4F6" stroke="#D6DCE5" stroke-width="1.5"/>
+    <text x="95.0" y="588.0" class="rowlabel" text-anchor="middle">Fractions</text>
+    <text x="95.0" y="608.0" class="rowlabel" text-anchor="middle">/ Measurement</text>
+  </g>
+
+  <g id="key-r5-c1" data-row="5" data-col="1" data-symbol="°">
+    <rect x="190" y="554" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="232.0" y="598.0" class="sym">°</text>
+  </g>
+
+  <g id="key-r5-c2" data-row="5" data-col="2" data-symbol="‰">
+    <rect x="286" y="554" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="328.0" y="598.0" class="sym">‰</text>
+  </g>
+
+  <g id="key-r5-c3" data-row="5" data-col="3" data-symbol="¹">
+    <rect x="382" y="554" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="424.0" y="598.0" class="sym">¹</text>
+  </g>
+
+  <g id="key-r5-c4" data-row="5" data-col="4" data-symbol="²">
+    <rect x="478" y="554" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="520.0" y="598.0" class="sym">²</text>
+  </g>
+
+  <g id="key-r5-c5" data-row="5" data-col="5" data-symbol="³">
+    <rect x="574" y="554" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="616.0" y="598.0" class="sym">³</text>
+  </g>
+
+  <g id="key-r5-c6" data-row="5" data-col="6" data-symbol="⁰">
+    <rect x="670" y="554" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="712.0" y="598.0" class="sym">⁰</text>
+  </g>
+
+  <g id="key-r5-c7" data-row="5" data-col="7" data-symbol="½">
+    <rect x="766" y="554" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="808.0" y="598.0" class="sym">½</text>
+  </g>
+
+  <g id="key-r5-c8" data-row="5" data-col="8" data-symbol="¼">
+    <rect x="862" y="554" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="904.0" y="598.0" class="sym">¼</text>
+  </g>
+
+  <g id="key-r5-c9" data-row="5" data-col="9" data-symbol="¾">
+    <rect x="958" y="554" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1000.0" y="598.0" class="sym">¾</text>
+  </g>
+
+  <g id="key-r5-c10" data-row="5" data-col="10" data-symbol="⌀">
+    <rect x="1054" y="554" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1096.0" y="598.0" class="sym">⌀</text>
+  </g>
+
+  <g id="row-label-6">
+    <rect x="20" y="650" width="150" height="84" rx="16" fill="#F3F4F6" stroke="#D6DCE5" stroke-width="1.5"/>
+    <text x="95.0" y="684.0" class="rowlabel" text-anchor="middle">Typography</text>
+  </g>
+
+  <g id="key-r6-c1" data-row="6" data-col="1" data-symbol="…">
+    <rect x="190" y="650" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="232.0" y="694.0" class="sym">…</text>
+  </g>
+
+  <g id="key-r6-c2" data-row="6" data-col="2" data-symbol="•">
+    <rect x="286" y="650" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="328.0" y="694.0" class="sym">•</text>
+  </g>
+
+  <g id="key-r6-c3" data-row="6" data-col="3" data-symbol="·">
+    <rect x="382" y="650" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="424.0" y="694.0" class="sym">·</text>
+  </g>
+
+  <g id="key-r6-c4" data-row="6" data-col="4" data-symbol="–">
+    <rect x="478" y="650" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="520.0" y="694.0" class="sym">–</text>
+  </g>
+
+  <g id="key-r6-c5" data-row="6" data-col="5" data-symbol="—">
+    <rect x="574" y="650" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="616.0" y="694.0" class="sym">—</text>
+  </g>
+
+  <g id="key-r6-c6" data-row="6" data-col="6" data-symbol="‐">
+    <rect x="670" y="650" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="712.0" y="694.0" class="sym">‐</text>
+  </g>
+
+  <g id="key-r6-c7" data-row="6" data-col="7" data-symbol="“">
+    <rect x="766" y="650" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="808.0" y="694.0" class="sym">“</text>
+  </g>
+
+  <g id="key-r6-c8" data-row="6" data-col="8" data-symbol="”">
+    <rect x="862" y="650" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="904.0" y="694.0" class="sym">”</text>
+  </g>
+
+  <g id="key-r6-c9" data-row="6" data-col="9" data-symbol="‘">
+    <rect x="958" y="650" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1000.0" y="694.0" class="sym">‘</text>
+  </g>
+
+  <g id="key-r6-c10" data-row="6" data-col="10" data-symbol="’">
+    <rect x="1054" y="650" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1096.0" y="694.0" class="sym">’</text>
+  </g>
+
+  <g id="row-label-7">
+    <rect x="20" y="746" width="150" height="84" rx="16" fill="#F3F4F6" stroke="#D6DCE5" stroke-width="1.5"/>
+    <text x="95.0" y="780.0" class="rowlabel" text-anchor="middle">Arrows</text>
+  </g>
+
+  <g id="key-r7-c1" data-row="7" data-col="1" data-symbol="←">
+    <rect x="190" y="746" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="232.0" y="790.0" class="sym">←</text>
+  </g>
+
+  <g id="key-r7-c2" data-row="7" data-col="2" data-symbol="↑">
+    <rect x="286" y="746" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="328.0" y="790.0" class="sym">↑</text>
+  </g>
+
+  <g id="key-r7-c3" data-row="7" data-col="3" data-symbol="→">
+    <rect x="382" y="746" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="424.0" y="790.0" class="sym">→</text>
+  </g>
+
+  <g id="key-r7-c4" data-row="7" data-col="4" data-symbol="↓">
+    <rect x="478" y="746" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="520.0" y="790.0" class="sym">↓</text>
+  </g>
+
+  <g id="key-r7-c5" data-row="7" data-col="5" data-symbol="↔">
+    <rect x="574" y="746" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="616.0" y="790.0" class="sym">↔</text>
+  </g>
+
+  <g id="key-r7-c6" data-row="7" data-col="6" data-symbol="↕">
+    <rect x="670" y="746" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="712.0" y="790.0" class="sym">↕</text>
+  </g>
+
+  <g id="key-r7-c7" data-row="7" data-col="7" data-symbol="↖">
+    <rect x="766" y="746" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="808.0" y="790.0" class="sym">↖</text>
+  </g>
+
+  <g id="key-r7-c8" data-row="7" data-col="8" data-symbol="↗">
+    <rect x="862" y="746" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="904.0" y="790.0" class="sym">↗</text>
+  </g>
+
+  <g id="key-r7-c9" data-row="7" data-col="9" data-symbol="↘">
+    <rect x="958" y="746" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1000.0" y="790.0" class="sym">↘</text>
+  </g>
+
+  <g id="key-r7-c10" data-row="7" data-col="10" data-symbol="↙">
+    <rect x="1054" y="746" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1096.0" y="790.0" class="sym">↙</text>
+  </g>
+
+  <g id="row-label-8">
+    <rect x="20" y="842" width="150" height="84" rx="16" fill="#F3F4F6" stroke="#D6DCE5" stroke-width="1.5"/>
+    <text x="95.0" y="876.0" class="rowlabel" text-anchor="middle">Navigation</text>
+    <text x="95.0" y="896.0" class="rowlabel" text-anchor="middle">/ Action</text>
+  </g>
+
+  <g id="key-r8-c1" data-row="8" data-col="1" data-symbol="⇐">
+    <rect x="190" y="842" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="232.0" y="886.0" class="sym">⇐</text>
+  </g>
+
+  <g id="key-r8-c2" data-row="8" data-col="2" data-symbol="⇒">
+    <rect x="286" y="842" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="328.0" y="886.0" class="sym">⇒</text>
+  </g>
+
+  <g id="key-r8-c3" data-row="8" data-col="3" data-symbol="⇑">
+    <rect x="382" y="842" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="424.0" y="886.0" class="sym">⇑</text>
+  </g>
+
+  <g id="key-r8-c4" data-row="8" data-col="4" data-symbol="⇓">
+    <rect x="478" y="842" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="520.0" y="886.0" class="sym">⇓</text>
+  </g>
+
+  <g id="key-r8-c5" data-row="8" data-col="5" data-symbol="↩">
+    <rect x="574" y="842" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="616.0" y="886.0" class="sym">↩</text>
+  </g>
+
+  <g id="key-r8-c6" data-row="8" data-col="6" data-symbol="↪">
+    <rect x="670" y="842" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="712.0" y="886.0" class="sym">↪</text>
+  </g>
+
+  <g id="key-r8-c7" data-row="8" data-col="7" data-symbol="↺">
+    <rect x="766" y="842" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="808.0" y="886.0" class="sym">↺</text>
+  </g>
+
+  <g id="key-r8-c8" data-row="8" data-col="8" data-symbol="↻">
+    <rect x="862" y="842" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="904.0" y="886.0" class="sym">↻</text>
+  </g>
+
+  <g id="key-r8-c9" data-row="8" data-col="9" data-symbol="⤴">
+    <rect x="958" y="842" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1000.0" y="886.0" class="sym">⤴</text>
+  </g>
+
+  <g id="key-r8-c10" data-row="8" data-col="10" data-symbol="⤵">
+    <rect x="1054" y="842" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1096.0" y="886.0" class="sym">⤵</text>
+  </g>
+
+  <g id="row-label-9">
+    <rect x="20" y="938" width="150" height="84" rx="16" fill="#F3F4F6" stroke="#D6DCE5" stroke-width="1.5"/>
+    <text x="95.0" y="972.0" class="rowlabel" text-anchor="middle">Checks</text>
+    <text x="95.0" y="992.0" class="rowlabel" text-anchor="middle">/ Utility</text>
+  </g>
+
+  <g id="key-r9-c1" data-row="9" data-col="1" data-symbol="✓">
+    <rect x="190" y="938" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="232.0" y="982.0" class="sym">✓</text>
+  </g>
+
+  <g id="key-r9-c2" data-row="9" data-col="2" data-symbol="✔">
+    <rect x="286" y="938" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="328.0" y="982.0" class="sym">✔</text>
+  </g>
+
+  <g id="key-r9-c3" data-row="9" data-col="3" data-symbol="✕">
+    <rect x="382" y="938" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="424.0" y="982.0" class="sym">✕</text>
+  </g>
+
+  <g id="key-r9-c4" data-row="9" data-col="4" data-symbol="✖">
+    <rect x="478" y="938" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="520.0" y="982.0" class="sym">✖</text>
+  </g>
+
+  <g id="key-r9-c5" data-row="9" data-col="5" data-symbol="☑">
+    <rect x="574" y="938" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="616.0" y="982.0" class="sym">☑</text>
+  </g>
+
+  <g id="key-r9-c6" data-row="9" data-col="6" data-symbol="☐">
+    <rect x="670" y="938" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="712.0" y="982.0" class="sym">☐</text>
+  </g>
+
+  <g id="key-r9-c7" data-row="9" data-col="7" data-symbol="☒">
+    <rect x="766" y="938" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="808.0" y="982.0" class="sym">☒</text>
+  </g>
+
+  <g id="key-r9-c8" data-row="9" data-col="8" data-symbol="★">
+    <rect x="862" y="938" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="904.0" y="982.0" class="sym">★</text>
+  </g>
+
+  <g id="key-r9-c9" data-row="9" data-col="9" data-symbol="☆">
+    <rect x="958" y="938" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1000.0" y="982.0" class="sym">☆</text>
+  </g>
+
+  <g id="key-r9-c10" data-row="9" data-col="10" data-symbol="※">
+    <rect x="1054" y="938" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1096.0" y="982.0" class="sym">※</text>
+  </g>
+
+  <g id="row-label-10">
+    <rect x="20" y="1034" width="150" height="84" rx="16" fill="#F3F4F6" stroke="#D6DCE5" stroke-width="1.5"/>
+    <text x="95.0" y="1068.0" class="rowlabel" text-anchor="middle">Fun</text>
+    <text x="95.0" y="1088.0" class="rowlabel" text-anchor="middle">/ Misc</text>
+  </g>
+
+  <g id="key-r10-c1" data-row="10" data-col="1" data-symbol="♠">
+    <rect x="190" y="1034" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="232.0" y="1078.0" class="sym">♠</text>
+  </g>
+
+  <g id="key-r10-c2" data-row="10" data-col="2" data-symbol="♥">
+    <rect x="286" y="1034" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="328.0" y="1078.0" class="sym">♥</text>
+  </g>
+
+  <g id="key-r10-c3" data-row="10" data-col="3" data-symbol="♦">
+    <rect x="382" y="1034" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="424.0" y="1078.0" class="sym">♦</text>
+  </g>
+
+  <g id="key-r10-c4" data-row="10" data-col="4" data-symbol="♣">
+    <rect x="478" y="1034" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="520.0" y="1078.0" class="sym">♣</text>
+  </g>
+
+  <g id="key-r10-c5" data-row="10" data-col="5" data-symbol="♪">
+    <rect x="574" y="1034" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="616.0" y="1078.0" class="sym">♪</text>
+  </g>
+
+  <g id="key-r10-c6" data-row="10" data-col="6" data-symbol="♫">
+    <rect x="670" y="1034" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="712.0" y="1078.0" class="sym">♫</text>
+  </g>
+
+  <g id="key-r10-c7" data-row="10" data-col="7" data-symbol="☺">
+    <rect x="766" y="1034" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="808.0" y="1078.0" class="sym">☺</text>
+  </g>
+
+  <g id="key-r10-c8" data-row="10" data-col="8" data-symbol="☹">
+    <rect x="862" y="1034" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="904.0" y="1078.0" class="sym">☹</text>
+  </g>
+
+  <g id="key-r10-c9" data-row="10" data-col="9" data-symbol="♂">
+    <rect x="958" y="1034" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1000.0" y="1078.0" class="sym">♂</text>
+  </g>
+
+  <g id="key-r10-c10" data-row="10" data-col="10" data-symbol="♀">
+    <rect x="1054" y="1034" width="84" height="84" rx="16" fill="#FFFFFF" stroke="#C9D2DE" stroke-width="1.5"/>
+    <text x="1096.0" y="1078.0" class="sym">♀</text>
+  </g>
+
+  <text x="190" y="1163" class="smallnote">Tip: each key is an individual &lt;g&gt; group (key-r#-c#), so you can edit colors, outlines, or symbols per key in Illustrator/Photoshop.</text>
+  <text x="190" y="1181" class="smallnote">Layout order matches the flashed firmware exactly: top-left to bottom-right, row by row.</text>
+</svg>
