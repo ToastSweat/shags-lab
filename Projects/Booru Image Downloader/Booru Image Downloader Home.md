@@ -1,5 +1,5 @@
 ---
-type: project
+type: index
 status: active
 publish: true
 ---

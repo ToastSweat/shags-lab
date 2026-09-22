@@ -1,4 +1,5 @@
 ---
+title: 2026-09-17 - I Built A Booru Librarian?!
 type: update
 date: 2026-09-18
 project: Rule34 Tag Watcher
