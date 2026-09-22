@@ -1,6 +1,6 @@
 ---
-type: index
+type: project
 date: 2026-09-22
-project: PGN SWBFII Dedicated Server
+project: Instruments
 publish: true
 ---
