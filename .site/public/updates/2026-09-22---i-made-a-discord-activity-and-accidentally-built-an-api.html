@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>I Made A Discord Activity and Accidentally Built An API!</title><meta charset="utf-8"/><link rel="preload" href="../index-bb6c1746.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Shag's Lab"/><meta property="og:title" content="I Made A Discord Activity and Accidentally Built An API!"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="I Made A Discord Activity and Accidentally Built An API!"/><meta name="twitter:description" content="I Made A Discord Activity And Accidentally Built An API This started because I wanted to remake a stupid little game. Safe Cracker is simple."/><meta property="og:description" content="I Made A Discord Activity And Accidentally Built An API This started because I wanted to remake a stupid little game. Safe Cracker is simple."/><meta property="og:image:alt" content="I Made A Discord Activity And Accidentally Built An API This started because I wanted to remake a stupid little game. Safe Cracker is simple."/><meta property="twitter:domain" content="helvete.pizza/lab"/><meta property="og:url" content="https://helvete.pizza/lab/updates/2026-09-22---i-made-a-discord-activity-and-accidentally-built-an-api"/><meta property="twitter:url" content="https://helvete.pizza/lab/updates/2026-09-22---i-made-a-discord-activity-and-accidentally-built-an-api"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="I Made A Discord Activity And Accidentally Built An API This started because I wanted to remake a stupid little game. Safe Cracker is simple."/><meta name="generator" content="Quartz"/><link href="../index-bb6c1746.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-11d41004.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-26a99b87.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://helvete.pizza/lab/updates/2026-09-22---i-made-a-discord-activity-and-accidentally-built-an-api-og-image.webp"/><meta property="og:image:url" content="https://helvete.pizza/lab/updates/2026-09-22---i-made-a-discord-activity-and-accidentally-built-an-api-og-image.webp"/><meta name="twitter:image" content="https://helvete.pizza/lab/updates/2026-09-22---i-made-a-discord-activity-and-accidentally-built-an-api-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="updates/2026-09-22---i-made-a-discord-activity-and-accidentally-built-an-api" data-basepath="/lab"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Shag's Lab</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="Search" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something..." placeholder="Search for something..."/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="Dark mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="Reader mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-21" aria-label="Explorer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-21" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../updates/">Updates Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>I Made A Discord Activity and Accidentally Built An API!</a></div></nav><h1 class="article-title">I Made A Discord Activity and Accidentally Built An API!</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-22T05:00:00.000Z">Sep 22, 2026</time><span>11 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><p>I Made A Discord Activity And Accidentally Built An API</p>
+<p>This started because I wanted to remake a stupid little game.</p>
+<p>Safe Cracker is simple.</p>
+<p>There is one safe every day.</p>
+<p>It has a four-digit combination from:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>0000-9999</span></span></code></pre></figure>
+<p>You guess a number.</p>
+<p>The game tells you:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>HIGHER</span></span></code></pre></figure>
+<p>or:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>LOWER</span></span></code></pre></figure>
+<p>and you keep going until you crack it.</p>
+<p>That is basically the whole game.</p>
+<p>No complicated inventory.<br/>
+No skill tree.<br/>
+No twelve-hour tutorial.<br/>
+No battle pass featuring Tactical Safe Pants.</p>
+<p>Just you, a number, and the rapidly increasing realization that you absolutely should have remembered whether 4200 was too high.</p>
+<p>The scoring is equally simple.</p>
+<p>Fewest guesses wins.</p>
+<p>If two people use the same number of guesses, fastest time wins.</p>
+<p>I had made versions of this idea before, but this time I wanted it to live inside Discord as an Activity.</p>
+<p>That seemed reasonable.</p>
+<p>Make a little web game.<br/>
+Put it in Discord.<br/>
+Done.</p>
+<p>Naturally, I built an authentication system, an API, a database, a leaderboard service, production infrastructure, HTTPS certificates, persistent sessions, Rich Presence, and a social sharing system.</p>
+<p>This happens to me a lot.</p>
+<p>The game itself came first.</p>
+<p>I built it with SvelteKit and TypeScript.</p>
+<p>The first version was intentionally ugly.</p>
+<p>I did not want to spend three days making glowing buttons before I knew if the game actually felt good.</p>
+<p>The important part was making the guessing loop fast.</p>
+<p>You enter a four-digit number.<br/>
+Hit Enter.<br/>
+Immediately start entering another guess.</p>
+<p>The game never waits for an animation.<br/>
+It never locks the keypad while HIGHER or LOWER is displayed.<br/>
+It never makes you watch some cute little transition before accepting another number.</p>
+<p>Safe Cracker does not wait for the player.</p>
+<p>The feedback flashes briefly and disappears.</p>
+<p>That matters more than it sounds.</p>
+<p>A huge part of the game is remembering the range in your own head while trying to move quickly.</p>
+<p>If the game kept a visible guess history or showed the current minimum and maximum values, it would basically solve half the puzzle for you.</p>
+<p>So it does not.</p>
+<p>You have to remember.</p>
+<p>Skill issue.</p>
+<p>Once the prototype felt right, I needed an actual daily safe.</p>
+<p>The game uses Central Time as the authoritative clock because that is where I am and apparently I have appointed myself the International Commissioner of Safe Time.</p>
+<p>Every calendar day maps to a Safe number.</p>
+<p>The launch date is Safe #001.</p>
+<p>The next day is Safe #002.</p>
+<p>And so on.</p>
+<p>The combination itself is generated deterministically on the server using HMAC-SHA256 and a private secret.</p>
+<p>That means the same date always produces the same safe combination without me having to manually create thousands of daily puzzles.</p>
+<p>It also means the answer never needs to exist in the browser before the player solves it.</p>
+<p>The client knows:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>Safe #009</span></span></code></pre></figure>
+<p>The server knows:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>Nice try.</span></span></code></pre></figure>
+<p>That distinction became increasingly important because I decided the server should be authoritative about basically everything that matters.</p>
+<p>The browser does not decide how many guesses you made.<br/>
+The browser does not decide your final time.<br/>
+The browser does not decide whether you already completed today’s safe.</p>
+<p>The server does.</p>
+<p>The first guess creates the run.<br/>
+Every valid guess increments the attempt count in SQLite.<br/>
+The first guess starts the official timer.<br/>
+The correct guess stops it.<br/>
+If you close Discord halfway through and come back later, your run is still there.</p>
+<p>I tested that specifically.</p>
+<p>I made a few guesses, closed the Activity, waited, reopened it, and watched the timer jump forward correctly.</p>
+<p>The safe had not forgotten me.<br/>
+Unfortunately.</p>
+<p>Once a run has started, you are committed.<br/>
+Closing the Activity does not magically stop time.<br/>
+Once you crack the safe, you cannot replay it that day for a better score.<br/>
+That would make the leaderboard fairly pointless.</p>
+<p>This was also around the time I realized:</p>
+<blockquote>
+<p>Oh shit. I am making an API.</p>
+</blockquote>
+<p>That was genuinely exciting.</p>
+<p>“Make an API” has been one of those vague programming bucket-list things in my head for years.</p>
+<p>Apparently I just needed to stop thinking about APIs and start trying to make a tiny safe game.</p>
+<p>Safe Cracker now has several actual HTTP endpoints:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>GET  /api/daily</span></span>
+<span data-line><span>POST /api/token</span></span>
+<span data-line><span>GET  /api/me</span></span>
+<span data-line><span>GET  /api/run</span></span>
+<span data-line><span>POST /api/guess</span></span>
+<span data-line><span>GET  /api/stats</span></span>
+<span data-line><span>GET  /api/health</span></span></code></pre></figure>
+<p>The Svelte frontend talks to those endpoints.</p>
+<p>Some are public.<br/>
+Others require an authenticated session.<br/>
+The browser sends guesses to the server.</p>
+<p>The server checks the answer, records the attempt, calculates the official elapsed time, and sends back the result.</p>
+<p>That is an API.</p>
+<p>Look at me go.</p>
+<p>Naturally, none of this was useful inside Discord until I knew who the player actually was.</p>
+<p>So I wired in Discord OAuth through the Embedded App SDK.<br/>
+When Safe Cracker launches inside Discord, it asks Discord to identify the player.<br/>
+The authorization code goes to my server.</p>
+<p>The server exchanges it with Discord.</p>
+<p>Then the server independently asks Discord who that token belongs to instead of simply trusting whatever identity the browser claims it has.</p>
+<p>The player gets stored in SQLite.</p>
+<p>Then Safe Cracker creates its own random session token, stores only the hash in the database, and gives the browser an HttpOnly Secure cookie.</p>
+<p>So Discord authenticates who you are.<br/>
+Safe Cracker maintains its own authenticated session afterward.</p>
+<p>That sentence makes this project sound approximately nine hundred times more sophisticated than:</p>
+<blockquote>
+<p>Guess the number, idiot.</p>
+</blockquote>
+<p>But here we are.</p>
+<p>There was, of course, an authentication bug.<br/>
+I had added logic that removed old Safe Cracker sessions whenever a new one was created.<br/>
+That part worked.</p>
+<p>Unfortunately, while editing the function, I removed the part where it actually returned the new session token.</p>
+<p>So the login process successfully created a session and then immediately attempted to read:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>session.token</span></span></code></pre></figure>
+<p>from:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>undefined</span></span></code></pre></figure>
+<p>Beautiful.</p>
+<p>The Activity responded with the highly informative message:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>Discord auth failed</span></span></code></pre></figure>
+<p>After digging through the actual code, I found the missing:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="ts" data-theme="github-light github-dark"><code data-language="ts" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> {</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal">    token,</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal">    expiresAt</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">};</span></span></code></pre></figure>
+<p>and everything came back to life.</p>
+<p>That bug also taught me something useful about the build process.</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>npm run build</span></span></code></pre></figure>
+<p>can successfully build the application without catching every TypeScript mistake.</p>
+<p>So now the ritual is:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>npm run check</span></span>
+<span data-line><span>npm run build</span></span></code></pre></figure>
+<p>Much better.</p>
+<p>Once accounts and daily runs were persistent, the next obvious feature was competition.</p>
+<p>I added streaks.</p>
+<p>Current streak.<br/>
+Best streak.<br/>
+Total safes cracked.</p>
+<p>The current streak has one rule I particularly like:<br/>
+Your streak does not die merely because you have not played today’s safe yet.<br/>
+If you completed yesterday, your streak remains alive throughout today.<br/>
+It only breaks once an entire day has actually been missed.<br/>
+That sounds obvious, but “obvious” things still have to become actual database logic.</p>
+<p>Then came the daily leaderboard.</p>
+<p>Players are ranked by:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>1. Fewest guesses</span></span>
+<span data-line><span>2. Fastest time</span></span>
+<span data-line><span>3. Completion time as a stable final tiebreaker</span></span></code></pre></figure>
+<p>The game returns the Top 10 and also returns your own rank separately if you are outside the Top 10.</p>
+<p>The first leaderboard was not especially competitive.<br/>
+It was me.<br/>
+Rank #1.<br/>
+Also last place.<br/>
+An incredible performance.</p>
+<p>I tested the whole persistence chain by completing Safe #001.</p>
+<p>The result was:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>22 guesses</span></span>
+<span data-line><span>03:00.55</span></span></code></pre></figure>
+<p>Then I closed the Activity.<br/>
+Reopened it.<br/>
+Same result.<br/>
+Same completed state.<br/>
+Same leaderboard entry.<br/>
+No replay.</p>
+<p>That was the moment the backend stopped feeling theoretical.<br/>
+The little game had memory.<br/>
+Then I needed somewhere for the thing to actually live.</p>
+<p>I already run a Windows server with XAMPP and Apache for <code>helvete.pizza</code>, so Safe Cracker got its own subdomain:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>safecracker.helvete.pizza</span></span></code></pre></figure>
+<p>The production SvelteKit build runs through Node on:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>127.0.0.1:3000</span></span></code></pre></figure>
+<p>Apache sits in front of it as a reverse proxy.<br/>
+Discord talks to Apache over HTTPS.<br/>
+Apache talks to the local Node service.<br/>
+The Node service talks to SQLite.<br/>
+This project apparently needed architecture.<br/>
+I created the DNS record.<br/>
+Configured Apache virtual hosts.<br/>
+Enabled the proxy modules.</p>
+<p>Set up a separate Let’s Encrypt certificate using win-acme.</p>
+<p>The certificate uses automatic filesystem HTTP validation so renewal does not require me to perform some ridiculous ceremonial DNS ritual every few months.</p>
+<p>The Node application runs through a Windows Scheduled Task:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>PGN Safe Cracker</span></span></code></pre></figure>
+<p>It starts automatically with the server.</p>
+<p>The production update process is now:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>stop task</span></span>
+<span data-line><span>git pull</span></span>
+<span data-line><span>npm ci</span></span>
+<span data-line><span>npm run build</span></span>
+<span data-line><span>start task</span></span></code></pre></figure>
+<p>There was also an educational period where I forgot the <code>npm run build</code> part.</p>
+<p>Git had the new source.<br/>
+Node was still happily running yesterday’s compiled application.<br/>
+Computers are extremely literal.</p>
+<p>The development copy also lives inside Dropbox, which repeatedly decided that locking generated Svelte files while I was trying to build them would be a helpful collaboration feature.</p>
+<p>It was not.<br/>
+I now pause Dropbox before Git or build operations.<br/>
+We have reached an understanding.<br/>
+Once the production app was stable, I added a health endpoint:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>GET /api/health</span></span></code></pre></figure>
+<p>It returns something like:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="json" data-theme="github-light github-dark"><code data-language="json" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">{</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="punctuation">  &quot;status&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot;ok&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="punctuation">  &quot;safeNumber&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">9</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="punctuation">  &quot;date&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot;2026-09-21&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="punctuation">  &quot;uptimeSeconds&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">1843</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">}</span></span></code></pre></figure>
+<p>Nothing sensitive.</p>
+<p>Just enough information to prove:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>Internet</span></span>
+<span data-line><span>→ Apache</span></span>
+<span data-line><span>→ Node</span></span>
+<span data-line><span>→ SvelteKit</span></span>
+<span data-line><span>→ daily-safe logic</span></span></code></pre></figure>
+<p>is alive.</p>
+<p>I tested it locally.<br/>
+Then I tested the production URL.<br/>
+It worked.<br/>
+Tiny feature.<br/>
+Extremely satisfying.</p>
+<p>The Discord integration was still missing one thing, though.</p>
+<p>If somebody was playing Safe Cracker, I wanted Discord to actually show that they were playing Safe Cracker.</p>
+<p>So I added Rich Presence.</p>
+<p>The Activity now updates Discord while you play.</p>
+<p>It can show:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>Cracking Safe #009</span></span>
+<span data-line><span>Playing the daily safe</span></span></code></pre></figure>
+<p>with an elapsed timer.</p>
+<p>Once the safe is open, it changes to something like:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>Cracked Safe #009</span></span>
+<span data-line><span>19 guesses • 0:58 • 1 day streak</span></span></code></pre></figure>
+<p>This required adding Discord’s:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>rpc.activities.write</span></span></code></pre></figure>
+<p>OAuth scope and keeping the Embedded App SDK instance alive after authentication so the rest of the game could update the Activity.</p>
+<p>At first I thought the code was broken because absolutely nothing appeared on my profile.</p>
+<p>After investigating the SDK, the scopes, the Activity state, and probably preparing myself emotionally for another authentication adventure, I discovered the problem.</p>
+<p>Discord’s:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>Share my activity</span></span></code></pre></figure>
+<p>setting was turned off.</p>
+<p>Turned it on.<br/>
+There it was.<br/>
+Of course.</p>
+<p>The profile now shows Safe Cracker properly while I am playing, complete with the game artwork and current result.</p>
+<p>That immediately led to the next feature.<br/>
+If somebody cracks the safe, they should be able to brag about it.<br/>
+So I added Discord’s native Activity sharing flow.</p>
+<p>After completing the daily safe, there is now a:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>SHARE RESULT</span></span></code></pre></figure>
+<p>button.</p>
+<p>It opens Discord’s normal share dialog and produces a proper result post.</p>
+<p>Something like:</p>
+<h1 id="shagwrath-was-playing-safe-cracker">Shagwrath was playing Safe Cracker<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#shagwrath-was-playing-safe-cracker" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>🏆 Rank <a href=".././tags/1" class="tag-link internal internal-link alias" data-slug="tags/1">1</a><br/>
+🔥 <strong>2</strong> Day Streak<br/>
+<strong>27</strong> Guesses • 01:09.12</p>
+<p>Then Discord automatically attaches the Safe Cracker Activity card underneath it.</p>
+<p>The card has the game artwork.<br/>
+The game icon.<br/>
+The Activity name.</p>
+<p>And, most importantly, a big:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>Play</span></span></code></pre></figure>
+<p>button.</p>
+<p>So someone can see another person’s score in Discord, click Play, and immediately launch the Activity themselves.</p>
+<p>That little loop is probably my favorite thing in the project so far.<br/>
+Someone plays.<br/>
+Discord shows that they are playing.<br/>
+They finish.<br/>
+They share their score.<br/>
+Someone else sees it.<br/>
+They click Play.<br/>
+Now they are trying to beat it.</p>
+<p>That is exactly what I wanted this thing to feel like.</p>
+<p>Safe Cracker currently has:<br/>
+Discord OAuth authentication.<br/>
+Secure persistent sessions.<br/>
+A server-authoritative daily game.<br/>
+Deterministic daily combinations.<br/>
+SQLite persistence.<br/>
+Resumable runs.<br/>
+Server-controlled timing and attempts.<br/>
+Completion lockout.<br/>
+Current and best streaks.<br/>
+Daily leaderboards.<br/>
+A REST-style HTTP API.<br/>
+A production health endpoint.<br/>
+Apache reverse proxy hosting.<br/>
+Automated HTTPS.<br/>
+Windows startup through Scheduled Tasks.<br/>
+GitHub deployment.<br/>
+Discord Rich Presence.<br/>
+Native Discord result sharing.</p>
+<p>And a direct social path from:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>Look at my score</span></span></code></pre></figure>
+<p>to:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>Fuck you, I can beat that.</span></span></code></pre></figure>
+<p>Not bad for higher-or-lower.</p>
+<p>The funniest part is that the visual design is still basically the prototype.<br/>
+It is a dark rectangle.<br/>
+There are buttons.<br/>
+They work.<br/>
+That was intentional.</p>
+<p>I wanted to prove the entire game underneath the graphics before spending time decorating it.</p>
+<p>Now I know that the authentication works.<br/>
+The database works.<br/>
+The API works.<br/>
+The daily puzzle works.<br/>
+Persistence works.<br/>
+The leaderboard works.<br/>
+Discord presence works.<br/>
+Sharing works.<br/>
+Production works.</p>
+<p>So now I can finally start making the thing actually look and sound like Safe Cracker instead of a development interface somebody forgot to delete.</p>
+<p>That will be a much nicer problem to have.</p>
+<p>For now, though, I am extremely happy with what this little game quietly turned into.</p>
+<p>I wanted to remake a number guessing game.</p>
+<p>Instead I learned SvelteKit, built a server-authoritative web application, made an actual API, implemented OAuth and secure sessions, deployed a Node service behind Apache, added persistent multiplayer-adjacent statistics, and wired the whole thing directly into Discord.</p>
+<p>Bucket list item:</p>
+<blockquote>
+<p>Make an API.</p>
+</blockquote>
+<p>Apparently checked.</p>
+<p><a href="../safe-cracker-discord-activity-home" class="internal internal-link alias" data-slug="safe-cracker-discord-activity-home">Safe Cracker Discord Activity Home</a></p></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-0" class="overflow"><li><a href="../updates/updates-home" class="internal">Updates Home</a></li><li><a href="../updates/" class="internal">Updates Home</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-3426b91c.js" type="module" data-persist="true"></script></html>
