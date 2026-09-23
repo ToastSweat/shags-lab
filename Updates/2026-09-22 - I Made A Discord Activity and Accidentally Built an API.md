@@ -1,5 +1,5 @@
 ---
-title: I Made A Discord Activity and Accidentally Built An API!
+title: 2026-09-22 - I Made A Discord Activity and Accidentally Built An API!
 type: update
 date: 2026-09-22
 project: Safe Cracker Discord Activity

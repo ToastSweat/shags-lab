@@ -2,7 +2,6 @@
 type: archive-index
 project: Cosmic Raven Records
 ---
-
 # Cosmic Raven Records - Transmission Archive
 
 Descriptions and pinned comments are intentionally archived as separate notes.
@@ -17,4 +16,5 @@ Descriptions and pinned comments are intentionally archived as separate notes.
 - **004B** — [[004B - Jedicide - The Seduction on the Darkside 2]] · [[004B - Pinned Comment]] · [YouTube](https://www.youtube.com/watch?v=K2G7XC_31I8)
 - **005B** — [[005B - Jedicide - The Rule of Two]] · [[005B - Pinned Comment]] · [YouTube](https://www.youtube.com/watch?v=dUxBkdX4Ae0)
 
-- **006A** — [[006A - Jedicide - Shadows of the Empire 1]] · [[006A - Pinned Comment - TODO]] · [YouTube](https://www.youtube.com/watch?v=RO-x8LIJHb4)
+- **006A** — [[006A - Jedicide - Shadows of the Empire 1]] · [[006A - Pinned Comment]] · [YouTube](https://www.youtube.com/watch?v=RO-x8LIJHb4)
+- **006B** — [[006B - Jedicide - Shadows of the Empire 2]] · [[006A - Pinned Comment]] · [YouTube](https://youtu.be/XvBtJLbzUvM)
