@@ -6,6 +6,7 @@ project: Cosmic Raven Records, Safe Cracker Discord Activity
 publish: true
 ---
 ## Cosmic Raven Records 
+![[Art.png]]
 [[Cosmic Raven Records Home]]
 
 Some days are like this, you cant just focus on one thing, instead you bounce around from thing to thing.
@@ -43,4 +44,4 @@ Order of operations, gah!
 
 So now I will remake the connection screen and redo my work on the main screen, but hey, its progress!
 
-Maybe I'll just go play Marvel Rivals...
+Maybe I'll just go play Marvel Rivals... 

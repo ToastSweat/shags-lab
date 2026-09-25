@@ -8,6 +8,7 @@ publish: true
 
 ## Latest Updates
 
+- [[Updates/2026-09-24 - Another Mix-Bag Sort of Day|2026-09-24 - Another Mix-Bag Sort of Day]]
 - [[Updates/2026-09-23 - A Little Bit of This and That|2026-09-23 - A Little Bit of This and That]]
 - [[Updates/2026-09-22 - I Made A Discord Activity and Accidentally Built an API|2026-09-22 - I Made A Discord Activity and Accidentally Built an API]]
 - [[Updates/2026-09-21 - Star Wars Battlefront II Server Development|2026-09-21 - Star Wars Battlefront II Server Development]]

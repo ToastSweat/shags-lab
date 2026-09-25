@@ -17,4 +17,5 @@ Descriptions and pinned comments are intentionally archived as separate notes.
 - **005B** — [[005B - Jedicide - The Rule of Two]] · [[005B - Pinned Comment]] · [YouTube](https://www.youtube.com/watch?v=dUxBkdX4Ae0)
 
 - **006A** — [[006A - Jedicide - Shadows of the Empire 1]] · [[006A - Pinned Comment]] · [YouTube](https://www.youtube.com/watch?v=RO-x8LIJHb4)
-- **006B** — [[006B - Jedicide - Shadows of the Empire 2]] · [[006A - Pinned Comment]] · [YouTube](https://youtu.be/XvBtJLbzUvM)
+- **006B** — [[006B - Jedicide - Shadows of the Empire 2]] · [[006B - Pinned Comment]] · [YouTube](https://youtu.be/XvBtJLbzUvM)
+- **006C** — [[006C - Jedicide - Shadows of the Empire 3]] · · [YouTube](https://www.youtube.com/watch?v=s0IEWLTzl6g)
