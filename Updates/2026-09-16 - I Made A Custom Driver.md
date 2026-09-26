@@ -1,7 +1,7 @@
 ---
 type: update
 date: 2026-09-16
-project: Keychron C100
+project: Keychron C100 Custom Firmware
 publish: true
 ---
 I Made A Custom Driver?!

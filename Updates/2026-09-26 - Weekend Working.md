@@ -1,8 +1,10 @@
 
 ## Shag's Lab Updates
-* Make the Quartz builder either remove folder listing from the bottom of both Projects Home and Updates Home folders pages, or have all folders look for 'Folder Name' + 'Home' and treat that as their homepage.
-* There are some output warning in the Quartz builder I want to take a look at too.
-* A visitor counter on the site would be so cool.
+Lets just run though everything I did. No need to celebrate it, just constant improvement.
+* Added some missing Home page for [[Keychron C100 Home]], [[My Mini Retro Television Home]], moved [[Obsidian Vault to Website Home]]
+* Made the Quartz website builder default the folder's page from a directory listing to the 'Home' page for that project.
+* I addressed some output warning in the builder, boring.
+* I added a visitor counter!
 
 ## Header
 * Dune Awakening Private Server: documentation, backup, investigate new server build?
