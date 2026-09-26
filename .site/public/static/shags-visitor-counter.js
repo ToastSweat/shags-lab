@@ -19,7 +19,7 @@
         node.textContent = count;
       });
     } catch (error) {
-      console.warn("Shag's Lab visitor counter could not be loaded.", error);
+      console.warn("Shag's Lab visitor counter could not be loaded. Make sure GoatCounter Settings > Allow adding visitor counts on your website is enabled.", error);
       nodes.forEach(function (node) {
         node.textContent = "--";
       });
