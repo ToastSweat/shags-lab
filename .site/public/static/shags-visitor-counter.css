@@ -1,6 +1,6 @@
 .shags-lab-visitor-counter {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 0.35rem;
   margin-top: 0.35rem;
   font-size: 0.9rem;
@@ -12,20 +12,7 @@
   font-weight: 600;
 }
 
-.shags-lab-visitor-counter [data-shags-goatcounter-host] {
-  display: inline-flex;
-  align-items: center;
-  width: 82px;
-  height: 24px;
-  overflow: hidden;
-  vertical-align: middle;
-}
-
-.shags-lab-visitor-counter [data-shags-goatcounter-host] iframe {
-  display: block;
-  width: 82px;
-  height: 24px;
-  border: 0;
-  margin: 0;
-  padding: 0;
+.shags-lab-visitor-counter [data-shags-visitor-count] {
+  color: var(--darkgray);
+  font-variant-numeric: tabular-nums;
 }
