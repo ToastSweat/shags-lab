@@ -1,0 +1,15 @@
+.shags-lab-visitor-counter {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.shags-lab-visitor-counter strong {
+  color: var(--darkgray);
+  font-weight: 600;
+}
+
+.shags-lab-visitor-counter [data-shags-visitor-count] {
+  color: var(--darkgray);
+  font-variant-numeric: tabular-nums;
+}
