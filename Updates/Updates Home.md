@@ -8,6 +8,7 @@ publish: true
 
 ## Latest Updates
 
+- [[Updates/2026-09-26.2 - I Accidentally Became A Dune Server Goblin|2026-09-26.2 - I Accidentally Became A Dune Server Goblin]]
 - [[Updates/2026-09-25 - Holy Cow, I'm Pooped|2026-09-25 - Holy Cow, I'm Pooped]]
 - [[Updates/2026-09-24 - Another Mix-Bag Sort of Day|2026-09-24 - Another Mix-Bag Sort of Day]]
 - [[Updates/2026-09-23 - A Little Bit of This and That|2026-09-23 - A Little Bit of This and That]]
@@ -21,4 +22,4 @@ publish: true
 - [[Updates/2026-09-17 - I Built A Booru Librarian|2026-09-17 - I Built A Booru Librarian]]
 - [[Updates/2026-09-16 - I Made A Custom Driver|2026-09-16 - I Made A Custom Driver]]
 
-*Last Updated: 2026-09-25*
+*Last Updated: 2026-09-26*

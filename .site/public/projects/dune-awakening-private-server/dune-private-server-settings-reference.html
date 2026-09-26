@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Dune Private Server Settings Reference</title><meta charset="utf-8"/><link rel="preload" href="../../index-b9b435bc.css" as="style"/><link rel="preload" href="../../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Shag's Lab"/><meta property="og:title" content="Dune Private Server Settings Reference"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Dune Private Server Settings Reference"/><meta name="twitter:description" content="Dune Private Server Settings Reference This is the configuration record for our self-hosted Dune: Awakening battlegroup immediately before the newly released build is audited."/><meta property="og:description" content="Dune Private Server Settings Reference This is the configuration record for our self-hosted Dune: Awakening battlegroup immediately before the newly released build is audited."/><meta property="og:image:alt" content="Dune Private Server Settings Reference This is the configuration record for our self-hosted Dune: Awakening battlegroup immediately before the newly released build is audited."/><meta property="twitter:domain" content="helvete.pizza/lab"/><meta property="og:url" content="https://helvete.pizza/lab/projects/dune-awakening-private-server/dune-private-server-settings-reference"/><meta property="twitter:url" content="https://helvete.pizza/lab/projects/dune-awakening-private-server/dune-private-server-settings-reference"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="Dune Private Server Settings Reference This is the configuration record for our self-hosted Dune: Awakening battlegroup immediately before the newly released build is audited."/><meta name="generator" content="Quartz"/><link href="../../index-b9b435bc.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-11d41004.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-26a99b87.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://helvete.pizza/lab/projects/dune-awakening-private-server/dune-private-server-settings-reference-og-image.webp"/><meta property="og:image:url" content="https://helvete.pizza/lab/projects/dune-awakening-private-server/dune-private-server-settings-reference-og-image.webp"/><meta name="twitter:image" content="https://helvete.pizza/lab/projects/dune-awakening-private-server/dune-private-server-settings-reference-og-image.webp"/><meta property="og:image:type" content="image/webp"/><link rel="stylesheet" href="/lab/static/shags-visitor-counter.css"></head><body data-slug="projects/dune-awakening-private-server/dune-private-server-settings-reference" data-basepath="/lab"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">Shag's Lab</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="Search" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something..." placeholder="Search for something..."/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="Dark mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="Reader mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-5" aria-label="Explorer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-5" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../projects/">Projects Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../projects/dune-awakening-private-server/">Dune Awakening Private Server</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Dune Private Server Settings Reference</a></div></nav><h1 class="article-title">Dune Private Server Settings Reference</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-26T05:00:00.000Z">Sep 26, 2026</time><span>14 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="dune-private-server-settings-reference">Dune Private Server Settings Reference<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dune-private-server-settings-reference" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>This is the configuration record for our self-hosted <strong>Dune: Awakening</strong> battlegroup immediately before the newly released build is audited.</p>
+<p><strong>It records:</strong></p>
+<ul>
+<li>settings Funcom deliberately exposed through the Battlegroup Editor or seeded <code>UserSettings</code> files;</li>
+<li>additional settings we found in shipped defaults and tested ourselves;</li>
+<li>the values currently used on our server;</li>
+<li>the value types and ranges we can defend;</li>
+<li>settings that looked promising but turned out to be cooked-asset, database-state, or runtime problems instead.</li>
+</ul>
+<p>This is a <strong>known-good historical baseline</strong>, not a claim that every value survives the new build unchanged.</p>
+<blockquote>
+<p><strong>Scope rule:</strong> Funcom’s extracted <code>DefaultGame.ini</code> contains thousands of properties. Many are internal defaults, asset references, UI values, or untested class properties. This guide catalogs the administratively useful controls we exposed or investigated. A key merely existing in an extracted file does not make it a safe server setting.</p>
+</blockquote>
+<h2 id="confidence-labels">Confidence labels<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#confidence-labels" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Label</th><th>Meaning</th></tr></thead><tbody><tr><td><strong>Official surface</strong></td><td>Exposed by Funcom’s Battlegroup Editor or seeded self-host configuration.</td></tr><tr><td><strong>Confirmed</strong></td><td>We applied it and observed the expected behavior or persistence.</td></tr><tr><td><strong>Shipped key</strong></td><td>Present in shipped defaults, but our exact gameplay result still needs a controlled test.</td></tr><tr><td><strong>Candidate</strong></td><td>Found through asset/binary/database research; do not treat as a supported knob.</td></tr><tr><td><strong>Not a setting</strong></td><td>State or content that cannot be made persistent with a normal INI override.</td></tr></tbody></table></div>
+<h2 id="what-acceptable-values-means-here">What “acceptable values” means here<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-acceptable-values-means-here" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The server rarely publishes a formal minimum and maximum. This guide therefore separates:</p>
+<ul>
+<li><strong>formal range</strong> — explicitly documented in the shipped template;</li>
+<li><strong>type-safe range</strong> — the value shape the engine accepts, such as Boolean, integer, or finite float;</li>
+<li><strong>tested value</strong> — a value we actually used;</li>
+<li><strong>safe advice</strong> — a practical constraint intended to avoid pathological behavior.</li>
+</ul>
+<p>If no formal range is known, the table says so. Do not mistake “parses successfully” for “balanced” or “safe.”</p>
+<h2 id="configuration-surfaces">Configuration surfaces<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#configuration-surfaces" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Surface</th><th>Scope</th><th>Open it with</th><th>Apply changes</th></tr></thead><tbody><tr><td>Battlegroup Editor</td><td>Per map, server, partition, or service</td><td><code>battlegroup.bat → 6. edit</code></td><td>Save the editor changes; restart affected servers if they do not reconcile automatically.</td></tr><tr><td>Advanced Battlegroup YAML</td><td>Entire Kubernetes battlegroup resource</td><td>Advanced option inside the editor</td><td>Save only valid YAML; a bad edit can break the battlegroup.</td></tr><tr><td><code>UserEngine.ini</code></td><td>Every game server in the battlegroup</td><td><code>battlegroup.bat → 13. open-file-browser → UserSettings</code></td><td><code>3. restart</code>, then <code>1. status</code></td></tr><tr><td><code>UserGame.ini</code></td><td>Every game server in the battlegroup</td><td>Same location</td><td><code>3. restart</code>, then <code>1. status</code></td></tr><tr><td>Map-specific config override</td><td>Only the selected map/server</td><td>Battlegroup Editor</td><td>Restart/verify the affected map.</td></tr><tr><td>Database state</td><td>Saved world/player/actor state, not ordinary configuration</td><td>PostgreSQL inside the database pod</td><td>Usually requires the relevant game process to be stopped before editing.</td></tr></tbody></table></div>
+<p><code>UserEngine.ini</code> and <code>UserGame.ini</code> are global to the battlegroup. Use the Battlegroup Editor when different maps or partitions need different settings.</p>
+<h2 id="battlegroup-editor-settings">Battlegroup Editor settings<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#battlegroup-editor-settings" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>These are operational settings, not gameplay INI values.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Setting</th><th>Accepted value</th><th>Important invariant</th><th>Our status</th></tr></thead><tbody><tr><td>Maximum servers / dimensions for a map</td><td>Integer <code>>= 1</code></td><td>Implemented as the map’s <code>worldPartitions</code> count.</td><td>Official surface; our normal world uses a single Sietch.</td></tr><tr><td>Active servers / replicas</td><td>Integer from <code>0</code> through the map’s partition count</td><td><code>replicas</code> must be less than or equal to <code>worldPartitions</code>. Raising replicas without adding a partition causes a crash loop.</td><td>Official surface; confirmed operational behavior.</td></tr><tr><td>Per-partition display name</td><td>Non-empty string</td><td>Each Sietch name should be unique.</td><td>Official surface.</td></tr><tr><td>Per-partition login password</td><td>String; blank only if an open server is intended</td><td>Treat as a secret. Never copy the real password into a public guide.</td><td>Official surface.</td></tr><tr><td>Memory limit</td><td>Positive Kubernetes memory quantity such as <code>5Gi</code>, <code>8Gi</code>, or <code>10Gi</code></td><td>Too little memory causes <code>OOMKilled</code> / exit code <code>137</code>.</td><td>Confirmed: <code>5Gi</code> was too low for at least one special map; <code>8–10Gi</code> was the successful troubleshooting range.</td></tr><tr><td>CPU/resource limits</td><td>Positive Kubernetes resource quantities</td><td>Must fit the VM’s available resources across all running pods.</td><td>Official surface; no single universal value recorded.</td></tr><tr><td>Server arguments</td><td>A list of arguments recognized by that server component</td><td>There is no safe arbitrary-string range. Unknown arguments should be tested one at a time.</td><td>Official surface.</td></tr><tr><td>Per-server configuration overrides</td><td>Valid INI/CVar key-value pairs</td><td>Prefer this over global <code>UserSettings</code> when only one map should change.</td><td>Official surface.</td></tr><tr><td>Advanced component configuration</td><td>Valid Battlegroup YAML</td><td>Schema-valid YAML can still be operationally bad. Back up the battlegroup spec first.</td><td>Official surface; high risk.</td></tr></tbody></table></div>
+<h2 id="userengineini"><code>UserEngine.ini</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#userengineini" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="url"><code>[URL]</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#url" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Key</th><th>Type and acceptable values</th><th style="text-align:right;">Our value</th><th>Status</th><th>Effect / notes</th></tr></thead><tbody><tr><td><code>Port</code></td><td>Integer <code>1–65535</code>; must not collide with another listener</td><td style="text-align:right;"><code>7777</code></td><td>Official surface / confirmed</td><td>Starting client/game UDP port. Our firewall/NAT range is <code>7777–7810/UDP</code>.</td></tr><tr><td><code>IGWPort</code></td><td>Integer <code>1–65535</code>; must not collide with another listener</td><td style="text-align:right;"><code>7888</code></td><td>Official surface / confirmed</td><td>Starting inter-gateway UDP port. Our firewall/NAT range is <code>7888–7921/UDP</code>.</td></tr></tbody></table></div>
+<p>The self-host stack also requires <code>31982/TCP</code> for RabbitMQ. That port is infrastructure, not an INI gameplay setting.</p>
+<h3 id="consolevariables"><code>[ConsoleVariables]</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#consolevariables" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Key</th><th>Type and acceptable values</th><th style="text-align:right;">Shipped/default</th><th style="text-align:right;">Our value</th><th>Status</th><th>Effect / notes</th></tr></thead><tbody><tr><td><code>Bgd.ServerDisplayName</code></td><td>Quoted string</td><td style="text-align:right;">Installation-specific</td><td style="text-align:right;">Private</td><td>Official surface / confirmed</td><td>Browser/server display name.</td></tr><tr><td><code>Bgd.ServerLoginPassword</code></td><td>Quoted string</td><td style="text-align:right;">Installation-specific</td><td style="text-align:right;"><strong>Not recorded here</strong></td><td>Official surface / confirmed</td><td>Sensitive. Keep it out of screenshots and public repositories.</td></tr><tr><td><code>Dune.GlobalMiningOutputMultiplier</code></td><td>Finite float <code>>= 0</code>; no published maximum</td><td style="text-align:right;"><code>1.0</code></td><td style="text-align:right;"><code>2.0</code></td><td>Confirmed</td><td>Player/manual mining output multiplier. <code>2.0</code> means 2×. Zero behavior was not tested.</td></tr><tr><td><code>Dune.GlobalVehicleMiningOutputMultiplier</code></td><td>Finite float <code>>= 0</code>; no published maximum</td><td style="text-align:right;"><code>1.0</code></td><td style="text-align:right;"><code>2.0</code></td><td>Confirmed</td><td>Vehicle mining output multiplier.</td></tr><tr><td><code>SecurityZones.PvpResourceMultiplier</code></td><td>Finite float <code>>= 0</code>; no published maximum</td><td style="text-align:right;">Build-dependent</td><td style="text-align:right;"><code>5.0</code></td><td>Confirmed</td><td>Resource multiplier in PvP/security-zone contexts.</td></tr><tr><td><code>dw.VehicleDurabilityDamageMultiplier</code></td><td>Formal shipped range <code>0–10</code>; <code>0</code> disables durability damage</td><td style="text-align:right;"><code>1.0</code></td><td style="text-align:right;"><code>1.0</code></td><td>Official surface / confirmed baseline</td><td>Vehicle durability damage multiplier.</td></tr><tr><td><code>Sandstorm.Enabled</code></td><td>Boolean CVar: <code>0</code> or <code>1</code></td><td style="text-align:right;"><code>1</code></td><td style="text-align:right;"><code>1</code></td><td>Official surface / confirmed</td><td>Master ordinary sandstorm toggle.</td></tr><tr><td><code>Sandstorm.Treasure.Enabled</code></td><td>Boolean CVar: <code>0</code> or <code>1</code></td><td style="text-align:right;"><code>1</code></td><td style="text-align:right;"><code>1</code></td><td>Official surface / confirmed</td><td>Enables sandstorm treasure behavior.</td></tr><tr><td><code>sandworm.dune.Enabled</code></td><td>Boolean CVar: <code>0</code> or <code>1</code></td><td style="text-align:right;"><code>1</code></td><td style="text-align:right;"><code>1</code></td><td>Official surface / confirmed</td><td>Enables the Hagga Basin sandworm system.</td></tr><tr><td><code>Vehicle.SandwormCollisionInteraction</code></td><td>Boolean: <code>true</code> or <code>false</code></td><td style="text-align:right;">Build-dependent</td><td style="text-align:right;"><code>false</code></td><td>Confirmed; intentionally retained</td><td>Whether vehicle/sandworm collision interaction can push or damage vehicles. We disabled this because of prior bugs and intend to leave it disabled for the foreseeable future.</td></tr><tr><td><code>Sandworm.SandwormDangerZonesEnabled</code></td><td>Boolean: <code>true</code> or <code>false</code></td><td style="text-align:right;"><code>true</code></td><td style="text-align:right;"><code>true</code></td><td>Confirmed</td><td>Enables sandworm danger-zone behavior.</td></tr><tr><td><code>Vehicle.SandwormInvulnerabilitySecondsOnExit</code></td><td>Finite seconds <code>>= 0</code></td><td style="text-align:right;">Build-dependent</td><td style="text-align:right;"><code>900.0</code></td><td>Confirmed</td><td>Vehicle protection after a player exits. <code>900</code> seconds = 15 minutes.</td></tr><tr><td><code>Vehicle.SandwormInvulnerabilitySecondsOnServerRestart</code></td><td>Finite seconds <code>>= 0</code></td><td style="text-align:right;">Build-dependent</td><td style="text-align:right;"><code>7200.0</code></td><td>Confirmed</td><td>Vehicle protection after restart. <code>7200</code> seconds = 2 hours.</td></tr></tbody></table></div>
+<h3 id="known-good-userengineini">Known-good <code>UserEngine.ini</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#known-good-userengineini" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="ini" data-theme="github-light github-dark"><code data-language="ini" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;" data-token-type="comment">; Applies to every server in the battlegroup.</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="punctuation">[URL]</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">Port</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=7777</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">IGWPort</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=7888</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="punctuation">[ConsoleVariables]</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">Bgd.ServerDisplayName</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot;YOUR SERVER NAME&quot;</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">Bgd.ServerLoginPassword</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot;YOUR PASSWORD&quot;</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">Dune.GlobalMiningOutputMultiplier</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=2.0</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">Dune.GlobalVehicleMiningOutputMultiplier</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=2.0</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">SecurityZones.PvpResourceMultiplier</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=5.0</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">dw.VehicleDurabilityDamageMultiplier</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=1.0</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">Sandstorm.Enabled</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=1</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">Sandstorm.Treasure.Enabled</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=1</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">sandworm.dune.Enabled</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=1</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">Vehicle.SandwormCollisionInteraction</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=false</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">Sandworm.SandwormDangerZonesEnabled</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=true</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">Vehicle.SandwormInvulnerabilitySecondsOnExit</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=900.0</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">Vehicle.SandwormInvulnerabilitySecondsOnServerRestart</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=7200.0</span></span></code></pre></figure>
+<h2 id="usergameini-official-and-confirmed-baseline"><code>UserGame.ini</code>: official and confirmed baseline<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#usergameini-official-and-confirmed-baseline" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="pvp-and-security-zones">PvP and security zones<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pvp-and-security-zones" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Section / key</th><th>Type and acceptable values</th><th style="text-align:right;">Our value</th><th>Status</th><th>Effect / notes</th></tr></thead><tbody><tr><td><code>[/Script/DuneSandbox.PvpPveSettings]</code> → <code>m_bShouldForceEnablePvpOnAllPartitions</code></td><td><code>True</code> or <code>False</code></td><td style="text-align:right;"><code>False</code></td><td>Official surface / confirmed</td><td><code>True</code> forces PvP globally. <code>False</code> leaves partition and security-zone rules in control.</td></tr><tr><td>Same section → <code>+m_PvpEnabledPartitions</code></td><td>Repeated integer partition IDs that actually exist</td><td style="text-align:right;">Commented examples <code>1</code>, <code>2</code></td><td>Official surface / untested</td><td>Unreal array append syntax. Do not enable arbitrary IDs.</td></tr><tr><td><code>[/Script/DuneSandbox.SecurityZonesSubsystem]</code> → <code>m_bAreSecurityZonesEnabled</code></td><td><code>True</code> or <code>False</code></td><td style="text-align:right;"><code>True</code></td><td>Official surface / confirmed</td><td>Master security-zone system toggle.</td></tr></tbody></table></div>
+<h3 id="deterioration">Deterioration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#deterioration" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Section / key</th><th>Type and acceptable values</th><th style="text-align:right;">Our value</th><th>Status</th><th>Effect / notes</th></tr></thead><tbody><tr><td><code>[/DeteriorationSystem.ItemDeteriorationConstants]</code> → <code>UpdateRateInSeconds</code></td><td>Formal shipped range <code>0–10</code>; <code>0</code> disables the update</td><td style="text-align:right;"><code>1.0</code></td><td>Official surface / confirmed baseline</td><td>Tick/update cadence, <strong>not</strong> a simple “1× decay speed” multiplier. Lower positive values update more often.</td></tr></tbody></table></div>
+<h3 id="coriolis-storms">Coriolis storms<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#coriolis-storms" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Section / key</th><th>Type and acceptable values</th><th style="text-align:right;">Our value</th><th>Status</th><th>Effect / notes</th></tr></thead><tbody><tr><td><code>[/Script/DuneSandbox.SandStormConfig]</code> → <code>m_bCoriolisAutoSpawnEnabled</code></td><td><code>True</code> or <code>False</code></td><td style="text-align:right;"><code>False</code></td><td>Official surface / configured</td><td>Intended to disable automatic Coriolis storm spawning. The value loaded without error, but we did not isolate and formally prove the resulting spawn behavior. This is separate from the ordinary <code>Sandstorm.Enabled</code> CVar.</td></tr></tbody></table></div>
+<h3 id="building-limits">Building limits<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#building-limits" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Section / key</th><th>Type and acceptable values</th><th style="text-align:right;">Shipped/default</th><th style="text-align:right;">Our value</th><th>Status</th><th>Effect / notes</th></tr></thead><tbody><tr><td><code>[/Script/DuneSandbox.BuildingSettings]</code> → <code>m_MaxNumLandclaimSegments</code></td><td>Integer <code>>= 1</code>; practical upper bound not published</td><td style="text-align:right;"><code>6</code></td><td style="text-align:right;"><code>12</code></td><td>Confirmed</td><td>Maximum connected landclaim segments. The same value may need to be added to each player’s client <code>Game.ini</code>.</td></tr><tr><td>Same section → <code>m_BuildingBlueprintMaxExtensions</code></td><td>Integer <code>>= 0</code>; no published maximum</td><td style="text-align:right;"><code>4</code></td><td style="text-align:right;"><code>8</code></td><td>Confirmed</td><td>Maximum blueprint/landclaim extension count. Not the number-of-bases cap.</td></tr><tr><td>Same section → <code>m_BaseBackupMaxExtensions</code></td><td>Integer <code>>= 0</code>; no published maximum</td><td style="text-align:right;"><code>8</code></td><td style="text-align:right;"><code>16</code></td><td>Confirmed</td><td>Base backup/reconstruction extension count. Not the number-of-bases cap.</td></tr><tr><td>Same section → <code>m_bBuildingRestrictionLimitsEnabled</code></td><td><code>True</code> or <code>False</code></td><td style="text-align:right;"><code>True</code></td><td style="text-align:right;"><code>True</code></td><td>Confirmed baseline</td><td>Enables restriction-limit enforcement. This value may also need to match on clients.</td></tr></tbody></table></div>
+<h2 id="usergameini-settings-we-found-and-exposed"><code>UserGame.ini</code>: settings we found and exposed<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#usergameini-settings-we-found-and-exposed" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="random-encounter-cadence">Random encounter cadence<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#random-encounter-cadence" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Section:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="ini" data-theme="github-light github-dark"><code data-language="ini" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="punctuation">[/Script/DuneSandbox.EncountersSubsystem]</span></span></code></pre></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Key</th><th>Type and acceptable values</th><th style="text-align:right;">Shipped/default</th><th style="text-align:right;">Our value</th><th>Status</th><th>Effect / notes</th></tr></thead><tbody><tr><td><code>m_bAreRandomEncountersEnabled</code></td><td><code>True</code> or <code>False</code></td><td style="text-align:right;"><code>True</code></td><td style="text-align:right;"><code>True</code></td><td>Shipped key</td><td>Master random-encounter toggle.</td></tr><tr><td><code>m_RandomEncounterInstigationAroundPlayersBoxExtentInMeters</code></td><td>Finite float <code>> 0</code></td><td style="text-align:right;"><code>500</code></td><td style="text-align:right;">Unchanged</td><td>Shipped key</td><td>Search extent around players.</td></tr><tr><td><code>m_RandomEncounterInstigationAroundPlayersDelayInSec</code></td><td>Finite seconds <code>> 0</code>; no formal bounds</td><td style="text-align:right;"><code>15.0</code></td><td style="text-align:right;"><code>12.0</code></td><td>Confirmed</td><td>Reduced the interval between around-player encounter attempts. Very low values may increase server load.</td></tr><tr><td><code>m_RandomEncounterInstigationOnWholeServerDelayInSec</code></td><td>Finite seconds <code>> 0</code>; no formal bounds</td><td style="text-align:right;"><code>60.0</code></td><td style="text-align:right;"><code>45.0</code></td><td>Confirmed</td><td>Reduced the interval between whole-server encounter attempts.</td></tr><tr><td><code>m_RandomEncounterInstigationByAreaDelayInSecOverride</code></td><td>Finite seconds; <code>-1.0</code> means use default/no override</td><td style="text-align:right;"><code>-1.0</code></td><td style="text-align:right;">Unchanged</td><td>Shipped key</td><td>Per-area delay override.</td></tr><tr><td><code>m_bAreEncounterAreaLimitsEnabled</code></td><td><code>True</code> or <code>False</code></td><td style="text-align:right;"><code>True</code></td><td style="text-align:right;"><code>True</code></td><td>Confirmed</td><td>Keeps encounter area limits enabled.</td></tr><tr><td><code>m_bAreEncounterNodesEnabled</code></td><td><code>True</code> or <code>False</code></td><td style="text-align:right;"><code>True</code></td><td style="text-align:right;"><code>True</code></td><td>Shipped key</td><td>Enables encounter nodes.</td></tr><tr><td><code>m_bIsRandomEncounterInstigationAroundPlayersEnabled</code></td><td><code>True</code> or <code>False</code></td><td style="text-align:right;"><code>True</code></td><td style="text-align:right;"><code>True</code></td><td>Shipped key</td><td>Enables around-player instigation.</td></tr><tr><td><code>m_bIsRandomEncounterInstigationOnWholeServerEnabled</code></td><td><code>True</code> or <code>False</code></td><td style="text-align:right;"><code>True</code></td><td style="text-align:right;"><code>True</code></td><td>Shipped key</td><td>Enables whole-server instigation.</td></tr><tr><td><code>m_bIsRandomEncounterInstigationOnWholeServerForced</code></td><td><code>True</code> or <code>False</code></td><td style="text-align:right;"><code>False</code></td><td style="text-align:right;"><code>False</code></td><td>Shipped key</td><td>Forced whole-server mode. We did not enable it.</td></tr><tr><td><code>m_bIsRandomEncounterInstigationByAreaEnabled</code></td><td><code>True</code> or <code>False</code></td><td style="text-align:right;"><code>True</code></td><td style="text-align:right;"><code>True</code></td><td>Shipped key</td><td>Enables area-based instigation.</td></tr><tr><td><code>m_DisabledEncounterNames</code></td><td>Unreal map/array syntax containing valid encounter names</td><td style="text-align:right;">Deprecated DD wreck entry</td><td style="text-align:right;">Unchanged</td><td>Shipped key</td><td>The shipped disabled entry is <code>DE_120_SmallShipWreck_DeepDesert_Depricated</code>. Do not remove entries without testing.</td></tr></tbody></table></div>
+<p>Known override:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="ini" data-theme="github-light github-dark"><code data-language="ini" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="punctuation">[/Script/DuneSandbox.EncountersSubsystem]</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_RandomEncounterInstigationAroundPlayersDelayInSec</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=12.0</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_RandomEncounterInstigationOnWholeServerDelayInSec</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=45.0</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_bAreEncounterAreaLimitsEnabled</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=True</span></span></code></pre></figure>
+<p>These values make <strong>all qualifying random encounters poll more often</strong>. They are not shipwreck-only controls.</p>
+<h3 id="grandfather-worm-for-a-low-population-server">Grandfather Worm for a low-population server<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#grandfather-worm-for-a-low-population-server" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The giant-worm spawning controls are shipped under:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="ini" data-theme="github-light github-dark"><code data-language="ini" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="punctuation">[/Script/DuneSandbox.TimeOfDaySettings]</span></span></code></pre></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Key</th><th>Type and acceptable values</th><th style="text-align:right;">Shipped/default</th><th style="text-align:right;">Our value</th><th>Status</th><th>Effect / notes</th></tr></thead><tbody><tr><td><code>m_bGiantWormSystemEnabled</code></td><td><code>True</code> or <code>False</code></td><td style="text-align:right;"><code>True</code></td><td style="text-align:right;"><code>True</code></td><td>Shipped key</td><td>Master giant-worm system toggle.</td></tr><tr><td><code>m_GiantWormSpawningUpdateFrequency</code></td><td>Finite seconds <code>> 0</code></td><td style="text-align:right;"><code>60.0</code></td><td style="text-align:right;">Unchanged</td><td>Shipped key</td><td>How often the spawn conditions are evaluated.</td></tr><tr><td><code>m_GiantWormSpawningCooldown</code></td><td>Finite seconds <code>>= 0</code></td><td style="text-align:right;"><code>7200.0</code></td><td style="text-align:right;"><code>3600.0</code></td><td>Confirmed behavior target</td><td>Reduced cooldown from 2 hours to 1 hour.</td></tr><tr><td><code>m_GiantWormMinimumSpiceAmountHarvested</code></td><td>Finite amount <code>>= 0</code></td><td style="text-align:right;"><code>50000.0</code></td><td style="text-align:right;"><code>20000.0</code></td><td>Confirmed behavior target</td><td>Lowers the harvested-spice trigger.</td></tr><tr><td><code>m_GiantWormMinimumPlayersOnSpiceField</code></td><td>Integer <code>>= 1</code></td><td style="text-align:right;"><code>4</code></td><td style="text-align:right;"><code>1</code></td><td>Confirmed behavior target</td><td>Allows a solo player to satisfy the population requirement.</td></tr><tr><td><code>m_GiantWormSafezoneDetectionDistance</code></td><td>Finite distance <code>>= 0</code></td><td style="text-align:right;"><code>35000.0</code></td><td style="text-align:right;">Unchanged</td><td>Shipped key</td><td>Not part of our low-population change.</td></tr></tbody></table></div>
+<p>Our intended override block:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="ini" data-theme="github-light github-dark"><code data-language="ini" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="punctuation">[/Script/DuneSandbox.TimeOfDaySettings]</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_bGiantWormSystemEnabled</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=True</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_GiantWormSpawningCooldown</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=3600.0</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_GiantWormMinimumSpiceAmountHarvested</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=20000.0</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_GiantWormMinimumPlayersOnSpiceField</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=1</span></span></code></pre></figure>
+<p>The cooldown and thresholds make the event possible; they do not guarantee an immediate spawn because location, safe-zone, field type, and other eligibility checks still apply.</p>
+<h3 id="dew-refresh">Dew refresh<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dew-refresh" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Section:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="ini" data-theme="github-light github-dark"><code data-language="ini" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="punctuation">[/Script/DuneSandbox.DewHarvestSettings]</span></span></code></pre></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Key</th><th>Type and acceptable values</th><th style="text-align:right;">Shipped/default</th><th style="text-align:right;">Our target</th><th>Status</th><th>Effect / notes</th></tr></thead><tbody><tr><td><code>m_DewRefreshTime</code></td><td>Finite float <code>>= 0</code>; observed as hours in this system</td><td style="text-align:right;"><code>12.0</code></td><td style="text-align:right;"><code>24.0</code></td><td>Shipped key / behavior recorded</td><td>We selected a 24-hour refresh. Reconfirm the unit and persistence after the new build.</td></tr><tr><td><code>m_DewRefreshTimeNPE</code></td><td>Finite float <code>>= 0</code>; special/NPE behavior</td><td style="text-align:right;"><code>300.0</code></td><td style="text-align:right;">Unchanged</td><td>Shipped key / not tested</td><td>Do not mirror the normal value into this field without a separate test.</td></tr></tbody></table></div>
+<p>Historical override:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="ini" data-theme="github-light github-dark"><code data-language="ini" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="punctuation">[/Script/DuneSandbox.DewHarvestSettings]</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_DewRefreshTime</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=24.0</span></span></code></pre></figure>
+<h3 id="hagga-basin-spice-field-cap">Hagga Basin spice-field cap<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hagga-basin-spice-field-cap" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Section and authoritative compound key:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="ini" data-theme="github-light github-dark"><code data-language="ini" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="punctuation">[/Script/DuneSandbox.SpiceHarvestingSystem]</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_PerMapSystemSettings</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=...</span></span></code></pre></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Sub-value</th><th>Type and acceptable values</th><th style="text-align:right;">Shipped/default</th><th style="text-align:right;">Our target</th><th>Status</th></tr></thead><tbody><tr><td><code>Survival_1</code> → <code>Small</code> → <code>MaxGloballyPrimed</code></td><td>Integer <code>>= 0</code></td><td style="text-align:right;"><code>5</code></td><td style="text-align:right;"><code>15</code></td><td>Confirmed behavior target</td></tr><tr><td><code>Survival_1</code> → <code>Small</code> → <code>MaxGloballyActive</code></td><td>Integer <code>>= 0</code></td><td style="text-align:right;"><code>5</code></td><td style="text-align:right;"><code>15</code></td><td>Confirmed behavior target</td></tr></tbody></table></div>
+<p>This key is a serialized per-map structure. <strong>Do not paste only the Survival fragment</strong>, because replacing the compound value can discard the Deep Desert entries. During the new-build audit, re-extract the complete shipped value and change only these two <code>Survival_1</code> sub-values.</p>
+<p>The field cap is authoritative and observable in the spice-field database state. A separate persistent spawn-rate multiplier has not been confirmed.</p>
+<h3 id="ping-controls-found-but-not-adopted">Ping controls found but not adopted<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ping-controls-found-but-not-adopted" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Section:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="ini" data-theme="github-light github-dark"><code data-language="ini" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="punctuation">[/Script/DuneSandbox.PingSystemSettings]</span></span></code></pre></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Key</th><th>Type and acceptable values</th><th style="text-align:right;">Shipped/default</th><th>Our status</th></tr></thead><tbody><tr><td><code>m_PingsPerPlayerLimit</code></td><td>Integer <code>>= 0</code></td><td style="text-align:right;"><code>5</code></td><td>Found; not part of our baseline.</td></tr><tr><td><code>m_PingMaximumDistance</code></td><td>Finite distance <code>>= 0</code></td><td style="text-align:right;"><code>2000.0</code></td><td>Found; not tested.</td></tr><tr><td><code>m_PingInWorldMarkerExpiryTime</code></td><td>Finite seconds <code>>= 0</code></td><td style="text-align:right;"><code>5</code></td><td>Found; not tested.</td></tr><tr><td><code>m_PingMapMarkerExpiryTime</code></td><td>Finite seconds <code>>= 0</code></td><td style="text-align:right;"><code>60</code></td><td>Found; not tested.</td></tr></tbody></table></div>
+<h3 id="inventory-size-controls-found-but-deliberately-rejected">Inventory-size controls found but deliberately rejected<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#inventory-size-controls-found-but-deliberately-rejected" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Section:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="ini" data-theme="github-light github-dark"><code data-language="ini" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="punctuation">[/Script/DuneSandbox.InventorySystemSettings]</span></span></code></pre></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Key</th><th>Type and acceptable values</th><th style="text-align:right;">Shipped/default</th><th>Our status</th></tr></thead><tbody><tr><td><code>PlayerInventoryStartingSize</code></td><td>Integer <code>>= 0</code></td><td style="text-align:right;"><code>35</code></td><td>Found; not adopted.</td></tr><tr><td><code>PlayerInventoryColumnCount</code></td><td>Integer <code>>= 1</code></td><td style="text-align:right;"><code>5</code></td><td>Found; not adopted.</td></tr><tr><td><code>PlayerInventoryStartingVolumeCapacity</code></td><td>Finite float <code>>= 0</code></td><td style="text-align:right;"><code>175.0</code></td><td>Found; not adopted.</td></tr><tr><td><code>P2pTradingInventoryStartingSize</code></td><td>Integer <code>>= 0</code></td><td style="text-align:right;"><code>10</code></td><td>Found; not adopted.</td></tr></tbody></table></div>
+<p>We rejected this change after learning that the client also needs matching configuration and that starting-size settings may not safely resize existing characters. This is different from the cooked capacity problem for placed containers and vehicles.</p>
+<h2 id="complete-recorded-usergameini-baseline">Complete recorded <code>UserGame.ini</code> baseline<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#complete-recorded-usergameini-baseline" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>This block contains only settings whose exact syntax was preserved. Some entries were configured or selected without a perfectly isolated gameplay test, as noted in the tables above. The compound spice-field override is intentionally omitted until it is re-extracted in full.</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="ini" data-theme="github-light github-dark"><code data-language="ini" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;" data-token-type="comment">; Applies to every server in the battlegroup.</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="punctuation">[/Script/DuneSandbox.PvpPveSettings]</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_bShouldForceEnablePvpOnAllPartitions</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=False</span></span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;" data-token-type="comment">;+m_PvpEnabledPartitions=1</span></span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;" data-token-type="comment">;+m_PvpEnabledPartitions=2</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="punctuation">[/Script/DuneSandbox.SecurityZonesSubsystem]</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_bAreSecurityZonesEnabled</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=True</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="punctuation">[/DeteriorationSystem.ItemDeteriorationConstants]</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">UpdateRateInSeconds</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=1.0</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="punctuation">[/Script/DuneSandbox.SandStormConfig]</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_bCoriolisAutoSpawnEnabled</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=False</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="punctuation">[/Script/DuneSandbox.BuildingSettings]</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_MaxNumLandclaimSegments</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=12</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_BuildingBlueprintMaxExtensions</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=8</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_BaseBackupMaxExtensions</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=16</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_bBuildingRestrictionLimitsEnabled</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=True</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="punctuation">[/Script/DuneSandbox.EncountersSubsystem]</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_RandomEncounterInstigationAroundPlayersDelayInSec</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=12.0</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_RandomEncounterInstigationOnWholeServerDelayInSec</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=45.0</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_bAreEncounterAreaLimitsEnabled</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=True</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="punctuation">[/Script/DuneSandbox.TimeOfDaySettings]</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_bGiantWormSystemEnabled</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=True</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_GiantWormSpawningCooldown</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=3600.0</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_GiantWormMinimumSpiceAmountHarvested</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=20000.0</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_GiantWormMinimumPlayersOnSpiceField</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=1</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="punctuation">[/Script/DuneSandbox.DewHarvestSettings]</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">m_DewRefreshTime</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">=24.0</span></span></code></pre></figure>
+<h2 id="settings-we-wanted-but-did-not-expose-safely">Settings we wanted but did not expose safely<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#settings-we-wanted-but-did-not-expose-safely" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Goal</th><th>Result</th><th>Current conclusion</th></tr></thead><tbody><tr><td>Pause the server clock when no players are online</td><td>No confirmed pre-new-build INI or editor knob</td><td>Use <strong>Stop Battlegroup</strong> as the operational hibernation method. Verify base-power behavior after starting again because timestamp-based catch-up was not formally tested.</td></tr><tr><td>Stronger / Tier 6 ordinary sandstorms</td><td>Only enable/disable, treasure, and Coriolis auto-spawn controls were exposed</td><td>No pre-new-build intensity, tier, duration, frequency, or damage setting was confirmed.</td></tr><tr><td>Increase Advanced Fremen Deathstill processing speed</td><td>Timer lives in cooked placeable data (<code>DT_PlaceableBlood_Settings</code>)</td><td>Requires an asset/server-client mod or runtime hook, not a safe INI line.</td></tr><tr><td>Permanently enlarge containers or vehicle storage</td><td>Database capacity edits reverted to baked defaults at startup</td><td>Limits are reconstructed from cooked templates. Database edits are not authoritative.</td></tr><tr><td>Remove the altitude fuel penalty</td><td>No safe scalar INI setting found</td><td>Treat as cooked gameplay data until a real override is proven.</td></tr><tr><td>Increase only dynamic shipwreck encounter count/weight</td><td>Encounter cadence is exposed, per-encounter weights/caps are not</td><td>The cadence settings increase broad random-encounter polling, not only wrecks.</td></tr><tr><td>Directly tune CHOAM event count/weight</td><td>Asset references were found, safe scalar controls were not</td><td>Asset or runtime research required.</td></tr><tr><td>Increase building-piece cap beyond the observed limit</td><td>Candidate keys/assets exist, but no client/server-safe INI path was proven in our work</td><td>Do not confuse landclaim segments or blueprint extensions with the piece cap.</td></tr><tr><td>Increase the number of bases/sub-fiefs per player</td><td>No confirmed INI key</td><td>Landclaim segment count is not the same thing as the per-player base/totem cap.</td></tr></tbody></table></div>
+<p>Known encounter assets found during research:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Map</th><th>Asset</th></tr></thead><tbody><tr><td>Hagga Basin</td><td><code>DA_DE_Tn_SmallShipWreck_01</code></td></tr><tr><td>Deep Desert</td><td><code>DA_DE_120_SmallShipWreck_DeepDesert_01</code></td></tr></tbody></table></div>
+<p>These asset names prove content exists; they are not numeric spawn settings.</p>
+<p>Our live check found an active Hagga Basin shipwreck actor, <code>BP_SmallShipwreck_01_C</code>, but no evidence that more than one could be active concurrently. Faster encounter attempts did not override the encounter asset’s baked <code>InstancesNumber</code> or <code>SpawnCooldown</code> behavior.</p>
+<h2 id="databaseruntime-state-we-successfully-changed">Database/runtime state we successfully changed<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#databaseruntime-state-we-successfully-changed" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>These are useful discoveries, but they are <strong>not normal server settings</strong>.</p>
+<h3 id="placed-water-cisterns">Placed water cisterns<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#placed-water-cisterns" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The stored amount is persisted in each cistern entity at:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>FWaterStorageComponent → m_WaterStored</span></span></code></pre></figure>
+<p>For our Medium Water Cisterns:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Field</th><th>Accepted/tested value</th></tr></thead><tbody><tr><td><code>m_WaterStored</code></td><td>Integer from <code>0</code> through <code>25000</code> per cistern</td></tr><tr><td>Capacity used</td><td><code>25000</code></td></tr><tr><td>Cistern count</td><td><code>16</code></td></tr><tr><td>Filled total</td><td><code>400000</code></td></tr></tbody></table></div>
+<p>The reliable workflow was:</p>
+<ol>
+<li>Log the player out.</li>
+<li><strong>Stop Battlegroup</strong> completely.</li>
+<li>Confirm no game-server pods are running and the database pod remains healthy.</li>
+<li>Back up the database.</li>
+<li>Update only the intended cistern entity rows.</li>
+<li>Verify every changed row and commit.</li>
+<li><strong>Start Battlegroup</strong> normally.</li>
+</ol>
+<p>Editing while the map server was running appeared to succeed in PostgreSQL, but the live process kept the old value in memory and overwrote the database on shutdown. Stopped-server timing was the difference between failure and success.</p>
+<h3 id="inventory-and-storage-capacity">Inventory and storage capacity<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#inventory-and-storage-capacity" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><code>dune.inventories.max_item_count</code> and <code>max_item_volume</code> can be changed in PostgreSQL, but the game rebuilt our test container from its cooked template during startup. These columns therefore do not provide a persistent capacity setting for existing or newly built containers.</p>
+<h2 id="syntax-notes">Syntax notes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#syntax-notes" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="boolean-spelling">Boolean spelling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#boolean-spelling" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Unreal object properties in <code>UserGame.ini</code> normally use <code>True</code> / <code>False</code>.</li>
+<li>Console variables in <code>UserEngine.ini</code> may use <code>0</code> / <code>1</code> or lowercase <code>true</code> / <code>false</code>, depending on the key.</li>
+<li>Preserve the spelling used in the known-good examples.</li>
+</ul>
+<h3 id="arrays-and-maps">Arrays and maps<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#arrays-and-maps" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>A leading <code>+</code> appends an Unreal array entry.</li>
+<li>Repeating <code>+m_PvpEnabledPartitions=...</code> adds partition IDs.</li>
+<li>Compound map values such as <code>m_PerMapSystemSettings</code> should be copied from the <strong>same build</strong> before editing.</li>
+<li>Never replace a compound map with an isolated fragment unless the property is documented to merge rather than replace.</li>
+</ul>
+<h3 id="client-synchronization">Client synchronization<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#client-synchronization" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>At minimum, custom building-limit values such as <code>m_MaxNumLandclaimSegments</code> and <code>m_bBuildingRestrictionLimitsEnabled</code> may also need matching values in each player’s local client <code>Game.ini</code>. A mismatched client can show ghost placement behavior even when the server is authoritative.</p>
+<h2 id="safe-change-procedure">Safe change procedure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#safe-change-procedure" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>Record the current game/server build.</li>
+<li>Use <code>9. backup</code> before risky changes.</li>
+<li>Copy both <code>UserEngine.ini</code> and <code>UserGame.ini</code> somewhere safe.</li>
+<li>Change one logical system at a time.</li>
+<li>Restart with <code>3. restart</code>.</li>
+<li>Verify health with <code>1. status</code>.</li>
+<li>Check the actual gameplay behavior, not merely whether the file saved.</li>
+<li>Record the test result and exact build in this guide.</li>
+<li>Make a fresh backup after the server is healthy.</li>
+</ol>
+<p>For database state changes, stop the relevant game process before writing unless that specific mutation has already been proven live-safe.</p>
+<h2 id="new-build-audit-checklist">New-build audit checklist<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#new-build-audit-checklist" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>When we begin the next deep dive:</p>
+<ul class="contains-task-list">
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> Record the new build/image number.</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> Back up the database, Battlegroup spec, <code>UserEngine.ini</code>, and <code>UserGame.ini</code>.</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> Diff the newly seeded configuration files against this baseline.</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> Check whether the new build adds <code>UserServerCustomSettings.ini</code> or another official difficulty surface.</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> Re-test every <strong>Confirmed</strong> setting after restart.</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> Check for renamed sections, deprecated keys, and new formal ranges.</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> Re-extract the complete <code>m_PerMapSystemSettings</code> value before restoring the <code>15/15</code> Hagga spice cap.</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> Test whether the new difficulty controls expose storm intensity, item durability, base decay, XP, death-loot, survival, or Landsraad behavior.</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> Revisit pause-on-empty/hibernation and base-power consumption.</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> Revisit Deathstill timers, storage capacity, vehicle capacity, and the altitude fuel penalty.</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> Revisit per-encounter shipwreck/CHOAM weights rather than only global encounter cadence.</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> Check whether settings now replicate automatically to clients.</li>
+<li class="task-list-item" data-task=" "><input type="checkbox" class="checkbox-toggle"/> Update each table’s shipped default, formal range, and validation status.</li>
+</ul>
+<h2 id="provenance-and-further-research">Provenance and further research<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance-and-further-research" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Primary operational source:</p>
+<ul>
+<li><a href="https://duneawakening.com/self-hosted-servers/" class="external external-link">Funcom: Self Hosted Servers<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p>Community extraction/research used to cross-check exact shipped keys:</p>
+<ul>
+<li><a href="https://github.com/snapetech/DuneAwakeningSelfHost/blob/main/SERVER_CONFIG_KEYS.md" class="external external-link">snapetech/DuneAwakeningSelfHost — Server Config Keys<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/snapetech/DuneAwakeningSelfHost/blob/main/DEEP_DESERT_EVENT_KNOBS.md" class="external external-link">snapetech/DuneAwakeningSelfHost — Deep Desert Event Knobs<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/Icehunter/dune-awakening-truenas/blob/main/COMPLETE-SERVER-SETTINGS.md" class="external external-link">Icehunter/dune-awakening-truenas — Complete Server Settings<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p>Our server’s confirmed values, failure modes, and database behavior come from our own tests. Community extractions are evidence of key names and shipped values, not a warranty that every key remains supported in later builds.</p>
+<h2 id="change-log">Change log<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#change-log" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="2026-09-26--initial-paper-baseline">2026-09-26 — Initial paper baseline<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2026-09-26--initial-paper-baseline" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Captured the known-good <code>UserEngine.ini</code> and <code>UserGame.ini</code> values.</li>
+<li>Added encounter cadence, low-population Grandfather Worm, dew refresh, and Hagga spice-cap discoveries.</li>
+<li>Separated official settings from shipped-but-untested properties.</li>
+<li>Recorded asset/database dead ends so they are not rediscovered as fake INI solutions.</li>
+<li>Added a focused checklist for auditing the newly released build.</li>
+</ul></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-2" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#dune-private-server-settings-reference" data-for="dune-private-server-settings-reference">Dune Private Server Settings Reference</a></li><li class="depth-1"><a href="#confidence-labels" data-for="confidence-labels">Confidence labels</a></li><li class="depth-1"><a href="#what-acceptable-values-means-here" data-for="what-acceptable-values-means-here">What “acceptable values” means here</a></li><li class="depth-1"><a href="#configuration-surfaces" data-for="configuration-surfaces">Configuration surfaces</a></li><li class="depth-1"><a href="#battlegroup-editor-settings" data-for="battlegroup-editor-settings">Battlegroup Editor settings</a></li><li class="depth-1"><a href="#userengineini" data-for="userengineini">UserEngine.ini</a></li><li class="depth-2"><a href="#url" data-for="url">[URL]</a></li><li class="depth-2"><a href="#consolevariables" data-for="consolevariables">[ConsoleVariables]</a></li><li class="depth-2"><a href="#known-good-userengineini" data-for="known-good-userengineini">Known-good UserEngine.ini</a></li><li class="depth-1"><a href="#usergameini-official-and-confirmed-baseline" data-for="usergameini-official-and-confirmed-baseline">UserGame.ini: official and confirmed baseline</a></li><li class="depth-2"><a href="#pvp-and-security-zones" data-for="pvp-and-security-zones">PvP and security zones</a></li><li class="depth-2"><a href="#deterioration" data-for="deterioration">Deterioration</a></li><li class="depth-2"><a href="#coriolis-storms" data-for="coriolis-storms">Coriolis storms</a></li><li class="depth-2"><a href="#building-limits" data-for="building-limits">Building limits</a></li><li class="depth-1"><a href="#usergameini-settings-we-found-and-exposed" data-for="usergameini-settings-we-found-and-exposed">UserGame.ini: settings we found and exposed</a></li><li class="depth-2"><a href="#random-encounter-cadence" data-for="random-encounter-cadence">Random encounter cadence</a></li><li class="depth-2"><a href="#grandfather-worm-for-a-low-population-server" data-for="grandfather-worm-for-a-low-population-server">Grandfather Worm for a low-population server</a></li><li class="depth-2"><a href="#dew-refresh" data-for="dew-refresh">Dew refresh</a></li><li class="depth-2"><a href="#hagga-basin-spice-field-cap" data-for="hagga-basin-spice-field-cap">Hagga Basin spice-field cap</a></li><li class="depth-2"><a href="#ping-controls-found-but-not-adopted" data-for="ping-controls-found-but-not-adopted">Ping controls found but not adopted</a></li><li class="depth-2"><a href="#inventory-size-controls-found-but-deliberately-rejected" data-for="inventory-size-controls-found-but-deliberately-rejected">Inventory-size controls found but deliberately rejected</a></li><li class="depth-1"><a href="#complete-recorded-usergameini-baseline" data-for="complete-recorded-usergameini-baseline">Complete recorded UserGame.ini baseline</a></li><li class="depth-1"><a href="#settings-we-wanted-but-did-not-expose-safely" data-for="settings-we-wanted-but-did-not-expose-safely">Settings we wanted but did not expose safely</a></li><li class="depth-1"><a href="#databaseruntime-state-we-successfully-changed" data-for="databaseruntime-state-we-successfully-changed">Database/runtime state we successfully changed</a></li><li class="depth-2"><a href="#placed-water-cisterns" data-for="placed-water-cisterns">Placed water cisterns</a></li><li class="depth-2"><a href="#inventory-and-storage-capacity" data-for="inventory-and-storage-capacity">Inventory and storage capacity</a></li><li class="depth-1"><a href="#syntax-notes" data-for="syntax-notes">Syntax notes</a></li><li class="depth-2"><a href="#boolean-spelling" data-for="boolean-spelling">Boolean spelling</a></li><li class="depth-2"><a href="#arrays-and-maps" data-for="arrays-and-maps">Arrays and maps</a></li><li class="depth-2"><a href="#client-synchronization" data-for="client-synchronization">Client synchronization</a></li><li class="depth-1"><a href="#safe-change-procedure" data-for="safe-change-procedure">Safe change procedure</a></li><li class="depth-1"><a href="#new-build-audit-checklist" data-for="new-build-audit-checklist">New-build audit checklist</a></li><li class="depth-1"><a href="#provenance-and-further-research" data-for="provenance-and-further-research">Provenance and further research</a></li><li class="depth-1"><a href="#change-log" data-for="change-log">Change log</a></li><li class="depth-2"><a href="#2026-09-26--initial-paper-baseline" data-for="2026-09-26--initial-paper-baseline">2026-09-26 — Initial paper baseline</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul><div class="shags-lab-visitor-counter"><strong>Shag&#39;s Lab</strong> &middot; <span data-shags-visitor-count>...</span><span>visitors</span></div></footer></div></div><script src="/lab/static/shags-visitor-counter.js" defer></script></body><script src="../../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript-04f7d8cb.js" type="module" data-persist="true"></script></html>
