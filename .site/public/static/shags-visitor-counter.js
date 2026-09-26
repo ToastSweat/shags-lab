@@ -1,24 +1,6 @@
 (function () {
   var retryTimer = null;
 
-  function setVisibleCount(value) {
-    var nodes = document.querySelectorAll("[data-shags-visitor-count]");
-    nodes.forEach(function (node) {
-      node.textContent = value;
-    });
-  }
-
-  function readRenderedCount(host) {
-    var views = host.querySelector("#gcvc-views");
-    if (!views) return false;
-
-    var value = (views.textContent || "").trim();
-    if (!value) return false;
-
-    setVisibleCount(value);
-    return true;
-  }
-
   function renderTotalCount() {
     var host = document.querySelector("[data-shags-goatcounter-host]");
     if (!host) return;
@@ -36,32 +18,23 @@
         append: "[data-shags-goatcounter-host]",
         type: "html",
         path: "TOTAL",
-        no_branding: true
+        no_branding: true,
+        attr: {
+          width: "82",
+          height: "24",
+          title: "Total visitors to Shag's Lab"
+        },
+        style: [
+          "html, body { margin: 0 !important; padding: 0 !important; background: transparent !important; }",
+          "div { margin: 0 !important; padding: 0 !important; border: 0 !important; background: transparent !important; }",
+          "#gcvc-for, #gcvc-by { display: none !important; }",
+          "#gcvc-views { font-family: Arial, sans-serif !important; font-size: 14px !important; line-height: 20px !important; color: #777 !important; font-weight: 400 !important; }"
+        ].join(" ")
       });
     } catch (error) {
       console.warn("Shag's Lab visitor counter could not be rendered.", error);
-      setVisibleCount("--");
-      return;
+      host.textContent = "--";
     }
-
-    var attempts = 0;
-    var poll = window.setInterval(function () {
-      attempts += 1;
-
-      if (readRenderedCount(host)) {
-        window.clearInterval(poll);
-        return;
-      }
-
-      if (attempts >= 50) {
-        window.clearInterval(poll);
-        console.warn(
-          "Shag's Lab visitor counter did not return a value. " +
-          "Make sure GoatCounter Settings > Allow adding visitor counts on your website is enabled."
-        );
-        setVisibleCount("--");
-      }
-    }, 100);
   }
 
   function scheduleRender() {
