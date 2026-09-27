@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Garth's Game I - Technical Design</title><meta charset="utf-8"/><link rel="preload" href="../../../index-b9b435bc.css" as="style"/><link rel="preload" href="../../../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Shag's Lab"/><meta property="og:title" content="Garth's Game I - Technical Design"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Garth's Game I - Technical Design"/><meta name="twitter:description" content="Garth’s Game DMG - Technical Design Purpose This document records the technical shape of Garth’s Game I and the constraints that matter when implementing the redesign."/><meta property="og:description" content="Garth’s Game DMG - Technical Design Purpose This document records the technical shape of Garth’s Game I and the constraints that matter when implementing the redesign."/><meta property="og:image:alt" content="Garth’s Game DMG - Technical Design Purpose This document records the technical shape of Garth’s Game I and the constraints that matter when implementing the redesign."/><meta property="twitter:domain" content="helvete.pizza/lab"/><meta property="og:url" content="https://helvete.pizza/lab/projects/garths-game-dmg/docs/garth's-game-i---technical-design"/><meta property="twitter:url" content="https://helvete.pizza/lab/projects/garths-game-dmg/docs/garth's-game-i---technical-design"/><link rel="icon" href="../../../static/icon.png"/><meta name="description" content="Garth’s Game DMG - Technical Design Purpose This document records the technical shape of Garth’s Game I and the constraints that matter when implementing the redesign."/><meta name="generator" content="Quartz"/><link href="../../../index-b9b435bc.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-11d41004.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-26a99b87.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://helvete.pizza/lab/projects/garths-game-dmg/docs/garth's-game-i---technical-design-og-image.webp"/><meta property="og:image:url" content="https://helvete.pizza/lab/projects/garths-game-dmg/docs/garth's-game-i---technical-design-og-image.webp"/><meta name="twitter:image" content="https://helvete.pizza/lab/projects/garths-game-dmg/docs/garth's-game-i---technical-design-og-image.webp"/><meta property="og:image:type" content="image/webp"/><link rel="stylesheet" href="/lab/static/shags-visitor-counter.css"></head><body data-slug="projects/garths-game-dmg/docs/garth's-game-i---technical-design" data-basepath="/lab"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../..">Shag's Lab</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="Search" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something..." placeholder="Search for something..."/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="Dark mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="Reader mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-12" aria-label="Explorer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-12" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../projects/">Projects Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../projects/garths-game-dmg/">Garths Game DMG</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../projects/garths-game-dmg/docs/">docs</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Garth's Game I - Technical Design</a></div></nav><h1 class="article-title">Garth's Game I - Technical Design</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-26T23:39:11.727Z">Sep 26, 2026</time><span>8 min read</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="garths-game-dmg---technical-design">Garth’s Game DMG - Technical Design<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#garths-game-dmg---technical-design" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="purpose">Purpose<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#purpose" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>This document records the technical shape of Garth’s Game I and the constraints that matter when implementing the redesign.</p>
+<p>It is not a replacement for the complete source archive. It is the short version Future Me should read before touching the game.</p>
+<h2 id="current-source-warning">Current source warning<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-source-warning" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The available archive contains several overlapping revisions:</p>
+<ul>
+<li>an older partial project snapshot;</li>
+<li>later individually uploaded files;</li>
+<li>accepted fix packages;</li>
+<li>debug maps;</li>
+<li>a rejected minigame GUI experiment.</li>
+</ul>
+<p>The next coding session must begin with a ZIP of the exact active Windows project and a fresh successful compile/map. Do not reconstruct the current game by silently mixing old files.</p>
+<h2 id="toolchain">Toolchain<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#toolchain" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Language: C.</li>
+<li>SDK: GBDK 2020.</li>
+<li>Target: Game Boy-compatible <code>.gb</code> ROM.</li>
+<li>Historical working path: <code>C:\gbdk\examples\gb\garth_game_i</code>.</li>
+<li>Build entry point: <code>compile.bat</code>.</li>
+<li>Art conversion: <code>png2asset</code> plus custom Python asset builders.</li>
+<li>Music: hUGEDriver exports and a bank-aware wrapper.</li>
+<li>Save: battery-backed SRAM.</li>
+</ul>
+<p>The available build flags include:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="bat" data-theme="github-light github-dark"><code data-language="bat" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">-Wl-m</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">-Wm-yt0x1B</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">-Wm-ya1</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">-Wm-yoA</span></span></code></pre></figure>
+<p>Their resulting cartridge header, mapper, RAM size, and battery behavior must be verified against the final physical PCB before ordering cartridges.</p>
+<h2 id="known-modules">Known modules<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#known-modules" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Area</th><th>Files</th><th>Responsibility</th></tr></thead><tbody><tr><td>Boot/menu</td><td><code>main.c</code>, splash/logo/menu resources</td><td>Startup, CONTINUE, NEW GAME, HANGOUT, menu resources</td></tr><tr><td>Pet</td><td><code>pet.c/.h</code></td><td>Stats, decay, mood, SRAM, rewards, screen flow</td></tr><tr><td>Progression</td><td><code>progression.c/.h</code></td><td>Stat-cap unlock thresholds</td></tr><tr><td>Food data</td><td><code>food.c/.h</code> and food resources</td><td>Food catalog, names, graphics</td></tr><tr><td>Minigames</td><td><code>food_game.c</code>, <code>play_game.c</code>, <code>nap_game.c</code></td><td>Current FEED/PLAY/NAP loops</td></tr><tr><td>Shared UI</td><td><code>gui.c/.h</code>, <code>print_util.c</code></td><td>Borders, text, controls, values</td></tr><tr><td>Dialogue</td><td><code>hangout.c</code>, <code>dialogue*.c/.h</code></td><td>TALK/HANGOUT flow and banked text</td></tr><tr><td>Face</td><td><code>hangout_face*.c/.h</code></td><td>Face frames and animation state</td></tr><tr><td>Speech</td><td><code>lang808.c/.h</code>, <code>audio.c/.h</code></td><td>Token timing and synthesized voice</td></tr><tr><td>Audio</td><td><code>music.c/.h</code>, <code>sfx.c/.h</code>, hUGEDriver/music data</td><td>Music selection/update and SFX</td></tr><tr><td>Generated art</td><td><code>res/*.c/.h</code></td><td>Background tiles, maps, sprites, stat UI</td></tr><tr><td>Build tools</td><td><code>tools/*.py</code>, <code>compile.bat</code></td><td>Conversion, tile ordering, minification, compile/report</td></tr></tbody></table></div>
+<h2 id="runtime-model">Runtime model<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#runtime-model" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The project uses several blocking screen loops.</p>
+<p>Each active mode is responsible for:</p>
+<ol>
+<li>loading its palette and resources;</li>
+<li>draining transition input;</li>
+<li>polling controls;</li>
+<li>updating game/animation state;</li>
+<li>updating music;</li>
+<li>waiting for VBlank;</li>
+<li>cleaning up before returning.</li>
+</ol>
+<p>This is simple to understand, but it means every transition can leak global Game Boy state.</p>
+<p>The most common leaked state has been:</p>
+<ul>
+<li>held input;</li>
+<li>background/sprite palette;</li>
+<li>background tiles;</li>
+<li>sprite positions/tiles;</li>
+<li>music mode;</li>
+<li>speech/SFX channels.</li>
+</ul>
+<h2 id="screen-entry-contract">Screen-entry contract<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#screen-entry-contract" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Every screen should explicitly perform this sequence:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>stop/switch old audio</span></span>
+<span data-line><span>set palette</span></span>
+<span data-line><span>hide unused sprites</span></span>
+<span data-line><span>load required tile data</span></span>
+<span data-line><span>load/draw map and initial UI</span></span>
+<span data-line><span>start correct music</span></span>
+<span data-line><span>wait for clean input edge</span></span>
+<span data-line><span>enter frame loop</span></span></code></pre></figure>
+<p>Returning to a screen must go through its normal entry routine. Never assume its previous VRAM contents survived.</p>
+<h2 id="input-handling">Input handling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#input-handling" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A held button once crossed CONTINUE into the pet screen and immediately launched FEED.</p>
+<p>Recommended shared input state:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="c" data-theme="github-light github-dark"><code data-language="c" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">current </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> joypad</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">();</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">pressed </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> current </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">&amp;</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> ~</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">previous;</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">previous </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation"> current;</span></span></code></pre></figure>
+<p>Use <code>pressed</code> for menu choices, slot locking, TALK advance, and other discrete actions. Use held input only for continuous movement.</p>
+<p>The redesign should use one consistent active-minigame exit. START is the current recommendation because B is gameplay in Simon Says and Pass the Gas.</p>
+<h2 id="palette-handling">Palette handling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#palette-handling" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Palette inversion previously leaked from minigames/TALK back into other screens.</p>
+<p>Rule:</p>
+<blockquote>
+<p>Every screen writes the palette it expects on entry.</p>
+</blockquote>
+<p>Do not rely on the screen that came before it.</p>
+<h2 id="vram-and-tile-ownership">VRAM and tile ownership<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vram-and-tile-ownership" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="confirmed-historical-collision">Confirmed historical collision<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#confirmed-historical-collision" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The 16-tile randomized menu background uses tile IDs:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>202–217</span></span></code></pre></figure>
+<p>An available pet revision used:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="c" data-theme="github-light github-dark"><code data-language="c" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="punctuation">#define</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> PET_BLACK_TILE</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 211</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="punctuation">#define</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> PET_GUI_TILE_START</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 212</span></span></code></pre></figure>
+<p>The pet screen overwrote menu tiles 211–217. The third/fourth menu patterns were corrupt after returning from pet mode.</p>
+<p>Accepted fix:</p>
+<blockquote>
+<p>Reload all sixteen menu tiles every time <code>show_main_menu()</code> runs.</p>
+</blockquote>
+<h3 id="required-redesign-manifest">Required redesign manifest<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#required-redesign-manifest" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Each screen/stage needs a small resource record:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Field</th><th>Purpose</th></tr></thead><tbody><tr><td>Background tile range/count</td><td>Prevent overlap and measure load</td></tr><tr><td>Sprite tile range/count</td><td>Prevent metasprite corruption</td></tr><tr><td>Unique tile count</td><td>Determine VRAM/ROM cost</td></tr><tr><td>Map dimensions</td><td>Determine generated data size</td></tr><tr><td>Maximum total sprites</td><td>Hardware budget</td></tr><tr><td>Maximum sprites on one scanline</td><td>Flicker/drop risk</td></tr><tr><td>Palette</td><td>Restore correctly</td></tr><tr><td>ROM bank</td><td>Safe data access</td></tr><tr><td>Entry/exit cleanup</td><td>Prevent state leakage</td></tr></tbody></table></div>
+<h3 id="redesign-strategy">Redesign strategy<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#redesign-strategy" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Use background maps for static machinery and footer icons.</li>
+<li>Use sprites for Garth and genuinely moving objects.</li>
+<li>Swap background tiles for Simon button lights where practical.</li>
+<li>Keep Pass the Gas machinery static; animate only bubbles/clouds/meters.</li>
+<li>Measure NAP’s 2×2 falling objects against the ten-sprites-per-scanline limit.</li>
+<li>Reload a screen’s entire tileset on entry when another mode can overwrite it.</li>
+</ul>
+<h2 id="game-boy-display-constraints">Game Boy display constraints<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#game-boy-display-constraints" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>160×144 pixels.</li>
+<li>20×18 background tiles.</li>
+<li>Four DMG shades through palette mapping.</li>
+<li>40 sprites total.</li>
+<li>10 sprites per scanline.</li>
+<li>Sprite color zero is transparent.</li>
+</ul>
+<p>The final target may support CGB hardware, but the art must remain readable in the DMG presentation unless that design goal changes explicitly.</p>
+<h2 id="asset-pipeline">Asset pipeline<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#asset-pipeline" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The current build references:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>tools/build_menu_background.py</span></span>
+<span data-line><span>tools/build_dialogue_gui.py</span></span>
+<span data-line><span>tools/build_food_quadrants.py</span></span>
+<span data-line><span>tools/minify_tile_asset.py</span></span></code></pre></figure>
+<p>Food assets use <code>png2asset</code> with options such as:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="bat" data-theme="github-light github-dark"><code data-language="bat" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">-spr8x8</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">-keep_duplicate_tiles</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">-noflip</span></span></code></pre></figure>
+<h3 id="important-conversion-lesson">Important conversion lesson<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#important-conversion-lesson" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><code>png2asset</code> may deduplicate or reorder tiles.</p>
+<p>That is fine when the generated map/metasprite owns the relationship. It is not fine when code assumes the third 8×8 block in a PNG must become tile index 2.</p>
+<p>The menu strip required a custom positional builder because tile position had semantic meaning.</p>
+<h3 id="redesign-conversion-process">Redesign conversion process<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#redesign-conversion-process" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>Preserve the original mockup.</li>
+<li>Confirm exact 160×144 composition.</li>
+<li>Quantize to the intended four shades.</li>
+<li>Separate static background, animated background, and sprites.</li>
+<li>Slice/count unique 8×8 tiles.</li>
+<li>Find intentional repeat/flip opportunities.</li>
+<li>Build one isolated screen prototype.</li>
+<li>Measure VRAM, sprite scanlines, ROM bytes, and bank placement.</li>
+<li>Compare an emulator screenshot to the mockup.</li>
+<li>Document any visual compromise.</li>
+</ol>
+<h2 id="rom-banking">ROM banking<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rom-banking" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="historical-reports">Historical reports<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#historical-reports" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>An earlier build reported:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Bank</th><th style="text-align:right;">Used</th><th style="text-align:right;">Free</th></tr></thead><tbody><tr><td>ROM0</td><td style="text-align:right;">16,043</td><td style="text-align:right;">341</td></tr><tr><td>ROM1</td><td style="text-align:right;">14,371</td><td style="text-align:right;">2,013</td></tr></tbody></table></div>
+<p>That build produced overflow warnings and should be considered historical/unsafe.</p>
+<p>A later report showed:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Bank</th><th style="text-align:right;">Used</th><th style="text-align:right;">Free</th><th style="text-align:right;">Used %</th></tr></thead><tbody><tr><td>ROM0</td><td style="text-align:right;">15,667</td><td style="text-align:right;">717</td><td style="text-align:right;">96%</td></tr><tr><td>ROM1</td><td style="text-align:right;">9,266</td><td style="text-align:right;">7,118</td><td style="text-align:right;">57%</td></tr><tr><td>ROM2</td><td style="text-align:right;">7,729</td><td style="text-align:right;">8,655</td><td style="text-align:right;">47%</td></tr><tr><td>ROM3</td><td style="text-align:right;">6,940</td><td style="text-align:right;">9,444</td><td style="text-align:right;">42%</td></tr><tr><td>ROM4</td><td style="text-align:right;">14,783</td><td style="text-align:right;">1,601</td><td style="text-align:right;">90%</td></tr><tr><td>WRAM_LO</td><td style="text-align:right;">556</td><td style="text-align:right;">3,540</td><td style="text-align:right;">14%</td></tr></tbody></table></div>
+<p>The accelerated progression test used ROM0 at 15,818 / 16,384 bytes, leaving 566 bytes.</p>
+<p>These numbers predate the complete redesign and may predate some accepted fixes. A fresh map is required.</p>
+<h3 id="known-placement">Known placement<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#known-placement" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Progression code/data uses Bank 2 in the available version.</li>
+<li>Dialogue uses banked data/copy helpers around Bank 3.</li>
+<li>hUGEDriver and music use Bank 4.</li>
+<li>Selected generated gameplay assets are placed in Bank 2.</li>
+</ul>
+<h3 id="banking-rules">Banking rules<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#banking-rules" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Treat bank-span, overlap, multiple-write, and ROM0 overflow warnings as build failures.</li>
+<li>Use <code>#pragma bank</code>, BANKED declarations/functions, and intentional link placement.</li>
+<li><code>-bank 2</code> was not a valid compiler option in this workflow.</li>
+<li>Switch to a data object’s bank before dereferencing it and restore the prior bank.</li>
+<li>Keep large initializers out of ROM0.</li>
+<li>Re-run <code>romusage</code> after each meaningful screen/system addition.</li>
+</ul>
+<h2 id="save-data">Save data<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#save-data" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The available legacy save uses:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="c" data-theme="github-light github-dark"><code data-language="c" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="punctuation">#define</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> SAVE_MAGIC_1</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> 'G'</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="punctuation">#define</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> SAVE_MAGIC_2</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> 'A'</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="punctuation">#define</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> SAVE_MAGIC_3</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> 'R'</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="punctuation">#define</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> SAVE_MAGIC_4</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> 'T'</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="punctuation">#define</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> SAVE_VERSION</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 1</span></span></code></pre></figure>
+<p>SRAM begins at <code>0xA000</code> in that revision.</p>
+<p>Adding GAS changes the persistent structure.</p>
+<h3 id="safe-options">Safe options<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#safe-options" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="migrate-version-1">Migrate version 1<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#migrate-version-1" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Define an immutable <code>SaveDataV1</code>.</li>
+<li>Load/copy known fields into a new version.</li>
+<li>Initialize GAS and new counters.</li>
+<li>Validate before writing version 2.</li>
+</ul>
+<h4 id="deliberate-reset">Deliberate reset<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#deliberate-reset" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Detect version 1.</li>
+<li>Clearly require/confirm NEW GAME.</li>
+<li>Never partially load old bytes into the new structure.</li>
+</ul>
+<p>Migration is friendlier; reset is safer if no public saves exist. The decision must happen before normal redesign work changes the struct.</p>
+<h2 id="pet-timing">Pet timing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pet-timing" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The available values include:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="c" data-theme="github-light github-dark"><code data-language="c" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="punctuation">#define</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> PET_TICK_TIME</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 3600</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="punctuation">#define</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> PET_START_CURRENT</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 30</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="punctuation">#define</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> PET_START_MAX</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 30</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="punctuation">#define</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> PET_STAT_ABSOLUTE_MAX</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 100</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="punctuation">#define</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> PET_MIN_MAX</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 10</span></span></code></pre></figure>
+<p><code>PET_TICK_TIME 3600</code> is approximately one minute at 60 frames per second.</p>
+<p>The accepted TALK fix shares this tick timer between STATUS and TALK. Main menu and minigames pause normal decay.</p>
+<p>GAS should use the same care-time definition unless deliberately designed otherwise.</p>
+<h2 id="mood-thresholds">Mood thresholds<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mood-thresholds" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Legacy values:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="c" data-theme="github-light github-dark"><code data-language="c" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="punctuation">#define</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> PET_LOW_STAT_THRESHOLD</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 10</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="punctuation">#define</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> PET_DYING_STAT_THRESHOLD</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 5</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="punctuation">#define</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> PET_HAPPY_STAT_THRESHOLD</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 22</span></span></code></pre></figure>
+<p>Because <code>PET_MIN_MAX</code> is 10, permanent maximum damage can make the 22-point HAPPY threshold unreachable. This requires a design/code correction before release.</p>
+<h2 id="audio-architecture">Audio architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#audio-architecture" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="music">Music<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#music" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The later wrapper defines:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="c" data-theme="github-light github-dark"><code data-language="c" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="punctuation">#define</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> MUSIC_BANK</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 4</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="punctuation">#define</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> RESULT_MUSIC_FRAMES</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 96</span></span></code></pre></figure>
+<p>Music modes include MENU, PET, MINIGAME, RESULT, and NONE.</p>
+<p>Bank 4 is selected for <code>hUGE_init()</code> and <code>hUGE_dosound()</code>, then the previous bank is restored.</p>
+<h3 id="blocking-loop-rule">Blocking loop rule<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#blocking-loop-rule" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Every blocking loop must call:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="c" data-theme="github-light github-dark"><code data-language="c" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function">update_music</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">();</span></span></code></pre></figure>
+<p>once per frame. Starting a song outside the loop is not enough.</p>
+<h3 id="channel-ownership">Channel ownership<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#channel-ownership" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Channel 2 is reserved for SFX in the existing integration. Stray <code>E00</code>/<code>Cxx</code> commands were removed from minigame exports so the song would leave it alone.</p>
+<p>New music must preserve a written channel allocation.</p>
+<h3 id="speech">Speech<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#speech" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Lang808 uses 23 token types made from vowel, consonant, and punctuation sounds.</p>
+<p>Approximate timings in the available source:</p>
+<ul>
+<li>normal token: 6 frames;</li>
+<li>space: 9 frames;</li>
+<li>punctuation: 30 frames.</li>
+</ul>
+<p>Speech start must be tied to a new dialogue line, not a new face frame. All exit paths must call the stop/channel-cleanup routine.</p>
+<h2 id="new-technical-modules-likely-needed">New technical modules likely needed<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#new-technical-modules-likely-needed" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><code>gas_game.c/.h</code> or equivalent.</li>
+<li>Home-screen renderer/resources.</li>
+<li>Mood animation data/resources.</li>
+<li>GAS field and simulation in pet/save state.</li>
+<li>Joke selection/content pool.</li>
+<li>Shared title animation helper.</li>
+<li>Shared footer/button icon helper.</li>
+<li>Shared transition/input-release helper.</li>
+<li>Possibly a shared results presenter that still permits game-specific layouts.</li>
+</ul>
+<p>Avoid putting all visual data into one universal resource package. Share lifecycle code while keeping stage-specific art banked and reloadable.</p>
+<h2 id="build-verification">Build verification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#build-verification" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Every meaningful checkpoint should record:</p>
+<ul>
+<li>exact source ZIP/commit;</li>
+<li>clean compiler output;</li>
+<li>ROM SHA-256;</li>
+<li><code>.map</code> file;</li>
+<li><code>romusage</code> table;</li>
+<li>emulator/version;</li>
+<li>new-game and continue test;</li>
+<li>save persistence result.</li>
+</ul>
+<h2 id="regression-hazards">Regression hazards<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#regression-hazards" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Always check for:</p>
+<ul>
+<li>held button entering the next screen;</li>
+<li>wrong/inherited palette;</li>
+<li>overwritten background tiles;</li>
+<li>stale sprites;</li>
+<li>stale text glyphs;</li>
+<li>music that starts and freezes;</li>
+<li>result music that does not stop;</li>
+<li>repeated speech after face animation;</li>
+<li>stuck audio channels;</li>
+<li>wrong bank access/white screen;</li>
+<li>SRAM corruption/version mismatch.</li>
+</ul>
+<h2 id="release-hardware-checks">Release hardware checks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#release-hardware-checks" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Verify header/mapper/RAM/battery configuration.</li>
+<li>Test on more than one emulator.</li>
+<li>Test on a flash cart or physical development cartridge.</li>
+<li>Power-cycle and verify save retention.</li>
+<li>Test sound on real speaker/headphones.</li>
+<li>Test sprite flicker and native-size readability.</li>
+<li>Freeze final ROM checksum with the physical release source archive.</li>
+</ul>
+<h2 id="immediate-technical-order">Immediate technical order<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#immediate-technical-order" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>Capture the exact active project.</li>
+<li>Compile it unchanged and archive the ROM/map.</li>
+<li>Decide save-version behavior.</li>
+<li>Audit mockup tile/sprite demand.</li>
+<li>Define per-screen VRAM and bank ownership.</li>
+<li>Implement transition/input helpers.</li>
+<li>Build the home shell.</li>
+<li>Convert one minigame at a time.</li>
+<li>Prototype GAS before locking final art behavior.</li>
+<li>Run the complete regression/hardware plan.</li>
+</ol>
+<h2 id="related-notes">Related notes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related-notes" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../../../projects/garths-game-dmg/docs/garth's-game-dmg" class="internal internal-link alias" data-slug="projects/garths-game-dmg/docs/garth's-game-dmg">Garth’s Game DMG</a></li>
+<li><a href="../../../projects/garths-game-dmg/docs/garth's-game-i---game-design-document" class="internal internal-link alias" data-slug="projects/garths-game-dmg/docs/garth's-game-i---game-design-document">Garth’s Game I - Game Design Document</a></li>
+<li><a href="../../../projects/garths-game-dmg/docs/garth's-game-i---production-roadmap" class="internal internal-link alias" data-slug="projects/garths-game-dmg/docs/garth's-game-i---production-roadmap">Garth’s Game I - Production Roadmap</a></li>
+</ul></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-9" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#garths-game-dmg---technical-design" data-for="garths-game-dmg---technical-design">Garth’s Game DMG - Technical Design</a></li><li class="depth-1"><a href="#purpose" data-for="purpose">Purpose</a></li><li class="depth-1"><a href="#current-source-warning" data-for="current-source-warning">Current source warning</a></li><li class="depth-1"><a href="#toolchain" data-for="toolchain">Toolchain</a></li><li class="depth-1"><a href="#known-modules" data-for="known-modules">Known modules</a></li><li class="depth-1"><a href="#runtime-model" data-for="runtime-model">Runtime model</a></li><li class="depth-1"><a href="#screen-entry-contract" data-for="screen-entry-contract">Screen-entry contract</a></li><li class="depth-1"><a href="#input-handling" data-for="input-handling">Input handling</a></li><li class="depth-1"><a href="#palette-handling" data-for="palette-handling">Palette handling</a></li><li class="depth-1"><a href="#vram-and-tile-ownership" data-for="vram-and-tile-ownership">VRAM and tile ownership</a></li><li class="depth-2"><a href="#confirmed-historical-collision" data-for="confirmed-historical-collision">Confirmed historical collision</a></li><li class="depth-2"><a href="#required-redesign-manifest" data-for="required-redesign-manifest">Required redesign manifest</a></li><li class="depth-2"><a href="#redesign-strategy" data-for="redesign-strategy">Redesign strategy</a></li><li class="depth-1"><a href="#game-boy-display-constraints" data-for="game-boy-display-constraints">Game Boy display constraints</a></li><li class="depth-1"><a href="#asset-pipeline" data-for="asset-pipeline">Asset pipeline</a></li><li class="depth-2"><a href="#important-conversion-lesson" data-for="important-conversion-lesson">Important conversion lesson</a></li><li class="depth-2"><a href="#redesign-conversion-process" data-for="redesign-conversion-process">Redesign conversion process</a></li><li class="depth-1"><a href="#rom-banking" data-for="rom-banking">ROM banking</a></li><li class="depth-2"><a href="#historical-reports" data-for="historical-reports">Historical reports</a></li><li class="depth-2"><a href="#known-placement" data-for="known-placement">Known placement</a></li><li class="depth-2"><a href="#banking-rules" data-for="banking-rules">Banking rules</a></li><li class="depth-1"><a href="#save-data" data-for="save-data">Save data</a></li><li class="depth-2"><a href="#safe-options" data-for="safe-options">Safe options</a></li><li class="depth-1"><a href="#pet-timing" data-for="pet-timing">Pet timing</a></li><li class="depth-1"><a href="#mood-thresholds" data-for="mood-thresholds">Mood thresholds</a></li><li class="depth-1"><a href="#audio-architecture" data-for="audio-architecture">Audio architecture</a></li><li class="depth-2"><a href="#music" data-for="music">Music</a></li><li class="depth-2"><a href="#blocking-loop-rule" data-for="blocking-loop-rule">Blocking loop rule</a></li><li class="depth-2"><a href="#channel-ownership" data-for="channel-ownership">Channel ownership</a></li><li class="depth-2"><a href="#speech" data-for="speech">Speech</a></li><li class="depth-1"><a href="#new-technical-modules-likely-needed" data-for="new-technical-modules-likely-needed">New technical modules likely needed</a></li><li class="depth-1"><a href="#build-verification" data-for="build-verification">Build verification</a></li><li class="depth-1"><a href="#regression-hazards" data-for="regression-hazards">Regression hazards</a></li><li class="depth-1"><a href="#release-hardware-checks" data-for="release-hardware-checks">Release hardware checks</a></li><li class="depth-1"><a href="#immediate-technical-order" data-for="immediate-technical-order">Immediate technical order</a></li><li class="depth-1"><a href="#related-notes" data-for="related-notes">Related notes</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-0" class="overflow"><li><a href="../../../projects/garths-game-dmg/docs/garth's-game-dmg" class="internal">Garth's Game DMG</a></li><li><a href="../../../projects/garths-game-dmg/docs/garth's-game-i---game-design-document" class="internal">Garth's Game I - Game Design Document</a></li><li><a href="../../../projects/garths-game-dmg/docs/garth's-game-i---production-roadmap" class="internal">Garth's Game I - Production Roadmap</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul><div class="shags-lab-visitor-counter"><strong>Shag&#39;s Lab</strong> &middot; <span data-shags-visitor-count>...</span><span>visitors</span></div></footer></div></div><script src="/lab/static/shags-visitor-counter.js" defer></script></body><script src="../../../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../../../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../../../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../../../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../postscript-04f7d8cb.js" type="module" data-persist="true"></script></html>

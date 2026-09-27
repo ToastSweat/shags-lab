@@ -1,7 +1,7 @@
 ---
 type: documentation
 date: 2026-09-22
-project: PGN Star Wars Battlefront II Dedicated Server
+project: Star Wars Battlefront II Dedicated Server
 publish: true
 ---
 > **Total disaster-recovery manual for _PGN - Ewok Around and Find Out_**  

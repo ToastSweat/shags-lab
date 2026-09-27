@@ -9,6 +9,7 @@ publish: true
 ## Latest Updates
 
 - [[Updates/2026-09-26.2 - I Accidentally Became A Dune Server Goblin|2026-09-26.2 - I Accidentally Became A Dune Server Goblin]]
+- [[Updates/2026-09-26.1 - Weekend Working|2026-09-26.1 - Weekend Working]]
 - [[Updates/2026-09-25 - Holy Cow, I'm Pooped|2026-09-25 - Holy Cow, I'm Pooped]]
 - [[Updates/2026-09-24 - Another Mix-Bag Sort of Day|2026-09-24 - Another Mix-Bag Sort of Day]]
 - [[Updates/2026-09-23 - A Little Bit of This and That|2026-09-23 - A Little Bit of This and That]]

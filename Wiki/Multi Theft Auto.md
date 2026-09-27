@@ -1,3 +1,8 @@
+---
+title: Multi Theft Auto
+type: wiki
+publish: true
+---
 My personal involvement with Multi Theft auto start in 2014 on the [[San Andreas Emergency Services]] Server, SAES:RPG.
 
 After Hell's Soldiers and making [[Helvete]], I had a falling out with the SAES clan, and left to join some friends on the [[Why So Serious RPG]] server.
