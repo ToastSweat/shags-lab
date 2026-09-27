@@ -1,3 +1,8 @@
+---
+type: guide
+project: Obsidian Vault to Website
+publish: true
+---
 # Build Your Own Obsidian-Powered Wiki/Blog Website
 
 This guide shows one way to turn an Obsidian vault into a public website while keeping the vault itself as the permanent source of truth.

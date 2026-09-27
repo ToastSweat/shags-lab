@@ -1,10 +1,9 @@
 ---
 type: project-parent
 date: 2026-09-22
-project: Guitar Case Nameplates
+project: My Mini Retro Television
 status: active
 publish: true
-git:
 ---
 ![[{29F9B449-D236-407D-A150-C41CF840C3F3}.png]]
 ## About

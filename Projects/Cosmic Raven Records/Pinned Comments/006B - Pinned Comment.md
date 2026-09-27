@@ -1,13 +1,13 @@
 ---
 type: pinned-comment
 project: Cosmic Raven Records
-transmission: "006B"
-artist: "Jedicide"
-track: "Shadows of the Empire [2]"
-youtube: ""
 status: posted
+publish: true
+transmission: 006B
+artist: Jedicide
+track: Shadows of the Empire [2]
+youtube: https://youtu.be/XvBtJLbzUvM
 ---
-
 # 006B - Pinned Comment
 
 Third pass gave me the same answer.

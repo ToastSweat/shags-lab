@@ -1,15 +1,16 @@
 ---
 type: transmission
 project: Cosmic Raven Records
-transmission: "005B"
-artist: "Jedicide"
-track: "The Rule of Two"
-youtube: "https://www.youtube.com/watch?v=dUxBkdX4Ae0"
-reality: "B"
+status: posted
+publish: true
+transmission: 005B
+artist: Jedicide
+track: The Rule of Two
+youtube: https://www.youtube.com/watch?v=dUxBkdX4Ae0
+reality: B
 reception: Stable
 pinned_comment: "[[005B - Pinned Comment]]"
 ---
-
 # TRANSMISSION 005B [Jedicide, The Rule of Two]
 
 [Watch on YouTube](https://www.youtube.com/watch?v=dUxBkdX4Ae0)

@@ -1,15 +1,16 @@
 ---
 type: transmission
 project: Cosmic Raven Records
-transmission: "004A"
-artist: "Jedicide"
-track: "The Seduction on the Darkside [1]"
-youtube: "https://www.youtube.com/watch?v=4wBkw9Awo9M"
-reality: "A"
+status: posted
+publish: true
+transmission: 004A
+artist: Jedicide
+track: The Seduction on the Darkside [1]
+youtube: https://www.youtube.com/watch?v=4wBkw9Awo9M
+reality: A
 reception: Stable
 pinned_comment: "[[004A - Pinned Comment]]"
 ---
-
 # TRANSMISSION 004A [Jedicide, The Seduction on the Darkside [1]]
 
 [Watch on YouTube](https://www.youtube.com/watch?v=4wBkw9Awo9M)

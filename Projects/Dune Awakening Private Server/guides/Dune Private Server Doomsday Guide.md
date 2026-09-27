@@ -1,11 +1,9 @@
 ---
-title: Dune Private Server Doomsday Guide
 type: guide
 date: 2026-09-26
-project: Dune Private Server
+project: Dune Awakening Private Server
 publish: true
 ---
-
 # Dune Private Server Doomsday Guide
 
 This is the “future me is tired, the server exploded, and I do not want to rediscover all of this again” guide.

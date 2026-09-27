@@ -1,5 +1,6 @@
 ---
 type: project
+project: My Mini Retro Television Channels
 status: active
 publish: true
 ---

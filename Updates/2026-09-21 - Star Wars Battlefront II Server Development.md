@@ -325,4 +325,4 @@ For now, the important part is that the server works, the community layer works,
 
 Not bad for wanting to play an old Star Wars game.
 
-[[PGN Star Wars Battlefront II Dedicated Server]]
+[[PGN Star Wars Battlefront II Dedicated Server Disaster Recovery]]

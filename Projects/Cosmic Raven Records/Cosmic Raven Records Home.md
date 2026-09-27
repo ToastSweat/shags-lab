@@ -19,7 +19,7 @@ Mostly, I just keep turning the dial and archiving what comes through.
 [[Cosmic Raven Records - Archive Index]]
 
 ## Technical Information:
-[[Transmission Generator Home]]
+[[Transmission Builder Home|Transmission Generator]]
 [[Transmission Generator - Technical Notes]]
 
 ## TODO

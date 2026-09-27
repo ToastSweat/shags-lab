@@ -1,9 +1,9 @@
 ---
 type: project-parent
 date: 2026-09-22
-status: paused
+project: Keychron C100
+status: active
 publish: true
-git:
 ---
 ![[Pasted image 20260916232955.png]]
 
@@ -15,4 +15,4 @@ This keyboard is weird, and a little stupid, just like me. So I had to buy it, a
 
 ### My Projects
 [[Keychron C100 Custom Firmware Home]]
-[[Keychron C100 Custom Custom Keycaps Home]]
+[[Keychron C100 Custom Keycaps Home]]

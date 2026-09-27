@@ -1,15 +1,16 @@
 ---
 type: transmission
 project: Cosmic Raven Records
-transmission: "006A"
-artist: "Jedicide"
-track: "Shadows of the Empire [1]"
-youtube: "https://www.youtube.com/watch?v=RO-x8LIJHb4"
-reality: "A"
+status: posted
+publish: true
+transmission: 006A
+artist: Jedicide
+track: Shadows of the Empire [1]
+youtube: https://www.youtube.com/watch?v=RO-x8LIJHb4
+reality: A
 reception: Stable
-pinned_comment: "[[006A - Pinned Comment - TODO]]"
+pinned_comment: "[[006A - Pinned Comment]]"
 ---
-
 # TRANSMISSION 006A [Jedicide, Shadows of the Empire [1]]
 
 [Watch on YouTube](https://www.youtube.com/watch?v=RO-x8LIJHb4)

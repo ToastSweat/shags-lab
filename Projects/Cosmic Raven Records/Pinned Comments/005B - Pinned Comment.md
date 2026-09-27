@@ -1,14 +1,14 @@
 ---
 type: pinned-comment
 project: Cosmic Raven Records
-transmission: "005B"
-artist: "Jedicide"
-track: "The Rule of Two"
-youtube: "https://www.youtube.com/watch?v=dUxBkdX4Ae0"
-transmission_note: "[[005B - Jedicide - The Rule of Two]]"
 status: posted
+publish: true
+transmission: 005B
+artist: Jedicide
+track: The Rule of Two
+youtube: https://www.youtube.com/watch?v=dUxBkdX4Ae0
+transmission_note: "[[005B - Jedicide - The Rule of Two]]"
 ---
-
 # 005B - Pinned Comment
 
 [Watch on YouTube](https://www.youtube.com/watch?v=dUxBkdX4Ae0)

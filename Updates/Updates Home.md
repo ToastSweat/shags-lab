@@ -8,6 +8,7 @@ publish: true
 
 ## Latest Updates
 
+- [[Updates/2026-09-26.3 - I Swear I'm Going to Finish This Game!|2026-09-26.3 - I Swear I'm Going to Finish This Game!]]
 - [[Updates/2026-09-26.2 - I Accidentally Became A Dune Server Goblin|2026-09-26.2 - I Accidentally Became A Dune Server Goblin]]
 - [[Updates/2026-09-26.1 - Weekend Working|2026-09-26.1 - Weekend Working]]
 - [[Updates/2026-09-25 - Holy Cow, I'm Pooped|2026-09-25 - Holy Cow, I'm Pooped]]

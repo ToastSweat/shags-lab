@@ -1,10 +1,11 @@
 ---
+title: Garth's Game DMG
 type: project
 date: 2026-09-26
 project: Garth's Game DMG
+project_aliases: Garths Game DMG
 status: active
 publish: true
-git:
 ---
 ![[Pasted image 20260926184227.png]]
 

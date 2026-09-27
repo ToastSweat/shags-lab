@@ -1,5 +1,4 @@
 ---
-title:
 type: update
 date: 2026-09-24
 project: Cosmic Raven Records, Safe Cracker Discord Activity

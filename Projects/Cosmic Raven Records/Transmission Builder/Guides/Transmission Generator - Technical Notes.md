@@ -1,3 +1,8 @@
+---
+type: guide
+project: Cosmic Raven Records
+publish: true
+---
 # Transmission Generator - Technical Notes
 
 This document is the quick technical reference for `make_transmission.v4.bat`.

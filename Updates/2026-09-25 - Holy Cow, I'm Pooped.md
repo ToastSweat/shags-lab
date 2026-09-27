@@ -1,8 +1,6 @@
 ---
-title:
 type: update
 date: 2026-09-25
-project:
 publish: true
 ---
 What a long week. I don't have a huge update today, I took my cat to the vet today to get neutered and to deal with his hernia.

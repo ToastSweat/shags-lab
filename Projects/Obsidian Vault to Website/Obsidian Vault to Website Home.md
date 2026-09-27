@@ -13,3 +13,5 @@ If you want to do something like this yourself:
 
 This is more for me but maybe it will help you?
 [[Shag's Lab - Doomsday Rebuild Guide]]
+## Vault Standards
+[[Shag's Lab - Metadata Standards]]

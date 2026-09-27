@@ -2,6 +2,7 @@
 type: project
 date: 2026-09-17
 project: Booru Image Downloader
+project_aliases: Rule34 Tag Watcher
 status: active
 publish: true
 git: https://github.com/ToastSweat/r34-tag-watcher

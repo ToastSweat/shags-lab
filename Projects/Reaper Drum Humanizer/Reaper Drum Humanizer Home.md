@@ -1,4 +1,5 @@
 ---
+title: REAPER Drum Humanizer
 type: project
 date: 2026-09-26
 project: REAPER Drum Humanizer

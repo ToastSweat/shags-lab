@@ -1,6 +1,7 @@
 ---
 type: archive-index
 project: Cosmic Raven Records
+publish: true
 ---
 # Cosmic Raven Records - Transmission Archive
 

@@ -1,14 +1,14 @@
 ---
 type: pinned-comment
 project: Cosmic Raven Records
-transmission: "001A"
-artist: "Nekroxx"
-track: "Empty"
-youtube: "https://www.youtube.com/watch?v=3JIIzlHZgMQ"
-transmission_note: "[[001A - Nekroxx - Empty]]"
 status: posted
+publish: true
+transmission: 001A
+artist: Nekroxx
+track: Empty
+youtube: https://www.youtube.com/watch?v=3JIIzlHZgMQ
+transmission_note: "[[001A - Nekroxx - Empty]]"
 ---
-
 # 001A - Pinned Comment
 
 [Watch on YouTube](https://www.youtube.com/watch?v=3JIIzlHZgMQ)

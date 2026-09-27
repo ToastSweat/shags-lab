@@ -1,15 +1,15 @@
 ---
 type: transmission
 project: Cosmic Raven Records
-transmission: "006B"
-artist: "Jedicide"
-track: "Shadows of the Empire [2]"
-reality: "B"
-reception: "Stable"
-youtube: ""
-status: ready-to-post
+status: posted
+publish: true
+transmission: 006B
+artist: Jedicide
+track: Shadows of the Empire [2]
+youtube: https://youtu.be/XvBtJLbzUvM
+reality: B
+reception: Stable
 ---
-
 # TRANSMISSION 006B [Jedicide, Shadows of the Empire [2]]
 
 Second pass.

@@ -1,3 +1,8 @@
+---
+type: guide
+project: Booru Image Downloader
+publish: true
+---
 # Rule34 Tag Watcher 2.0
 
 A small Windows downloader that checks Rule34.xxx for selected **Copyright**,

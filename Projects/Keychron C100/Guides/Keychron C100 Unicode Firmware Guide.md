@@ -1,3 +1,8 @@
+---
+type: guide
+project: Keychron C100 Custom Firmware
+publish: true
+---
 ## Complete rebuild / recovery notes
 
 **Original build date:** 2026-09-16  

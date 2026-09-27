@@ -1,15 +1,16 @@
 ---
 type: transmission
 project: Cosmic Raven Records
-transmission: "001A"
-artist: "Nekroxx"
-track: "Empty"
-youtube: "https://www.youtube.com/watch?v=3JIIzlHZgMQ"
-reality: "A"
+status: posted
+publish: true
+transmission: 001A
+artist: Nekroxx
+track: Empty
+youtube: https://www.youtube.com/watch?v=3JIIzlHZgMQ
+reality: A
 reception: Stable
 pinned_comment: "[[001A - Pinned Comment]]"
 ---
-
 # TRANSMISSION 001A [Nekroxx, Empty]
 
 [Watch on YouTube](https://www.youtube.com/watch?v=3JIIzlHZgMQ)

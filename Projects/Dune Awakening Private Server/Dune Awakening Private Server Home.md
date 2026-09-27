@@ -2,9 +2,9 @@
 type: project
 date: 2026-09-26
 project: Dune Awakening Private Server
+project_aliases: Dune Private Server
 status: paused
 publish: true
-git:
 ---
 ![[Pasted image 20260926171254.png]]
 

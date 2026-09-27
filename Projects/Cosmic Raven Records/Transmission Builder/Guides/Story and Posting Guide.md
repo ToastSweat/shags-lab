@@ -1,3 +1,8 @@
+---
+type: guide
+project: Cosmic Raven Records
+publish: true
+---
 # Cosmic Raven Records - Story and Posting Guide
 
 This is a practical continuity guide, not a rigid lore bible. The narrator is allowed to be wrong.

@@ -1,14 +1,14 @@
 ---
 type: pinned-comment
 project: Cosmic Raven Records
-transmission: "004B"
-artist: "Jedicide"
-track: "The Seduction on the Darkside [2]"
-youtube: "https://www.youtube.com/watch?v=K2G7XC_31I8"
-transmission_note: "[[004B - Jedicide - The Seduction on the Darkside 2]]"
 status: posted
+publish: true
+transmission: 004B
+artist: Jedicide
+track: The Seduction on the Darkside [2]
+youtube: https://www.youtube.com/watch?v=K2G7XC_31I8
+transmission_note: "[[004B - Jedicide - The Seduction on the Darkside 2]]"
 ---
-
 # 004B - Pinned Comment
 
 [Watch on YouTube](https://www.youtube.com/watch?v=K2G7XC_31I8)

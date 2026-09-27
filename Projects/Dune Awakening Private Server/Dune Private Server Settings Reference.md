@@ -1,12 +1,10 @@
 ---
-title: Dune Private Server Settings Reference
 type: guide
 date: 2026-09-26
-project: Dune Private Server
-status: pre-new-build baseline
+project: Dune Awakening Private Server
+status: snapshot
 publish: true
 ---
-
 # Dune Private Server Settings Reference
 
 This is the configuration record for our self-hosted **Dune: Awakening** battlegroup immediately before the newly released build is audited.

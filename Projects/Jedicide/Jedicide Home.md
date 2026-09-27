@@ -4,7 +4,6 @@ date: 2026-09-22
 project: Jedicide
 status: active
 publish: true
-git:
 ---
 ![[ChatGPT Image Sep 26, 2026, 06_59_16 PM.png]]
 

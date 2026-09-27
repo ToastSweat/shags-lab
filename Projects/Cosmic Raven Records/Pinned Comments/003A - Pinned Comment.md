@@ -1,14 +1,14 @@
 ---
 type: pinned-comment
 project: Cosmic Raven Records
-transmission: "003A"
-artist: "None"
-track: "Unnamed"
-youtube: "https://www.youtube.com/watch?v=MU_QGWQwVSY"
-transmission_note: "[[003A - None - Unnamed]]"
 status: posted
+publish: true
+transmission: 003A
+artist: "None"
+track: Unnamed
+youtube: https://www.youtube.com/watch?v=MU_QGWQwVSY
+transmission_note: "[[003A - None - Unnamed]]"
 ---
-
 # 003A - Pinned Comment
 
 [Watch on YouTube](https://www.youtube.com/watch?v=MU_QGWQwVSY)

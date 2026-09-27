@@ -1,3 +1,8 @@
+---
+type: guide
+project: Cosmic Raven Records
+publish: true
+---
 # Cosmic Raven Records - Doomsday Rebuild Guide
 
 If you are reading this because the original machine died, Windows was reinstalled, the Dropbox folder vanished, or Future Me has absolutely no memory of how any of this worked: hello.

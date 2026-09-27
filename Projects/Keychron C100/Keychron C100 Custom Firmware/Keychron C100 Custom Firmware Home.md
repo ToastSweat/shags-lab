@@ -1,9 +1,9 @@
 ---
 type: project
+project: Keychron C100 Custom Firmware
 status: active
 publish: true
 ---
-
 ![[Pasted image 20260916232955.png]]
 **Summary:**
 

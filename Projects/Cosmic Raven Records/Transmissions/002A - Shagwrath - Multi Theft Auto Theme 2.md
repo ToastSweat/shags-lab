@@ -1,15 +1,16 @@
 ---
 type: transmission
 project: Cosmic Raven Records
-transmission: "002A"
-artist: "Shagwrath"
-track: "Multi Theft Auto Theme [2]"
-youtube: "https://www.youtube.com/watch?v=uKdTXT9Hn4M"
-reality: "A"
+status: posted
+publish: true
+transmission: 002A
+artist: Shagwrath
+track: Multi Theft Auto Theme [2]
+youtube: https://www.youtube.com/watch?v=uKdTXT9Hn4M
+reality: A
 reception: Stable
 pinned_comment: "[[002A - Pinned Comment]]"
 ---
-
 # TRANSMISSION 002A [Shagwrath, Multi Theft Auto Theme [2]]
 
 [Watch on YouTube](https://www.youtube.com/watch?v=uKdTXT9Hn4M)

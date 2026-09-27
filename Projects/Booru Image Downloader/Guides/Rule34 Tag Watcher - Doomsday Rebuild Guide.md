@@ -1,10 +1,9 @@
 ---
 type: guide
 date: 2026-09-18
-project: Rule34 Tag Watcher
+project: Booru Image Downloader
 publish: true
 ---
-
 # Rule34 Tag Watcher: The Doomsday File
 
 This is the file for Future Me, Curious You, or Whoever Is Staring At A Dead Drive At 2 A.M.

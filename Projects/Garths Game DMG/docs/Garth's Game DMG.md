@@ -1,7 +1,7 @@
 ---
-type: project
+type: guide
 project: Garth's Game DMG
-status: active
+status: living
 publish: true
 ---
 # Garth's Game DMG

@@ -1,5 +1,4 @@
 ---
-title: Multi Theft Auto
 type: wiki
 publish: true
 ---

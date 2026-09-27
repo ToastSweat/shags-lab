@@ -1,15 +1,15 @@
 ---
 type: transmission
 project: Cosmic Raven Records
-transmission: "006C"
-artist: "Jedicide"
-track: "Shadows of the Empire [3]"
-reality: "C"
-reception: "Stable"
-youtube: ""
-status: ready-to-post
+status: posted
+publish: true
+transmission: 006C
+artist: Jedicide
+track: Shadows of the Empire [3]
+youtube: https://www.youtube.com/watch?v=s0IEWLTzl6g
+reality: C
+reception: Stable
 ---
-
 # TRANSMISSION 006C [Jedicide, Shadows of the Empire [3]]
 
 Third pass.

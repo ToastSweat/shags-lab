@@ -4,7 +4,6 @@ date: 2026-09-22
 project: Safe Cracker Discord Activity
 status: active
 publish: true
-git:
 ---
 ![[Connecting.png]]
 ## About

@@ -4,7 +4,6 @@ date: 2026-09-22
 project: Guitar Case Nameplates
 status: paused
 publish: true
-git:
 ---
 ![[{136371B9-2ABB-429C-9DAE-4D95CA2734CA}.png]]
 # About
