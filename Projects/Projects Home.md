@@ -37,8 +37,6 @@ publish: true
   - **complete** - [[Projects/Instruments/Synth - Suzuki Omnichord OM-108|Synth - Suzuki Omnichord OM-108]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Synth - Teenage Engineering EP–1320 medieval|Synth - Teenage Engineering EP–1320 Medieval]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Synth - Teenage Engineering EP–40 riddim|Synth - Teenage Engineering EP–40 Riddim]] - last activity 2026-09-26
-  - **complete** - [[Projects/Instruments/Synth - Teenage Engineering EPâ€“1320 medieval|Synth - Teenage Engineering EPâ€“1320 Medieval]] - last activity 2026-09-26
-  - **complete** - [[Projects/Instruments/Synth - Teenage Engineering EPâ€“40 riddim|Synth - Teenage Engineering EPâ€“40 Riddim]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Synth - Teenage Engineering PO-14 sub|Synth - Teenage Engineering PO-14 Sub]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Synth - Teenage Engineering PO-33 K.O!|Synth - Teenage Engineering PO-33 K.O!]] - last activity 2026-09-26
 - [[Projects/Obsidian Vault to Website|Obsidian Vault to Website]] - last activity 2026-09-26
