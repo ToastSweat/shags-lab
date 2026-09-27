@@ -1,3 +1,11 @@
+---
+type: project
+date: 2026-09-26
+project: Garth's Game DMG
+status: active
+publish: true
+git:
+---
 ![[Pasted image 20260926184227.png]]
 
 ## About

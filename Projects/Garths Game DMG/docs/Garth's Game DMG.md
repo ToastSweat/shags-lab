@@ -1,6 +1,6 @@
 ---
 type: project
-project: Garth's Game I
+project: Garth's Game DMG
 status: active
 publish: true
 ---

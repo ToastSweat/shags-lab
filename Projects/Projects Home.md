@@ -8,8 +8,9 @@ publish: true
 
 ## Projects
 
-- [[Projects/Jedicide|Jedicide]] - last activity 2026-09-26
+- [[Projects/Garths Game DMG|Garths Game DMG]] - last activity 2026-09-26
 - [[Projects/Garths Game DMG/docs/Garth's Game DMG|Garth's Game DMG]] - last activity 2026-09-26
+- [[Projects/Jedicide|Jedicide]] - last activity 2026-09-26
 - [[Projects/Instruments/Guitar Case Nameplates|Guitar Case Nameplates]] - last activity 2026-09-26
 - [[Projects/Booru Image Downloader|Booru Image Downloader]] - last activity 2026-09-26
 - [[Projects/Cosmic Raven Records|Cosmic Raven Records]] - last activity 2026-09-26
