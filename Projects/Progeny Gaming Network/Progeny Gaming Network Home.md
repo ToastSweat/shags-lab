@@ -1,13 +1,10 @@
 ---
-title: Progeny Gaming Network
 type: project
 date: 2026-09-28
 project: Progeny Gaming Network
 status: active
 publish: true
 ---
-
-
 [[PGN - The Epic History]]
 
 [[PGN - Master Timeline]]
