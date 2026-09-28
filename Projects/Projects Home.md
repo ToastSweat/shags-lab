@@ -10,10 +10,13 @@ publish: true
 
 ### Active
 
+- [[Projects/Safe Cracker Discord Activity|Safe Cracker Discord Activity]] - last activity 2026-09-28
+- [[Projects/My Mini Retro Television|My Mini Retro Television]] - last activity 2026-09-27
+  - **active** - [[Projects/My Mini Retro Television/My Mini Retro Television Channels|My Mini Retro Television Channels]] - last activity 2026-09-27
+- [[Projects/Obsidian Vault to Website|Obsidian Vault to Website]] - last activity 2026-09-27
 - [[Projects/Cosmic Raven Records|Cosmic Raven Records]] - last activity 2026-09-26
 - [[Projects/Garths Game DMG|Garth's Game DMG]] - last activity 2026-09-26
 - [[Projects/Instruments|Instruments]] - last activity 2026-09-26
-  - **active** - [[Projects/Instruments/Bass VI - Penny|BASS VI - Penny]] - last activity 2026-09-18
   - **paused** - [[Projects/Instruments/Guitar Case Nameplates|Guitar Case Nameplates]] - last activity 2026-09-22
   - **complete** - [[Projects/Instruments/Bass - 5 Finger Nut Punch|Bass - 5 Finger Nut Punch]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Bass - Ibanez SRAS7|Bass - Ibanez SRAS7]] - last activity 2026-09-26
@@ -39,14 +42,11 @@ publish: true
   - **complete** - [[Projects/Instruments/Synth - Teenage Engineering EP–40 riddim|Synth - Teenage Engineering EP–40 Riddim]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Synth - Teenage Engineering PO-14 sub|Synth - Teenage Engineering PO-14 Sub]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Synth - Teenage Engineering PO-33 K.O!|Synth - Teenage Engineering PO-33 K.O!]] - last activity 2026-09-26
-- [[Projects/Obsidian Vault to Website|Obsidian Vault to Website]] - last activity 2026-09-26
-- [[Projects/Safe Cracker Discord Activity|Safe Cracker Discord Activity]] - last activity 2026-09-26
 - [[Projects/Jedicide|Jedicide]] - last activity 2026-09-22
 - [[Projects/Keychron C100|Keychron C100]] - last activity 2026-09-22
   - **active** - [[Projects/Keychron C100/Keychron C100 Custom Firmware|Keychron C100 Custom Firmware]] - last activity 2026-09-16
-- [[Projects/My Mini Retro Television|My Mini Retro Television]] - last activity 2026-09-22
-  - **active** - [[Projects/My Mini Retro Television/My Mini Retro Television Channels|My Mini Retro Television Channels]] - last activity 2026-09-19
 - [[Projects/Star Wars Battlefront II Dedicated Server|Star Wars Battlefront II Dedicated Server]] - last activity 2026-09-21
+- [[Projects/Instruments/Bass VI - Penny|BASS VI - Penny]] - last activity 2026-09-18
 - [[Projects/Booru Image Downloader|Booru Image Downloader]] - last activity 2026-09-17
 ### Paused
 
@@ -55,4 +55,4 @@ publish: true
 
 - [[Projects/Reaper Drum Humanizer|REAPER Drum Humanizer]] - last activity 2026-09-18
 
-*Last Updated: 2026-09-26*
+*Last Updated: 2026-09-28*

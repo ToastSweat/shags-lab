@@ -64,3 +64,17 @@ The G6SS uses Legator's fixed headless bridge and locking headpiece system for s
 - Lightweight, balanced headless construction
 - Designed for fast, technical and high-gain playing
 - Made in Indonesia
+### Specs
+**Neck/Body Assembly:** Bolt-on  
+**Neck Material:** 3-piece Maple  
+**Neck Finish:** Satin  
+**Scale Length:** 25.5" Scale  
+**Fretboard Material:** 18" Radius Ebony Fingerboard  
+**Inlays:** MOP Offset Dot Inlays  
+**Frets:** 24 Medium Jumbo Stainless Steel  
+**Body Material:** Mahogany  
+**Body Finish:** Gloss  
+**Pickups:** Legator Passive Aftershock Ceramic Humbuckers  
+**Controls:** Master Volume, Tone, 5-way blade switch  
+**Bridge:** Legator headless Bridge  
+**Tuners:** Locking headpiece

@@ -1,7 +1,7 @@
 ---
-type: project
+type: project-parent
 date: 2026-09-22
-project: BASS VI - Penny
+project: Bass VI - Penny
 status: active
 publish: true
 ---
