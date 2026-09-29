@@ -9,6 +9,7 @@ track: Shadows of the Empire [2]
 youtube: https://youtu.be/XvBtJLbzUvM
 reality: B
 reception: Stable
+pinned_comment: "[[006B - Pinned Comment]]"
 ---
 # TRANSMISSION 006B [Jedicide, Shadows of the Empire [2]]
 

@@ -7,6 +7,7 @@ transmission: 006A
 artist: Jedicide
 track: Shadows of the Empire [1]
 youtube: https://www.youtube.com/watch?v=RO-x8LIJHb4
+transmission_note: "[[006A - Jedicide - Shadows of the Empire 1]]"
 ---
 # 006A - Pinned Comment
 

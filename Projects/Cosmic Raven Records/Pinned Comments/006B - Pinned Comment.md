@@ -7,6 +7,7 @@ transmission: 006B
 artist: Jedicide
 track: Shadows of the Empire [2]
 youtube: https://youtu.be/XvBtJLbzUvM
+transmission_note: "[[006B - Jedicide - Shadows of the Empire 2]]"
 ---
 # 006B - Pinned Comment
 

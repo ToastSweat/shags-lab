@@ -10,8 +10,9 @@ publish: true
 
 ### Active
 
+- [[Projects/Safe Cracker Discord Activity|Safe Cracker Discord Activity]] - last activity 2026-09-29
 - [[Projects/Progeny Gaming Network|Progeny Gaming Network]] - last activity 2026-09-28
-- [[Projects/Safe Cracker Discord Activity|Safe Cracker Discord Activity]] - last activity 2026-09-28
+  - **complete** - [[Projects/Progeny Gaming Network/PGN Discord Archive|PGN Discord Archive]] - last activity 2026-09-28
 - [[Projects/My Mini Retro Television|My Mini Retro Television]] - last activity 2026-09-27
   - **active** - [[Projects/My Mini Retro Television/My Mini Retro Television Channels|My Mini Retro Television Channels]] - last activity 2026-09-27
 - [[Projects/Obsidian Vault to Website|Obsidian Vault to Website]] - last activity 2026-09-27
@@ -56,4 +57,4 @@ publish: true
 
 - [[Projects/Reaper Drum Humanizer|REAPER Drum Humanizer]] - last activity 2026-09-18
 
-*Last Updated: 2026-09-28*
+*Last Updated: 2026-09-29*

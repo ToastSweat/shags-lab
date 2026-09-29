@@ -8,7 +8,8 @@ publish: true
 
 ## Latest Updates
 
-- [[Updates/2026-09-28.1 - Tool Time with Tim Allen's Home Improvement with Bob Vila Again|2026-09-28.1 - Tool Time with Tim Allen's Home Improvement with Bob Vila Again]]
+- [[Updates/2026-09-29 - Tool Time with Tim Allen's Home Improvement with Bob Vila Again 1|2026-09-29 - Tool Time with Tim Allen's Home Improvement with Bob Vila Again 1]]
+- [[Updates/2026-09-28 - I Downloaded Ten Years of Discord and Accidentally Became the Clan Historian|2026-09-28 - I Downloaded Ten Years of Discord and Accidentally Became the Clan Historian]]
 - [[Updates/2026-09-27.2 - I Accidentally Downloaded 131GB of Television|2026-09-27.2 - I Accidentally Downloaded 131GB of Television]]
 - [[Updates/2026-09-27.1 - I Gave Shag's Lab a Tune-Up|2026-09-27.1 - I Gave Shag's Lab a Tune-Up]]
 - [[Updates/2026-09-26.3 - I Swear I'm Going to Finish This Game!|2026-09-26.3 - I Swear I'm Going to Finish This Game!]]
@@ -27,4 +28,4 @@ publish: true
 - [[Updates/2026-09-17 - I Built A Booru Librarian|2026-09-17 - I Built A Booru Librarian]]
 - [[Updates/2026-09-16 - I Made A Custom Driver|2026-09-16 - I Made A Custom Driver]]
 
-*Last Updated: 2026-09-28*
+*Last Updated: 2026-09-29*

@@ -9,6 +9,7 @@ track: Shadows of the Empire [3]
 youtube: https://www.youtube.com/watch?v=s0IEWLTzl6g
 reality: C
 reception: Stable
+pinned_comment: "[[006C - Jedicide - Shadows of the Empire 3]]"
 ---
 # TRANSMISSION 006C [Jedicide, Shadows of the Empire [3]]
 
