@@ -332,3 +332,5 @@ For now, though, I have something I never really expected to have:
 **a ten-year primary-source archive of one very weird group of friends.**
 
 And for once, when one of our projects inevitably dies, I might actually remember what the hell happened.
+
+[[Progeny Gaming Network Home]]
