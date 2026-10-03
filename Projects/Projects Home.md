@@ -10,16 +10,11 @@ publish: true
 
 ### Active
 
-- [[Projects/Safe Cracker Discord Activity|Safe Cracker Discord Activity]] - last activity 2026-09-30
-- [[Projects/Cosmic Raven Records|Cosmic Raven Records]] - last activity 2026-09-29
-- [[Projects/Progeny Gaming Network|Progeny Gaming Network]] - last activity 2026-09-28
-  - **complete** - [[Projects/Progeny Gaming Network/PGN Discord Archive|PGN Discord Archive]] - last activity 2026-09-28
-- [[Projects/My Mini Retro Television|My Mini Retro Television]] - last activity 2026-09-27
-  - **active** - [[Projects/My Mini Retro Television/My Mini Retro Television Channels|My Mini Retro Television Channels]] - last activity 2026-09-27
-- [[Projects/Obsidian Vault to Website|Obsidian Vault to Website]] - last activity 2026-09-27
-- [[Projects/Garths Game DMG|Garth's Game DMG]] - last activity 2026-09-26
-- [[Projects/Instruments|Instruments]] - last activity 2026-09-26
+- [[Projects/Safe Cracker Discord Activity|Safe Cracker Discord Activity]] - last activity 2026-10-03
+- [[Projects/Cosmic Raven Records|Cosmic Raven Records]] - last activity 2026-10-02
+- [[Projects/Instruments|Instruments]] - last activity 2026-10-02
   - **paused** - [[Projects/Instruments/Guitar Case Nameplates|Guitar Case Nameplates]] - last activity 2026-09-22
+  - **complete** - [[Projects/Instruments/Guitar - Hello Kitty (White)|Guitar - Hello Kitty (White)]] - last activity 2026-10-02
   - **complete** - [[Projects/Instruments/Bass - 5 Finger Nut Punch|Bass - 5 Finger Nut Punch]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Bass - Ibanez SRAS7|Bass - Ibanez SRAS7]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Bass - Lieutenant Dan|Bass - Lieutenant Dan]] - last activity 2026-09-26
@@ -44,7 +39,14 @@ publish: true
   - **complete** - [[Projects/Instruments/Synth - Teenage Engineering EP–40 riddim|Synth - Teenage Engineering EP–40 Riddim]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Synth - Teenage Engineering PO-14 sub|Synth - Teenage Engineering PO-14 Sub]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Synth - Teenage Engineering PO-33 K.O!|Synth - Teenage Engineering PO-33 K.O!]] - last activity 2026-09-26
-- [[Projects/Jedicide|Jedicide]] - last activity 2026-09-22
+- [[Queued Projects/Vinyl|Vinyl]] - last activity 2026-09-29
+- [[Progeny Gaming Network|Progeny Gaming Network]] - last activity 2026-09-28
+  - **complete** - [[Progeny Gaming Network/PGN Discord Archive|PGN Discord Archive]] - last activity 2026-09-28
+- [[Projects/My Mini Retro Television|My Mini Retro Television]] - last activity 2026-09-27
+  - **active** - [[Projects/My Mini Retro Television/My Mini Retro Television Channels|My Mini Retro Television Channels]] - last activity 2026-09-27
+- [[Projects/Obsidian Vault to Website|Obsidian Vault to Website]] - last activity 2026-09-27
+- [[Queued Projects/Garths Game DMG|Garth's Game DMG]] - last activity 2026-09-26
+- [[Queued Projects/Jedicide|Jedicide]] - last activity 2026-09-22
 - [[Projects/Keychron C100|Keychron C100]] - last activity 2026-09-22
   - **active** - [[Projects/Keychron C100/Keychron C100 Custom Firmware|Keychron C100 Custom Firmware]] - last activity 2026-09-16
 - [[Projects/Star Wars Battlefront II Dedicated Server|Star Wars Battlefront II Dedicated Server]] - last activity 2026-09-21
@@ -57,4 +59,4 @@ publish: true
 
 - [[Projects/Reaper Drum Humanizer|REAPER Drum Humanizer]] - last activity 2026-09-18
 
-*Last Updated: 2026-09-30*
+*Last Updated: 2026-10-03*

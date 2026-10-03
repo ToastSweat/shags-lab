@@ -8,7 +8,10 @@ publish: true
 
 ## Latest Updates
 
-- [[Updates/2026-09-30 - Tool Time with Tim Allen's Home Improvement with Bob Vila Again 1 1|2026-09-30 - Tool Time with Tim Allen's Home Improvement with Bob Vila Again 1 1]]
+- [[Updates/2026-10-03 - Tool Time with Tim Allen's Home Improvement with Bob Vila Again|2026-10-03 - Tool Time with Tim Allen's Home Improvement with Bob Vila Again]]
+- [[Updates/2026-10-02 - Friday! Party Time!|2026-10-02 - Friday! Party Time!]]
+- [[Updates/2026-10-01 - Nope 3|2026-10-01 - Nope 3]]
+- [[Updates/2026-09-30 - Nope 2|2026-09-30 - Nope 2]]
 - [[Updates/2026-09-29 - Nope|2026-09-29 - Nope]]
 - [[Updates/2026-09-28 - I Downloaded Ten Years of Discord and Accidentally Became the Clan Historian|2026-09-28 - I Downloaded Ten Years of Discord and Accidentally Became the Clan Historian]]
 - [[Updates/2026-09-27.2 - I Accidentally Downloaded 131GB of Television|2026-09-27.2 - I Accidentally Downloaded 131GB of Television]]
@@ -29,4 +32,4 @@ publish: true
 - [[Updates/2026-09-17 - I Built A Booru Librarian|2026-09-17 - I Built A Booru Librarian]]
 - [[Updates/2026-09-16 - I Made A Custom Driver|2026-09-16 - I Made A Custom Driver]]
 
-*Last Updated: 2026-09-30*
+*Last Updated: 2026-10-03*
