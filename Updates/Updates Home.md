@@ -9,8 +9,9 @@ publish: true
 ## Latest Updates
 
 - [[Updates/2026-10-06 - Tool Time with Tim Allen's Home Improvement with Bob Vila Again|2026-10-06 - Tool Time with Tim Allen's Home Improvement with Bob Vila Again]]
-- [[Updates/2026-10-5.2 - iCue Image Ranker Widget|2026-10-5.2 - iCue Image Ranker Widget]]
-- [[Updates/2026-10-5.1 - iCue Binary Clock Widget|2026-10-5.1 - iCue Binary Clock Widget]]
+- [[Updates/2026-10-05.3 - I Put a Binary Clock on My Monitor|2026-10-05.3 - I Put a Binary Clock on My Monitor]]
+- [[Updates/2026-10-05.2 - I Taught My Monitor to Rank My Images|2026-10-05.2 - I Taught My Monitor to Rank My Images]]
+- [[Updates/2026-10-05.1 - Safe Cracker Is Live|2026-10-05.1 - Safe Cracker Is Live]]
 - [[Updates/2026-10-04.1 - Mixed Bag Again|2026-10-04.1 - Mixed Bag Again]]
 - [[Updates/2026-10-03.2 - Cosmic Raven Gets Some Traction 1|2026-10-03.2 - Cosmic Raven Gets Some Traction 1]]
 - [[Updates/2026-10-03.1 - Dune Awakening Server Finally Backed Up! 1|2026-10-03.1 - Dune Awakening Server Finally Backed Up! 1]]

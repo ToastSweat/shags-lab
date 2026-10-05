@@ -10,3 +10,8 @@ publish: true
 Crap, I thought I wrote up a bunch of stuff on this already.
 
 Nothing to see here but us dragons...
+
+How it will look
+![[Pasted image 20261005002931.png]]
+
+![[Pasted image 20261005002944.png]]↙
