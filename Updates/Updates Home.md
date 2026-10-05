@@ -8,7 +8,12 @@ publish: true
 
 ## Latest Updates
 
-- [[Updates/2026-10-03 - Tool Time with Tim Allen's Home Improvement with Bob Vila Again|2026-10-03 - Tool Time with Tim Allen's Home Improvement with Bob Vila Again]]
+- [[Updates/2026-10-06 - Tool Time with Tim Allen's Home Improvement with Bob Vila Again|2026-10-06 - Tool Time with Tim Allen's Home Improvement with Bob Vila Again]]
+- [[Updates/2026-10-5.2 - iCue Image Ranker Widget|2026-10-5.2 - iCue Image Ranker Widget]]
+- [[Updates/2026-10-5.1 - iCue Binary Clock Widget|2026-10-5.1 - iCue Binary Clock Widget]]
+- [[Updates/2026-10-04.1 - Mixed Bag Again|2026-10-04.1 - Mixed Bag Again]]
+- [[Updates/2026-10-03.2 - Cosmic Raven Gets Some Traction 1|2026-10-03.2 - Cosmic Raven Gets Some Traction 1]]
+- [[Updates/2026-10-03.1 - Dune Awakening Server Finally Backed Up! 1|2026-10-03.1 - Dune Awakening Server Finally Backed Up! 1]]
 - [[Updates/2026-10-02 - Friday! Party Time!|2026-10-02 - Friday! Party Time!]]
 - [[Updates/2026-10-01 - Nope 3|2026-10-01 - Nope 3]]
 - [[Updates/2026-09-30 - Nope 2|2026-09-30 - Nope 2]]
@@ -32,4 +37,4 @@ publish: true
 - [[Updates/2026-09-17 - I Built A Booru Librarian|2026-09-17 - I Built A Booru Librarian]]
 - [[Updates/2026-09-16 - I Made A Custom Driver|2026-09-16 - I Made A Custom Driver]]
 
-*Last Updated: 2026-10-03*
+*Last Updated: 2026-10-06*

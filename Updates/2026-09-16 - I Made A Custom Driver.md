@@ -8,35 +8,35 @@ I Made A Custom Driver?!
 
 Sorry, I just had to add some punctuation since I can't have it in the title. So cool! Seems ridiculous but this is a bucket list item for me. Something I've always wanted to do.
 
-I got a new Keychron c100 keyboard, its 10x10 keys in a perfect square. I knew I would be able to find something to do with it, but I couldn't. I really wanted to make it have a bunch of symbols that I hardly used, because maybe I would use them more, or maybe that's just cool?
+I got a new [Keychron c100 keyboard](https://www.keychron.com/products/keychron-c100-8k-giant-custom-macro-pad), its 10x10 keys in a perfect square. I knew I would be able to find something to do with it, but I couldn't. I really wanted to make it have a bunch of symbols that I hardly used, because maybe I would use them more, or maybe that's just cool?
 
 ![[Pasted image 20260916232955.png]]
 
-Turns out, Keychron's Launcher was not quite up to the job.
+Turns out, [Keychron's Launcher](https://launcher.keychron.com/#/keymap) was not quite up to the job.
 
-You can assign normal keys just fine, but there are only 16 macro slots. I tried making custom profiles and modifying the exported JSON to force functionality that just wasn't there.
+You can assign normal keys just fine, but there are only 16 macro slots. I tried making custom profiles and modifying the exported [[JSON]] to force functionality that just wasn't there.
 
 No dice.
 
-I kept digging and, after asking the oracle, ChatGPT, I learned that the firmware Keychron was using was open source and based on QMK.
+I kept digging and, after asking the oracle, [[ChatGPT]], I learned that the firmware Keychron was using was open source and based on [[QMK]].
 
-And QMK is basically an entire open-source keyboard firmware ecosystem.
+And [[QMK]] is basically an entire [[open-source]] keyboard [[firmware]] ecosystem.
 
 Oh.
 
 Well now we're cooking.
 
-The Keychron C100 8K has its own target in Keychron's QMK fork, which meant there was nothing stopping me from compiling my own firmware for it.
+The Keychron C100 8K has its own target in [Keychron's QMK fork](https://github.com/keychron), which meant there was nothing stopping me from compiling my own firmware for it.
 
 Except, you know, not knowing how to do that.
 
-So I installed the QMK toolchain in WSL, cloned Keychron's firmware repository, installed an ARM compiler, installed `dfu-util`, fought with USB drivers for a little while, passed the keyboard's DFU device through from Windows into WSL...
+So I installed the [[QMK]] toolchain in [[WSL]], cloned Keychron's firmware repository, installed an [[ARM]] compiler, installed `dfu-util`, fought with USB drivers for a little while, passed the keyboard's [[DFU]] device through from Windows into [[WSL]]...
 
-And eventually compiled my first firmware.
+And eventually compiled my first [[firmware]].
 
-I decided not to immediately flash all 100 keys because I am not _completely_ stupid.
+I decided not to immediately flash all 100 keys because I am not _completely_ [[stupid]].
 
-The first test firmware did one thing.
+The first test [[firmware]] did one thing.
 
 The top-left key typed:
 
@@ -70,7 +70,7 @@ Obviously.
 
 That proved the whole thing worked.
 
-The trick was QMK's Unicode support. Instead of trying to store 100 macros or relying on Keychron Launcher, every physical key could be defined directly in the firmware as a Unicode code point.
+The trick was [[QMK]]'s [[Unicode]] support. Instead of trying to store 100 [[macros]] or relying on Keychron's Launcher, every physical key could be defined directly in the [[firmware]] as a [[Unicode]] code point.
 
 So something like this:
 
@@ -84,11 +84,11 @@ becomes:
 ©
 ```
 
-No macro slot.
+No [[macro]] slot.
 
 No copy and paste.
 
-No Alt-code cheat sheet.
+No [[Alt-code]] cheat sheet.
 
 The keyboard itself knows what that key is supposed to do.
 
@@ -111,15 +111,15 @@ And somehow, against all odds, every single one worked:
 ♠♥♦♣♪♫☺☹♂♀
 ```
 
-It's such a stupid keyboard.
+It's such a [[stupid]] keyboard.
 
 I love it.
 
 And yes, I know.
 
-Technically I didn't make a **driver**.
+Technically I didn't make a **[[driver]]**.
 
-I made custom **firmware**.
+I made custom **[[firmware]]**.
 
 But "I Made Custom Keyboard Firmware" doesn't have quite the same energy, and I also had to manually install a USB driver along the way, so I'm invoking the rule of cool.
 
@@ -129,9 +129,9 @@ I just wanted a button that typed ©.
 
 Then one limitation turned into another question.
 
-That question turned into QMK.
+That question turned into [[QMK]].
 
-QMK turned into cross-compiling ARM firmware.
+[[QMK]] turned into cross-compiling [[ARM]] firmware.
 
 That turned into DFU bootloaders, USB passthrough, flashing microcontrollers, and writing my own keyboard layout at the firmware level.
 

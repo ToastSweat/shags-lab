@@ -10,8 +10,12 @@ publish: true
 
 ### Active
 
-- [[Projects/Safe Cracker Discord Activity|Safe Cracker Discord Activity]] - last activity 2026-10-03
-- [[Projects/Cosmic Raven Records|Cosmic Raven Records]] - last activity 2026-10-02
+- [[Projects/Safe Cracker Discord Activity|Safe Cracker Discord Activity]] - last activity 2026-10-06
+- [[Projects/Corsair Xenon Edge|Corsair Xenon Edge]] - last activity 2026-10-05
+  - **active** - [[Projects/Corsair Xenon Edge/iCue Binary Clock Widget|iCue Binary Clock Widget]] - last activity 2026-10-05
+  - **active** - [[Projects/Corsair Xenon Edge/iCue Image Ranker Widget|iCue Image Ranker Widget]] - last activity 2026-10-05
+- [[Projects/Star Wars Battlefront II Dedicated Server|Star Wars Battlefront II Dedicated Server]] - last activity 2026-10-04
+- [[Projects/Cosmic Raven Records|Cosmic Raven Records]] - last activity 2026-10-03
 - [[Projects/Instruments|Instruments]] - last activity 2026-10-02
   - **paused** - [[Projects/Instruments/Guitar Case Nameplates|Guitar Case Nameplates]] - last activity 2026-09-22
   - **complete** - [[Projects/Instruments/Guitar - Hello Kitty (White)|Guitar - Hello Kitty (White)]] - last activity 2026-10-02
@@ -49,14 +53,13 @@ publish: true
 - [[Queued Projects/Jedicide|Jedicide]] - last activity 2026-09-22
 - [[Projects/Keychron C100|Keychron C100]] - last activity 2026-09-22
   - **active** - [[Projects/Keychron C100/Keychron C100 Custom Firmware|Keychron C100 Custom Firmware]] - last activity 2026-09-16
-- [[Projects/Star Wars Battlefront II Dedicated Server|Star Wars Battlefront II Dedicated Server]] - last activity 2026-09-21
 - [[Projects/Instruments/Bass VI - Penny|BASS VI - Penny]] - last activity 2026-09-18
 - [[Projects/Booru Image Downloader|Booru Image Downloader]] - last activity 2026-09-17
 ### Paused
 
-- [[Projects/Dune Awakening Private Server|Dune Awakening Private Server]] - last activity 2026-09-26
+- [[Projects/Dune Awakening Private Server|Dune Awakening Private Server]] - last activity 2026-10-03
 ### Complete
 
 - [[Projects/Reaper Drum Humanizer|REAPER Drum Humanizer]] - last activity 2026-09-18
 
-*Last Updated: 2026-10-03*
+*Last Updated: 2026-10-06*

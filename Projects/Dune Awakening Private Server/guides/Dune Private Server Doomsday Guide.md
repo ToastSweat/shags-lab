@@ -1,9 +1,12 @@
 ---
+title: Dune Private Server Doomsday Guide
 type: guide
 date: 2026-09-26
-project: Dune Awakening Private Server
+updated: 2026-10-03
+project: Dune Private Server
 publish: true
 ---
+
 # Dune Private Server Doomsday Guide
 
 This is the “future me is tired, the server exploded, and I do not want to rediscover all of this again” guide.
@@ -35,6 +38,21 @@ Known working Dune server install path:
 ```text
 C:\PGN\DUNE
 ```
+
+Current production identity captured on October 3, 2026:
+
+```text
+Hyper-V VM: dune-awakening
+VM IP: 192.168.69.69
+Server display name: Mysa Jar Jar Binks
+Battlegroup ID: sh-238803c537a22e2-fdofyf
+Namespace: funcom-seabass-sh-238803c537a22e2-fdofyf
+Game-server build: 2064155-0-shipping
+Database image: igw-postgres:17.4-alpine-fc-13
+```
+
+The battlegroup ID and namespace identify the real world. Preserve them in a
+recovery and never substitute the old deleted `krmfhh` battlegroup.
 
 Known working SteamCMD path:
 
@@ -304,12 +322,19 @@ Useful menu options we used:
 4. stop
 5. update
 6. edit
-9. backup
-13. open-file-browser
-15. shell-vm
+7. edit-advanced
+8. backup
+9. import
+10. logs-export
+11. open-file-browser
+12. open-director
+13. shell-vm
+14. shell-pod
 ```
 
-Exact menu names can change, but those numbers are what this install used.
+These numbers were confirmed on build `2064155-0-shipping` on October 3, 2026.
+Funcom may change them again, so always read the displayed menu before entering
+a number.
 
 ## First Setup
 
@@ -344,7 +369,7 @@ ssh dune@192.168.69.69
 Open with:
 
 ```text
-battlegroup.bat → 13. open-file-browser → UserSettings
+battlegroup.bat → 14. open-file-browser → UserSettings
 ```
 
 There are two main files:
@@ -421,35 +446,219 @@ After editing `UserEngine.ini` or `UserGame.ini`:
 
 ```text
 3. restart
-1. status
+4. status
 ```
 
 Do not reboot the entire Windows server unless you need to.
 
-## Backups
+## Backups and Full Recovery
+
+The normal disaster-recovery backup is the small, targeted portable bundle.
+It is designed for a clean Funcom installation followed by restoration of the
+world and configuration. It is **not** necessary to keep cloning the entire
+virtual machine.
+
+The full Hyper-V export is only an optional emergency safety net.
+
+### Verified Recovery Snapshot: 20261003-015515
+
+Canonical portable package:
+
+```text
+C:\DuneBackups\PGN-2026-10-03\dune-backup-20261003-015515.tar.gz
+```
+
+Package size and SHA-256:
+
+```text
+7,836,960 bytes
+f46c95b0468570b408cc64ed75769ac6016b288dd27b3ba9bde7ebf0351a5c4d
+```
+
+Its companion `.sha256` file contains the same hash. The Windows copy was
+hashed after transfer and matched exactly.
+
+The snapshot was taken while the battlegroup was stopped and PostgreSQL was
+still running. This avoids live game-server memory overwriting database changes
+during shutdown.
+
+### What the Portable Package Preserves
+
+| Recovery need | Backup component |
+| --- | --- |
+| Players, characters, bases, inventories, vehicles, water, and world state | `database/*.backup` |
+| Battlegroup specification associated with the dump | `database/*.backup.yaml` |
+| Live settings actually used by the battlegroup | `config-live/UserEngine.ini` and `UserGame.ini` |
+| Setup-template settings | `config-setup/UserEngine.ini` and `UserGame.ini` |
+| Persistent battlegroup `/srv` contents | `battlegroup-persistent-files.tar.gz` |
+| Funcom custom resources and battlegroup definition | `kubernetes/funcom-resources.yaml` |
+| PVC and PV identities | `kubernetes/persistent-volume-claims.yaml` and `persistent-volumes.yaml` |
+| Workloads and ConfigMaps | `kubernetes/workloads-and-configmaps.yaml` |
+| VM, OS, k3s, IP, and routing information | `system/vm-and-network.txt` |
+| Container images and exact build references | `system/container-images.txt` |
+| Persistent-file inventory | `system/battlegroup-persistent-files.list` |
+| Backup explanation | `BACKUP-INFO.txt` |
+| Integrity of every packaged file | package checksum manifests |
+
+The PostgreSQL dump is the authoritative gameplay backup. Dune stores the
+important world and character state in PostgreSQL rather than ordinary world
+save files. That includes structures and the generic component records used by
+placed objects.
+
+The database dump was tested with `pg_restore --list` and returned:
+
+```text
+VALID: pg_restore parsed the backup successfully
+```
+
+Its original files were:
+
+```text
+sh-238803c537a22e2-fdofyf-20261003-015515.backup
+sh-238803c537a22e2-fdofyf-20261003-015515.backup.yaml
+```
+
+Original individual hashes:
+
+```text
+f74237a745dda278c50330b5944c52c1c4eda1ad2f0674c1f36cb996cc305ac8  .backup
+010129e75e3824ecfc0ce228235395f292641a0a3febf1c7398928d2e2ebf561  .backup.yaml
+```
+
+The persistent-files archive was also parsed successfully and contained 102
+entries at the time of backup.
+
+### Windows Host Configuration Package
+
+The Windows host configuration is stored separately:
+
+```text
+C:\DuneBackups\PGN-2026-10-03\PGN-HostConfig-2026-10-03.zip
+C:\DuneBackups\PGN-2026-10-03\PGN-HostConfig-2026-10-03.zip.sha256
+```
+
+It contains the Hyper-V VM, processor, memory, disk, virtual switch, network
+adapter, Windows NAT, NAT mappings, IP addresses, firewall export, and Windows
+system information. The ZIP is only about 40 KB because it is configuration,
+not a VM image.
+
+### Optional Full Hyper-V Export
+
+One cold export was made while `dune-awakening` was cleanly powered off:
+
+```text
+C:\DuneBackups\PGN-2026-10-03\HyperV-Export\dune-awakening
+```
+
+The exported VHDX is approximately 96.82 GB. `Test-VHD` returned `True`.
+This preserves the entire appliance, cached images, operating system, and
+historically allocated disk blocks. It is overkill for normal recovery and is
+not the canonical backup.
+
+Keep it only as temporary insurance until the portable clean-install recovery
+has been tested. Future routine backups should not copy the full VM.
+
+### Critical Off-Host Rule
+
+A backup stored only on `C:` of the same OVH machine is not protection against
+host loss or disk failure. At minimum, copy these three small artifacts to a
+different physical system or cloud location:
+
+```text
+dune-backup-20261003-015515.tar.gz
+dune-backup-20261003-015515.tar.gz.sha256
+PGN-HostConfig-2026-10-03.zip
+PGN-HostConfig-2026-10-03.zip.sha256
+```
+
+The 96.82 GB VM export is optional off-host material. The small portable files
+are mandatory.
+
+### Clean-Install Recovery Order
+
+This is the intended recovery path. It restores the important state onto a
+fresh Funcom installation instead of treating the giant VM export as the only
+way home.
+
+1. Verify the portable package SHA-256 before extracting it.
+2. Extract the package and run the included per-file checksum verification.
+3. Reinstall the Dune self-hosted server tool with SteamCMD app `4754530`.
+4. Recreate the Hyper-V internal switch, NAT, firewall rules, and VM networking
+   from `PGN-HostConfig-2026-10-03.zip` and the networking sections above.
+5. Run Funcom `setup` once on the fresh VM with a valid self-host token.
+6. Recreate or restore the battlegroup while preserving the saved identity and
+   specification for `sh-238803c537a22e2-fdofyf`.
+7. Keep the battlegroup game servers stopped during data restoration.
+8. Use the official menu option `11. import` to import the saved `.backup`.
+   Prefer the supported importer over a hand-written `pg_restore` command so
+   Funcom can apply any required schema handling.
+9. Restore the two files from `config-live` into `/srv/UserSettings`. These are
+   the authoritative tuned settings. Keep `config-setup` as a reference for
+   setup defaults; do not let it overwrite the known live files accidentally.
+10. Restore additional `/srv` files only if needed. Logs and crash reports are
+    historical evidence, not required world state. Do not blindly replace a
+    newly created PVC with an old archive.
+11. Confirm the battlegroup specification points to the intended server build,
+    maps, resources, and database.
+12. Start the battlegroup.
+13. Complete the recovery validation checklist below before allowing normal
+    play.
+
+The October 3 backup was created on game build `2064155-0-shipping` and
+PostgreSQL `17.4-alpine-fc-13`. If restoring into a newer Funcom release, keep
+an untouched copy of the original dump and allow the official tools to perform
+their migrations. Never modify the only copy of the dump.
+
+### Recovery Validation Checklist
+
+After the restored battlegroup starts, verify all of the following:
+
+- Database, gateway, director, Overmap, and Survival servers become ready.
+- The public browser shows `Mysa Jar Jar Binks`.
+- Existing players can use their original characters.
+- Player inventories, currencies, and equipment are present.
+- Bases, land claims, placed containers, vehicles, and their contents exist.
+- World-state changes and stored resource values are present.
+- Live `UserEngine.ini` and `UserGame.ini` settings are active.
+- Solo/low-player multipliers and building limits match the saved configuration.
+- Travel between maps works.
+- No restored pod enters `CrashLoopBackOff`.
+- A new official database backup succeeds after validation.
+
+The backup is structurally verified, but the entire clean-install restoration
+has not yet been rehearsed on a separate VM. Do not delete the optional cold VM
+export until that rehearsal passes.
+
+### Routine Targeted Backup Procedure
 
 Before scary operations:
 
 ```text
-9. backup
+4. stop
+5. backup
 ```
+
+Then preserve the new `.backup`, its `.backup.yaml`, both live INI files, the
+battlegroup specification, and current checksums off-host. Use a timestamped
+folder for every snapshot and never overwrite the last known-good backup.
 
 Do this before:
 
 - deleting battlegroups
 - restoring backups
 - major updates
-- risky config changes
-- anything involving database/state
+- risky configuration changes
+- direct database work
+- anything involving persistent world state
 
-After the server is healthy again, make a fresh backup.
+After the server is healthy again, make another fresh targeted backup.
 
 ## Kubernetes Commands
 
 Open shell:
 
 ```text
-battlegroup.bat → 15. shell-vm
+battlegroup.bat → 16. shell-vm
 ```
 
 List namespaces:
@@ -528,7 +737,7 @@ Then:
 
 ```text
 3. restart
-1. status
+4. status
 ```
 
 If the pod stops getting OOMKilled and becomes ready, that was the issue.
@@ -786,26 +995,28 @@ blank partitionMap/serverGuid annotations
 
 ## Emergency Summary
 
-If rebuilding from scratch:
+If rebuilding from scratch with the portable recovery package:
 
-1. Install SteamCMD.
-2. Install app `4754530` to `C:\PGN\DUNE`.
-3. Enable Hyper-V.
-4. Use internal switch, not OVH bridged networking.
-5. Recreate `Bootyhole` internal switch and NAT.
-6. Give VM `192.168.69.69`.
-7. Forward UDP `7777-7810`.
-8. Forward UDP `7888-7921`.
-9. Forward TCP `31982`.
-10. Open same ports in Windows Firewall.
-11. Run `battlegroup.bat`.
-12. Complete `setup` once with token.
-13. Configure server name/password/settings.
-14. Start battlegroup.
-15. Check status.
-16. Test browser visibility.
-17. Test actual connection.
-18. Make a backup.
+1. Verify and preserve the original portable backup and checksums.
+2. Install SteamCMD.
+3. Install app `4754530` to `C:\PGN\DUNE`.
+4. Enable Hyper-V.
+5. Use the internal switch, not OVH bridged networking.
+6. Recreate `Bootyhole`, `Bootyhole-NAT`, and VM IP `192.168.69.69`.
+7. Forward UDP `7777-7810` and `7888-7921`.
+8. Forward TCP `31982`.
+9. Open the same ports in Windows Firewall.
+10. Run `battlegroup.bat`.
+11. Complete `setup` once with a valid token.
+12. Recreate the real battlegroup identity from the saved specification.
+13. Leave its game servers stopped.
+14. Import the saved PostgreSQL `.backup` with menu option `11`.
+15. Restore the live `UserEngine.ini` and `UserGame.ini`.
+16. Confirm the saved maps, resource limits, and build configuration.
+17. Start the battlegroup.
+18. Validate characters, bases, inventories, vehicles, world state, and tuning.
+19. Test browser visibility, connection, and travel.
+20. Make a fresh post-recovery backup.
 
 ## Final Note
 
