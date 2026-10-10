@@ -8,6 +8,7 @@ publish: true
 
 ## Latest Updates
 
+- [[Updates/2026-10-10 - The Tiny TV Cart Builder Actually Works|2026-10-10 - The Tiny TV Cart Builder Actually Works]]
 - [[Updates/2026-10-09 - I Built A Tiny TV Station Factory|2026-10-09 - I Built A Tiny TV Station Factory]]
 - [[Updates/2026-10-08 - Slow Day|2026-10-08 - Slow Day]]
 - [[Updates/2026-10-07 - Steam Frame. So Lame. 1|2026-10-07 - Steam Frame. So Lame. 1]]
@@ -41,4 +42,4 @@ publish: true
 - [[Updates/2026-09-17 - I Built A Booru Librarian|2026-09-17 - I Built A Booru Librarian]]
 - [[Updates/2026-09-16 - I Made A Custom Driver|2026-09-16 - I Made A Custom Driver]]
 
-*Last Updated: 2026-10-09*
+*Last Updated: 2026-10-10*

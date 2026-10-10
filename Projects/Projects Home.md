@@ -10,7 +10,7 @@ publish: true
 
 ### Active
 
-- [[Projects/My Mini Retro Television|My Mini Retro Television]] - last activity 2026-10-09
+- [[Projects/My Mini Retro Television|My Mini Retro Television]] - last activity 2026-10-10
   - **active** - [[Projects/My Mini Retro Television/My Mini Retro Television Channels|My Mini Retro Television Channels]] - last activity 2026-10-09
 - [[Projects/Hermes|Hermes]] - last activity 2026-10-08
 - [[Projects/Hermes/VR Lightsaber Trainer/VR Lightsaber Trainer|VR Lightsaber Trainer]] - last activity 2026-10-08
@@ -64,4 +64,4 @@ publish: true
 
 - [[Projects/Reaper Drum Humanizer|REAPER Drum Humanizer]] - last activity 2026-09-18
 
-*Last Updated: 2026-10-09*
+*Last Updated: 2026-10-10*
