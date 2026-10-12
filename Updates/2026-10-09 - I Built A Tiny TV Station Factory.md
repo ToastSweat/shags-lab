@@ -1,4 +1,5 @@
 ---
+title: 2026-10-09 - I Built A Tiny TV Station Factory!
 type: update
 date: 2026-10-09
 project: My Mini Retro Television Channels

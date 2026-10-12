@@ -1,8 +1,10 @@
 ---
+title: The Tiny TV Cart Builder Actually Works!
 type: update
 date: 2026-10-10
-project: My Mini Retro Television
+project: My Mini Retro Television Channels
 publish: true
+git: https://github.com/ToastSweat/my-mini-retro-television-cart-builder
 ---
 Yesterday I wrote that I had built a tiny TV station factory.
 

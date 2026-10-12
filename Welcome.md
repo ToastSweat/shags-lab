@@ -3,7 +3,7 @@ title: Welcome
 type: index
 publish: true
 ---
-ccccccccccccccccc# Welcome to my Lab.
+Welcome to my Lab.
 
 **This is part blog, part wiki. All me.**
 

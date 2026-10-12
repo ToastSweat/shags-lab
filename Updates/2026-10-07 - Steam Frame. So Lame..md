@@ -1,5 +1,5 @@
 ---
-title: Steam Frame? So Lame.
+title: 2026-10-07 - Steam Frame? So Lame...
 type: update
 date: 2026-10-07
 project: Hermes

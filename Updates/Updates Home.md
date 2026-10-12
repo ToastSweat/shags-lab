@@ -8,11 +8,12 @@ publish: true
 
 ## Latest Updates
 
+- [[Updates/2026-10-11 - I Built Nickelodeon On A Tiny TV|2026-10-11 - I Built Nickelodeon On A Tiny TV]]
 - [[Updates/2026-10-10 - The Tiny TV Cart Builder Actually Works|2026-10-10 - The Tiny TV Cart Builder Actually Works]]
 - [[Updates/2026-10-09 - I Built A Tiny TV Station Factory|2026-10-09 - I Built A Tiny TV Station Factory]]
 - [[Updates/2026-10-08 - Slow Day|2026-10-08 - Slow Day]]
-- [[Updates/2026-10-07 - Steam Frame. So Lame. 1|2026-10-07 - Steam Frame. So Lame. 1]]
-- [[Updates/2026-10-06 - I Made HK-47 Assign The Teams 1|2026-10-06 - I Made HK-47 Assign The Teams 1]]
+- [[Updates/2026-10-07 - Steam Frame. So Lame.|2026-10-07 - Steam Frame. So Lame.]]
+- [[Updates/2026-10-06 - I Made HK-47 Assign The Teams|2026-10-06 - I Made HK-47 Assign The Teams]]
 - [[Updates/2026-10-05.3 - I Put a Binary Clock on My Monitor|2026-10-05.3 - I Put a Binary Clock on My Monitor]]
 - [[Updates/2026-10-05.2 - I Taught My Monitor to Rank My Images|2026-10-05.2 - I Taught My Monitor to Rank My Images]]
 - [[Updates/2026-10-05.1 - Safe Cracker Is Live|2026-10-05.1 - Safe Cracker Is Live]]
@@ -42,4 +43,4 @@ publish: true
 - [[Updates/2026-09-17 - I Built A Booru Librarian|2026-09-17 - I Built A Booru Librarian]]
 - [[Updates/2026-09-16 - I Made A Custom Driver|2026-09-16 - I Made A Custom Driver]]
 
-*Last Updated: 2026-10-10*
+*Last Updated: 2026-10-11*
