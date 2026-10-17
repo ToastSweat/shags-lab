@@ -8,6 +8,11 @@ publish: true
 
 ## Latest Updates
 
+- [[Updates/2026-10-16 - Nerdy Gurdy and Guitar Cases|2026-10-16 - Nerdy Gurdy and Guitar Cases]]
+- [[Updates/2026-10-15 - ChatBot|2026-10-15 - ChatBot]]
+- [[Updates/2026-10-14 - Zzzzzzz|2026-10-14 - Zzzzzzz]]
+- [[Updates/2026-10-13 - Oh Hell, Did I Miss One|2026-10-13 - Oh Hell, Did I Miss One]]
+- [[Updates/2026-10-12 - One of Those All-Over-The-Place Type Days|2026-10-12 - One of Those All-Over-The-Place Type Days]]
 - [[Updates/2026-10-11 - I Built Nickelodeon On A Tiny TV|2026-10-11 - I Built Nickelodeon On A Tiny TV]]
 - [[Updates/2026-10-10 - The Tiny TV Cart Builder Actually Works|2026-10-10 - The Tiny TV Cart Builder Actually Works]]
 - [[Updates/2026-10-09 - I Built A Tiny TV Station Factory|2026-10-09 - I Built A Tiny TV Station Factory]]
@@ -43,4 +48,4 @@ publish: true
 - [[Updates/2026-09-17 - I Built A Booru Librarian|2026-09-17 - I Built A Booru Librarian]]
 - [[Updates/2026-09-16 - I Made A Custom Driver|2026-09-16 - I Made A Custom Driver]]
 
-*Last Updated: 2026-10-11*
+*Last Updated: 2026-10-16*

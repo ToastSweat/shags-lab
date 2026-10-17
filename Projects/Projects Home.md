@@ -10,17 +10,9 @@ publish: true
 
 ### Active
 
-- [[Projects/My Mini Retro Television|My Mini Retro Television]] - last activity 2026-10-11
-  - **active** - [[Projects/My Mini Retro Television/My Mini Retro Television Channels|My Mini Retro Television Channels]] - last activity 2026-10-11
-- [[Projects/Hermes|Hermes]] - last activity 2026-10-08
-- [[Projects/Hermes/VR Lightsaber Trainer/VR Lightsaber Trainer|VR Lightsaber Trainer]] - last activity 2026-10-08
-- [[Projects/Corsair Xenon Edge|Corsair Xenon Edge]] - last activity 2026-10-05
-  - **active** - [[Projects/Corsair Xenon Edge/iCue Binary Clock Widget|iCue Binary Clock Widget]] - last activity 2026-10-05
-  - **active** - [[Projects/Corsair Xenon Edge/iCue Image Ranker Widget|iCue Image Ranker Widget]] - last activity 2026-10-05
-- [[Projects/Safe Cracker Discord Activity|Safe Cracker Discord Activity]] - last activity 2026-10-05
-- [[Projects/Cosmic Raven Records|Cosmic Raven Records]] - last activity 2026-10-03
-- [[Projects/Instruments|Instruments]] - last activity 2026-10-02
+- [[Projects/Instruments|Instruments]] - last activity 2026-10-16
   - **paused** - [[Projects/Instruments/Guitar Case Nameplates|Guitar Case Nameplates]] - last activity 2026-09-22
+  - **complete** - [[Projects/Instruments/Hurdy Gurdy - Nerdy Gurdy|Hurdy Gurdy - Nerdy Gurdy]] - last activity 2026-10-16
   - **complete** - [[Projects/Instruments/Guitar - Hello Kitty (White)|Guitar - Hello Kitty (White)]] - last activity 2026-10-02
   - **complete** - [[Projects/Instruments/Bass - 5 Finger Nut Punch|Bass - 5 Finger Nut Punch]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Bass - Ibanez SRAS7|Bass - Ibanez SRAS7]] - last activity 2026-09-26
@@ -38,7 +30,6 @@ publish: true
   - **complete** - [[Projects/Instruments/Guitar - Princess Feedback|Guitar - Princess Feedback]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Guitar - Sammy|Guitar - Sammy]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Guitar - The Eye of Sadow|Guitar - The Eye of Sadow]] - last activity 2026-09-26
-  - **complete** - [[Projects/Instruments/Hurdy Gurdy - Nerdy Gurdy|Hurdy Gurdy - Nerdy Gurdy]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Synth - Ok Housecat - Circuit Bent MEOWSIC Third Eye Edition (Frozen Zebra)|Synth - Ok Housecat - Circuit Bent MEOWSIC Third Eye Edition (Frozen Zebra)]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Synth - Ok Housecat - Custom Ok Gameboy Switch (Galactic Algae)|Synth - Ok Housecat - Custom Ok Gameboy Switch (Galactic Algae)]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Synth - Suzuki Omnichord OM-108|Synth - Suzuki Omnichord OM-108]] - last activity 2026-09-26
@@ -46,6 +37,16 @@ publish: true
   - **complete** - [[Projects/Instruments/Synth - Teenage Engineering EP–40 riddim|Synth - Teenage Engineering EP–40 Riddim]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Synth - Teenage Engineering PO-14 sub|Synth - Teenage Engineering PO-14 Sub]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Synth - Teenage Engineering PO-33 K.O!|Synth - Teenage Engineering PO-33 K.O!]] - last activity 2026-09-26
+- [[Projects/Hermes/ChatBot|ChatBot]] - last activity 2026-10-15
+- [[Projects/Safe Cracker Discord Activity|Safe Cracker Discord Activity]] - last activity 2026-10-14
+- [[Projects/Cosmic Raven Records|Cosmic Raven Records]] - last activity 2026-10-12
+- [[Projects/My Mini Retro Television|My Mini Retro Television]] - last activity 2026-10-11
+  - **active** - [[Projects/My Mini Retro Television/My Mini Retro Television Channels|My Mini Retro Television Channels]] - last activity 2026-10-11
+- [[Projects/Hermes|Hermes]] - last activity 2026-10-08
+- [[Projects/Hermes/VR Lightsaber Trainer/VR Lightsaber Trainer|VR Lightsaber Trainer]] - last activity 2026-10-08
+- [[Projects/Corsair Xenon Edge|Corsair Xenon Edge]] - last activity 2026-10-05
+  - **active** - [[Projects/Corsair Xenon Edge/iCue Binary Clock Widget|iCue Binary Clock Widget]] - last activity 2026-10-05
+  - **active** - [[Projects/Corsair Xenon Edge/iCue Image Ranker Widget|iCue Image Ranker Widget]] - last activity 2026-10-05
 - [[Queued Projects/Vinyl|Vinyl]] - last activity 2026-09-29
 - [[Progeny Gaming Network|Progeny Gaming Network]] - last activity 2026-09-28
   - **complete** - [[Progeny Gaming Network/PGN Discord Archive|PGN Discord Archive]] - last activity 2026-09-28
@@ -64,4 +65,4 @@ publish: true
 
 - [[Projects/Reaper Drum Humanizer|REAPER Drum Humanizer]] - last activity 2026-09-18
 
-*Last Updated: 2026-10-11*
+*Last Updated: 2026-10-16*

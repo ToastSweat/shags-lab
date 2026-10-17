@@ -1,5 +1,5 @@
 ---
-title: The Tiny TV Cart Builder Actually Works!
+title: 2026-10-10 - The Tiny TV Cart Builder Actually Works!
 type: update
 date: 2026-10-10
 project: My Mini Retro Television Channels
