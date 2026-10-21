@@ -8,6 +8,10 @@ publish: true
 
 ## Latest Updates
 
+- [[Updates/2026-10-20 - Companion AI Finally Escaped Localhost!|2026-10-20 - Companion AI Finally Escaped Localhost!]]
+- [[Updates/2026-10-19 - Well, Shit.|2026-10-19 - Well, Shit.]]
+- [[Updates/2026-10-18 - Man, Still Going...|2026-10-18 - Man, Still Going...]]
+- [[Updates/2026-10-17 - I Wanted a Chatbot. Hermes Built Me a Platform|2026-10-17 - I Wanted a Chatbot. Hermes Built Me a Platform]]
 - [[Updates/2026-10-16 - Nerdy Gurdy and Guitar Cases|2026-10-16 - Nerdy Gurdy and Guitar Cases]]
 - [[Updates/2026-10-15 - ChatBot|2026-10-15 - ChatBot]]
 - [[Updates/2026-10-14 - Zzzzzzz|2026-10-14 - Zzzzzzz]]
@@ -23,8 +27,8 @@ publish: true
 - [[Updates/2026-10-05.2 - I Taught My Monitor to Rank My Images|2026-10-05.2 - I Taught My Monitor to Rank My Images]]
 - [[Updates/2026-10-05.1 - Safe Cracker Is Live|2026-10-05.1 - Safe Cracker Is Live]]
 - [[Updates/2026-10-04.1 - Mixed Bag Again|2026-10-04.1 - Mixed Bag Again]]
-- [[Updates/2026-10-03.2 - Cosmic Raven Gets Some Traction 1|2026-10-03.2 - Cosmic Raven Gets Some Traction 1]]
-- [[Updates/2026-10-03.1 - Dune Awakening Server Finally Backed Up! 1|2026-10-03.1 - Dune Awakening Server Finally Backed Up! 1]]
+- [[Updates/2026-10-03.2 - Cosmic Raven Gets Some Traction|2026-10-03.2 - Cosmic Raven Gets Some Traction]]
+- [[Updates/2026-10-03.1 - Dune Awakening Server Finally Backed Up!|2026-10-03.1 - Dune Awakening Server Finally Backed Up!]]
 - [[Updates/2026-10-02 - Friday! Party Time!|2026-10-02 - Friday! Party Time!]]
 - [[Updates/2026-10-01 - Nope 3|2026-10-01 - Nope 3]]
 - [[Updates/2026-09-30 - Nope 2|2026-09-30 - Nope 2]]
@@ -48,4 +52,4 @@ publish: true
 - [[Updates/2026-09-17 - I Built A Booru Librarian|2026-09-17 - I Built A Booru Librarian]]
 - [[Updates/2026-09-16 - I Made A Custom Driver|2026-09-16 - I Made A Custom Driver]]
 
-*Last Updated: 2026-10-16*
+*Last Updated: 2026-10-20*
