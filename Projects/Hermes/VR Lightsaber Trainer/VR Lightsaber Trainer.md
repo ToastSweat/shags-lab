@@ -2,7 +2,7 @@
 type: project
 date: 2026-10-08
 project: VR Lightsaber Trainer
-status: active
+status: paused
 publish: true
 git: https://github.com/ToastSweat/cosmic-raven-records
 ---

@@ -83,6 +83,9 @@
     <loc>https://helvete.pizza/lab/projects/cosmic-raven-records/pinned-comments/009a---pinned-comment</loc>
     <lastmod>2026-10-02T19:27:11.503Z</lastmod>
   </url><url>
+    <loc>https://helvete.pizza/lab/projects/cosmic-raven-records/pinned-comments/010a---pinned-comment</loc>
+    <lastmod>2026-10-23T15:03:07.414Z</lastmod>
+  </url><url>
     <loc>https://helvete.pizza/lab/projects/cosmic-raven-records/transmission-builder/guides/cosmic-raven-records---doomsday-rebuild-guide</loc>
     <lastmod>2026-09-27T05:51:08.162Z</lastmod>
   </url><url>
@@ -96,10 +99,13 @@
     <lastmod>2026-09-27T05:51:08.135Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/projects/cosmic-raven-records/transmission-builder/</loc>
-    <lastmod>2026-10-21T15:08:11.173Z</lastmod>
+    <lastmod>2026-10-23T15:03:22.433Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/projects/cosmic-raven-records/transmissions/001a---nekroxx---empty</loc>
     <lastmod>2026-09-27T05:51:08.165Z</lastmod>
+  </url><url>
+    <loc>https://helvete.pizza/lab/projects/cosmic-raven-records/transmissions/001b-a---nekroxx---empty</loc>
+    <lastmod>2026-10-23T05:57:51.085Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/projects/cosmic-raven-records/transmissions/002a---shagwrath---multi-theft-auto-theme-2</loc>
     <lastmod>2026-09-27T05:51:08.171Z</lastmod>
@@ -255,13 +261,13 @@
     <lastmod>2026-09-27T05:51:08.132Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/projects/keychron-c100/keychron-c100-custom-firmware/</loc>
-    <lastmod>2026-10-21T15:08:11.297Z</lastmod>
+    <lastmod>2026-10-23T15:03:22.529Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/projects/keychron-c100/</loc>
     <lastmod>2026-09-22T05:00:00.000Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/projects/my-mini-retro-television/my-mini-retro-television-channels/</loc>
-    <lastmod>2026-10-21T15:08:11.303Z</lastmod>
+    <lastmod>2026-10-23T15:03:22.534Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/projects/my-mini-retro-television/</loc>
     <lastmod>2026-09-22T05:00:00.000Z</lastmod>
@@ -291,7 +297,7 @@
     <lastmod>2026-09-22T05:00:00.000Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/projects/</loc>
-    <lastmod>2026-10-21T15:08:11.151Z</lastmod>
+    <lastmod>2026-10-23T15:03:22.412Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/queued-projects/garths-game-dmg/docs/garth's-game-dmg</loc>
     <lastmod>2026-09-27T05:51:08.219Z</lastmod>
@@ -443,84 +449,90 @@
     <loc>https://helvete.pizza/lab/updates/2026-10-20---companion-ai-finally-escaped-localhost!</loc>
     <lastmod>2026-10-20T05:00:00.000Z</lastmod>
   </url><url>
+    <loc>https://helvete.pizza/lab/updates/2026-10-21---i-made-photoshop-build-my-discord-activity</loc>
+    <lastmod>2026-10-21T05:00:00.000Z</lastmod>
+  </url><url>
+    <loc>https://helvete.pizza/lab/updates/2026-10-22---finally-something-i've-never-seen-before!</loc>
+    <lastmod>2026-10-22T05:00:00.000Z</lastmod>
+  </url><url>
     <loc>https://helvete.pizza/lab/updates/</loc>
-    <lastmod>2026-10-21T15:08:11.331Z</lastmod>
+    <lastmod>2026-10-23T15:03:22.558Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/wiki/multi-theft-auto</loc>
     <lastmod>2026-09-27T05:51:08.242Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/wiki/</loc>
-    <lastmod>2026-10-21T15:08:11.337Z</lastmod>
+    <lastmod>2026-10-23T15:03:22.564Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/</loc>
     <lastmod>2026-10-10T19:06:02.220Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/projects/booru-image-downloader/guides/</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/projects/cosmic-raven-records/pinned-comments/</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/projects/cosmic-raven-records/transmission-builder/guides/</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/projects/cosmic-raven-records/transmissions/</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/projects/dune-awakening-private-server/guides/</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/projects/instruments/bass-vi---penny/first-time-setup/</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/projects/keychron-c100/guides/</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/projects/obsidian-vault-to-website/guides/</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/projects/star-wars-battlefront-ii-dedicated-server/guides/</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/queued-projects/garths-game-dmg/docs/</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/queued-projects/</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/tags/clanhopperwrath</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/tags/bots</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/tags/valheim</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/tags</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/tags/star</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/tags/sta</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/tags/cosmicravenrecords</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/tags/ai</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/tags/aimusic</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/tags/aimusicvideo</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/tags/1</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url><url>
     <loc>https://helvete.pizza/lab/tags/</loc>
-    <lastmod>2026-10-21T15:08:52.810Z</lastmod>
+    <lastmod>2026-10-23T15:03:59.809Z</lastmod>
   </url></urlset>

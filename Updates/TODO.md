@@ -31,5 +31,17 @@
 	* configure
 	* customizer
 
+* BOT AI NOTES
+	* needs a better name
+	* needs a logo
+	* how can people make an account?
+	* Sakura.fm importer fails
+	* need to redesign ui from ground up. too many bullet points to list here
+	* ai suggestions for text fields
+	* ui layout and redesign
+	* random charachters? character of the day? new scenarios of the day?
+	* chance image service to comfyui
+
+
 ## Projects to Add
 * old unity projects worth sharing

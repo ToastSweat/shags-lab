@@ -10,6 +10,8 @@ publish: true
 
 ### Active
 
+- [[Projects/Cosmic Raven Records|Cosmic Raven Records]] - last activity 2026-10-22
+- [[Projects/Safe Cracker Discord Activity|Safe Cracker Discord Activity]] - last activity 2026-10-21
 - [[Projects/Hermes/ChatBot|ChatBot]] - last activity 2026-10-20
 - [[Projects/Instruments|Instruments]] - last activity 2026-10-16
   - **paused** - [[Projects/Instruments/Guitar Case Nameplates|Guitar Case Nameplates]] - last activity 2026-09-22
@@ -38,12 +40,9 @@ publish: true
   - **complete** - [[Projects/Instruments/Synth - Teenage Engineering EP–40 riddim|Synth - Teenage Engineering EP–40 Riddim]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Synth - Teenage Engineering PO-14 sub|Synth - Teenage Engineering PO-14 Sub]] - last activity 2026-09-26
   - **complete** - [[Projects/Instruments/Synth - Teenage Engineering PO-33 K.O!|Synth - Teenage Engineering PO-33 K.O!]] - last activity 2026-09-26
-- [[Projects/Safe Cracker Discord Activity|Safe Cracker Discord Activity]] - last activity 2026-10-14
-- [[Projects/Cosmic Raven Records|Cosmic Raven Records]] - last activity 2026-10-12
 - [[Projects/My Mini Retro Television|My Mini Retro Television]] - last activity 2026-10-11
   - **active** - [[Projects/My Mini Retro Television/My Mini Retro Television Channels|My Mini Retro Television Channels]] - last activity 2026-10-11
 - [[Projects/Hermes|Hermes]] - last activity 2026-10-08
-- [[Projects/Hermes/VR Lightsaber Trainer/VR Lightsaber Trainer|VR Lightsaber Trainer]] - last activity 2026-10-08
 - [[Projects/Corsair Xenon Edge|Corsair Xenon Edge]] - last activity 2026-10-05
   - **active** - [[Projects/Corsair Xenon Edge/iCue Binary Clock Widget|iCue Binary Clock Widget]] - last activity 2026-10-05
   - **active** - [[Projects/Corsair Xenon Edge/iCue Image Ranker Widget|iCue Image Ranker Widget]] - last activity 2026-10-05
@@ -59,10 +58,11 @@ publish: true
 - [[Projects/Booru Image Downloader|Booru Image Downloader]] - last activity 2026-09-17
 ### Paused
 
+- [[Projects/Hermes/VR Lightsaber Trainer/VR Lightsaber Trainer|VR Lightsaber Trainer]] - last activity 2026-10-08
 - [[Projects/Star Wars Battlefront II Dedicated Server|Star Wars Battlefront II Dedicated Server]] - last activity 2026-10-06
 - [[Projects/Dune Awakening Private Server|Dune Awakening Private Server]] - last activity 2026-10-03
 ### Complete
 
 - [[Projects/Reaper Drum Humanizer|REAPER Drum Humanizer]] - last activity 2026-09-18
 
-*Last Updated: 2026-10-20*
+*Last Updated: 2026-10-22*

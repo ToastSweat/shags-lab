@@ -8,6 +8,8 @@ publish: true
 
 ## Latest Updates
 
+- [[Updates/2026-10-22 - Finally Something I've Never Seen Before!|2026-10-22 - Finally Something I've Never Seen Before!]]
+- [[Updates/2026-10-21 - I Made Photoshop Build My Discord Activity|2026-10-21 - I Made Photoshop Build My Discord Activity]]
 - [[Updates/2026-10-20 - Companion AI Finally Escaped Localhost!|2026-10-20 - Companion AI Finally Escaped Localhost!]]
 - [[Updates/2026-10-19 - Well, Shit.|2026-10-19 - Well, Shit.]]
 - [[Updates/2026-10-18 - Man, Still Going...|2026-10-18 - Man, Still Going...]]
@@ -52,4 +54,4 @@ publish: true
 - [[Updates/2026-09-17 - I Built A Booru Librarian|2026-09-17 - I Built A Booru Librarian]]
 - [[Updates/2026-09-16 - I Made A Custom Driver|2026-09-16 - I Made A Custom Driver]]
 
-*Last Updated: 2026-10-20*
+*Last Updated: 2026-10-22*
