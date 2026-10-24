@@ -7,7 +7,7 @@ transmission: 007A
 artist: Unknown
 track: Untitled 1
 youtube: https://www.youtube.com/watch?v=enwG2O3hp9M
-transmission_note: "[[007A - Unknown - Untitled 1]]"
+transmission_note: "[[Projects/Cosmic Raven Records/Transmissions/007A - Unknown - Untitled 1|007A - Unknown - Untitled 1]]"
 ---
 
 # 007A - Pinned Comment

@@ -17,7 +17,7 @@ Upgraded electronics, classically brutal style and fast, efficient playability m
   
 This 34"-scale bass pairs a poplar body with a graphite-reinforced neck-through-body design that generates formidable sustain, while the speed maple neck contour, 12"-16" compound radius bound laurel fingerboard and 24 jumbo frets make for lightning-fast playability.  
   
-The heart of this four-string beast is a Jackson J-style bridge pickup and Jackson P-style neck pickup, mated to an active 3-band EQ circuit for adding punch, cut, rumble or grunt to your sound. A stylish chrome Jackson Bass Bacher IV string-through hardtail bridge enhances note attack and sustain without altering your carefully crafted tone while the sealed die-cast tuning machines keep the strings in tune, no matter how hard you dig into them.
+The heart of this four-string beast is a Jackson J-style bridge pickup and Jackson P-style neck pickup, mated to an active 3-band EQ circuit for adding punch, cut, rumble or grunt to your sound. A stylish chrome Jackson Bass Bacher IV string-through hardtail [[Wiki/Bridge|bridge]] enhances note attack and sustain without altering your carefully crafted tone while the sealed die-cast tuning machines keep the strings in tune, no matter how hard you dig into them.
 
 ## Specs
 **-Series:** X  
@@ -43,3 +43,7 @@ The heart of this four-string beast is a Jackson J-style bridge pickup and Jacks
 **-Hardware Finish:** Black  
 **-Strings:** Nickel Plated Steel (.045-.105 Gauges)  
 **-Case/Gig Bag:** Optional Jackson(R) JS Bass Gig Bag
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]]

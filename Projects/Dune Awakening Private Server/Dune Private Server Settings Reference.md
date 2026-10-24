@@ -14,7 +14,7 @@ This is the configuration record for our self-hosted **Dune: Awakening** battleg
 - additional settings we found in shipped defaults and tested ourselves;
 - the values currently used on our server;
 - the value types and ranges we can defend;
-- settings that looked promising but turned out to be cooked-asset, database-state, or runtime problems instead.
+- settings that looked promising but turned out to be cooked-asset, [[Wiki/database|database]]-state, or runtime problems instead.
 
 This is a **known-good historical baseline**, not a claim that every value survives the new build unchanged.
 
@@ -472,3 +472,7 @@ Our server's confirmed values, failure modes, and database behavior come from ou
 - Separated official settings from shipped-but-untested properties.
 - Recorded asset/database dead ends so they are not rediscovered as fake INI solutions.
 - Added a focused checklist for auditing the newly released build.
+
+## Related notes
+
+[[Projects/Dune Awakening Private Server/Dune Awakening Private Server Home|Dune server project]] · [[Projects/Dune Awakening Private Server/guides/Dune Private Server Doomsday Guide|Recovery guide]] · [[Wiki/backups|Backups]]

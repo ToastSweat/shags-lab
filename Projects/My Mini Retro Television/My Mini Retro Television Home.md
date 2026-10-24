@@ -12,7 +12,11 @@ A tiny fake old television with a little screen, a speaker, some buttons, and a 
 You turn it on, it plays a little startup video, and then you can click through the videos like you are changing channels.
 
 ## Product Website
-[My Mini Retro Television]([https://www.keychron.com/products/keychron-c100-8k-giant-custom-macro-pad?srsltid=AU7gw4VWw1yF4miYpwb39suSNc8DM-uluxd9tGRnJ-s1S_oXnzbXMNfx](https://myminiretrotv.com/))
+[My Mini Retro Television](https://myminiretrotv.com/)
 
 ### My Projects
-[[My Mini Retro Television Channels Home]]
+[[Projects/My Mini Retro Television/My Mini Retro Television Channels/My Mini Retro Television Channels Home|My Mini Retro Television Channels Home]]
+
+## Related notes
+
+[[Wiki/bumpers|Bumpers]] · [[Wiki/idents|Idents]]

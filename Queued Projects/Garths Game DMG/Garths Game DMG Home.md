@@ -5,7 +5,7 @@ date: 2026-09-26
 project: Garth's Game DMG
 project_aliases: Garths Game DMG
 status: active
-publish: true
+publish: false
 ---
 ![[Pasted image 20260926184227.png]]
 
@@ -18,7 +18,7 @@ Not a Unity game with a pixel filter.
 
 An actual `.gb` ROM that runs on a Game Boy, is built with GBDK, has to fit into ROM banks, uses the Game Boy sound hardware, and can become a real cartridge if I ever finish the damn thing.
 
-It stars [[Garth Algar]] as you Companion/Virtual Pet. A burping and farting Tamagotchi.
+It stars [[Wiki/Garth Algar|Garth Algar]] as you Companion/Virtual Pet. A burping and farting Tamagotchi.
 
 ![[Pasted image 20260926184247.png]]
 
@@ -33,11 +33,11 @@ It stars [[Garth Algar]] as you Companion/Virtual Pet. A burping and farting Tam
 * Much
 
 
-[[Cosmic Raven Universe]]
+[[Wiki/Cosmic Raven Universe|Cosmic Raven Universe]]
 
-[[Garth Algar]]
+[[Wiki/Garth Algar|Garth Algar]]
 
-[[Garths Game DMG Home]]
+Garth's Game DMG
 
 [[Garth's Game I - Game Design Document]]
 [[Garth's Game I - Production Roadmap]]

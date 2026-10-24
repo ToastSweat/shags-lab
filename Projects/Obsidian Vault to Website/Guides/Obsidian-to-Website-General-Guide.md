@@ -5,15 +5,15 @@ publish: true
 ---
 # Build Your Own Obsidian-Powered Wiki/Blog Website
 
-This guide shows one way to turn an Obsidian vault into a public website while keeping the vault itself as the permanent source of truth.
+This guide shows one way to turn an [[Wiki/Obsidian|Obsidian]] vault into a public website while keeping the vault itself as the permanent source of truth.
 
 The basic idea is simple:
 
-**Write locally in Obsidian. Keep everything in Git. Publish only the notes you explicitly mark public. Build a static website from those notes. Push everything to one private GitHub repository. Let the web server pull the repo and serve only the generated site.**
+**Write locally in Obsidian. Keep everything in [[Wiki/Git|Git]]. Publish only the notes you explicitly mark public. Build a static website from those notes. Push everything to one private [[Wiki/GitHub|GitHub]] repository. Let the web server pull the repo and serve only the generated site.**
 
 The website is disposable.
 
-The Markdown vault is not.
+The [[Wiki/Markdown|Markdown]] vault is not.
 
 ---
 
@@ -111,7 +111,7 @@ This gives you several advantages:
 - Git tracks the history of your diary/wiki;
 - GitHub becomes an off-machine backup;
 - the web server does not need Obsidian;
-- the web server does not even need Node or Quartz if you build on your home PC.
+- the web server does not even need Node or [[Wiki/Quartz|Quartz]] if you build on your home PC.
 
 If the website disappears tomorrow, your vault is still fine.
 
@@ -263,7 +263,7 @@ publish:true
 
 # 6. Put the Vault Under Git
 
-Open PowerShell.
+Open [[Wiki/PowerShell|PowerShell]].
 
 If your path contains square brackets, use `-LiteralPath`.
 
@@ -1263,3 +1263,7 @@ A healthy setup should have all of these:
 Once all of that works:
 
 **Stop touching the plumbing and go write things.**
+
+## Related notes
+
+[[Projects/Obsidian Vault to Website/Obsidian Vault to Website Home|Website project]] · [[Projects/Obsidian Vault to Website/Guides/Shag's Lab - Doomsday Rebuild Guide|Lab-specific recovery guide]] · [[Projects/Obsidian Vault to Website/Guides/Shag's Lab - Metadata Standards|Metadata standards]] · [[Wiki/backups|Backup concepts]]

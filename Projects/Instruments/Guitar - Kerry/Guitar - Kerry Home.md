@@ -19,7 +19,7 @@ A bolt-on maple neck and 25.5" scale length give the guitar a familiar, articula
 
 Two exposed B.C. Rich B.D.S.M. humbuckers provide the Wartribe 1 with a hot, heavy voice designed for distortion, chugging rhythms, and cutting leads. A three-way pickup selector and separate volume controls allow for some tonal flexibility, while a master tone control helps shape the overall response.
 
-Unlike the earlier tremolo-equipped Wartribe variant, this version uses a string-through-body fixed bridge design, giving it a more direct feel, solid sustain, and simpler setup. That makes it especially appealing if you want the Kerry King look and attitude without the added maintenance of a locking tremolo system.
+Unlike the earlier tremolo-equipped Wartribe variant, this version uses a string-through-body fixed [[Wiki/Bridge|bridge]] design, giving it a more direct feel, solid sustain, and simpler setup. That makes it especially appealing if you want the Kerry King look and attitude without the added maintenance of a locking tremolo system.
 ### Kerry King Tribal Styling
 The visual centerpiece of this Wartribe 1 is its black finish with white/silver tribal graphics. The pattern gives the guitar the sharp, aggressive aesthetic associated with Kerry King's signature instruments while standing apart from the earlier red-fire version.
 
@@ -37,7 +37,7 @@ The Wartribe 1 is loaded with two exposed B.C. Rich B.D.S.M. humbuckers. These p
 
 With two volume controls, one master tone, and a three-way pickup selector, the guitar keeps its controls simple while still allowing useful tonal adjustments.
 ### String-Through Fixed Bridge
-This version of the Wartribe 1 uses a fixed Tune-o-matic-style bridge with string-through-body construction. Compared to a tremolo-equipped design, the fixed bridge offers a more solid feel, stable tuning, and easier restringing and setup.
+This version of the Wartribe 1 uses a fixed Tune-o-matic-style bridge with string-through-body construction. Compared to a tremolo-equipped design, the fixed bridge offers a more solid feel, stable [[Wiki/Tuning|tuning]], and easier restringing and setup.
 
 That makes it a practical choice for players who want straightforward reliability along with the aggressive Kerry King aesthetic.
 ## Features
@@ -86,3 +86,7 @@ That makes it a practical choice for players who want straightforward reliabilit
 - **Finish:** Black with silver/white tribal graphics
 - **Headstock:** Beast-style
 - **Approximate Production Era:** 2011 onward
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]]

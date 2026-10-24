@@ -8,11 +8,11 @@ publish: true
 ![[{467C3283-03C2-4002-B8A7-5A4CD3AE2E9F}.png]]
 [Sweetwater](https://www.sweetwater.com/store/detail/SRC6MSBLL--ibanez-bass-workshop-src6ms-6-string-multi-scale-bass-guitar-black-stained-burst-low-gloss)
 ## About
-I fell in love with Bass VIs after buying my first one. Then I saw this, and thought this would be a great low risk way to get into fanned frets/multi-scale.
+I fell in love with [[Wiki/Bass VI|Bass VIs]] after buying my first one. Then I saw this, and thought this would be a great low risk way to get into fanned frets/multi-scale.
 
 ## Marketing
 ### A 6-string Bass for the Seasoned Musician
-The Ibanez Bass Workshop SRC6MS is built from an exciting blend of tonewoods. An okoume body delivers a light, bright tone with an articulate high end and tight low end. A 5-piece jatoba/walnut neck makes a fine tonal complement while supplying excellent comfort and stability. The SRC6MS's multi-scale rosewood fingerboard offers optimal tension and playability. Experience superior intonation and vibration transference, thanks to a Mono-Rail bridge. A duo of Bartolini BH2 dual-coil pickups yields incredible depth and clarity, a 3-band EQ allows for further sonic sculpting, and a 3-way midrange switch rounds out the SRC6MS's controls. To top it all off, the Bass Workshop SRC6MS features black hardware for a sleek, eye-catching look.
+The Ibanez Bass Workshop SRC6MS is built from an exciting blend of tonewoods. An okoume body delivers a light, bright tone with an articulate high end and tight low end. A 5-piece jatoba/walnut neck makes a fine tonal complement while supplying excellent comfort and stability. The SRC6MS's multi-scale rosewood fingerboard offers optimal tension and playability. Experience superior [[Wiki/Intonation|intonation]] and vibration transference, thanks to a Mono-Rail [[Wiki/Bridge|bridge]]. A duo of Bartolini BH2 dual-coil pickups yields incredible depth and clarity, a 3-band EQ allows for further sonic sculpting, and a 3-way midrange switch rounds out the SRC6MS's controls. To top it all off, the Bass Workshop SRC6MS features black hardware for a sleek, eye-catching look.
 ### Better comfort, tension, and tone
 Multi-scale frets are an exciting new trend in high-end bass guitar design. They yield a longer scale on the bass side of the instrument and a shorter scale on the treble side, offering you better intonation and more consistent tension and attack from string to string. And while getting used to them may look like it will be quite an undertaking, Sweetwater bassists insist that it's a very natural transition. And the better intonation, consistent string tension, and more open tone far outweigh any difference from other basses.
 ### Bartolini BH2 pickups deliver full and balanced tone
@@ -50,6 +50,10 @@ The Mono-Rail bridge installed on the Bass Workshop SRC6MS solves the issue of t
 - **Neck Pickup:** Bartolini BH2 Humbucker
 - **Bridge Pickup:** Bartolini BH2 Humbucker
 - **Controls:** 1 x volume, 1 x balancer, 3-band active EQ
-- **Strings:** D'Addario EXL156, .024-.084 (Factory Tuning: E, A, D, G, b, e)
+- **Strings:** D'Addario EXL156, .024-.084 (Factory [[Wiki/Tuning|Tuning]]: E, A, D, G, b, e)
 - **Case/Gig Bag:** Sold Separately
 - **Manufacturer Part Number:** SRC6MSBLL
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]]

@@ -11,7 +11,7 @@ Okay, that title is maybe a little dramatic.
 
 But only a little.
 
-Safe Cracker has been live for a bit now, and Phase 1 did exactly what I needed it to do. The game worked. Discord authentication worked. Scores worked. Streaks worked. The leaderboard worked. The database was encrypted. Discord verified the Activity.
+[[Projects/Safe Cracker Discord Activity/Safe Cracker Discord Activity Home|Safe Cracker]] has been live for a bit now, and Phase 1 did exactly what I needed it to do. The game worked. [[Wiki/Discord|Discord]] [[Wiki/authentication|authentication]] worked. Scores worked. Streaks worked. The leaderboard worked. The [[Wiki/database|database]] was encrypted. Discord verified the Activity.
 
 It was done.
 
@@ -100,7 +100,7 @@ That already made the Photoshop file feel less like a pile of art layers and mor
 
 Then I made the exporter.
 
-The Photoshop script walks the PSD, validates the tagged structure, exports assets, reads text properties, and generates a manifest describing everything.
+The Photoshop [[Wiki/script|script]] walks the PSD, validates the tagged structure, exports assets, reads text properties, and generates a manifest describing everything.
 
 That manifest includes things like:
 
@@ -240,7 +240,7 @@ Somewhere along the way I also had to solve the fact that the Photoshop UI is de
 1440 × 1080
 ```
 
-which is 4:3, while a Discord Activity window can be basically whatever stupid shape somebody decides to make it.
+which is 4:3, while a [[Wiki/Discord Activities|Discord Activity]] window can be basically whatever stupid shape somebody decides to make it.
 
 Cropping the UI was unacceptable because it could cut off buttons.
 
@@ -286,7 +286,7 @@ I exported it.
 
 Imported it.
 
-Loaded localhost.
+Loaded [[Wiki/localhost|localhost]].
 
 And...
 

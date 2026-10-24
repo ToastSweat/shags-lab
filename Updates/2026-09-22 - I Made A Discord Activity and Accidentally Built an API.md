@@ -5,11 +5,11 @@ date: 2026-09-22
 project: Safe Cracker Discord Activity
 publish: true
 ---
-I Made A Discord Activity And Accidentally Built An API
+I Made A [[Wiki/Discord Activities|Discord Activity]] And Accidentally Built An [[Wiki/API|API]]
 
 This started because I wanted to remake a stupid little game.
 
-Safe Cracker is simple.
+[[Projects/Safe Cracker Discord Activity/Safe Cracker Discord Activity Home|Safe Cracker]] is simple.
 
 There is one safe every day.
 
@@ -50,7 +50,7 @@ Fewest guesses wins.
 
 If two people use the same number of guesses, fastest time wins.
 
-I had made versions of this idea before, but this time I wanted it to live inside Discord as an Activity.
+I had made versions of this idea before, but this time I wanted it to live inside [[Wiki/Discord|Discord]] as an Activity.
 
 That seemed reasonable.
 
@@ -58,7 +58,7 @@ Make a little web game.
 Put it in Discord.
 Done.
 
-Naturally, I built an authentication system, an API, a database, a leaderboard service, production infrastructure, HTTPS certificates, persistent sessions, Rich Presence, and a social sharing system.
+Naturally, I built an [[Wiki/authentication|authentication]] system, an API, a [[Wiki/database|database]], a leaderboard service, production infrastructure, [[Wiki/TLS|HTTPS]] certificates, persistent sessions, Rich Presence, and a social sharing system.
 
 This happens to me a lot.
 
@@ -135,7 +135,7 @@ The browser does not decide whether you already completed today's safe.
 The server does.
 
 The first guess creates the run.
-Every valid guess increments the attempt count in SQLite.
+Every valid guess increments the attempt count in [[Wiki/SQLite|SQLite]].
 The first guess starts the official timer.
 The correct guess stops it.
 If you close Discord halfway through and come back later, your run is still there.
@@ -340,7 +340,7 @@ Set up a separate Let's Encrypt certificate using win-acme.
 
 The certificate uses automatic filesystem HTTP validation so renewal does not require me to perform some ridiculous ceremonial DNS ritual every few months.
 
-The Node application runs through a Windows Scheduled Task:
+The Node application runs through a [[Wiki/Windows Task Scheduler|Windows Scheduled Task]]:
 
 ```text
 PGN Safe Cracker
@@ -360,7 +360,7 @@ start task
 
 There was also an educational period where I forgot the `npm run build` part.
 
-Git had the new source.
+[[Wiki/Git|Git]] had the new source.
 Node was still happily running yesterday's compiled application.
 Computers are extremely literal.
 
@@ -521,7 +521,7 @@ A production health endpoint.
 Apache reverse proxy hosting.
 Automated HTTPS.
 Windows startup through Scheduled Tasks.
-GitHub deployment.
+[[Wiki/GitHub|GitHub]] deployment.
 Discord Rich Presence.
 Native Discord result sharing.
 
@@ -573,4 +573,4 @@ Bucket list item:
 
 Apparently checked.
 
-[[Safe Cracker Discord Activity Home]]
+[[Projects/Safe Cracker Discord Activity/Safe Cracker Discord Activity Home|Safe Cracker Discord Activity Home]]

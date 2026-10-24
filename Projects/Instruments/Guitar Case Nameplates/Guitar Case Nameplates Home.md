@@ -25,3 +25,7 @@ I designed the name plates but I have yet to make them into 3d models or setup m
 
 ## TODO
 * Make the other 7 I need...
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]]

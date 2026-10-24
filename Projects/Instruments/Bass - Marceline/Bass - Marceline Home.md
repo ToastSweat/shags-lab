@@ -11,7 +11,7 @@ publish: true
 It reminds me of the blood ace from Adventure Time, plus this things is neck-dive city.
 ![[Pasted image 20260926213607.png]]
 ## Marketing
-Psst...the Epiphone EB-3 electric bass is an excellent steal for the beginning bassist! This baby features Sidewinder neck and NYT Bass Mini bridge humbuckers housed in a dark resounding mahogany SG-style body, a sturdy mahogany set neck in a comfy SG shape, a smooth Pau Ferro fingerboard with 22 frets and sleek trapezoid inlays, dual sets of volume and tone controls, a three-position transformer to adjust frequency response, a secure stoptail bridge, and shiny chrome hardware. Break into the electric bass game without breaking your wallet -- pick up this classic SG-shaped axe.
+Psst...the Epiphone EB-3 electric bass is an excellent steal for the beginning bassist! This baby features Sidewinder neck and NYT Bass Mini bridge humbuckers housed in a dark resounding mahogany SG-style body, a sturdy mahogany set neck in a comfy SG shape, a smooth Pau Ferro fingerboard with 22 frets and sleek trapezoid inlays, dual sets of volume and tone controls, a three-position transformer to adjust frequency response, a secure stoptail [[Wiki/Bridge|bridge]], and shiny chrome hardware. Break into the electric bass game without breaking your wallet -- pick up this classic SG-shaped axe.
 ### Sweet SG Mahogany Body
 The SG figure is perhaps one of the most recognized body shapes in rock history. Mahogany makes a great tonewood for electric basses because the lower and middle frequencies of each of your notes are pushed a little bit more. A rich and deep tone is the consistent result when you plug this baby in and fire it up.
 ### Comfy SG Mahogany Neck
@@ -42,4 +42,7 @@ The control complement on this baby is pretty sweet. Along with dual tone and du
 - **Fingerboard/Inlay:** Pau Ferro/Trapezoid  
 - **Body Material:** Mahogany
 
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]]
 

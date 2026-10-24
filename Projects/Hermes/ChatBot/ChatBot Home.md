@@ -6,3 +6,7 @@ status: active
 publish: true
 ---
 Placeholder
+
+## Related notes
+
+[[Projects/Hermes/Hermes Home|Hermes projects]] · [[Wiki/Hermes Agent|Hermes Agent]]

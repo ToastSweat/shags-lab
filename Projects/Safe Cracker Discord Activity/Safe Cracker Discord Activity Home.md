@@ -15,3 +15,7 @@ How it will look
 ![[Pasted image 20261005002931.png]]
 
 ![[Pasted image 20261005002944.png]]↙
+
+## Related notes
+
+[[Wiki/Discord Activities|Discord Activities]] · [[Progeny Gaming Network/Progeny Gaming Network Home|PGN]] · [[Progeny Gaming Network/PGN Discord Archive/PGN - The Epic History|Project history]] · [[Wiki/Safe Cracker|Safe Cracker background]]

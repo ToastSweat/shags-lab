@@ -22,7 +22,7 @@ NICK01 has made it all the way through the review process, and revision 9 is com
 0 unresolved
 ```
 
-That feels like a much bigger milestone than just finishing one fake Nickelodeon cartridge.
+That feels like a much bigger milestone than just finishing one fake [[Wiki/Nickelodeon|Nickelodeon]] cartridge.
 
 Because the real goal was never just NICK1.
 
@@ -42,7 +42,7 @@ Until then I was mostly reviewing the cart on my computer and making assumptions
 
 Watching the actual cartridge on the actual tiny television exposed a bunch of stuff that was much harder to notice in the builder.
 
-Too many bumpers.
+Too many [[Wiki/bumpers|bumpers]].
 
 Too many commercials.
 
@@ -106,7 +106,7 @@ One of my favorites was selecting a replacement clip in the review page and havi
 REPLACE_THIS_CART
 ```
 
-So later the apply script would look at:
+So later the apply [[Wiki/script|script]] would look at:
 
 ```text
 Action: GOOD
@@ -223,7 +223,7 @@ There are still a lot of cartridges I want to make.
 
 Nickelodeon was only the first one.
 
-I already have plans for Cartoon Network, Kids' WB, Fox Kids, Boomerang, Sci-Fi, UPN, HBO, AMC, and more.
+I already have plans for [[Wiki/Cartoon Network|Cartoon Network]], [[Wiki/Kids' WB|Kids' WB]], [[Wiki/FOX|Fox]] Kids, Boomerang, Sci-Fi, UPN, HBO, AMC, and more.
 
 Now I actually have a machine for building them.
 
@@ -277,13 +277,13 @@ Just enough that the system feels like an actual application instead of me opera
 
 ## The Real End Goal
 
-I want to put this whole thing on GitHub.
+I want to put this whole thing on [[Wiki/GitHub|GitHub]].
 
 Not just dump the scripts into a repository and call it done.
 
 Actually clean it up.
 
-Remove all of my hard-coded local paths where possible.
+Remove all of my hard-coded local [[Wiki/paths|paths]] where possible.
 
 Make setup sane.
 
@@ -297,7 +297,7 @@ Make it so someone else with a pile of old TV recordings and one of these little
 
 There will need to be a proper cleanup pass before that happens.
 
-A clean Git commit.
+A clean [[Wiki/Git|Git]] commit.
 
 A cleaner folder structure.
 
@@ -322,3 +322,7 @@ A usable cart-building system.
 And a tiny television waiting for another cartridge.
 
 That is a pretty damn good milestone.
+
+## Related projects
+
+- [[Projects/My Mini Retro Television/My Mini Retro Television Channels/My Mini Retro Television Channels Home|My Mini Retro Television Channels]]

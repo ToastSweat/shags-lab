@@ -416,3 +416,7 @@ Message IDs are Discord message IDs from the exported archive.
 - Human/bot classification comes from DiscordChatExporter author metadata.
 - The history uses direct-message evidence more heavily than Steam/store links because a link alone does not prove group adoption.
 - Pre-Discord claims are labeled as retrospective lore unless supported by later PGN self-description.
+
+## Related notes
+
+[[Progeny Gaming Network/PGN Discord Archive/PGN - The Epic History|Epic history]] · [[Progeny Gaming Network/PGN Discord Archive/PGN - Master Timeline|Master timeline]]

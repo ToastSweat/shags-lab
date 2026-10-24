@@ -6,7 +6,7 @@ publish: true
 ---
 ## Cosmic Raven Records 
 ![[Art.png]]
-[[Cosmic Raven Records Home]]
+[[Projects/Cosmic Raven Records/Cosmic Raven Records Home|Cosmic Raven Records Home]]
 
 Some days are like this, you cant just focus on one thing, instead you bounce around from thing to thing.
 
@@ -23,9 +23,9 @@ I don't want to give the story away, for multiple reasons, but my clear directio
 And along the way I will make sure the story is being told, they way it needs to be told.
 
 ## Safe Cracker Discord Activity
-[[Safe Cracker Discord Activity Home]]
+[[Projects/Safe Cracker Discord Activity/Safe Cracker Discord Activity Home|Safe Cracker Discord Activity Home]]
 
-I have made great progress, all that remains is the art, sound and Discord approval.
+I have made great progress, all that remains is the art, sound and [[Wiki/Discord|Discord]] approval.
 
 I know the art will take time but I want to finish it now! I am so close to finish I am already salivating at the possibilities for new projects. Because working on 5 things all at once is a total sane person thing to do.
 

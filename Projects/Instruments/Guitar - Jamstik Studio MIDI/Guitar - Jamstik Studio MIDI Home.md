@@ -11,7 +11,7 @@ publish: true
 If this is blank then there is nothing special to say about this instrument, yet.
 
 ## Marketing
-The Jamstik Studio MIDI Guitar is a headless, 24-fret electric guitar with full MIDI capabilities. Powered by Jamstik signal processing technology & proprietary algorithms, the Studio MIDI represents state-of-the-art MIDI guitar performance built right into a portable, all-in-one solution.  
+The Jamstik Studio [[Wiki/MIDI|MIDI]] Guitar is a headless, 24-fret electric guitar with full MIDI capabilities. Powered by Jamstik signal processing technology & proprietary algorithms, the Studio MIDI represents state-of-the-art MIDI guitar performance built right into a portable, all-in-one solution.  
   
 As an electric guitar, it's a 3/4 size headless design with two humbuckers, a coil tap switch, a three-way switch, and standard 1/4" out.
 
@@ -24,7 +24,7 @@ MIDI out options include USB C, 3.5mm TRS & Bluetooth. Speed and accuracy are Ja
 - Required USB C to A cable & adapter  
 - 3.5 TRS-MIDI cable  
 - 1/4'' Guitar Cable  
-- Strap Locks  
+- [[Wiki/Strap Locks|Strap Locks]]  
 - Allen Keys  
 - Manual Guitar Pick.
 
@@ -43,3 +43,7 @@ MIDI out options include USB C, 3.5mm TRS & Bluetooth. Speed and accuracy are Ja
 **- Electronics:** Three-way switch  
 **- Switch:** Coil tap  
 **- Output Jack:** Standard 1/4" out
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]]

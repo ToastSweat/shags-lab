@@ -133,6 +133,8 @@ publish: true
 
 stays out of the public build.
 
+`Work/` and `Queued Projects/` are always excluded, even when a note inside them says `publish: true`. That includes attachments. Public notes can still mention those projects, but private-note links become plain text in the website staging copy. The original Obsidian links stay intact.
+
 ## Normal publishing workflow
 
 On the home PC:
@@ -261,6 +263,10 @@ configuration:
 ```
 
 The custom publisher performs the public/private filtering before Quartz sees the notes, so the Quartz `explicit-publish` plugin does not need to be enabled.
+
+The [saved Quartz configuration](Projects/Obsidian%20Vault%20to%20Website/assets/quartz.config.housekeeping.yaml) also preserves the private-folder ignore patterns and the Updates-only newest-first Explorer sort. Restore those settings as well when rebuilding; the two `pageTitle`/`baseUrl` values above are not the whole configuration.
+
+Updates Home sorts by the post date, newest first, with the numbered filename suffix breaking same-day ties. Explorer uses that filename chronology too, rather than the last time a note was edited. The rest of Explorer stays alphabetic.
 
 Restore `Publish-Lab.ps1` from the copy embedded later in this guide.
 
@@ -671,7 +677,7 @@ The vault does not exist to feed the website.
 
 # Recovery scripts
 
-The following are the working scripts used by this setup as of September 19, 2026.
+The publisher below includes the October 2026 housekeeping fixes: private-folder exclusions, staged private-link cleanup, and Obsidian-safe project links. The BAT launchers retain their original workflow.
 
 Keep this guide under source control so Future Me can recreate them even if the operational copies are gone.
 
@@ -688,6 +694,7 @@ param(
     [string]$VaultPath = "F:\[DIARY]\Shag's Lab",
     [string]$QuartzRoot = "F:\[DIARY]\ShagsLab-Web",
     [string]$TrackedSiteRoot = "F:\[DIARY]\Shag's Lab\.site\public",
+    [string]$ExpectedBaseUrl = "helvete.pizza/lab",
     [switch]$Serve,
     [switch]$SkipGit
 )
@@ -725,6 +732,21 @@ function Get-RelativePathFromRoot {
     return $FullPath.Substring($rootNormalized.Length).TrimStart('\')
 }
 
+# Folder privacy is an unconditional source boundary, not frontmatter metadata.
+# Share it between both note scans, the asset index and direct asset resolution.
+function Test-PublicSourcePath {
+    param([string]$FullPath)
+
+    $root = [System.IO.Path]::GetFullPath($VaultPath).TrimEnd('\', '/') + '\'
+    $candidate = [System.IO.Path]::GetFullPath($FullPath)
+    if (-not $candidate.StartsWith($root, [System.StringComparison]::OrdinalIgnoreCase)) {
+        return $false
+    }
+    $relative = $candidate.Substring($root.Length) -replace '\\', '/'
+    return $relative -notmatch '^(?i:Work|Queued Projects)(/|$)' -and
+        $relative -notmatch '(^|/)(?i:\.git|\.obsidian|\.trash|\.site)(/|$)'
+}
+
 function Get-FrontMatter {
     param([string]$Text)
 
@@ -741,6 +763,7 @@ function Get-FrontMatter {
     }
 
     $block = $normalized.Substring(4, $end - 4)
+    $aliasList = $false
 
     foreach ($line in ($block -split "`n")) {
         if ($line -match '^\s*([A-Za-z0-9_-]+)\s*:\s*(.*?)\s*$') {
@@ -753,10 +776,70 @@ function Get-FrontMatter {
             }
 
             $result[$key] = $value
+            # Obsidian writes aliases as a block sequence. Keep project and
+            # project_aliases on their existing comma/pipe scalar contracts.
+            $aliasList = $key -eq 'aliases' -and $value -eq ''
+            if ($aliasList) { $result[$key] = @() }
         }
+        elseif ($aliasList -and $line -match '^\s*-(?:\s+(.*?))?\s*$') {
+            $value = ([string]$Matches[1]).Trim()
+            if ($value -match '^(["''])(.*?)\1(?:\s+#.*)?$') {
+                $value = $Matches[2]
+            }
+            else { $value = ($value -replace '(^|\s+)#.*$', '').Trim() }
+            $result['aliases'] += @($value)
+        }
+        elseif ($line -notmatch '^\s*(#.*)?$') { $aliasList = $false }
     }
 
     return $result
+}
+
+function Get-PrivateProjectReferenceKeys {
+    # This local-only metadata registry lets a public update name an existing
+    # private project. No private note enters validation, indexes or staging.
+    $keys = @{}
+    foreach ($folder in @('Work', 'Queued Projects')) {
+        $directory = Join-Path $VaultPath $folder
+        if (-not (Test-Path -LiteralPath $directory -PathType Container)) { continue }
+        foreach ($file in (Get-ChildItem -LiteralPath $directory -Recurse -File -Filter '*.md')) {
+            $reader = [IO.File]::OpenText($file.FullName)
+            try {
+                if ($reader.ReadLine() -ne '---') { continue }
+                $lines = New-Object System.Collections.Generic.List[string]
+                $lines.Add('---')
+                while ($null -ne ($line = $reader.ReadLine())) {
+                    $lines.Add($line)
+                    if ($line -eq '---') { break }
+                }
+                $fm = Get-FrontMatter -Text (($lines -join "`n") + "`n")
+                if ($fm['type'] -notin @('project', 'project-parent')) { continue }
+                if ($fm['project']) { $keys[$fm['project'].Trim().ToLowerInvariant()] = $true }
+                foreach ($alias in ($fm['project_aliases'] -split '\|')) {
+                    if ($alias.Trim()) { $keys[$alias.Trim().ToLowerInvariant()] = $true }
+                }
+            }
+            finally { $reader.Dispose() }
+        }
+    }
+    return $keys
+}
+
+function Get-BodyAfterFrontMatter {
+    param([string]$Text)
+
+    $normalized = $Text -replace "`r`n", "`n"
+
+    if (-not $normalized.StartsWith("---`n")) {
+        return $normalized
+    }
+
+    $end = $normalized.IndexOf("`n---`n", 4)
+    if ($end -lt 0) {
+        return $normalized
+    }
+
+    return $normalized.Substring($end + 5)
 }
 
 function Convert-ToDate {
@@ -806,12 +889,132 @@ function Get-WikiTarget {
     return $target.Trim()
 }
 
+function Get-PublicationLinkKey {
+    param([string]$Target)
+    $clean = Get-WikiTarget -RawTarget $Target
+    $clean = [uri]::UnescapeDataString($clean.Trim('<', '>')) -replace '\\', '/'
+    return ($clean -replace '\.md$', '').TrimStart('/').ToLowerInvariant()
+}
+
+function Test-PrivateLinkTarget {
+    param([string]$Target, [string]$NoteDirectory)
+    if ($Target -match '^[a-zA-Z][a-zA-Z0-9+.-]*:|^#|^//') { return $false }
+    $key = Get-PublicationLinkKey -Target $Target
+    if (-not $key) { return $false }
+    if ($privateLinkTargets.ContainsKey($key)) { return $true }
+    foreach ($base in @($NoteDirectory, $VaultPath)) {
+        $candidate = [IO.Path]::GetFullPath((Join-Path $base ($key -replace '/', '\')))
+        if (-not (Test-PublicSourcePath -FullPath $candidate)) { return $true }
+        $relative = Get-RelativePathFromRoot -Root $VaultPath -FullPath $candidate
+        if ($privateLinkTargets.ContainsKey(($relative -replace '\\', '/').ToLowerInvariant())) { return $true }
+    }
+    return $false
+}
+
+function Get-MarkdownCodePattern {
+    return '(?ms)^[ \t]*(?<fence>`{3,}|~{3,})[^\r\n]*\r?\n.*?^[ \t]*\k<fence>[ \t]*(?:\r?\n|$)|(?<inline>`+)[^\r\n]*?\k<inline>(?!`)'
+}
+
+function Convert-ToPublicStagingText {
+    param([string]$Text, [string]$NoteDirectory)
+    # Remove the link token before Quartz parses it: unresolved wikilinks still
+    # produce hrefs and graph links. Source notes remain byte-for-byte untouched.
+    # Code examples are not links; protect them before applying link patterns.
+    $codeSlots = @{}
+    $codePrefix = 'SHAGSLAB_CODE_' + [guid]::NewGuid().ToString('N') + '_'
+    $codeEvaluator = [System.Text.RegularExpressions.MatchEvaluator]{ param($match)
+        $slot = $codePrefix + $codeSlots.Count + '_END'
+        $codeSlots[$slot] = $match.Value
+        return $slot
+    }
+    $codePattern = Get-MarkdownCodePattern
+    $maskedText = [regex]::Replace($Text, $codePattern, $codeEvaluator)
+    $wikiEvaluator = [System.Text.RegularExpressions.MatchEvaluator]{ param($match)
+        $raw = $match.Groups[1].Value
+        if (-not (Test-PrivateLinkTarget -Target $raw -NoteDirectory $NoteDirectory)) { return $match.Value }
+        $display = if ($raw.Contains('|')) { $raw.Substring($raw.IndexOf('|') + 1) }
+            else { (([uri]::UnescapeDataString((Get-WikiTarget -RawTarget $raw)) -replace '\\', '/') -replace '\.md$', '').Split('/')[-1] }
+        return [regex]::Replace($display, '([\\`*{}\[\]<>()!])', '\$1')
+    }
+    $result = [regex]::Replace($maskedText, '!?\[\[([^\]]+)\]\]', $wikiEvaluator)
+    $markdownEvaluator = [System.Text.RegularExpressions.MatchEvaluator]{ param($match)
+        $target = $match.Groups[2].Value.Trim()
+        # Markdown URL may be enclosed in angle brackets or followed by a title.
+        if ($target.StartsWith('<')) { $target = ($target -split '>')[0].TrimStart('<') }
+        else { $target = $target -replace '\s+["''].*$', '' }
+        if (-not (Test-PrivateLinkTarget -Target $target -NoteDirectory $NoteDirectory)) { return $match.Value }
+        return [regex]::Replace($match.Groups[1].Value, '([\\`*{}\[\]<>()!])', '\$1')
+    }
+    $result = [regex]::Replace($result, '!?\[([^\]\r\n]*)\]\(([^)\r\n]+)\)', $markdownEvaluator)
+    foreach ($entry in $codeSlots.GetEnumerator()) { $result = $result.Replace($entry.Key, $entry.Value) }
+    return $result
+}
+
+function Set-FrontMatterScalar {
+    param(
+        [string]$Text,
+        [string]$Key,
+        [string]$Value
+    )
+
+    $normalized = $Text -replace "`r`n", "`n"
+
+    if (-not $normalized.StartsWith("---`n")) {
+        return "---`n$Key`: $Value`n---`n" + $normalized
+    }
+
+    $end = $normalized.IndexOf("`n---`n", 4)
+    if ($end -lt 0) {
+        return $normalized
+    }
+
+    $front = $normalized.Substring(4, $end - 4)
+    $rest = $normalized.Substring($end + 5)
+
+    $pattern = "(?m)^\s*" + [regex]::Escape($Key) + "\s*:.*$"
+    if ([regex]::IsMatch($front, $pattern)) {
+        $front = [regex]::Replace($front, $pattern, "$Key`: $Value", 1)
+    }
+    else {
+        if ($front.Length -gt 0 -and -not $front.EndsWith("`n")) {
+            $front += "`n"
+        }
+        $front += "$Key`: $Value"
+    }
+
+    return "---`n" + $front.TrimEnd("`n") + "`n---`n" + $rest
+}
+
 if (-not (Test-Path -LiteralPath $VaultPath -PathType Container)) {
     throw "Vault not found: $VaultPath"
 }
 if (-not (Test-Path -LiteralPath $QuartzRoot -PathType Container)) {
     throw "Quartz root not found: $QuartzRoot"
 }
+
+$QuartzConfig = Join-Path $QuartzRoot "quartz.config.yaml"
+if (-not (Test-Path -LiteralPath $QuartzConfig -PathType Leaf)) {
+    throw "Quartz config not found: $QuartzConfig"
+}
+
+$configText = [System.IO.File]::ReadAllText($QuartzConfig, [System.Text.Encoding]::UTF8)
+$baseUrlMatch = [regex]::Match($configText, '(?m)^\s*baseUrl:\s*["'']?([^\r\n"'']+?)["'']?\s*$')
+
+if (-not $baseUrlMatch.Success) {
+    throw "Could not find baseUrl in quartz.config.yaml."
+}
+
+$actualBaseUrl = $baseUrlMatch.Groups[1].Value.Trim()
+if ($actualBaseUrl.Contains("#")) {
+    $actualBaseUrl = $actualBaseUrl.Split("#")[0].Trim()
+}
+
+if ($actualBaseUrl -ne $ExpectedBaseUrl) {
+    throw "Quartz baseUrl is '$actualBaseUrl' but this deployment expects '$ExpectedBaseUrl'. Fix quartz.config.yaml before publishing."
+}
+
+$expectedUri = [uri]("https://" + $ExpectedBaseUrl)
+$ExpectedBasePath = $expectedUri.AbsolutePath.TrimEnd('/')
 
 $ContentRoot = Join-Path $QuartzRoot "content"
 $PublicRoot = Join-Path $QuartzRoot "public"
@@ -820,13 +1023,11 @@ Write-Step "Scanning Shag's Lab"
 
 $noteFiles = Get-ChildItem -LiteralPath $VaultPath -Recurse -File -Filter "*.md" |
     Where-Object {
-        $_.FullName -notmatch '\\\.git\\' -and
-        $_.FullName -notmatch '\\\.obsidian\\' -and
-        $_.FullName -notmatch '\\\.trash\\'
+        (Test-PublicSourcePath -FullPath $_.FullName)
     }
 
 $notes = foreach ($file in $noteFiles) {
-    $text = Get-Content -LiteralPath $file.FullName -Raw
+    $text = [System.IO.File]::ReadAllText($file.FullName, [System.Text.Encoding]::UTF8)
     $fm = Get-FrontMatter -Text $text
 
     $publish = $false
@@ -851,6 +1052,7 @@ $notes = foreach ($file in $noteFiles) {
         Directory    = $file.DirectoryName
         Name         = $file.BaseName
         Text         = $text
+        Body         = Get-BodyAfterFrontMatter -Text $text
         FrontMatter  = $fm
         Publish      = ($publish -and -not $draft)
         Type         = $type
@@ -870,9 +1072,129 @@ $publicUpdates = @(
                 @{ Expression = { $_.Name }; Descending = $true }
 )
 
+Write-Step "Validating vault metadata"
+
+$metadataErrors = New-Object System.Collections.Generic.List[string]
+$metadataWarnings = New-Object System.Collections.Generic.List[string]
+$allowedProjectStatuses = @("planned", "active", "paused", "complete", "archived")
+$allowedGuideStatuses = @("living", "snapshot", "complete", "deprecated")
+
+$projectDefinitions = @(
+    $notes | Where-Object { $_.Type -eq "project" -or $_.Type -eq "project-parent" }
+)
+
+$canonicalProjectKeys = @{}
+$projectAliasKeys = @{}
+$privateProjectReferenceKeys = Get-PrivateProjectReferenceKeys
+
+foreach ($note in $projectDefinitions) {
+    if ([string]::IsNullOrWhiteSpace($note.Project)) {
+        $metadataErrors.Add("$($note.Relative): $($note.Type) is missing project:")
+        continue
+    }
+
+    $key = $note.Project.Trim()
+    if ($canonicalProjectKeys.ContainsKey($key.ToLowerInvariant())) {
+        $metadataErrors.Add("$($note.Relative): duplicate project key '$key'")
+    }
+    else {
+        $canonicalProjectKeys[$key.ToLowerInvariant()] = $note.Relative
+    }
+
+    if ([string]::IsNullOrWhiteSpace($note.Status)) {
+        $metadataErrors.Add("$($note.Relative): $($note.Type) is missing status:")
+    }
+    elseif ($allowedProjectStatuses -notcontains $note.Status.ToLowerInvariant()) {
+        $metadataErrors.Add("$($note.Relative): invalid project status '$($note.Status)'")
+    }
+
+    if ($note.FrontMatter.ContainsKey("project_aliases")) {
+        foreach ($alias in ($note.FrontMatter["project_aliases"] -split '\|')) {
+            $cleanAlias = $alias.Trim()
+            if ($cleanAlias) {
+                $projectAliasKeys[$cleanAlias.ToLowerInvariant()] = $key
+            }
+        }
+    }
+}
+
+foreach ($note in $notes) {
+    foreach ($entry in $note.FrontMatter.GetEnumerator()) {
+        if (@($entry.Value).Count -eq 0 -or
+            @($entry.Value | Where-Object { [string]::IsNullOrWhiteSpace([string]$_) }).Count -gt 0) {
+            $metadataErrors.Add("$($note.Relative): empty frontmatter property '$($entry.Key)'")
+        }
+    }
+
+    if ($note.Type -eq "update") {
+        if ($note.DateValue -eq [datetime]::MinValue) {
+            $metadataErrors.Add("$($note.Relative): update is missing a valid date:")
+        }
+
+        if ($note.Name -match '^(\d{4}-\d{2}-\d{2})') {
+            $fileDate = $Matches[1]
+            if ($note.DateValue -ne [datetime]::MinValue -and $note.DateValue.ToString('yyyy-MM-dd') -ne $fileDate) {
+                $metadataErrors.Add("$($note.Relative): filename date $fileDate does not match frontmatter date $($note.DateValue.ToString('yyyy-MM-dd'))")
+            }
+        }
+    }
+
+    if ($note.Type -eq "guide" -and -not [string]::IsNullOrWhiteSpace($note.Status)) {
+        if ($allowedGuideStatuses -notcontains $note.Status.ToLowerInvariant()) {
+            $metadataErrors.Add("$($note.Relative): invalid guide status '$($note.Status)'")
+        }
+    }
+
+    if ($note.Publish -and [string]::IsNullOrWhiteSpace($note.Body)) {
+        $metadataErrors.Add("$($note.Relative): published note has no body content")
+    }
+
+    if (-not [string]::IsNullOrWhiteSpace($note.Project) -and
+        $note.Type -ne "project" -and $note.Type -ne "project-parent") {
+        foreach ($projectKey in @(Get-ProjectKeysFromUpdate -ProjectValue $note.Project)) {
+            $lowerKey = $projectKey.ToLowerInvariant()
+            if (-not $canonicalProjectKeys.ContainsKey($lowerKey) -and
+                -not $projectAliasKeys.ContainsKey($lowerKey) -and
+                -not $privateProjectReferenceKeys.ContainsKey($lowerKey)) {
+                $metadataErrors.Add("$($note.Relative): project reference '$projectKey' has no project/project-parent Home note")
+            }
+        }
+    }
+
+    if ($note.Name -match '\sHome$') {
+        $relativeDir = Split-Path $note.Relative -Parent
+        if ($relativeDir) {
+            $folderName = Split-Path $relativeDir -Leaf
+            $expectedHomeName = "$folderName Home"
+            if ($note.Name -ine $expectedHomeName) {
+                $metadataWarnings.Add("$($note.Relative): folder Home convention expects '$expectedHomeName.md'")
+            }
+        }
+    }
+}
+
+if ($metadataWarnings.Count -gt 0) {
+    Write-Host "Metadata warnings:" -ForegroundColor Yellow
+    foreach ($warning in $metadataWarnings) {
+        Write-Host "  - $warning"
+    }
+}
+
+if ($metadataErrors.Count -gt 0) {
+    Write-Host "Metadata errors:" -ForegroundColor Red
+    foreach ($metadataError in $metadataErrors) {
+        Write-Host "  - $metadataError"
+    }
+    throw "Metadata validation failed with $($metadataErrors.Count) error(s)."
+}
+
+Write-Host "Metadata validation passed for $($notes.Count) Markdown note(s)."
+Write-Host "Canonical projects: $($canonicalProjectKeys.Count)"
+Write-Host "Project aliases:    $($projectAliasKeys.Count)"
+
 $publicProjects = @(
     $notes |
-    Where-Object { $_.Publish -and $_.Type -eq "project" }
+    Where-Object { $_.Publish -and ($_.Type -eq "project" -or $_.Type -eq "project-parent") }
 )
 
 Write-Step "Generating Updates Home"
@@ -914,39 +1236,110 @@ $projectRows = foreach ($projectNote in $publicProjects) {
         $displayName = $displayName -replace '\s+Home$', ''
     }
 
-    $projectKey = if (-not [string]::IsNullOrWhiteSpace($projectNote.Project)) {
-        $projectNote.Project
-    }
-    else {
-        $displayName
+    $projectKey = $projectNote.Project.Trim()
+
+    $projectMatchKeys = New-Object System.Collections.Generic.List[string]
+    $projectMatchKeys.Add($projectKey)
+
+    if ($projectNote.FrontMatter.ContainsKey("project_aliases")) {
+        foreach ($alias in ($projectNote.FrontMatter["project_aliases"] -split '\|')) {
+            $cleanAlias = $alias.Trim()
+            if ($cleanAlias) {
+                $projectMatchKeys.Add($cleanAlias)
+            }
+        }
     }
 
     $matchingUpdates = @(
         $publicUpdates | Where-Object {
-            $keys = Get-ProjectKeysFromUpdate -ProjectValue $_.Project
-            $keys | Where-Object { $_ -ieq $projectKey }
+            $updateKeys = @(Get-ProjectKeysFromUpdate -ProjectValue $_.Project)
+            $matched = $false
+
+            foreach ($updateKey in $updateKeys) {
+                foreach ($projectMatchKey in $projectMatchKeys) {
+                    if ($updateKey -ieq $projectMatchKey) {
+                        $matched = $true
+                        break
+                    }
+                }
+                if ($matched) { break }
+            }
+
+            $matched
         }
     )
 
     if ($matchingUpdates.Count -gt 0) {
         $activityDate = ($matchingUpdates | Sort-Object DateValue -Descending | Select-Object -First 1).DateValue
     }
+    elseif ($projectNote.DateValue -ne [datetime]::MinValue) {
+        $activityDate = $projectNote.DateValue
+    }
     else {
         $activityDate = $projectNote.Modified
-        Write-Warning "No published update matched project '$projectKey'. Using the project note's modified date. Add 'project: $projectKey' to the project Home note and use the same value on its update posts for exact sorting."
     }
 
     [pscustomobject]@{
         Note         = $projectNote
         DisplayName  = $displayName
         ProjectKey   = $projectKey
+        Status       = $projectNote.Status.ToLowerInvariant()
+        Type         = $projectNote.Type
         ActivityDate = $activityDate
+        ParentKey    = ""
     }
 }
 
-$projectRows = @(
+# Infer parent/child relationships from the actual folder tree. A project-parent
+# owns published project pages nested anywhere beneath its directory. The nearest
+# project-parent wins if nested parents are added later.
+foreach ($row in $projectRows) {
+    if ($row.Type -ne "project") { continue }
+
+    $candidateParents = @(
+        $projectRows | Where-Object {
+            $_.Type -eq "project-parent" -and
+            $row.Note.Source.StartsWith($_.Note.Directory + "\", [System.StringComparison]::OrdinalIgnoreCase)
+        } | Sort-Object @{ Expression = { $_.Note.Directory.Length }; Descending = $true }
+    )
+
+    if ($candidateParents.Count -gt 0) {
+        $row.ParentKey = $candidateParents[0].ProjectKey
+    }
+}
+
+# A parent is as recently active as its most recently active child.
+foreach ($parentRow in @($projectRows | Where-Object { $_.Type -eq "project-parent" })) {
+    $childRows = @($projectRows | Where-Object { $_.ParentKey -ieq $parentRow.ProjectKey })
+    if ($childRows.Count -gt 0) {
+        $latestChild = ($childRows | Sort-Object ActivityDate -Descending | Select-Object -First 1).ActivityDate
+        if ($latestChild -gt $parentRow.ActivityDate) {
+            $parentRow.ActivityDate = $latestChild
+        }
+    }
+}
+
+$statusOrder = @{
+    "active"   = 10
+    "planned"  = 20
+    "paused"   = 30
+    "complete" = 40
+    "archived" = 50
+}
+
+function Get-ProjectTarget {
+    param($Row)
+
+    # Link the actual note so the generated index works in Obsidian too.
+    # Quartz retains this Home page unlisted alongside the folder landing index.
+    return ($Row.Note.Relative -replace '\\', '/') -replace '\.md$', ''
+}
+
+$topLevelRows = @(
     $projectRows |
-    Sort-Object @{ Expression = { $_.ActivityDate }; Descending = $true },
+    Where-Object { [string]::IsNullOrWhiteSpace($_.ParentKey) } |
+    Sort-Object @{ Expression = { $statusOrder[$_.Status] }; Descending = $false },
+                @{ Expression = { $_.ActivityDate }; Descending = $true },
                 @{ Expression = { $_.DisplayName }; Descending = $false }
 )
 
@@ -962,34 +1355,60 @@ $projectsLines.Add("")
 $projectsLines.Add("## Projects")
 $projectsLines.Add("")
 
-foreach ($row in $projectRows) {
-    $target = ($row.Note.Relative -replace '\\', '/') -replace '\.md$', ''
+$currentStatus = ""
+foreach ($row in $topLevelRows) {
+    if ($row.Status -ne $currentStatus) {
+        $currentStatus = $row.Status
+        $statusTitle = (Get-Culture).TextInfo.ToTitleCase($currentStatus)
+        $projectsLines.Add("### $statusTitle")
+        $projectsLines.Add("")
+    }
+
+    $target = Get-ProjectTarget -Row $row
     $dateText = $row.ActivityDate.ToString("yyyy-MM-dd")
     $projectsLines.Add("- [[$target|$($row.DisplayName)]] - last activity $dateText")
+
+    if ($row.Type -eq "project-parent") {
+        $children = @(
+            $projectRows |
+            Where-Object { $_.ParentKey -ieq $row.ProjectKey } |
+            Sort-Object @{ Expression = { $statusOrder[$_.Status] }; Descending = $false },
+                        @{ Expression = { $_.ActivityDate }; Descending = $true },
+                        @{ Expression = { $_.DisplayName }; Descending = $false }
+        )
+
+        foreach ($child in $children) {
+            $childTarget = Get-ProjectTarget -Row $child
+            $childDate = $child.ActivityDate.ToString("yyyy-MM-dd")
+            $projectsLines.Add("  - **$($child.Status)** - [[$childTarget|$($child.DisplayName)]] - last activity $childDate")
+        }
+    }
 }
 
-if ($projectRows.Count -eq 0) {
+if ($topLevelRows.Count -eq 0) {
     $projectsLines.Add("_No published projects yet._")
 }
 
 if ($projectRows.Count -gt 0) {
+    $latestProjectActivity = ($projectRows | Sort-Object ActivityDate -Descending | Select-Object -First 1).ActivityDate
     $projectsLines.Add("")
-    $projectsLines.Add("*Last Updated: $($projectRows[0].ActivityDate.ToString('yyyy-MM-dd'))*")
+    $projectsLines.Add("*Last Updated: $($latestProjectActivity.ToString('yyyy-MM-dd'))*")
 }
 
 $projectsHomePath = Join-Path $VaultPath "Projects\Projects Home.md"
 Write-Utf8NoBom -Path $projectsHomePath -Text (($projectsLines -join "`r`n") + "`r`n")
 
+Write-Host "Published project parents: $(@($projectRows | Where-Object { $_.Type -eq 'project-parent' }).Count)"
+Write-Host "Published projects:        $(@($projectRows | Where-Object { $_.Type -eq 'project' }).Count)"
+
 # Re-scan so the freshly generated Home pages are included.
 $noteFiles = Get-ChildItem -LiteralPath $VaultPath -Recurse -File -Filter "*.md" |
     Where-Object {
-        $_.FullName -notmatch '\\\.git\\' -and
-        $_.FullName -notmatch '\\\.obsidian\\' -and
-        $_.FullName -notmatch '\\\.trash\\'
+        (Test-PublicSourcePath -FullPath $_.FullName)
     }
 
 $notes = foreach ($file in $noteFiles) {
-    $text = Get-Content -LiteralPath $file.FullName -Raw
+    $text = [System.IO.File]::ReadAllText($file.FullName, [System.Text.Encoding]::UTF8)
     $fm = Get-FrontMatter -Text $text
 
     $publish = $false
@@ -1021,6 +1440,24 @@ New-Item -ItemType Directory -Path $ContentRoot -Force | Out-Null
 
 $publishedNotes = @($notes | Where-Object { $_.Publish })
 
+# Index names only, never bodies, from the unconditional private folders and
+# non-published notes. Include short-path suffixes used by Obsidian wikilinks.
+$privateLinkTargets = @{}
+$privateLinkSources = @($notes | Where-Object { -not $_.Publish } | ForEach-Object { $_.Source })
+foreach ($privateFolder in @('Work', 'Queued Projects')) {
+    $privateRoot = Join-Path $VaultPath $privateFolder
+    if (Test-Path -LiteralPath $privateRoot -PathType Container) {
+        $privateLinkSources += @(Get-ChildItem -LiteralPath $privateRoot -Recurse -File | ForEach-Object { $_.FullName })
+    }
+}
+foreach ($source in $privateLinkSources) {
+    $key = Get-PublicationLinkKey -Target (Get-RelativePathFromRoot -Root $VaultPath -FullPath $source)
+    $parts = $key.Split('/')
+    for ($i = 0; $i -lt $parts.Length; $i++) {
+        $privateLinkTargets[($parts[$i..($parts.Length - 1)] -join '/')] = $true
+    }
+}
+
 $welcome = $publishedNotes | Where-Object { $_.Relative -ieq "Welcome.md" } | Select-Object -First 1
 if (-not $welcome) {
     throw "Welcome.md must contain 'publish: true'. It becomes the public site's index.md."
@@ -1039,17 +1476,78 @@ foreach ($note in $publishedNotes) {
         New-Item -ItemType Directory -Path $parent -Force | Out-Null
     }
 
-    Copy-Item -LiteralPath $note.Source -Destination $destination -Force
+    $stagingText = Convert-ToPublicStagingText -Text $note.Text -NoteDirectory $note.Directory
+    Write-Utf8NoBom -Path $destination -Text $stagingText
+    # Copy-Item preserved this timestamp; text sanitization must not make every
+    # published page look newly edited to the date transformer/RSS.
+    [IO.File]::SetLastWriteTimeUtc($destination, [IO.File]::GetLastWriteTimeUtc($note.Source))
+}
+
+# Convention: if a published folder contains "<Folder Name> Home.md", use
+# that note as the folder's index page. The original Home note remains emitted
+# for existing wikilinks, but is marked unlisted in the staging copy so it does
+# not appear as a duplicate in Explorer/search/folder listings.
+$folderHomeNotes = @(
+    $publishedNotes | Where-Object {
+        $relativeDir = Split-Path $_.Relative -Parent
+        if (-not $relativeDir) {
+            return $false
+        }
+
+        $folderName = Split-Path $relativeDir -Leaf
+        $_.Name -ieq "$folderName Home"
+    }
+)
+
+foreach ($sourceNote in $folderHomeNotes) {
+    $relativeDir = Split-Path $sourceNote.Relative -Parent
+    $folderIndex = Join-Path (Join-Path $ContentRoot $relativeDir) "index.md"
+
+    $indexText = Convert-ToPublicStagingText -Text $sourceNote.Text -NoteDirectory $sourceNote.Directory
+    Write-Utf8NoBom -Path $folderIndex -Text $indexText
+
+    $stagedOriginal = Join-Path $ContentRoot $sourceNote.Relative
+    if (Test-Path -LiteralPath $stagedOriginal -PathType Leaf) {
+        $originalText = [System.IO.File]::ReadAllText($stagedOriginal, [System.Text.Encoding]::UTF8)
+        $originalText = Set-FrontMatterScalar -Text $originalText -Key "unlisted" -Value "true"
+        Write-Utf8NoBom -Path $stagedOriginal -Text $originalText
+    }
+
+    Write-Host "Folder Home: $relativeDir -> $($sourceNote.Name)"
+}
+
+# Quartz's FolderPage intentionally appends a directory listing after index.md.
+# Hide that automatic listing only when a real folder index has authored content.
+$customScssPath = Join-Path $QuartzRoot "quartz\styles\custom.scss"
+$folderHomeCssMarker = "SHAGS-LAB-FOLDER-HOME"
+$folderHomeCss = @"
+
+/* $folderHomeCssMarker
+   A real folder index should behave like its Home page, not a directory listing. */
+body[data-slug$="/index"] article:has(> .markdown-preview-view:not(:empty)) + .page-listing {
+  display: none !important;
+}
+/* /$folderHomeCssMarker */
+"@
+
+if (Test-Path -LiteralPath $customScssPath -PathType Leaf) {
+    $customScss = Get-Content -LiteralPath $customScssPath -Raw
+    if (-not $customScss.Contains($folderHomeCssMarker)) {
+        Add-Content -LiteralPath $customScssPath -Value $folderHomeCss -Encoding ASCII
+    }
+}
+else {
+    Write-Utf8NoBom -Path $customScssPath -Text ("@use ""./variables.scss"" as *;`r`n" + $folderHomeCss)
 }
 
 # Build an index of non-Markdown files so only attachments actually referenced
 # by published notes are copied into the website staging area.
+# IMPORTANT: .site is generated output inside the vault repo and must never be
+# treated as source content or as an attachment source.
 $assetFiles = Get-ChildItem -LiteralPath $VaultPath -Recurse -File |
     Where-Object {
         $_.Extension -ine ".md" -and
-        $_.FullName -notmatch '\\\.git\\' -and
-        $_.FullName -notmatch '\\\.obsidian\\' -and
-        $_.FullName -notmatch '\\\.trash\\'
+        (Test-PublicSourcePath -FullPath $_.FullName)
     }
 
 $assetsByName = @{}
@@ -1081,6 +1579,9 @@ function Resolve-Attachment {
     $sameFolder = Join-Path $NoteDirectory $cleanFs
     if (Test-Path -LiteralPath $sameFolder -PathType Leaf) {
         $item = Get-Item -LiteralPath $sameFolder
+        if (-not (Test-PublicSourcePath -FullPath $item.FullName)) {
+            return $null
+        }
         if ($item.Extension -ine ".md") {
             return $item
         }
@@ -1089,6 +1590,9 @@ function Resolve-Attachment {
     $fromRoot = Join-Path $VaultPath $cleanFs
     if (Test-Path -LiteralPath $fromRoot -PathType Leaf) {
         $item = Get-Item -LiteralPath $fromRoot
+        if (-not (Test-PublicSourcePath -FullPath $item.FullName)) {
+            return $null
+        }
         if ($item.Extension -ine ".md") {
             return $item
         }
@@ -1110,12 +1614,13 @@ $copiedAssets = @{}
 
 foreach ($note in $publishedNotes) {
     $targets = New-Object System.Collections.Generic.List[string]
+    $linkText = [regex]::Replace($note.Text, (Get-MarkdownCodePattern), '')
 
-    foreach ($match in [regex]::Matches($note.Text, '\[\[([^\]]+)\]\]')) {
+    foreach ($match in [regex]::Matches($linkText, '\[\[([^\]]+)\]\]')) {
         $targets.Add($match.Groups[1].Value)
     }
 
-    foreach ($match in [regex]::Matches($note.Text, '!?\[[^\]]*\]\(([^)]+)\)')) {
+    foreach ($match in [regex]::Matches($linkText, '!?\[[^\]]*\]\(([^)]+)\)')) {
         $targets.Add($match.Groups[1].Value)
     }
 
@@ -1164,6 +1669,233 @@ try {
 finally {
     Pop-Location
 }
+
+Write-Step "Validating Quartz base path"
+
+$builtIndex = Join-Path $PublicRoot "index.html"
+if (-not (Test-Path -LiteralPath $builtIndex -PathType Leaf)) {
+    throw "Quartz did not produce index.html at $builtIndex"
+}
+
+$builtIndexText = Get-Content -LiteralPath $builtIndex -Raw
+
+if ($ExpectedBasePath) {
+    $expectedAttribute = 'data-basepath="' + $ExpectedBasePath + '"'
+    if (-not $builtIndexText.Contains($expectedAttribute)) {
+        throw "Built index.html does not contain $expectedAttribute. Explorer links would lose the deployment subpath."
+    }
+}
+
+Write-Host "Base URL:  $ExpectedBaseUrl"
+Write-Host "Base path: $ExpectedBasePath"
+
+Write-Step "Adding visible GoatCounter visitor counter"
+
+$visitorCounterLabel = "Shag's Lab"
+
+$visitorCounterJs = @'
+(function () {
+  async function updateVisitorCounter() {
+    var nodes = document.querySelectorAll("[data-shags-visitor-count]");
+    if (!nodes.length) return;
+
+    try {
+      var response = await fetch("/lab/visitor-count.php", {
+        cache: "no-store",
+        credentials: "same-origin"
+      });
+
+      if (!response.ok) {
+        throw new Error("Visitor counter endpoint returned HTTP " + response.status);
+      }
+
+      var data = await response.json();
+
+      if (!data || typeof data.count === "undefined") {
+        throw new Error("Visitor counter endpoint returned no count.");
+      }
+
+      nodes.forEach(function (node) {
+        node.textContent = data.count;
+      });
+    } catch (error) {
+      console.warn("Shag's Lab visitor counter could not be loaded.", error);
+      nodes.forEach(function (node) {
+        node.textContent = "--";
+      });
+    }
+  }
+
+  function scheduleUpdate() {
+    window.setTimeout(updateVisitorCounter, 0);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", updateVisitorCounter, { once: true });
+  } else {
+    updateVisitorCounter();
+  }
+
+  document.addEventListener("nav", scheduleUpdate);
+})();
+'@
+
+$visitorCounterCss = @'
+.shags-lab-visitor-counter {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.shags-lab-visitor-counter strong {
+  color: var(--darkgray);
+  font-weight: 600;
+}
+
+.shags-lab-visitor-counter [data-shags-visitor-count] {
+  color: var(--darkgray);
+  font-variant-numeric: tabular-nums;
+}
+'@
+
+$staticRoot = Join-Path $PublicRoot "static"
+if (-not (Test-Path -LiteralPath $staticRoot)) {
+    New-Item -ItemType Directory -Path $staticRoot -Force | Out-Null
+}
+
+$visitorJsPath = Join-Path $staticRoot "shags-visitor-counter.js"
+$visitorCssPath = Join-Path $staticRoot "shags-visitor-counter.css"
+
+Write-Utf8NoBom -Path $visitorJsPath -Text $visitorCounterJs
+Write-Utf8NoBom -Path $visitorCssPath -Text $visitorCounterCss
+
+$visitorProxyPath = Join-Path $PublicRoot "visitor-count.php"
+$visitorProxyPhp = @'
+<?php
+header('Content-Type: application/json; charset=utf-8');
+header('Cache-Control: public, max-age=300');
+
+$url = 'https://shagwrath.goatcounter.com/counter/TOTAL.json';
+$body = false;
+
+if (function_exists('curl_init')) {
+    $curl = curl_init($url);
+
+    curl_setopt_array($curl, [
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_CONNECTTIMEOUT => 5,
+        CURLOPT_TIMEOUT => 10,
+        CURLOPT_USERAGENT => 'ShagsLab-VisitorCounter/1.0',
+    ]);
+
+    $body = curl_exec($curl);
+    $status = (int) curl_getinfo($curl, CURLINFO_RESPONSE_CODE);
+    curl_close($curl);
+
+    if ($body === false || $status < 200 || $status >= 300) {
+        $body = false;
+    }
+}
+elseif (filter_var(ini_get('allow_url_fopen'), FILTER_VALIDATE_BOOLEAN)) {
+    $context = stream_context_create([
+        'http' => [
+            'timeout' => 10,
+            'header' => "User-Agent: ShagsLab-VisitorCounter/1.0\r\n",
+        ],
+    ]);
+
+    $body = @file_get_contents($url, false, $context);
+}
+
+if ($body === false) {
+    http_response_code(502);
+    echo json_encode(['error' => 'Unable to reach GoatCounter']);
+    exit;
+}
+
+$data = json_decode($body, true);
+
+if (!is_array($data) || !array_key_exists('count', $data)) {
+    http_response_code(502);
+    echo json_encode(['error' => 'Invalid GoatCounter response']);
+    exit;
+}
+
+echo json_encode([
+    'count' => (string) $data['count'],
+]);
+'@
+
+Write-Utf8NoBom -Path $visitorProxyPath -Text $visitorProxyPhp
+
+$basePrefix = if ($ExpectedBasePath) { $ExpectedBasePath } else { "" }
+$visitorScriptTag = '<script src="' + $basePrefix + '/static/shags-visitor-counter.js" defer></script>'
+$visitorStyleTag = '<link rel="stylesheet" href="' + $basePrefix + '/static/shags-visitor-counter.css">'
+
+$visitorMarkup = '<div class="shags-lab-visitor-counter"><strong>' +
+    [System.Net.WebUtility]::HtmlEncode($visitorCounterLabel) +
+    '</strong> &middot; <span data-shags-visitor-count>...</span><span>visitors</span></div>'
+
+$htmlFiles = @(Get-ChildItem -LiteralPath $PublicRoot -Recurse -File -Filter "*.html")
+$patchedPages = 0
+$pagesWithoutFooter = New-Object System.Collections.Generic.List[string]
+
+foreach ($htmlFile in $htmlFiles) {
+    $html = [System.IO.File]::ReadAllText($htmlFile.FullName, [System.Text.Encoding]::UTF8)
+    $changed = $false
+
+    if (-not $html.Contains("shags-visitor-counter.css") -and $html.Contains("</head>")) {
+        $html = $html.Replace("</head>", $visitorStyleTag + "</head>")
+        $changed = $true
+    }
+
+    if (-not $html.Contains("data-shags-visitor-count")) {
+        if ($html.Contains("</footer>")) {
+            $html = $html.Replace("</footer>", $visitorMarkup + "</footer>")
+            $changed = $true
+        }
+        else {
+            $pagesWithoutFooter.Add($htmlFile.FullName)
+        }
+    }
+
+    if (-not $html.Contains("shags-visitor-counter.js") -and $html.Contains("</body>")) {
+        $html = $html.Replace("</body>", $visitorScriptTag + "</body>")
+        $changed = $true
+    }
+
+    if ($changed) {
+        Write-Utf8NoBom -Path $htmlFile.FullName -Text $html
+        $patchedPages++
+    }
+}
+
+Write-Host "Visible counter added to $patchedPages HTML page(s)."
+Write-Host "Visitor count is proxied through /lab/visitor-count.php to avoid browser CORS restrictions."
+
+if ($pagesWithoutFooter.Count -gt 0) {
+    Write-Host "Pages without a footer were left without the visible counter: $($pagesWithoutFooter.Count)"
+}
+
+$counterCheck = [System.IO.File]::ReadAllText($builtIndex, [System.Text.Encoding]::UTF8)
+
+if (-not $counterCheck.Contains("data-shags-visitor-count")) {
+    throw "Visitor counter markup was not found in the built homepage after patching."
+}
+
+if (-not $counterCheck.Contains("shags-visitor-counter.js")) {
+    throw "Visitor counter script was not found in the built homepage after patching."
+}
+
+if (-not (Test-Path -LiteralPath $visitorProxyPath -PathType Leaf)) {
+    throw "Visitor counter PHP proxy was not created: $visitorProxyPath"
+}
+
+Write-Host "Visitor counter endpoint: https://helvete.pizza/lab/visitor-count.php"
 
 Write-Step "Copying built website into the same Git repo"
 

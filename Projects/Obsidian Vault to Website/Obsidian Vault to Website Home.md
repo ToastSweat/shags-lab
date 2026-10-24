@@ -9,9 +9,13 @@ publish: true
 
 ## About
 If you want to do something like this yourself:
-[[Obsidian-to-Website-General-Guide]]
+[[Projects/Obsidian Vault to Website/Guides/Obsidian-to-Website-General-Guide|Obsidian-to-Website-General-Guide]]
 
 This is more for me but maybe it will help you?
-[[Shag's Lab - Doomsday Rebuild Guide]]
+[[Projects/Obsidian Vault to Website/Guides/Shag's Lab - Doomsday Rebuild Guide|Shag's Lab - Doomsday Rebuild Guide]]
 ## Vault Standards
-[[Shag's Lab - Metadata Standards]]
+[[Projects/Obsidian Vault to Website/Guides/Shag's Lab - Metadata Standards|Shag's Lab - Metadata Standards]]
+
+## Related notes
+
+[[Wiki/Obsidian|Obsidian]] · [[Wiki/Quartz|Quartz]]

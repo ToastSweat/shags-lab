@@ -7,7 +7,7 @@ transmission: 006C
 artist: Jedicide
 track: Shadows of the Empire [3]
 youtube: https://www.youtube.com/watch?v=s0IEWLTzl6g
-transmission_note: "[[006C - Jedicide - Shadows of the Empire 3]]"
+transmission_note: "[[Projects/Cosmic Raven Records/Transmissions/006C - Jedicide - Shadows of the Empire 3|006C - Jedicide - Shadows of the Empire 3]]"
 ---
 
 # 006C - Pinned Comment

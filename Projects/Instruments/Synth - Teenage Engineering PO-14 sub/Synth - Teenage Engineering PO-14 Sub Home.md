@@ -20,3 +20,7 @@ Deep bass line synthesizer with sequencer, parameter locks, play styles and punc
 - 16 punch-in effects
 - 16 punch-in bass oriented play styles
 - 16 pattern chaining
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]] · [[Wiki/Synthesizer|Synthesizer]]

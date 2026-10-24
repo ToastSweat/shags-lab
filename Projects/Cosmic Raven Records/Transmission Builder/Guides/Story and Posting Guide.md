@@ -133,3 +133,7 @@ Longer:
 ```text
 A transmedia fiction project built around music recovered from alternate realities.
 ```
+
+## Related notes
+
+[[Projects/Cosmic Raven Records/Cosmic Raven Records Home|Cosmic Raven Records]] · [[Projects/Cosmic Raven Records/Cosmic Raven Records - Archive Index|Transmission archive]] · [[Wiki/Cosmic Raven Universe|Cosmic Raven Universe]]

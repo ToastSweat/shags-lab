@@ -62,6 +62,10 @@ Better nominated by the clan than inferred from text gaps.
 
 ## Recommended process
 
-Generate 3–5 candidates per title, post the evidence in Discord, let everyone argue, then preserve the winning explanation with the title.
+Generate 3–5 candidates per title, post the evidence in [[Wiki/Discord|Discord]], let everyone argue, then preserve the winning explanation with the title.
 
 The story is the award.
+
+## Related notes
+
+[[Progeny Gaming Network/PGN Discord Archive/PGN Discord Archive Home|Archive home]] · [[Progeny Gaming Network/PGN Discord Archive/PGN - People and Presence|People and presence]]

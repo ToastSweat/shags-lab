@@ -17,7 +17,7 @@ The phrase appears in November 2016 and immediately begins mutating.
 
 Other members produce their own versions. Years later the formula still reappears.
 
-Its historical value is simple: it compresses the entire MTA inheritance into a phrase that can be deployed instantly.
+Its historical value is simple: it compresses the entire [[Wiki/Multi Theft Auto|MTA]] inheritance into a phrase that can be deployed instantly.
 
 The game can be dead.
 
@@ -27,7 +27,7 @@ The joke still runs.
 
 No other PGN word demonstrates identity persistence as well.
 
-Helvete is simultaneously an old MTA identity, a logo, a remembered era, tattoo material, a possible PGN rebrand, a revived SAES group, a motorcycle-club identity, a restaurant, a fast-food joke, a color palette, merchandise, and eventually a web domain.
+[[Wiki/Helvete|Helvete]] is simultaneously an old MTA identity, a logo, a remembered era, tattoo material, a possible PGN rebrand, a revived [[Wiki/San Andreas Emergency Services|SAES]] group, a motorcycle-club identity, a restaurant, a fast-food joke, a color palette, merchandise, and eventually a web domain.
 
 At some point "bring Helvete back" stops meaning restore one exact historical group.
 
@@ -53,13 +53,13 @@ The joke matters because it captures how membership had already become flexible 
 
 Not technically a joke, but practically a PGN catchphrase.
 
-ARK again. Minecraft again. MTA again. Valheim again. Crossout again. Helvete again. Dargeath again.
+ARK again. Minecraft again. MTA again. [[Wiki/Valheim|Valheim]] again. Crossout again. Helvete again. Dargeath again.
 
 "Again" is the unit of historical time in PGN.
 
 ## Taco Shack
 
-Taco Shack is both a Discord bot game and a data-analysis trap.
+Taco Shack is both a [[Wiki/Discord|Discord]] bot game and a data-analysis trap.
 
 In 2019, human users issue thousands of bot commands. Any historical method that simply counts messages will incorrectly treat Taco Shack as one of PGN's greatest intellectual periods.
 
@@ -108,3 +108,7 @@ The first deep archive ends with the server automatically welcoming **PGN Archiv
 A community whose history is full of lost servers, lost backups and remembered fragments ends the record by admitting a bot built to make forgetting harder.
 
 That is now lore too.
+
+## Related notes
+
+[[Progeny Gaming Network/PGN Discord Archive/PGN Discord Archive Home|Archive home]] · [[Progeny Gaming Network/PGN Discord Archive/PGN - The Epic History|Epic history]] · [[Progeny Gaming Network/PGN Discord Archive/PGN - Game Eras and Server Genealogy|Game eras and server genealogy]]

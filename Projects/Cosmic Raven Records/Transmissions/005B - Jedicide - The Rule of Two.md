@@ -9,7 +9,7 @@ track: The Rule of Two
 youtube: https://www.youtube.com/watch?v=dUxBkdX4Ae0
 reality: B
 reception: Stable
-pinned_comment: "[[005B - Pinned Comment]]"
+pinned_comment: "[[Projects/Cosmic Raven Records/Pinned Comments/005B - Pinned Comment|005B - Pinned Comment]]"
 ---
 # TRANSMISSION 005B [Jedicide, The Rule of Two]
 

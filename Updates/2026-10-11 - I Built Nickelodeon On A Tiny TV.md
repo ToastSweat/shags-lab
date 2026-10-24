@@ -1,10 +1,10 @@
 ---
 type: update
 date: 2026-10-11
-project: My Mini Retro Television Channels
+project: My Mini Retro Television Channels, My Mini Retro Television
 publish: true
 ---
-I Built Nickelodeon On A Tiny TV
+I Built [[Wiki/Nickelodeon|Nickelodeon]] On A Tiny TV
 
 Okay, this got out of hand.
 
@@ -12,13 +12,13 @@ What started as "I should put some old cartoons on tiny USB drives and make them
 
 And I am having an unreasonable amount of fun with it.
 
-The little My Mini Retro Television will play MP4 files from a USB drive in order, so my original idea was pretty simple:
+The little [[Projects/My Mini Retro Television/My Mini Retro Television Home|My Mini Retro Television]] will play MP4 files from a USB drive in order, so my original idea was pretty simple:
 
 Take a 4 GB thumb drive.
 
 Put some episodes on it.
 
-Mix in old commercials and bumpers.
+Mix in old commercials and [[Wiki/bumpers|bumpers]].
 
 Make the whole thing feel like somebody recorded a few hours of TV in 1998.
 
@@ -62,7 +62,7 @@ Are You Afraid of the Dark?
 
 Ren & Stimpy.
 
-SNICK bumpers.
+[[Wiki/SNICK|SNICK]] bumpers.
 
 Old commercials.
 
@@ -94,7 +94,7 @@ Bad crops.
 
 Audio that sounded like it was recovered from the bottom of Lake Erie.
 
-So the project slowly turned into what is now the **Retro TV Cart Builder**.
+So the project slowly turned into what is now the **[[Projects/My Mini Retro Television/My Mini Retro Television Channels/My Mini Retro Television Channels Home|Retro TV Cart Builder]]**.
 
 It keeps a registry of all of my episodes, commercials, network branding, bumpers, promos, IDs, sign-offs, and other assorted garbage.
 
@@ -128,7 +128,7 @@ It took me several carts to arrive at "maybe television should not have six thin
 
 ## The Studio
 
-Eventually I got sick of managing all of this through CSV files and PowerShell, so I built a little local web app for reviewing everything.
+Eventually I got sick of managing all of this through CSV files and [[Wiki/PowerShell|PowerShell]], so I built a little local web app for reviewing everything.
 
 Retro TV Cart Studio lets me go clip by clip and actually see what the final television output is going to look like.
 
@@ -234,7 +234,7 @@ Of course.
 
 The nice part is that this is not just a SNICK hack anymore.
 
-The upcoming Cartoon Network carts contain Powerpuff Girls and Dexter's Laboratory shorts that need the exact same treatment, so the composite builder is now a reusable utility.
+The upcoming [[Wiki/Cartoon Network|Cartoon Network]] carts contain Powerpuff Girls and Dexter's Laboratory shorts that need the exact same treatment, so the composite builder is now a reusable utility.
 
 ## Where This Is Going
 

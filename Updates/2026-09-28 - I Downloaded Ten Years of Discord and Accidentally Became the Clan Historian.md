@@ -1,7 +1,7 @@
 ---
 type: update
 date: 2026-09-28
-project: PGN Discord Archive
+project: PGN Discord Archive, Progeny Gaming Network, Safe Cracker Discord Activity, Star Wars Battlefront II Dedicated Server, Dune Awakening Private Server
 publish: true
 ---
 # I Downloaded Ten Years of Discord and Accidentally Became the Clan Historian
@@ -12,14 +12,14 @@ This started because I had a stupid thought:
 
 Turns out, yes.
 
-And once I realized that, obviously the next reasonable thing to do was dump roughly a decade of my friends' conversations into a pile of JSON and start doing archaeology on it.
+And once I realized that, obviously the next reasonable thing to do was dump roughly a decade of my friends' conversations into a pile of [[Wiki/JSON|JSON]] and start doing archaeology on it.
 
-The Discord server is for **PGN — Progeny Gaming Network**, which has existed in one form or another since around 2015. We started as more of a traditional gaming clan around stuff like Multi Theft Auto and Minecraft, but over the years it slowly turned into something much harder to define.
+The Discord server is for **[[Wiki/Progeny Gaming Network|PGN]] — Progeny Gaming Network**, which has existed in one form or another since around 2015. We started as more of a traditional gaming clan around stuff like [[Wiki/Multi Theft Auto|Multi Theft Auto]] and Minecraft, but over the years it slowly turned into something much harder to define.
 
 At this point PGN is basically:
 
 - a gaming group
-- a pile of old dedicated servers
+- a pile of old [[Wiki/dedicated servers|dedicated servers]]
 - a graveyard full of games we swear we're going to play again
 - a software lab
 - an excuse for me to host things
@@ -57,7 +57,7 @@ Once I had the JSON, staring at 69,000 messages one at a time sounded like a ter
 
 So I started building a little analysis tool I called:
 
-**PGN Discord Archaeologist**
+**[[Progeny Gaming Network/PGN Discord Archive/PGN Discord Archive Home|PGN Discord Archaeologist]]**
 
 The first version normalizes the exported messages and generates things like:
 
@@ -71,7 +71,7 @@ The first version normalizes the exported messages and generates things like:
 - return-after-disappearing patterns
 - and candidates for stupid clan titles
 
-It also builds a SQLite database so the archive becomes something I can actually search.
+It also builds a [[Wiki/SQLite|SQLite]] [[Wiki/database|database]] so the archive becomes something I can actually search.
 
 That means instead of scrolling through Discord for two hours trying to remember something, I can eventually ask questions like:
 
@@ -95,7 +95,7 @@ There are very obvious eras.
 
 2017 is absolutely enormous. It is by far the busiest year in the archive.
 
-Then there are periods where everybody piles into ARK, PUBG, Crossout, Grounded, Valheim, Helldivers, Minecraft, The Isle, Dune, or whatever terrible multiplayer decision we have made that month.
+Then there are periods where everybody piles into ARK, PUBG, Crossout, Grounded, [[Wiki/Valheim|Valheim]], Helldivers, Minecraft, The Isle, [[Wiki/Dune Awakening|Dune]], or whatever terrible multiplayer decision we have made that month.
 
 But underneath all of that there is a much more interesting pattern.
 
@@ -168,7 +168,7 @@ At this point Helvete is less of a specific organization and more like some kind
 
 Dargeath was our old Minecraft RPG server.
 
-At one point I went looking for the backups and realized they were probably gone.
+At one point I went looking for the [[Wiki/backups|backups]] and realized they were probably gone.
 
 The Discord archive literally contains:
 
@@ -192,7 +192,7 @@ Then I considered making it a Game Boy game because apparently I enjoy suffering
 
 Then it became a Steam game.
 
-Now I'm turning it into a Discord Activity.
+Now I'm turning it into a [[Wiki/Discord Activities|Discord Activity]].
 
 At this rate I expect to be porting Safe Cracker to a refrigerator in 2031.
 
@@ -237,7 +237,7 @@ from:
 
 For example, we have a later song that describes the lineage as:
 
-**Hell Soldiers → Helvete → WSS → PGN**
+**[[Wiki/Hell Soldiers|Hell Soldiers]] → Helvete → WSS → PGN**
 
 That is absolutely part of PGN lore.
 
@@ -333,4 +333,10 @@ For now, though, I have something I never really expected to have:
 
 And for once, when one of our projects inevitably dies, I might actually remember what the hell happened.
 
-[[Progeny Gaming Network Home]]
+[[Progeny Gaming Network/Progeny Gaming Network Home|Progeny Gaming Network Home]]
+
+## Related projects
+
+- [[Projects/Star Wars Battlefront II Dedicated Server/Star Wars Battlefront II Dedicated Server Home|Star Wars Battlefront II Dedicated Server]]
+- [[Projects/Dune Awakening Private Server/Dune Awakening Private Server Home|Dune Awakening Private Server]]
+- [[Projects/Safe Cracker Discord Activity/Safe Cracker Discord Activity Home|Safe Cracker Discord Activity]]

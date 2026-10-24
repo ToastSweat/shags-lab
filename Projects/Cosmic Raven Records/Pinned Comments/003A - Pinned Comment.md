@@ -7,7 +7,7 @@ transmission: 003A
 artist: "None"
 track: Unnamed
 youtube: https://www.youtube.com/watch?v=MU_QGWQwVSY
-transmission_note: "[[003A - None - Unnamed]]"
+transmission_note: "[[Projects/Cosmic Raven Records/Transmissions/003A - None - Unnamed|003A - None - Unnamed]]"
 ---
 # 003A - Pinned Comment
 

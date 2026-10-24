@@ -7,7 +7,7 @@ transmission: 004A
 artist: Jedicide
 track: The Seduction on the Darkside [1]
 youtube: https://www.youtube.com/watch?v=4wBkw9Awo9M
-transmission_note: "[[004A - Jedicide - The Seduction on the Darkside 1]]"
+transmission_note: "[[Projects/Cosmic Raven Records/Transmissions/004A - Jedicide - The Seduction on the Darkside 1|004A - Jedicide - The Seduction on the Darkside 1]]"
 ---
 # 004A - Pinned Comment
 

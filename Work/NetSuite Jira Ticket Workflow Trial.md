@@ -1,3 +1,7 @@
+---
+publish: false
+---
+
 # NetSuite / Jira Ticket Workflow — Trial Draft (v2)
 
 > **Status:** Working draft for day-to-day use and refinement  

@@ -15,13 +15,13 @@ publish: true
 
 ## Recently Completed
 
-- [x] Build and publish the sanitized GitHub disaster-recovery repository.
-- [x] Create encrypted private backups containing the player database, private configuration, and bridge credentials.
+- [x] Build and publish the sanitized [[Wiki/GitHub|GitHub]] disaster-recovery repository.
+- [x] Create encrypted private backups containing the player [[Wiki/database|database]], private configuration, and bridge [[Wiki/credentials|credentials]].
 - [x] Automatically verify and upload encrypted backups off-server to Dropbox.
 - [x] Write full recovery documentation for rebuilding the server from scratch.
-- [x] Remove Chrome Remote Desktop as the normal administration method.
-- [x] Keep GOG, SWBF2Admin, and Battlefront II isolated in the `admin` console session.
-- [x] Use the separate `RDC` account for normal Remote Desktop administration.
+- [x] Remove [[Wiki/Chrome Remote Desktop|Chrome Remote Desktop]] as the normal administration method.
+- [x] Keep GOG, [[Wiki/SWBFIIAdmin|SWBF2Admin]], and Battlefront II isolated in the `admin` console session.
+- [x] Use the separate `RDC` account for normal [[Wiki/Remote Desktop Connection|Remote Desktop]] administration.
 - [x] Confirm the server remains public and joinable across repeated RDC connections over multiple days.
 - [x] Set team selection to Auto Assign so players cannot undo administrative team swaps.
 - [x] Upgrade HK-47 to v1.3.0 with automatic PvE team enforcement.
@@ -43,11 +43,11 @@ publish: true
 
 ## Phase 1 — PGN Player Identity And Database
 
-- [ ] Document the live SWBF2Admin SQLite schema and confirm stable player key-hash behavior.
+- [ ] Document the live SWBF2Admin [[Wiki/SQLite|SQLite]] schema and confirm stable player key-hash behavior.
 - [ ] Design a separate PGN database keyed to an internal PGN player ID.
 - [ ] Never expose raw game key hashes, IP addresses, or private identifiers publicly.
 - [ ] Decide how players claim or verify an existing game identity.
-- [ ] Design optional Discord-account linking.
+- [ ] Design optional [[Wiki/Discord|Discord]]-account linking.
 - [ ] Define duplicate, renamed, and shared-machine identity handling.
 - [ ] Build a migration path from existing Season 1 statistics.
 
@@ -133,12 +133,16 @@ For every meaningful server change:
 3. Test it manually.
 4. Confirm the public server remains joinable.
 5. Run the relevant automated tests.
-6. Export and inspect the sanitized Git diff.
+6. Export and inspect the sanitized [[Wiki/Git|Git]] diff.
 7. Commit and push the recovery snapshot.
 8. Update the project notes so Future Me does not have to perform digital archaeology again.
 
-[[PGN SWBFII Dedicated Server]]
+[[Progeny Gaming Network/Progeny Gaming Network Home|Progeny Gaming Network]]
 
 
 
-[[PGN Star Wars Battlefront II Dedicated Server Disaster Recovery]]
+[[Projects/Star Wars Battlefront II Dedicated Server/Guides/PGN Star Wars Battlefront II Dedicated Server Disaster Recovery|PGN Star Wars Battlefront II Dedicated Server Disaster Recovery]]
+
+## Related notes
+
+[[Progeny Gaming Network/PGN Discord Archive/PGN - Game Eras and Server Genealogy|Game eras and server genealogy]] · [[Wiki/Star Wars Battlefront II|Battlefront II Classic]] · [[Wiki/HK-47|HK-47 bridge]]

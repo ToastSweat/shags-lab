@@ -7,7 +7,7 @@ transmission: 002A
 artist: Shagwrath
 track: Multi Theft Auto Theme [2]
 youtube: https://www.youtube.com/watch?v=uKdTXT9Hn4M
-transmission_note: "[[002A - Shagwrath - Multi Theft Auto Theme 2]]"
+transmission_note: "[[Projects/Cosmic Raven Records/Transmissions/002A - Shagwrath - Multi Theft Auto Theme 2|002A - Shagwrath - Multi Theft Auto Theme 2]]"
 ---
 # 002A - Pinned Comment
 

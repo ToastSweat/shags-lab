@@ -8,7 +8,7 @@ publish: true
 ![[Pasted image 20260926214603.png]]
 [zZounds](https://www.zzounds.com/item--SQU0374580?siid=258851)
 ## About
-My first Bass VI. God, they are so cool. Doomy sludgy low end monsters of chug. I took the vibrato off of this one and put a hardtail on it, and modified the bridge so it can not move freely. I also installed some brushed aluminum control plates to match the hardtail conversion. All from [OBSCURAMFG](https://www.obscuramfg.com/).
+My first [[Wiki/Bass VI|Bass VI]]. God, they are so cool. Doomy sludgy low end monsters of chug. I took the vibrato off of this one and put a hardtail on it, and modified the [[Wiki/Bridge|bridge]] so it can not move freely. I also installed some brushed aluminum control plates to match the hardtail conversion. All from [OBSCURAMFG](https://www.obscuramfg.com/).
 
 ### Mods
 [Bass VI Control Plate](https://www.obscuramfg.com/product-page/bass-vi-control-plate)
@@ -18,7 +18,7 @@ My first Bass VI. God, they are so cool. Doomy sludgy low end monsters of chug. 
 ## Marketing
 The Classic Vibe Bass VI is a faithful tribute to the secret weapon of producers and adventurous players that have dared to explore it since its original production from 1961 to 1975. Tuned an octave lower than a guitar and featuring a vintage-style tremolo, the Bass VI is the perfect companion to accompany any guitar or bass player into uncharted territory.
 
-Player-friendly features include a slim and comfortable "C"-shaped neck profile with an easy-playing 9.5"-radius fingerboard and narrow-tall frets, as well as a floating bridge with barrel saddles. This throwback Squier model also features 1960s inspired headstock markings, nickel-plated hardware and a slick vintage-tinted gloss neck finish for an old-school aesthetic vibe.
+Player-friendly features include a slim and comfortable "C"-shaped neck profile with an easy-playing 9.5"-radius fingerboard and narrow-tall frets, as well as a floating bridge with barrel saddles. This throwback [[Wiki/Squier|Squier]] model also features 1960s inspired headstock markings, nickel-plated hardware and a slick vintage-tinted gloss neck finish for an old-school aesthetic vibe.
 
 ## What's special about this item?
 
@@ -42,7 +42,7 @@ Player-friendly features include a slim and comfortable "C"-shaped neck profile 
 **- Scale Length:** 30" (762 mm)  
 **- Bridge:** 6-Saddle Vintage-Style with Non-Locking Floating Vibrato  
 **- Pickguard:** 4-Ply Tortoiseshell  
-**- Bridge Pickup:** Fender Designed Alnico Single-Coil  
+**- Bridge Pickup:** [[Wiki/Fender|Fender]] Designed Alnico Single-Coil  
 **- Middle Pickup:** Fender Designed Alnico Single-Coil  
 **- Neck Pickup:** 0Fender Designed Alnico Single-Coil  
 **- Pickup Switching:** 3-On/Off Slide Switches (One for Each Pickup)  
@@ -52,3 +52,7 @@ Player-friendly features include a slim and comfortable "C"-shaped neck profile 
 **- Hardware Finish:** Nickel  
 **- Strings:** Fender Nickel-Plated Steel, (.024, .034, .044, .056, .072, .084, Gauges)  
 **- Case/Gig Bag:** None
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]] · [[Projects/Instruments/Bass VI - Penny/BASS VI - Penny Home|Penny — the other Classic Vibe Bass VI]]

@@ -9,7 +9,7 @@ track: The Seduction on the Darkside [1]
 youtube: https://www.youtube.com/watch?v=4wBkw9Awo9M
 reality: A
 reception: Stable
-pinned_comment: "[[004A - Pinned Comment]]"
+pinned_comment: "[[Projects/Cosmic Raven Records/Pinned Comments/004A - Pinned Comment|004A - Pinned Comment]]"
 ---
 # TRANSMISSION 004A [Jedicide, The Seduction on the Darkside [1]]
 

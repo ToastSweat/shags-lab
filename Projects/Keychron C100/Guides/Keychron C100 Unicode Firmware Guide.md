@@ -7,10 +7,10 @@ publish: true
 
 **Original build date:** 2026-09-16  
 **Keyboard:** Keychron C100 8K, 10×10 physical key grid  
-**Host used:** Windows 11 + WSL2 / Ubuntu  
-**Firmware base:** Keychron's QMK fork, `2025q3` branch  
+**Host used:** Windows 11 + [[Wiki/WSL|WSL2]] / Ubuntu  
+**[[Wiki/firmware|Firmware]] base:** Keychron's [[Wiki/QMK|QMK]] fork, `2025q3` branch  
 **QMK target:** `keychron/c100_8k`  
-**Flash interface:** AT32 DFU, VID:PID `2e3c:df11`  
+**Flash interface:** AT32 [[Wiki/DFU|DFU]], VID:PID `2e3c:df11`  
 **Flash tool that actually worked:** `dfu-util` inside WSL, with the DFU USB device passed through by `usbipd-win`
 
 > [!IMPORTANT]
@@ -18,13 +18,13 @@ publish: true
 > The only Windows driver work in this process is giving the C100's **DFU bootloader**
 > a WinUSB driver so WSL / `dfu-util` can talk to it.
 
-This note is deliberately self-contained. The goal is that Future Me can rebuild the entire thing even if the old working directory, ZIP file, or ChatGPT conversation is gone.
+This note is deliberately self-contained. The goal is that Future Me can rebuild the entire thing even if the old working directory, ZIP file, or [[Wiki/ChatGPT|ChatGPT]] conversation is gone.
 
 ---
 
 # 1. What the finished keyboard does
 
-Every one of the C100's 100 physical keys sends a unique Unicode symbol.
+Every one of the C100's 100 physical keys sends a unique [[Wiki/Unicode|Unicode]] symbol.
 
 ```text
 © ® ™ ℠ ℗ § ¶ № † ‡
@@ -87,7 +87,7 @@ This top-left-key bootloader method was tested **after custom firmware was alrea
 
 QMK's Windows Unicode mode uses Windows' HexNumpad input mechanism.
 
-Open **Command Prompt or PowerShell on Windows** and run:
+Open **[[Wiki/Command Prompt|Command Prompt]] or [[Wiki/PowerShell|PowerShell]] on Windows** and run:
 
 ```cmd
 reg add "HKCU\Control Panel\Input Method" /v EnableHexNumpad /t REG_SZ /d 1 /f
@@ -116,7 +116,7 @@ Install QMK's setup tooling:
 curl -fsSL https://install.qmk.fm | sh
 ```
 
-On the machine used for the original build, the ARM compiler was still missing afterward, so explicitly install the pieces we actually needed:
+On the machine used for the original build, the [[Wiki/ARM|ARM]] compiler was still missing afterward, so explicitly install the pieces we actually needed:
 
 ```bash
 sudo apt update
@@ -855,9 +855,9 @@ sudo dfu-util \
 
 These were considered and rejected:
 
-- **16 Keychron Launcher macros:** not enough for 100 symbols.
+- **16 Keychron Launcher [[Wiki/macros|macros]]:** not enough for 100 symbols.
 - **100 Alt-code macros:** Launcher only exposes 16 macro slots.
-- **Direct Unicode keycodes in Launcher JSON:** the stock C100 firmware did not have the necessary QMK Unicode feature enabled, so the experiment did not work.
+- **Direct Unicode keycodes in Launcher [[Wiki/JSON|JSON]]:** the stock C100 firmware did not have the necessary QMK Unicode feature enabled, so the experiment did not work.
 - **AutoHotkey:** would work, but would make the keyboard dependent on a Windows-side script.
 - **Dedicated DFU key in the final map:** unnecessary.
 - **Two-key DFU combo:** unnecessary.
@@ -892,14 +892,14 @@ That means all 100 symbols can exist as real firmware key behaviors without cons
 
 Keep copies of:
 
-- this Markdown note
+- this [[Wiki/Markdown|Markdown]] note
 - the complete `c100-symbol-pad` source directory
 - the exact working `keychron_c100_8k_symbol_pad.bin`
 - the one-key `keychron_c100_8k_unicode_test.bin`
 - the 10×10 symbol/keycap artwork
 - if convenient, a copy or commit reference for the Keychron `qmk_firmware` source used to build it
 
-The Git branch used on 2026-09-16 was:
+The [[Wiki/Git|Git]] branch used on 2026-09-16 was:
 
 ```text
 Keychron/qmk_firmware
@@ -907,10 +907,14 @@ branch: 2025q3
 target: keychron/c100_8k
 ```
 
-Twenty years from now that branch, dependencies, URLs, or toolchain may no longer exist in the same form. Keeping the source tree and known-good `.bin` locally is much safer than relying only on today's GitHub state.
+Twenty years from now that branch, dependencies, URLs, or toolchain may no longer exist in the same form. Keeping the source tree and known-good `.bin` locally is much safer than relying only on today's [[Wiki/GitHub|GitHub]] state.
 
 ---
 
 # 26. One-line summary
 
 **Build Keychron C100 QMK firmware with `UNICODE_ENABLE = yes`, put the C100 into DFU by holding the physical top-left key while connecting USB, pass `2e3c:df11` into WSL with `usbipd-win`, then flash `alt=0` at `0x08000000` with `dfu-util`.**
+
+## Related notes
+
+[[Projects/Keychron C100/Keychron C100 Custom Firmware/Keychron C100 Custom Firmware Home|Firmware project]]

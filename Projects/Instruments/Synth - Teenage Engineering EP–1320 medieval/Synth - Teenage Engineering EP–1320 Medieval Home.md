@@ -22,6 +22,10 @@ A medieval experience like no other, EP–1320 features hundreds of built-in med
 - 7 built-in pocus and 12 punch-in pocus
 - pressure sensitive keys and multi-functional fader
 - sampling frequency: 46 kHz / 16-bit
-- 1x stereo in/out, sync in/out, midi in/out and usb-c
+- 1x stereo in/out, sync in/out, [[Wiki/MIDI|midi]] in/out and usb-c
 - powered by 4x AAA batteries, or via usb-c
 - dimensions: 240 x 176 x 16 mm | 9.5 x 7 x 0.7 in
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]] · [[Wiki/Synthesizer|Synthesizer]]

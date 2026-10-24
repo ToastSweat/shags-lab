@@ -2,7 +2,7 @@
 type: guide
 project: Garth's Game DMG
 status: living
-publish: true
+publish: false
 ---
 # Garth's Game DMG
 
@@ -47,5 +47,5 @@ I want a cartridge, label, box, and manual.
 
 ## Updates
 
-- [[2026-09-26 - I Made A Game Boy Virtual Pet And Then Gave Him Gas]]
+- *2026-09-26 - I Made A Game Boy Virtual Pet And Then Gave Him Gas* (the original linked note is missing). See [[Updates/2026-09-26.3 - I Swear I'm Going to Finish This Game!|the existing September 26 progress update]] for the later project account.
 

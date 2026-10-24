@@ -14,5 +14,5 @@ This keyboard is weird, and a little stupid, just like me. So I had to buy it, a
 [Keychron C100 8K Giant Custom Macro Pad](https://www.keychron.com/products/keychron-c100-8k-giant-custom-macro-pad?srsltid=AU7gw4VWw1yF4miYpwb39suSNc8DM-uluxd9tGRnJ-s1S_oXnzbXMNfx)
 
 ### My Projects
-[[Keychron C100 Custom Firmware Home]]
-[[Keychron C100 Custom Keycaps Home]]
+[[Projects/Keychron C100/Keychron C100 Custom Firmware/Keychron C100 Custom Firmware Home|Keychron C100 Custom Firmware Home]]
+[[Projects/Keychron C100/Keychron C100 Custom Keycaps/Keychron C100 Custom Keycaps Home|Keychron C100 Custom Keycaps Home]]

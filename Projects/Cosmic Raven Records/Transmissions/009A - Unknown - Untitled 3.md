@@ -9,6 +9,7 @@ track: Untitled 3
 youtube: https://www.youtube.com/watch?v=-CHCGF7ZNCA
 reality: A
 reception: Stable
+pinned_comment: "[[Projects/Cosmic Raven Records/Pinned Comments/009A - Pinned Comment|009A - Pinned Comment]]"
 ---
 
 # TRANSMISSION 009A [Unknown, Untitled 3]

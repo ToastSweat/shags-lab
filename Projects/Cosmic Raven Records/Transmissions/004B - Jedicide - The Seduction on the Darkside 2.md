@@ -9,7 +9,7 @@ track: The Seduction on the Darkside [2]
 youtube: https://www.youtube.com/watch?v=K2G7XC_31I8
 reality: B
 reception: Stable
-pinned_comment: "[[004B - Pinned Comment]]"
+pinned_comment: "[[Projects/Cosmic Raven Records/Pinned Comments/004B - Pinned Comment|004B - Pinned Comment]]"
 ---
 # TRANSMISSION 004B [Jedicide, The Seduction on the Darkside [2]]
 

@@ -6,7 +6,7 @@ publish: true
 ---
 # IT'S ALIIIIIIIIIIIIVE!
 
-I wanted to use my character chat app on my phone.
+I wanted to use my [[Projects/Hermes/ChatBot/ChatBot Home|character chat app]] on my phone.
 
 At home.
 Away from home.
@@ -54,7 +54,7 @@ It does not mean my desktop. It does not mean the server. It does not mean “pl
 
 Installing the app as a PWA would not solve that either. An icon on the home screen does not secretly contain a PostgreSQL server and all of my conversations.
 
-I needed the application, database, and private files to live on the always-on OVH machine.
+I needed the application, [[Wiki/database|database]], and private files to live on the always-on OVH machine.
 
 The browser could then be wherever I happened to be.
 
@@ -93,7 +93,7 @@ The OVH host already had websites and other services running on it.
 
 That made “install whatever the new app wants and hope nothing else notices” an unacceptable deployment strategy.
 
-The Apache security-maintenance work turned into a much larger detour than it should have. There were preparation tools, compatibility checks, backups, and eventually an attempted controlled update.
+The Apache security-maintenance work turned into a much larger detour than it should have. There were preparation tools, compatibility checks, [[Wiki/backups|backups]], and eventually an attempted controlled update.
 
 That update failed after Apache stopped, before the managed binary replacement began.
 
@@ -109,7 +109,7 @@ The phone deployment continued separately. It did not get to keep replaying the 
 
 The practical route was to preserve the working host, add the dedicated bot site, and leave the larger Apache update as an explicit maintenance issue.
 
-This was another Hermes-assisted project, and this part was frustrating. The original goal got buried under a lot of infrastructure work while I still could not use the app on my phone.
+This was another [[Wiki/Hermes Agent|Hermes]]-assisted project, and this part was frustrating. The original goal got buried under a lot of infrastructure work while I still could not use the app on my phone.
 
 Eventually, the plan needed to become a deployment again.
 
@@ -165,7 +165,7 @@ The original local data stayed where it was.
 
 ## Windows Had Opinions About the Transfer
 
-Temporary, restricted SSH access made the remaining server work much easier than manually pasting PowerShell through Remote Desktop.
+Temporary, restricted SSH access made the remaining server work much easier than manually pasting [[Wiki/PowerShell|PowerShell]] through Remote Desktop.
 
 The private configuration went directly over the encrypted connection. Its contents did not need to become a chat message, a command-line password, or a helpful screenshot of all my secrets.
 
@@ -185,7 +185,7 @@ The exact stuck receiver process was identified and stopped. The incomplete priv
 
 That transfer completed, and the checksum matched.
 
-I do not particularly care which transfer method wins the argument as long as the private data stays private and the bytes on the other end are the correct bytes.
+I do not particularly care which transfer method wins the argument as long as the private data stays private and the [[Wiki/bytes|bytes]] on the other end are the correct bytes.
 
 ## Then the Database Actually Came Back
 
@@ -250,7 +250,7 @@ Application: 127.0.0.1:5175
 Database:    127.0.0.1:5434
 ```
 
-Apache handles the public HTTPS connection.
+Apache handles the public [[Wiki/TLS|HTTPS]] connection.
 
 The services are configured for automatic startup, and the app has a configured failure-restart action.
 
@@ -294,7 +294,7 @@ Before putting a personal model-backed app on a public hostname, account registr
 
 My existing account could move across with the database.
 
-Random visitors did not need an invitation to create accounts backed by my provider credentials.
+Random visitors did not need an invitation to create accounts backed by my provider [[Wiki/credentials|credentials]].
 
 The deployed site rejects registration attempts, and the keys stay on the server.
 
@@ -354,7 +354,7 @@ They are not the same thing as me using Android Chrome on cellular with a real k
 
 ## I Also Wanted Future Me to Understand the Server
 
-The deployment left an operations guide with the service names, runtime paths, private configuration locations, backup information, certificate renewal setup, and the things that were not tested.
+The deployment left an operations guide with the service names, runtime [[Wiki/paths|paths]], private configuration locations, backup information, certificate renewal setup, and the things that were not tested.
 
 It also records the less exciting leftovers.
 
@@ -403,8 +403,8 @@ The server work is finally at the point where I can test the app from my phone i
 
 That was the whole point.
 
-[[Companion AI Home]]
+[[Projects/Hermes/ChatBot/ChatBot Home|Companion AI Home]]
 
-[[Companion AI Phone Hosting Guide]]
+*Companion AI Phone Hosting Guide — this guide has not been added to the vault yet.*
 
-I will get the source fully commited to GitHub tomorrow night and posted here.
+I will get the source fully commited to [[Wiki/GitHub|GitHub]] tomorrow night and posted here.

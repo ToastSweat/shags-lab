@@ -66,7 +66,7 @@ Avoid paths with brackets like:
 C:\[PGN]\[DUNE]
 ```
 
-PowerShell, SteamCMD, scripts, and wildcard handling can all become weird for no good reason. Use boring paths.
+[[Wiki/PowerShell|PowerShell]], SteamCMD, scripts, and wildcard handling can all become weird for no good reason. Use boring paths.
 
 ## Big Picture Architecture
 
@@ -479,7 +479,7 @@ Its companion `.sha256` file contains the same hash. The Windows copy was
 hashed after transfer and matched exactly.
 
 The snapshot was taken while the battlegroup was stopped and PostgreSQL was
-still running. This avoids live game-server memory overwriting database changes
+still running. This avoids live game-server memory overwriting [[Wiki/database|database]] changes
 during shutdown.
 
 ### What the Portable Package Preserves
@@ -1039,3 +1039,7 @@ Do not panic.
 Do not delete the real namespace.
 
 And absolutely preserve the `Bootyhole` switch unless there is a very good reason not to.
+
+## Related notes
+
+[[Projects/Dune Awakening Private Server/Dune Awakening Private Server Home|Dune server project]] · [[Projects/Dune Awakening Private Server/Dune Private Server Settings Reference|Settings reference]] · [[Wiki/backups|Backups]] · [[Wiki/dedicated servers|Dedicated servers]]

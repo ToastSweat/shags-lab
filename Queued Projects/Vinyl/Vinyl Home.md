@@ -3,7 +3,7 @@ type: project-parent
 date: 2026-09-29
 project: Vinyl
 status: active
-publish: true
+publish: false
 ---
 
 ## About

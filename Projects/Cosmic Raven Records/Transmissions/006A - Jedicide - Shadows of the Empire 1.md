@@ -9,7 +9,7 @@ track: Shadows of the Empire [1]
 youtube: https://www.youtube.com/watch?v=RO-x8LIJHb4
 reality: A
 reception: Stable
-pinned_comment: "[[006A - Pinned Comment]]"
+pinned_comment: "[[Projects/Cosmic Raven Records/Pinned Comments/006A - Pinned Comment|006A - Pinned Comment]]"
 ---
 # TRANSMISSION 006A [Jedicide, Shadows of the Empire [1]]
 

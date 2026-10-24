@@ -8,7 +8,7 @@ publish: true
 
 ![[{4B4395FD-0241-45B0-A0DE-CE5F20B0A306}.png]]
 
-Last time I wrote about this project I had somehow managed to download roughly 131GB of old television bumpers, commercials, station IDs, promos, and assorted broadcast garbage.
+Last time I wrote about this project I had somehow managed to download roughly 131GB of old television [[Wiki/bumpers|bumpers]], commercials, station IDs, promos, and assorted broadcast garbage.
 
 Which was great.
 
@@ -18,7 +18,7 @@ So naturally I built software for the tiny television.
 
 Again.
 
-The original idea was pretty simple: make little 4GB USB drives that behave like physical TV cartridges. Each one represents a fake period-correct station recording. Nickelodeon, Cartoon Network, Kids' WB, Fox Kids, Boomerang, Sci-Fi, UPN, HBO, AMC, etc.
+The original idea was pretty simple: make little 4GB USB drives that behave like physical TV cartridges. Each one represents a fake period-correct station recording. [[Wiki/Nickelodeon|Nickelodeon]], [[Wiki/Cartoon Network|Cartoon Network]], [[Wiki/Kids' WB|Kids' WB]], [[Wiki/FOX|Fox]] Kids, Boomerang, Sci-Fi, UPN, HBO, AMC, etc.
 
 Not a drive full of one show.
 
@@ -30,7 +30,7 @@ Synthetic nostalgia.
 
 ## The Cart Builder
 
-The big thing I have been working on is what I am currently calling the Retro TV Cart Builder.
+The big thing I have been working on is what I am currently calling the [[Projects/My Mini Retro Television/My Mini Retro Television Channels/My Mini Retro Television Channels Home|Retro TV Cart Builder]].
 
 Instead of manually dragging files onto a flash drive, I can define a station and let the builder assemble a proposed broadcast from my library.
 
@@ -388,4 +388,4 @@ Get NICK1 actually onto the flash drive.
 
 Then plug it into the tiny television and find out what I broke.
 
-[[My Mini Retro Television Channels Home]]
+[[Projects/My Mini Retro Television/My Mini Retro Television Channels/My Mini Retro Television Channels Home|My Mini Retro Television Channels Home]]

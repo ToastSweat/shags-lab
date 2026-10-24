@@ -9,12 +9,16 @@ publish: true
 
 Idk lol nothin else to say
 
-[[Keychron C100 Custom Firmware How Do]] or skip it and go right to [[Keychron C100 Unicode Firmware Guide]].
+[[Projects/Keychron C100/Guides/Keychron C100 Custom Firmware How Do|Keychron C100 Custom Firmware How Do]] or skip it and go right to [[Projects/Keychron C100/Guides/Keychron C100 Unicode Firmware Guide|Keychron C100 Unicode Firmware Guide]].
 
 **Legend**:
 ![[c100_symbol_pad_template_plain.svg]]
 
-**Firmware:**
+**[[Wiki/firmware|Firmware]]:**
 
 My Firmware Build, use at your own risk and if you know what you're doing.
 ![[c100-symbol-pad.zip]]
+
+## Related notes
+
+[[Projects/Keychron C100/Keychron C100 Home|Keychron C100]]

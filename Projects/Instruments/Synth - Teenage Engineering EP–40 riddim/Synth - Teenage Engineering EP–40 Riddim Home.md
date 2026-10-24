@@ -23,6 +23,10 @@ EP–40 riddim is a powerful sampler, sequencer and composer inspired by reggae,
 - 7 main fx and 12 punch-in™ fx
 - pressure sensitive keys and multifunctional fader
 - sampling frequency: 46 kHz / 16-bit
-- stereo in/out, sync in/out, midi in/out and usb-c
+- stereo in/out, sync in/out, [[Wiki/MIDI|midi]] in/out and usb-c
 - powered by 4x AAA batteries, or via usb-c
 - dimensions: 240 x 176 x 16 mm | 9.5 x 7 x 0.7 in
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]] · [[Wiki/Synthesizer|Synthesizer]]

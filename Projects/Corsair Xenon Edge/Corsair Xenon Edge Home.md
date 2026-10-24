@@ -9,5 +9,5 @@ publish: true
 Placeholder
 
 ## iCue Widgets
-[[iCue Binary Clock Widget Home]]
-[[iCue Image Ranker Widget Home]]
+[[Projects/Corsair Xenon Edge/iCue Binary Clock Widget/iCue Binary Clock Widget Home|iCue Binary Clock Widget Home]]
+[[Projects/Corsair Xenon Edge/iCue Image Ranker Widget/iCue Image Ranker Widget Home|iCue Image Ranker Widget Home]]

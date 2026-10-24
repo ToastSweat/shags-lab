@@ -22,7 +22,7 @@ The games were temporary.
 
 The people were the persistent world.
 
-The surviving archive contains **68,975 unique Discord messages** across the exported channels and threads. **62,498** of those messages were written by **193 distinct human author IDs**; the remaining **6,477** came from bots. The record begins on **October 19, 2016** and runs through **September 27, 2026**. PGN's own 2026 description says the clan itself dates to **2015**, so the Discord record begins after the story was already underway.
+The surviving archive contains **68,975 unique [[Wiki/Discord|Discord]] messages** across the exported channels and threads. **62,498** of those messages were written by **193 distinct human author IDs**; the remaining **6,477** came from bots. The record begins on **October 19, 2016** and runs through **September 27, 2026**. PGN's own 2026 description says the clan itself dates to **2015**, so the Discord record begins after the story was already underway.
 
 One archival problem deserves to be stated immediately: a single now-deleted Discord account accounts for **8,114 surviving messages**. The words remain, but the identity does not. Any history built from the archive therefore contains a large person-shaped blank spot.
 
@@ -56,13 +56,13 @@ That structural change is important. Early PGN history is a river. Later PGN his
 
 The earliest surviving Discord message is not the beginning of PGN.
 
-PGN's own 2026 `about-pgn` post calls the community **"est. 2015"** and says it began as a dedicated clan for **Multi Theft Auto** and **Minecraft**. [E42] That description is the strongest explicit statement inside the archive about the organization's starting point.
+PGN's own 2026 `about-pgn` post calls the community **"est. 2015"** and says it began as a dedicated clan for **[[Wiki/Multi Theft Auto|Multi Theft Auto]]** and **Minecraft**. [E42] That description is the strongest explicit statement inside the archive about the organization's starting point.
 
 There is also an older lineage preserved as clan lore. In October 2025, while working on a deliberately over-the-top PGN song, Shagwrath wrote the sequence:
 
 **Hell Soldiers → Helvete → WSS → PGN.** [E37]
 
-Because that sequence appears inside a stylized retrospective song rather than a contemporaneous 2015 record, it belongs in the category of **oral tradition** rather than hard archival chronology. But it matches something the Discord record makes obvious: **Helvete**, **WSS**, and the wider MTA scene were not random references. They were old countries people could still point to on the map.
+Because that sequence appears inside a stylized retrospective song rather than a contemporaneous 2015 record, it belongs in the category of **oral tradition** rather than hard archival chronology. But it matches something the Discord record makes obvious: **[[Wiki/Helvete|Helvete]]**, **[[Wiki/Why So Serious RPG|WSS]]**, and the wider MTA scene were not random references. They were old countries people could still point to on the map.
 
 By 2018, Shagwrath was talking about a future Helvete tattoo specifically because he wanted a permanent reminder of the MTA years and the friends attached to them. [E10] In 2020, people could still debate WSS history, old scripts, old HUDs, old server culture, and who had been where. By 2022, the MTA ecosystem had become a philosophical subject: not just a game people once played, but an example of how a community can outlive the software that created it.
 
@@ -339,7 +339,7 @@ The clan begins to look less like a game-specific group and more like a place wh
 
 ## Safe Cracker Returns
 
-On March 7, Shagwrath asks whether people remember his **Safe Cracker** game — originally associated with an SAES bank-robbing trainer — and wonders how it would work on a Game Boy. [E21]
+On March 7, Shagwrath asks whether people remember his **Safe Cracker** game — originally associated with an [[Wiki/San Andreas Emergency Services|SAES]] bank-robbing trainer — and wonders how it would work on a Game Boy. [E21]
 
 The group debates controls. A D-pad seems too slow. Maybe a keypad. Maybe the concept does not fit the hardware. Maybe the challenge is exactly why it is worth doing.
 
@@ -415,7 +415,7 @@ It is friends maintaining a shared place.
 
 ## Valheim Winter
 
-By late November, attention drifts toward **Valheim**.
+By late November, attention drifts toward **[[Wiki/Valheim|Valheim]]**.
 
 Tilong eventually signs off after playing for approximately sixteen hours in one day. [E26]
 
@@ -948,3 +948,7 @@ For the message-level research trail, see **`PGN - Historical Evidence Ledger.md
 ---
 
 *PGN Epic History — working draft 1.0, generated 2026-09-28.*
+
+## Related notes
+
+[[Progeny Gaming Network/PGN Discord Archive/PGN Discord Archive Home|Archive home]] · [[Progeny Gaming Network/PGN Discord Archive/PGN - Master Timeline|Master timeline]] · [[Progeny Gaming Network/PGN Discord Archive/PGN - Game Eras and Server Genealogy|Game eras and server genealogy]] · [[Progeny Gaming Network/PGN Discord Archive/PGN - People and Presence|People and presence]] · [[Projects/Star Wars Battlefront II Dedicated Server/Star Wars Battlefront II Dedicated Server Home|Battlefront II project]] · [[Projects/Dune Awakening Private Server/Dune Awakening Private Server Home|Dune server project]] · [[Projects/Safe Cracker Discord Activity/Safe Cracker Discord Activity Home|Safe Cracker Activity]]

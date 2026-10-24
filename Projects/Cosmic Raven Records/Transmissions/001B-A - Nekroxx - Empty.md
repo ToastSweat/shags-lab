@@ -9,6 +9,7 @@ track: Empty
 youtube: https://youtu.be/GRSyLwFr8LM
 reality: B-A
 reception: Stable
+pinned_comment: "[[Projects/Cosmic Raven Records/Pinned Comments/001B-A - Pinned Comment|001B-A - Pinned Comment]]"
 ---
 
 # TRANSMISSION 001B-A [Nekroxx, Empty]

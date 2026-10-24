@@ -1,0 +1,18 @@
+{
+  "scope": ["F:/[DIARY]/Shag's Lab", "F:/[DIARY]/ShagsLab-Web"],
+  "protected_existing_user_files_sha256": {
+    "Updates/TODO.md": "25b2b375bf46015be4368ff9b209911f95f9ddbdc16f64f14c0fe4c52539668f",
+    "Projects/Cosmic Raven Records/Pinned Comments/001B-A - Pinned Comment.md": "255a0cf5a6862c15480765a0b47f5201c456b362e38dd15305151dedd9686a20",
+    "Projects/Cosmic Raven Records/Transmissions/001B-B - Nekroxx - Empty.md": "a16eac97fe949b3517effd1f086e11b6234bac795beb91931a109649232946a7"
+  },
+  "original_note_counts": {
+    "Projects": 95,
+    "Wiki": 80,
+    "Updates": 48,
+    "Progeny Gaming Network": 9,
+    "Queued Projects": 7,
+    "Welcome.md": 1,
+    "Work": 1
+  },
+  "notes": "No commits, pushes or remote deployment authorized. Build verification may update local generated output. Existing Guides paths retained to preserve public URLs."
+}

@@ -7,7 +7,7 @@ publish: true
 
 # PGN Game Eras and Server Genealogy
 
-This file separates three things that raw Discord statistics easily confuse:
+This file separates three things that raw [[Wiki/Discord|Discord]] statistics easily confuse:
 
 1. a game was mentioned,
 2. PGN was actively playing a game together,
@@ -19,7 +19,7 @@ A Steam link is weak evidence of a clan era. Repeated direct invitations are str
 
 ## MTA / GTA multiplayer
 
-**MTA → SAES/WSS/Helvete → FiveM → GT-MP → alt:V → FiveM zombie work → modern GTA-server discussions**
+**[[Wiki/Multi Theft Auto|MTA]] → [[Wiki/San Andreas Emergency Services|SAES]]/[[Wiki/Why So Serious RPG|WSS]]/[[Wiki/Helvete|Helvete]] → FiveM → GT-MP → alt:V → FiveM zombie work → modern GTA-server discussions**
 
 This is PGN's longest technical lineage. What persists is not one mod but a preferred shape of multiplayer: social open-world play, custom jobs, groups/gangs, scripting, server ownership, and the ability to make ridiculous systems the base game never intended.
 
@@ -35,7 +35,7 @@ Dargeath gives that pattern a named myth. Its loss turns it from old software in
 
 ## Survival servers
 
-**ARK → 7 Days to Die → Grounded → Valheim → Palworld / Enshrouded / The Isle / ARK returns → Dune**
+**ARK → 7 Days to Die → Grounded → [[Wiki/Valheim|Valheim]] → Palworld / Enshrouded / The Isle / ARK returns → Dune**
 
 These games generate the clearest communal eras because they create persistent places and maintenance obligations.
 
@@ -165,3 +165,7 @@ The later private-server work turns it into one of PGN's technically richest hos
 The server is funny. The surrounding roadmap is historically significant.
 
 PGN begins by running servers for games and gradually evolves toward building systems around games until the surrounding project is almost as large as the game itself.
+
+## Related notes
+
+[[Progeny Gaming Network/PGN Discord Archive/PGN Discord Archive Home|Archive home]] · [[Progeny Gaming Network/PGN Discord Archive/PGN - The Epic History|Epic history]] · [[Projects/Dune Awakening Private Server/Dune Awakening Private Server Home|Dune server project]] · [[Projects/Star Wars Battlefront II Dedicated Server/Star Wars Battlefront II Dedicated Server Home|Battlefront II project]]

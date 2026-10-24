@@ -1,0 +1,164 @@
+{
+  "build": {
+    "exit_code": 0,
+    "public_source_notes": 250,
+    "referenced_attachments": 124,
+    "deployment_basepath": "/lab",
+    "git_actions_skipped": true
+  },
+  "automated_tests": {
+    "javascript_typescript": {
+      "tests": 168,
+      "passed": 168,
+      "failed": 0
+    },
+    "powershell_fixtures": "passed"
+  },
+  "source_audit": {
+    "note_count": 263,
+    "wiki_articles": 100,
+    "wikilinks": 1673,
+    "missing": [],
+    "ambiguous": [],
+    "selflinks": [],
+    "folder_only_links": [],
+    "public_links_to_unpublished": [
+      {
+        "source": "Updates/2026-09-16 - I Made A Custom Driver.md",
+        "line": 142,
+        "target": "Projects/Keychron C100/Keychron C100 Custom Keycaps/Keychron C100 Custom Keycaps Home"
+      },
+      {
+        "source": "Updates/2026-09-18.1 - A Mixed Bag Sort of Day.md",
+        "line": 37,
+        "target": "Updates/assets/GitHub Landing 9-18-2026"
+      },
+      {
+        "source": "Updates/2026-09-24 - Another Mix-Bag Sort of Day.md",
+        "line": 24,
+        "target": "Queued Projects/Garths Game DMG/Garths Game DMG Home"
+      },
+      {
+        "source": "Updates/2026-09-25 - Holy Cow, I'm Pooped.md",
+        "line": 24,
+        "target": "Queued Projects/Garths Game DMG/Garths Game DMG Home"
+      },
+      {
+        "source": "Updates/2026-09-26.1 - Weekend Working.md",
+        "line": 25,
+        "target": "Queued Projects/Garths Game DMG/Garths Game DMG Home"
+      },
+      {
+        "source": "Updates/2026-09-26.1 - Weekend Working.md",
+        "line": 26,
+        "target": "Queued Projects/Garths Game DMG/Garths Game DMG Home"
+      },
+      {
+        "source": "Updates/2026-09-26.3 - I Swear I'm Going to Finish This Game!.md",
+        "line": 388,
+        "target": "Queued Projects/Garths Game DMG/Garths Game DMG Home"
+      },
+      {
+        "source": "Updates/2026-09-26.3 - I Swear I'm Going to Finish This Game!.md",
+        "line": 390,
+        "target": "Queued Projects/Garths Game DMG/docs/Garth's Game I - Game Design Document"
+      },
+      {
+        "source": "Updates/2026-09-26.3 - I Swear I'm Going to Finish This Game!.md",
+        "line": 391,
+        "target": "Queued Projects/Garths Game DMG/docs/Garth's Game I - Production Roadmap"
+      },
+      {
+        "source": "Updates/2026-09-26.3 - I Swear I'm Going to Finish This Game!.md",
+        "line": 392,
+        "target": "Queued Projects/Garths Game DMG/docs/Garth's Game I - Technical Design"
+      },
+      {
+        "source": "Updates/2026-09-27.1 - I Gave Shag's Lab a Tune-Up.md",
+        "line": 24,
+        "target": "Projects/Keychron C100/Keychron C100 Custom Keycaps/Keychron C100 Custom Keycaps Home"
+      },
+      {
+        "source": "Updates/2026-10-04.1 - Mixed Bag Again.md",
+        "line": 73,
+        "target": "Queued Projects/Garths Game DMG/Garths Game DMG Home"
+      },
+      {
+        "source": "Updates/2026-10-04.1 - Mixed Bag Again.md",
+        "line": 75,
+        "target": "Queued Projects/Vinyl/Vinyl Home"
+      },
+      {
+        "source": "Wiki/Cosmic Raven Universe.md",
+        "line": 12,
+        "target": "Garths Game DMG Home"
+      },
+      {
+        "source": "Wiki/DBZS Zombie Survival RPG.md",
+        "line": 14,
+        "target": "PGN - Historical Evidence Ledger"
+      },
+      {
+        "source": "Wiki/Garth Algar.md",
+        "line": 10,
+        "target": "Garths Game DMG Home"
+      },
+      {
+        "source": "Wiki/Progeny Gaming Network.md",
+        "line": 14,
+        "target": "PGN - Historical Evidence Ledger"
+      },
+      {
+        "source": "Wiki/Video Games.md",
+        "line": 16,
+        "target": "Garths Game DMG Home"
+      },
+      {
+        "source": "Wiki/Why So Serious RPG.md",
+        "line": 14,
+        "target": "PGN - Historical Evidence Ledger"
+      },
+      {
+        "source": "Projects/Keychron C100/Keychron C100 Home.md",
+        "line": 18,
+        "target": "Projects/Keychron C100/Keychron C100 Custom Keycaps/Keychron C100 Custom Keycaps Home"
+      }
+    ],
+    "wiki_errors": [],
+    "nul_corruption": []
+  },
+  "html_audit": {
+    "html_pages": 336,
+    "internal_references_checked": 20645,
+    "missing_local_destinations": {},
+    "bad_anchor_count": 0,
+    "bad_anchor_examples": [],
+    "self_redirects": [],
+    "private_paths_in_output": [],
+    "private_live_links": [],
+    "private_search_graph_entries": [],
+    "content_index_entries": 271,
+    "homepage_basepath": "/lab"
+  },
+  "browser": {
+    "updates": {
+      "posts": 45,
+      "newest": "/lab/updates/2026-10-22---finally-something-i've-never-seen-before!",
+      "oldest": "/lab/updates/2026-09-16---i-made-a-custom-driver",
+      "explorer_and_home_newest_first": true,
+      "screenshot": "F:\\[DIARY]\\Shag's Lab\\Projects\\Obsidian Vault to Website\\assets\\updates-home-desktop.png"
+    },
+    "wiki_home": {
+      "screenshot": "F:\\[DIARY]\\Shag's Lab\\Projects\\Obsidian Vault to Website\\assets\\wiki-home-desktop.png"
+    },
+    "video_games_direct_navigation": true,
+    "mobile": {
+      "viewport": 390,
+      "scrollWidth": 390,
+      "screenshot": "F:\\[DIARY]\\Shag's Lab\\Projects\\Obsidian Vault to Website\\assets\\wiki-home-mobile.png"
+    },
+    "runtime_exceptions": [],
+    "private_explorer_entries": []
+  },
+  "remote_deployment": "not performed"
+}

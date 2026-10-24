@@ -10,13 +10,13 @@ I like character-based AI chat. Sakura has some fun character and roleplay tools
 
 You know. A little chatbot.
 
-Naturally, I handed Hermes Agent a product manifest, a roadmap, an architecture plan, and a pile of acceptance criteria, and this has escalated into building an entire application.
+Naturally, I handed [[Wiki/Hermes Agent|Hermes Agent]] a product manifest, a roadmap, an architecture plan, and a pile of acceptance criteria, and this has escalated into building an entire application.
 
 Cool. That's normal.
 
 ## Five things that shouldn't be the same thing
 
-The idea behind **Companion AI** (working title, because naming things is apparently harder than building them) is that a _Character_ should be its own person on paper, not just a prompt glued to an AI model.
+The idea behind **[[Projects/Hermes/ChatBot/ChatBot Home|Companion AI]]** (working title, because naming things is apparently harder than building them) is that a _Character_ should be its own person on paper, not just a prompt glued to an AI model.
 
 A **User Persona** is who I'm playing as. A **Scenario** is what's happening. A **Conversation** is the actual exchange. **Memory** is what should survive after the conversation ends.
 
@@ -48,7 +48,7 @@ No automatic rewriting of someone's personality because a model got enthusiastic
 
 I also wanted a way to bring my existing Sakura characters along for the ride.
 
-I ended up making a small browser extension that exports Sakura character definitions as JSON. I pulled together **39 characters**, then caught and cleaned up some mangled export text in **10** of those files. That collection gives me some actual material to work with instead of making up test characters all day.
+I ended up making a small browser extension that exports Sakura character definitions as [[Wiki/JSON|JSON]]. I pulled together **39 characters**, then caught and cleaned up some mangled export text in **10** of those files. That collection gives me some actual material to work with instead of making up test characters all day.
 
 On the app side, Hermes built a reviewed Sakura importer that separates the character from the scenario and opening context. It previews the mapping and warns about duplicates rather than quietly overwriting things.
 
@@ -72,7 +72,7 @@ Trying.
 
 ## Let the robot write code. Make it prove the code works.
 
-One part I'm especially happy with is the workflow. Hermes builds an increment, runs tests and reviews, makes database backups before migrations, and stops for me to try the feature before it moves on.
+One part I'm especially happy with is the workflow. Hermes builds an increment, runs tests and reviews, makes [[Wiki/database|database]] [[Wiki/backups|backups]] before migrations, and stops for me to try the feature before it moves on.
 
 The latest image-resolution release passed **783 unit tests, 342 database tests, and 56 targeted browser tests**. Those numbers aren't a substitute for actually using the thing, but they're a lot better than asking an AI to write 10,000 lines of code and hoping for the best.
 

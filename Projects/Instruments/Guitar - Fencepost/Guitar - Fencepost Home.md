@@ -16,17 +16,17 @@ So that's cool right? You know what's not cool? An electrical short that caused 
 
 I have replaced the pickups and electronics a few times now, just to keep the demons at bay.
 ### Marketing
-The Squier Bullet Stratocaster delivers the classic look, feel, and sound of a Strat in a simple and affordable package. Designed primarily for beginners and students, the Bullet strips the Stratocaster formula down to the essentials while retaining the comfortable double-cutaway body, familiar 25.5" scale length, three single-coil pickups, and five-way switching that have made the Strat one of the most recognizable electric guitars ever made.
+The [[Wiki/Squier|Squier]] Bullet Stratocaster delivers the classic look, feel, and sound of a Strat in a simple and affordable package. Designed primarily for beginners and students, the Bullet strips the Stratocaster formula down to the essentials while retaining the comfortable double-cutaway body, familiar 25.5" scale length, three single-coil pickups, and five-way switching that have made the Strat one of the most recognizable electric guitars ever made.
 
 This early-2000s Bullet features a lightweight laminated hardwood body finished in blue, paired with a bolt-on maple neck and rosewood fingerboard. Its straightforward construction and comfortable dimensions make it an easy guitar to pick up and play, whether you're learning your first chords, using it as a reliable practice instrument, or turning it into a modification platform.
 
 Three traditional Strat-style single-coil pickups provide the bright, clear tones associated with the design. A five-way selector lets you move between the individual pickups and the classic in-between combinations, giving the Bullet a surprisingly broad palette of clean, jangly, biting, and bluesy sounds.
 
-Unlike many later Bullet Stratocasters, this generation uses a six-saddle hardtail bridge rather than a tremolo. The fixed bridge keeps the design simple, improves tuning stability, and makes string changes and setup particularly straightforward.
+Unlike many later Bullet Stratocasters, this generation uses a six-saddle hardtail [[Wiki/Bridge|bridge]] rather than a tremolo. The fixed bridge keeps the design simple, improves [[Wiki/Tuning|tuning]] stability, and makes string changes and setup particularly straightforward.
 ### Classic Stratocaster Design
 The Bullet uses the familiar double-cutaway Stratocaster body shape, providing comfortable access to the upper frets along with the contoured feel that has made the Strat design a favorite for generations.
 
-The blue finish, white pickguard, chrome hardware, and traditional Squier headstock give the instrument the unmistakable appearance of a classic Strat without the price of its Fender counterparts.
+The blue finish, white pickguard, chrome hardware, and traditional Squier headstock give the instrument the unmistakable appearance of a classic Strat without the price of its [[Wiki/Fender|Fender]] counterparts.
 ### Maple Neck and Rosewood Fingerboard
 A bolt-on maple neck provides the familiar response and feel expected from a traditional Strat-style guitar. The rosewood fingerboard carries 21 frets and simple dot position markers, giving the Bullet a straightforward, uncluttered playing surface.
 
@@ -90,3 +90,7 @@ For a beginner guitar, the hardtail design also makes tuning, restringing, and e
 - **Pickguard:** White
 - **Original String Gauge:** .009–.042
 - **Country of Origin:** Indonesia
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]] · [[Projects/Instruments/Guitar - Sammy/Guitar - Sammy Home|Sammy — donor electronics]]

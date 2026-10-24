@@ -17,7 +17,7 @@ This 2001 example is finished in striking Cherry Red Sunburst, transitioning fro
 
 Underneath the carved quilted maple top is a lightweight swamp ash body, combining the resonance and clarity of ash with the visual depth of highly figured maple. Its sculpted double-cutaway shape gives the G290 the familiar comfort of a Strat-style guitar while sharper horns and a more modern silhouette give it an identity of its own.
 
-The bolt-on birdseye maple neck is paired with a rosewood fingerboard and 22 frets on a traditional 25.5" scale. At the other end of the neck, a Wilkinson roller nut works together with Sperzel Trim-Lok locking tuners and a Wilkinson VS50 II tremolo to provide a remarkably sophisticated tuning system for an early-2000s production guitar.
+The bolt-on birdseye maple neck is paired with a rosewood fingerboard and 22 frets on a traditional 25.5" scale. At the other end of the neck, a Wilkinson roller nut works together with Sperzel Trim-Lok locking tuners and a Wilkinson VS50 II tremolo to provide a remarkably sophisticated [[Wiki/Tuning|tuning]] system for an early-2000s production guitar.
 
 A genuine Seymour Duncan HSS pickup set gives the G290 a broad tonal range. Two Vintage Staggered-style single-coils provide the clear, open tones expected from a traditional Strat configuration, while a hot Seymour Duncan TB-4/JB-family bridge humbucker adds the power and output needed for hard rock, metal, and high-gain lead playing.
 
@@ -39,7 +39,7 @@ Unlike many similarly priced guitars of the period that used licensed or house-b
 
 Two Vintage Staggered-style single-coils occupy the neck and middle positions, providing traditional clear and articulate single-coil tones.
 
-At the bridge is a Seymour Duncan TB-4, the trembucker-spaced version of the legendary JB. Its higher output gives the G290 a significantly more aggressive voice when needed, making the guitar equally comfortable moving from clean and bluesy sounds into hard rock and metal.
+At the [[Wiki/Bridge|bridge]] is a Seymour Duncan TB-4, the trembucker-spaced version of the legendary JB. Its higher output gives the G290 a significantly more aggressive voice when needed, making the guitar equally comfortable moving from clean and bluesy sounds into hard rock and metal.
 
 ### Versatile Electronics
 A five-way pickup selector provides access to the G290's HSS pickup combinations, while an additional coil-tap function expands the available sounds from the bridge humbucker.
@@ -128,3 +128,7 @@ That makes this 2001 instrument part of the original Seymour Duncan/Wilkinson sp
 - **Additional Electronics:** Bridge Humbucker Coil Tap
 - **Hardware:** Chrome
 - **Pickguard:** None
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]]

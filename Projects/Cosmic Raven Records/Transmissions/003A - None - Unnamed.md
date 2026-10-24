@@ -9,7 +9,7 @@ track: Unnamed
 youtube: https://www.youtube.com/watch?v=MU_QGWQwVSY
 reality: A
 reception: Stable
-pinned_comment: "[[003A - Pinned Comment]]"
+pinned_comment: "[[Projects/Cosmic Raven Records/Pinned Comments/003A - Pinned Comment|003A - Pinned Comment]]"
 ---
 # TRANSMISSION 003A [None, Unnamed]
 

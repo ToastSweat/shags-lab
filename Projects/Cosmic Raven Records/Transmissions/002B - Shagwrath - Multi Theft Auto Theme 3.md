@@ -9,7 +9,7 @@ track: Multi Theft Auto Theme [3]
 youtube: https://www.youtube.com/watch?v=s5OVptDhxZc
 reality: B
 reception: Stable
-pinned_comment: "[[002B - Pinned Comment]]"
+pinned_comment: "[[Projects/Cosmic Raven Records/Pinned Comments/002B - Pinned Comment|002B - Pinned Comment]]"
 ---
 # TRANSMISSION 002B [Shagwrath, Multi Theft Auto Theme [3]]
 

@@ -4,9 +4,9 @@ date: 2026-10-06
 project: Star Wars Battlefront II Dedicated Server
 publish: true
 ---
-I Made HK-47 Assign The Teams
+I Made [[Wiki/HK-47|HK-47]] Assign The Teams
 
-The last time I wrote about the PGN Battlefront II server, I ended the post with this:
+The last time I wrote about the [[Projects/Star Wars Battlefront II Dedicated Server/Star Wars Battlefront II Dedicated Server Home|PGN Battlefront II server]], I ended the post with this:
 
 > The next job is to eliminate Chrome Remote Desktop.
 
@@ -16,7 +16,7 @@ It was not simple.
 
 But it is done.
 
-The server is still running **PGN - Ewok Around and Find Out**, still appearing in the public server list, and still letting people join normally. I can now connect and disconnect with regular Windows Remote Desktop without disturbing it.
+The server is still running **[[Wiki/Progeny Gaming Network|PGN]] - Ewok Around and Find Out**, still appearing in the public server list, and still letting people join normally. I can now connect and disconnect with regular [[Wiki/Remote Desktop Connection|Windows Remote Desktop]] without disturbing it.
 
 The solution was not another remote-access product, a VPN, Tailscale, or some elaborate tunnel through the center of the Earth.
 
@@ -26,7 +26,7 @@ It was another Windows account.
 
 The dangerous part of Windows Remote Desktop was not simply opening RDC.
 
-The dangerous part was letting GOG Galaxy, SWBF2Admin, and Battlefront II get tangled up with the temporary RDP session.
+The dangerous part was letting GOG Galaxy, [[Wiki/SWBFIIAdmin|SWBF2Admin]], and [[Wiki/Star Wars Battlefront II|Battlefront II]] get tangled up with the temporary RDP session.
 
 So I left the original `admin` account logged into the real Windows console session. GOG, SWBF2Admin, and Battlefront II all stay there.
 
@@ -43,7 +43,7 @@ I can open RDC, work on the server, disconnect, reconnect later, and the game pr
 
 I tested this over multiple days and multiple RDC connections. The server stayed visible. I could still connect to it from the game. Nothing quietly vanished from the public master list.
 
-Chrome Remote Desktop can remain installed as an emergency fallback, but it is no longer the thing holding the server together with duct tape and Google account authentication.
+[[Wiki/Chrome Remote Desktop|Chrome Remote Desktop]] can remain installed as an emergency fallback, but it is no longer the thing holding the server together with duct tape and Google account [[Wiki/authentication|authentication]].
 
 That entire problem is finally dead.
 
@@ -102,7 +102,7 @@ Fortunately, I already had a homicidal protocol droid connected to WebAdmin.
 
 I inspected SWBF2Admin's source instead of continuing to throw random Lua at a twenty-one-year-old game.
 
-The dynamic Lua API does expose a player-swap function, but its event-listener system is local to each command. It is not connected to real player-join events. There was no hidden `PlayerJoined` callback waiting for me to spell it correctly.
+The dynamic Lua [[Wiki/API|API]] does expose a player-swap function, but its event-listener system is local to each command. It is not connected to real player-join events. There was no hidden `PlayerJoined` callback waiting for me to spell it correctly.
 
 The WebAdmin interface, however, exposes exactly what HK-47 needed:
 
@@ -166,7 +166,7 @@ Just HK-47 quietly deciding where the meatbags belong.
 
 After the live test passed, I ran the repository exporter so the new bridge source, tests, documentation, and Auto Assign configuration would join the disaster-recovery snapshot.
 
-The Git diff also caught an unrelated bandwidth setting that looked suspicious.
+The [[Wiki/Git|Git]] diff also caught an unrelated bandwidth setting that looked suspicious.
 
 I had selected what appeared to be the high-bandwidth option, but the exported configuration changed from `16384` to `128`.
 
@@ -179,7 +179,7 @@ SWBF2Admin's own source confirmed that those values are literal:
 
 So `128` was not the higher setting. It was the bottom of the list wearing a fake mustache.
 
-I restored the server to `16384`, re-exported the clean configuration, and pushed HK-47 v1.3.0 to GitHub.
+I restored the server to `16384`, re-exported the clean configuration, and pushed HK-47 v1.3.0 to [[Wiki/GitHub|GitHub]].
 
 That is exactly why I wanted the live configuration captured and reviewed instead of trusting that I would remember every checkbox forever.
 
@@ -201,6 +201,6 @@ The droid has been given authority.
 
 This will probably be fine.
 
-[[2026-09-22 - PGN SWBFII Dedicated Server]]
+[[Updates/2026-09-21 - Star Wars Battlefront II Server Development|2026-09-22 - PGN SWBFII Dedicated Server]]
 
-[[PGN SWBFII Dedicated Server]]
+[[Projects/Star Wars Battlefront II Dedicated Server/Star Wars Battlefront II Dedicated Server Home|PGN SWBFII Dedicated Server]]

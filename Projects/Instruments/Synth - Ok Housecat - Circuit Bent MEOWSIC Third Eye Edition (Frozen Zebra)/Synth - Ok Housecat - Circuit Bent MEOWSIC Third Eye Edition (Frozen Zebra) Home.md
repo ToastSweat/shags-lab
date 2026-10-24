@@ -35,3 +35,7 @@ https://www.youtube.com/watch?v=zdy3HOs0dGQ&t=153s
   
 A playlist of videos featuring demos of all of the different Meowsic mods I've done:  
 https://youtube.com/playlist?list=PLhdeWuVRwyqqSgbqN5Vf33k5ekKGWw-QO
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]] · [[Wiki/Synthesizer|Synthesizer]]

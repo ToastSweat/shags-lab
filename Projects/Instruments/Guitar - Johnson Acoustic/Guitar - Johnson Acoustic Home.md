@@ -7,3 +7,7 @@ publish: true
 ---
 ## About
 Gave this to a friend, after I slapped Star Wars stickers all over it. Hopefully they or someone else is enjoying it now! I passed it on because I was not loving it. It was the lender I gave to a few people to learn on so it's off teaching other, hopefully.
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]]

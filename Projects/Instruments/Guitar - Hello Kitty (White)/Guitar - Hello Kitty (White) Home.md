@@ -6,3 +6,7 @@ status: complete
 publish: true
 ---
 placeholder
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]]

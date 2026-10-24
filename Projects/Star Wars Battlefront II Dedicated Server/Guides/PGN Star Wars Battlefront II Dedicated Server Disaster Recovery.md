@@ -4,6 +4,9 @@ date: 2026-09-22
 project: Star Wars Battlefront II Dedicated Server
 publish: true
 ---
+> [!WARNING] Dated recovery snapshot
+> This guide preserves the September 11 recovery procedure. The [[Projects/Star Wars Battlefront II Dedicated Server/Star Wars Battlefront II Dedicated Server Home|server project and current roadmap]] records a later `admin` console / `RDC` account model. Check those later notes before using the remote-access instructions below; the historical steps have not been rewritten here.
+
 > **Total disaster-recovery manual for _PGN - Ewok Around and Find Out_**  
 > Last verified: **September 11, 2026**
 
@@ -12,12 +15,12 @@ If you are reading this in 2036 with a blank Windows server and absolutely no me
 This repository contains the custom configuration and source code for:
 
 - The GOG edition of **STAR WARS Battlefront II (Classic, 2005)**
-- **SWBF2Admin/WebAdmin**
-- The two-way **Discord ↔ game chat bridge** (`HK-47`)
+- **[[Wiki/SWBFIIAdmin|SWBF2Admin]]/WebAdmin**
+- The two-way **[[Wiki/Discord|Discord]] ↔ game chat bridge** (`HK-47`)
 - The **SvelteKit/Tailwind landing page** and seasonal leaderboard
-- The PowerShell exporter used to build a safe GitHub backup
+- The [[Wiki/PowerShell|PowerShell]] exporter used to build a safe [[Wiki/GitHub|GitHub]] backup
 
-It intentionally does **not** contain the installed game, third-party executables, passwords, tokens, runtime logs, or the live player database.
+It intentionally does **not** contain the installed game, third-party executables, passwords, tokens, runtime logs, or the live player [[Wiki/database|database]].
 
 ---
 
@@ -26,7 +29,7 @@ It intentionally does **not** contain the installed game, third-party executable
 > [!CAUTION]
 > **NEVER start, restart, administer, or even open the server desktop with Windows Remote Desktop Connection (RDC/RDP).**
 
-SWBF2Admin's official documentation warns that GOG Galaxy communications do not work properly over Windows RDP and that components launched through RDP can disappear from the public master list. This was also reproduced on this server: the server remained public and joinable for nearly 24 hours under Chrome Remote Desktop, then stopped being reachable after an RDC session was opened.
+SWBF2Admin's official documentation warns that GOG Galaxy communications do not work properly over Windows RDP and that components launched through RDP can disappear from the public master list. This was also reproduced on this server: the server remained public and joinable for nearly 24 hours under [[Wiki/Chrome Remote Desktop|Chrome Remote Desktop]], then stopped being reachable after an RDC session was opened.
 
 Use one of these instead:
 
@@ -52,7 +55,7 @@ flowchart TD
     DB --> Site["XAMPP landing page + leaderboard"]
 ```
 
-The bridge talks only to WebAdmin on `localhost`. The website reads the SQLite database in read-only mode. Neither service needs direct public RCON access.
+The bridge talks only to WebAdmin on `localhost`. The website reads the [[Wiki/SQLite|SQLite]] database in read-only mode. Neither service needs direct public RCON access.
 
 ---
 
@@ -102,7 +105,7 @@ C:\PGN\SWBFII\
 └── SWBF2Admin.exe - Shortcut             optional convenience shortcut
 ```
 
-The root-level `.lnk` shortcuts are conveniences only. They are deliberately excluded from Git and can be recreated by right-dragging the corresponding live file and choosing **Create shortcuts here**.
+The root-level `.lnk` shortcuts are conveniences only. They are deliberately excluded from [[Wiki/Git|Git]] and can be recreated by right-dragging the corresponding live file and choosing **Create shortcuts here**.
 
 ### Git repository working folder
 
@@ -277,7 +280,7 @@ That gives recovery two choices: rebuild from editable source or immediately res
 
 ### 3. Export the live configuration and bridge source
 
-Run in PowerShell or Command Prompt:
+Run in PowerShell or [[Wiki/Command Prompt|Command Prompt]]:
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\PGN\Export-PGNSWBF2Repo.ps1
@@ -353,7 +356,7 @@ This database preserves player statistics, match history, WebAdmin users, bans, 
 
 Keep these in a password manager:
 
-- Windows dedicated-server administrator credentials
+- Windows dedicated-server administrator [[Wiki/credentials|credentials]]
 - GOG account and recovery method; the account must own SWBFII Classic
 - Discord account that owns/manages the bot application
 - Discord bot token, or instructions to rotate it
@@ -387,7 +390,7 @@ Follow these sections in order. Do not use RDC/RDP at any point.
    C:\PGN\repos\swbfii-server
    ```
 
-Do not use Windows Remote Desktop Connection “just this once.” If RDC is the only way into the new machine, use it only long enough to install CRD, then reboot and continue exclusively through CRD. Do not launch GOG, SWBF2Admin, or the game inside the RDP session.
+Do not use Windows [[Wiki/Remote Desktop Connection|Remote Desktop Connection]] “just this once.” If RDC is the only way into the new machine, use it only long enough to install CRD, then reboot and continue exclusively through CRD. Do not launch GOG, SWBF2Admin, or the game inside the RDP session.
 
 ## 2. Install prerequisites
 
@@ -646,7 +649,7 @@ into the same XAMPP destination. This snapshot includes the required `.htaccess`
 
 Then open the site through its configured Apache virtual host or local path. The filesystem destination is authoritative; the public/local URL depends on the Apache virtual-host configuration.
 
-Node.js is required to rebuild the source but is not required for the compiled production site to run. Apache serves the static SvelteKit build and PHP executes the read-only leaderboard API.
+Node.js is required to rebuild the source but is not required for the compiled production site to run. Apache serves the static SvelteKit build and PHP executes the read-only leaderboard [[Wiki/API|API]].
 
 ### Season configuration
 
@@ -1069,3 +1072,7 @@ Treat each as a separate tested change. Export, review, and commit a known-good 
 Install CRD first and never use RDP. Install GOG Galaxy and SWBFII to `C:\PGN\SWBFII\Star Wars - Battlefront 2`, install SWBF2Admin to `C:\PGN\SWBFII\SWBF2Admin`, copy the game's `GameData` contents into `SWBF2Admin\server`, restore the repository's configs, replace all `SET_LOCALLY_DO_NOT_COMMIT` values, restore the private SQLite database, and launch everything through CRD. Either build `website\source` and deploy its `build` contents or restore `website\live-deployment` directly to `C:\xampp\htdocs\helvete\swbfii`. Copy repository `discord-bridge` to live `C:\PGN\SWBFII\DiscordBridge`, run `setup.bat`, create `.env`, test, and install its startup task. Confirm the server is public, both chat directions work, the leaderboard works, then disconnect CRD without signing out.
 
 May the master server be merciful.
+
+## Related notes
+
+[[Projects/Star Wars Battlefront II Dedicated Server/Star Wars Battlefront II Dedicated Server Home|Server project and current roadmap]] · [[Wiki/dedicated servers|Dedicated servers]] · [[Wiki/localhost|Localhost]] · [[Wiki/backups|Backups]]

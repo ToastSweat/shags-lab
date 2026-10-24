@@ -5,4 +5,8 @@ publish: true
 ---
 If you want to do this yourself or if you're me in 2-5-20 years and you obviously forgot every detail because Grand Theft Auto VI took over the world and we have no need for real memories anymore.
 
-Follow the doc: [[Keychron C100 Unicode Firmware Guide]]
+Follow the doc: [[Projects/Keychron C100/Guides/Keychron C100 Unicode Firmware Guide|Keychron C100 Unicode Firmware Guide]]
+
+## Related notes
+
+[[Projects/Keychron C100/Keychron C100 Custom Firmware/Keychron C100 Custom Firmware Home|Firmware project]]

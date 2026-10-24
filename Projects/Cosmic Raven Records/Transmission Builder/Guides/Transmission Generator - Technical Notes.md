@@ -67,3 +67,7 @@ These should not survive a successful run.
 The archived `make_transmission.v4.bat` was reconstructed from the last known working v3.9 clean-intro-audio BAT plus the dedicated `thumbnail_overlay.png` V4 change.
 
 It should be compared with the actual production BAT before being declared the final canonical copy.
+
+## Related notes
+
+[[Projects/Cosmic Raven Records/Transmission Builder/Transmission Builder Home|Transmission Builder]] · [[Projects/Cosmic Raven Records/Transmission Builder/Guides/Cosmic Raven Records - Doomsday Rebuild Guide|Recovery guide]]

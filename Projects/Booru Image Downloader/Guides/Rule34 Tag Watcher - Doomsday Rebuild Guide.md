@@ -8,16 +8,16 @@ publish: true
 
 This is the file for Future Me, Curious You, or Whoever Is Staring At A Dead Drive At 2 A.M.
 
-It explains what the watcher does, how to install it from nothing, how the storage trick works, how to recover it, and how to unstick Windows Task Scheduler when it decides to become a cryptid.
+It explains what the watcher does, how to install it from nothing, how the storage trick works, how to recover it, and how to unstick [[Wiki/Windows Task Scheduler|Windows Task Scheduler]] when it decides to become a cryptid.
 
-The short version: this is a Windows Python downloader for exact Rule34 tags. It checks for new posts on a schedule, can backfill all available history, and uses NTFS hard links so one post can appear in several tag folders without storing several physical copies.
+The short version: this is a Windows [[Wiki/Python|Python]] downloader for exact Rule34 tags. It checks for new posts on a schedule, can backfill all available history, and uses [[Wiki/hard links|NTFS hard links]] so one post can appear in several tag folders without storing several physical copies.
 
 ## What you need
 
 - Windows 10 or 11
 - Python 3.10 or newer from [python.org](https://www.python.org/downloads/windows/)
-- An NTFS drive for the archive
-- A Rule34 account, numeric user ID, and API key
+- An [[Wiki/NTFS|NTFS]] drive for the archive
+- A Rule34 account, numeric user ID, and [[Wiki/API|API]] key
 - The project files from this repository or the release ZIP
 - Enough free space for the inevitable consequences of your decisions
 
@@ -52,7 +52,7 @@ Do not delete `.r34-watcher`. It contains the canonical file links and the datab
 
 Install Python 3.10 or newer from python.org. During setup, enable the option that adds Python to PATH or installs the `py` launcher.
 
-Open Command Prompt and confirm:
+Open [[Wiki/Command Prompt|Command Prompt]] and confirm:
 
 ```bat
 py -3 --version
@@ -98,7 +98,7 @@ Never commit `config.json`. It contains the API key in plain text because the un
 
 ### 4. Run setup
 
-Open PowerShell in the extracted project folder and run:
+Open [[Wiki/PowerShell|PowerShell]] in the extracted project folder and run:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\setup.ps1
@@ -258,7 +258,7 @@ Removing the task does not delete the archive, configuration, database, or logs.
 There are two different things:
 
 - The project folder contains the Python and launcher scripts.
-- The archive folder contains the media, hard links, and SQLite state.
+- The archive folder contains the media, hard links, and [[Wiki/SQLite|SQLite]] state.
 
 If the project folder moves, the scheduled task still points at the old absolute path. Changing `config.json` is not enough. Remove the old task before the move and reinstall it from the new project folder afterward.
 
@@ -329,11 +329,11 @@ Do not casually delete the lock while a watcher is alive. Two concurrent writers
 
 ### Missing authentication
 
-Both credentials are required. Confirm `user_id` contains numbers only and `api_key` contains only the key value.
+Both [[Wiki/credentials|credentials]] are required. Confirm `user_id` contains numbers only and `api_key` contains only the key value.
 
 ### Unexpected API response type
 
-Old builds hid string messages from the API. Current builds unwrap double-encoded JSON, treat “No images found” as an empty result, and display real API messages while redacting the configured API key.
+Old builds hid string messages from the API. Current builds unwrap double-encoded [[Wiki/JSON|JSON]], treat “No images found” as an empty result, and display real API messages while redacting the configured API key.
 
 ### Nothing downloads on the second normal run
 
@@ -372,7 +372,7 @@ Make a backup first. Then run backfill. The watcher can recognize existing canon
 
 Install from the repository, restore the tag lists and credentials, choose a new NTFS archive, test normally, and run backfill.
 
-This is why the safe-to-share parts belong on GitHub and the secret `config.json` does not.
+This is why the safe-to-share parts belong on [[Wiki/GitHub|GitHub]] and the secret `config.json` does not.
 
 ## Running the test suite
 
@@ -414,3 +414,7 @@ One physical copy of every file.
 As many useful folder paths as you want.
 
 Good luck, Future Me.
+
+## Related notes
+
+[[Projects/Booru Image Downloader/Booru Image Downloader Home|Downloader project]] · [[Projects/Booru Image Downloader/Guides/Rule34 Tag Watcher - How Do|Setup and usage guide]]

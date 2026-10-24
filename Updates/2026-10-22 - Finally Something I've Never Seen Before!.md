@@ -16,7 +16,7 @@ Getting there involved an AI assistant, several test tracks, an unreasonable num
 
 Who knew.
 
-Cosmic Raven Records already had a working video generator.
+[[Projects/Cosmic Raven Records/Cosmic Raven Records Home|Cosmic Raven Records]] already had a [[Projects/Cosmic Raven Records/Transmission Builder/Transmission Builder Home|working video generator]].
 
 Give it a song, a transmission number, an artist and a title, and it would assemble the intro, music video and thumbnail. The branding and little transmission readouts were already there. The visualizer had frequency bars, a spectrogram and an oscilloscope.
 
@@ -36,7 +36,7 @@ Also, I wanted it to look cool.
 
 That was definitely in the requirements.
 
-I started working with Hermes on isolated experiments instead of immediately ripping out the working renderer. We could make a short preview, look at it, argue with imaginary geometry, and leave the rest of the project alone.
+I started working with [[Wiki/Hermes Agent|Hermes]] on isolated experiments instead of immediately ripping out the working renderer. We could make a short preview, look at it, argue with imaginary geometry, and leave the rest of the project alone.
 
 The first direction I liked was something called Spectral Relief.
 

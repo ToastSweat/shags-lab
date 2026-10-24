@@ -7,7 +7,7 @@ transmission: 010A
 artist: Unknown
 track: Untitled 4
 youtube: https://www.youtube.com/watch?v=yi4Umuhw-eg
-transmission_note: "[[010A - Unknown - Untitled 4]]"
+transmission_note: "[[Projects/Cosmic Raven Records/Transmissions/010A - Unknown - Untitled 4|010A - Unknown - Untitled 4]]"
 ---
 
 # 010A - Pinned Comment

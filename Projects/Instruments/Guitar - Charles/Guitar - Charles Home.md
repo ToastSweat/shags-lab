@@ -17,7 +17,7 @@ A mahogany body provides a solid, resonant foundation, topped with striking popl
 
 Two Legator Aftershock passive ceramic humbuckers provide the G6SS with a powerful, articulate voice designed to stay clear under high gain. A five-way blade selector expands the tonal range beyond the basic two-humbucker configuration, with split-coil sounds available in positions 2 and 4. From tight rhythm work and complex riffs to fluid leads and aggressive modern metal tones, the G6SS is designed to remain defined and responsive.
 
-Legator's headless fixed bridge and locking headpiece eliminate the traditional headstock while providing dependable tuning stability and helping keep the instrument compact and well balanced. Combined with its sculpted body contours, thin neck profile, ebony fingerboard, stainless steel frets, and premium-looking burl top, the Ghost Super Shred delivers a boutique-inspired feature set in an instrument designed to be played fast and hard.
+Legator's headless fixed [[Wiki/Bridge|bridge]] and locking headpiece eliminate the traditional headstock while providing dependable [[Wiki/Tuning|tuning]] stability and helping keep the instrument compact and well balanced. Combined with its sculpted body contours, thin neck profile, ebony fingerboard, stainless steel frets, and premium-looking burl top, the Ghost Super Shred delivers a boutique-inspired feature set in an instrument designed to be played fast and hard.
 ### Headless Ghost Design
 The Ghost's headless construction reduces unnecessary weight at the end of the neck, resulting in a compact guitar with excellent balance whether played sitting or standing. The ergonomic body contours further improve comfort during long playing sessions, while the headless format makes the G6SS especially portable without sacrificing a full 25.5" scale length.
 ### Mahogany Body with Poplar Burl Top
@@ -78,3 +78,7 @@ The G6SS uses Legator's fixed headless bridge and locking headpiece system for s
 **Controls:** Master Volume, Tone, 5-way blade switch  
 **Bridge:** Legator headless Bridge  
 **Tuners:** Locking headpiece
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]]

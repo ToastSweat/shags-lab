@@ -30,7 +30,7 @@ What if the different versions were the point?
 
 So I made a fictional record label.
 
-Cosmic Raven Records.
+[[Projects/Cosmic Raven Records/Cosmic Raven Records Home|Cosmic Raven Records]].
 
 The basic premise is that I accidentally built a weird homemade receiver. At first I just call it a radio because I have no better word for it.
 
@@ -216,13 +216,13 @@ FFmpeg taught me that colons are apparently dangerous.
 
 A receiver timer taught me that sometimes the right feature is the one you delete.
 
-And native FFmpeg progress output taught me that I would rather parse its machine-readable progress with PowerShell than watch Windows Terminal fill itself with twenty-seven wrapped copies of the same status line.
+And native FFmpeg progress output taught me that I would rather parse its machine-readable progress with [[Wiki/PowerShell|PowerShell]] than watch Windows Terminal fill itself with twenty-seven wrapped copies of the same status line.
 
 Eventually the generator reached the magical software-development milestone known as:
 
 > Okay, quit fucking touching it for a minute. It works.
 
-So naturally I have now put the code under Git and written a full doomsday rebuild guide.
+So naturally I have now put the code under [[Wiki/Git|Git]] and written a full doomsday rebuild guide.
 
 The rebuild notes cover the folder structure, FFmpeg installation, exact asset names, the audio-stitching pipeline, the thumbnail generator, the visualizer settings, the Windows BAT landmines, transmission numbering, and the narrative rules I am likely to forget.
 
@@ -288,4 +288,4 @@ I have songs to release.
 
 So I am going to keep turning the dial.
 
-[[Transmission Builder Home|Transmission Generator]]
+[[Projects/Cosmic Raven Records/Transmission Builder/Transmission Builder Home|Transmission Generator]]

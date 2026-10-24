@@ -230,7 +230,7 @@ The working version uses:
 -progress pipe:1
 ```
 
-and PowerShell converts the machine-readable progress stream into one updating console line.
+and [[Wiki/PowerShell|PowerShell]] converts the machine-readable progress stream into one updating console line.
 
 FFmpeg errors are redirected to a temporary error file and displayed only when rendering fails.
 
@@ -353,7 +353,7 @@ This is all an experiment.
 
 Recovery order:
 
-1. Clone the Git repository.
+1. Clone the [[Wiki/Git|Git]] repository.
 2. Restore the live `assets` folder.
 3. Install FFmpeg.
 4. Verify Consolas or change the font path.
@@ -379,3 +379,7 @@ Ideas already discussed but deliberately **not required** for recovery:
 - more interactive receiver visuals
 
 Get the boring baseline working first. Then make it weird again.
+
+## Related notes
+
+[[Projects/Cosmic Raven Records/Transmission Builder/Transmission Builder Home|Transmission Builder]] · [[Projects/Cosmic Raven Records/Transmission Builder/Guides/Transmission Generator - Technical Notes|Technical notes]] · [[Projects/Cosmic Raven Records/Transmission Builder/Guides/Story and Posting Guide|Story and posting guide]]

@@ -22,3 +22,7 @@ A micro sampler with up to 40 sec sample memory and built-in microphone, making 
 - 40 seconds sample memory
 - 16 effects
 - step multiplier
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]] · [[Wiki/Synthesizer|Synthesizer]]

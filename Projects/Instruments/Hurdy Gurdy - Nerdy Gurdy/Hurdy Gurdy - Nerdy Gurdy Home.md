@@ -19,3 +19,7 @@ The kit contains all the parts that you need to build a working instrument, incl
 
 ## Specs
 Text.
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]] · [[Wiki/Hurdy Gurdy|Hurdy Gurdy]]

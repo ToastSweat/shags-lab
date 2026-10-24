@@ -12,7 +12,7 @@ If this is blank then there is nothing special to say about this instrument, yet
 
 ## Marketing
 ## The Omnichord Rides Again
-For musicians looking for fresh sounds or those looking to have some sonic fun, the Suzuki Omnichord OM-108 is your instrument. More than 40 years since its first release, the Omnichord is back and better than ever. In 1981, this little electronic instrument achieved cult status around the world for its ease of use, portability, and idiosyncratic tonal capabilities. Sweetwater highly recommends the OM-108 Omnichord to those looking for an exciting instrument that’ll play right out of the box — no musical training required. All you need to do is press a chord button and slide your hand along the harp sensor, or strumplate, and trigger a corresponding arpeggio. Conversely, Sweetwater producers have found the OM-108 Omnichord as a go-to for adding off-the-beaten-path textures to tracks. It offers 10 options for both rhythm and voices; many of which bring back beloved retro '80s vibes. Built-in speakers, battery power, line-out for an external amp, and a MIDI out round out the awesome capabilities of the enduring Omnichord!
+For musicians looking for fresh sounds or those looking to have some sonic fun, the Suzuki Omnichord OM-108 is your instrument. More than 40 years since its first release, the Omnichord is back and better than ever. In 1981, this little electronic instrument achieved cult status around the world for its ease of use, portability, and idiosyncratic tonal capabilities. Sweetwater highly recommends the OM-108 Omnichord to those looking for an exciting instrument that’ll play right out of the box — no musical training required. All you need to do is press a chord button and slide your hand along the harp sensor, or strumplate, and trigger a corresponding arpeggio. Conversely, Sweetwater producers have found the OM-108 Omnichord as a go-to for adding off-the-beaten-path textures to tracks. It offers 10 options for both rhythm and voices; many of which bring back beloved retro '80s vibes. Built-in speakers, battery power, line-out for an external amp, and a [[Wiki/MIDI|MIDI]] out round out the awesome capabilities of the enduring Omnichord!
 
 ### Analog circuitry and retro voicing
 The OM-108 Omnichord may sport some new duds, but this incarnation features many aspects that are a blast from its colorful past. Suzuki designed the OM-108 with analog circuity to accurately reproduce the sound of the previous OM-84 model, while the voices of “omni 1” and “omni 2” directly reflect the classic sound of the OM-84. Apart from that, there are eight strumplate tones to explore like harp, organ, guitar, banjo, and more! Omnichord fanatics may recognize the celeste, harp, and piano from previous models while the FM piano tone — a defining electric piano sound from the 1980s — debuts in the OM-108. All other sounds are produced using PCM (Pulse-Code Modulation).
@@ -49,3 +49,7 @@ The OM-108 is the perfect travel companion for anyone desiring musical enjoyment
 - **Power Source:** 12V DC Power Supply or 8 x AA Batteries (bothe sold separately)
 - **Dimensions:** 17.99" x 9.84" x 2.04"
 - **Manufacturer Part Number:** OM-108RED-LTD-U
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]] · [[Wiki/Synthesizer|Synthesizer]]

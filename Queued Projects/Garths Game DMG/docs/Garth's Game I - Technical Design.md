@@ -2,7 +2,7 @@
 type: guide
 project: Garth's Game DMG
 status: living
-publish: true
+publish: false
 ---
 # Garth's Game DMG - Technical Design
 

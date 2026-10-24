@@ -64,9 +64,9 @@ The first years heavily feature **Headygr, PcBro Stig, Choco, Amir077, SlayerZim
 
 **Tilong** appears in 2020 and becomes increasingly intertwined with servers and shared games.
 
-**Yuu** is technically an early-era name but becomes particularly visible again in the Grounded/Valheim/modern-game periods.
+**Yuu** is technically an early-era name but becomes particularly visible again in the Grounded/[[Wiki/Valheim|Valheim]]/modern-game periods.
 
-**Byars** is also an old Discord-era name whose later activity connects the early and modern communities.
+**Byars** is also an old [[Wiki/Discord|Discord]]-era name whose later activity connects the early and modern communities.
 
 ## The later cast
 
@@ -115,3 +115,7 @@ PGN does not show one clean generational replacement.
 It shows overlapping cohorts: early Discord regulars, people who fade and return, later central members, game-specific recruits, project collaborators, server regulars, and people who may barely type but remain socially present.
 
 That messy overlap is probably more important to durability than a stable formal roster would have been.
+
+## Related notes
+
+[[Progeny Gaming Network/PGN Discord Archive/PGN Discord Archive Home|Archive home]] · [[Progeny Gaming Network/PGN Discord Archive/PGN - The Epic History|Epic history]] · [[Progeny Gaming Network/PGN Discord Archive/PGN - Hall of Titles Research|Hall of Titles research]]

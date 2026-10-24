@@ -7,7 +7,7 @@ transmission: 002B
 artist: Shagwrath
 track: Multi Theft Auto Theme [3]
 youtube: https://www.youtube.com/watch?v=s5OVptDhxZc
-transmission_note: "[[002B - Shagwrath - Multi Theft Auto Theme 3]]"
+transmission_note: "[[Projects/Cosmic Raven Records/Transmissions/002B - Shagwrath - Multi Theft Auto Theme 3|002B - Shagwrath - Multi Theft Auto Theme 3]]"
 ---
 # 002B - Pinned Comment
 

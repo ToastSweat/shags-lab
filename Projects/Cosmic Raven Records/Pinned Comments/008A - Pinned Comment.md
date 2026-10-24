@@ -7,7 +7,7 @@ transmission: 008A
 artist: Unknown
 track: Untitled 2
 youtube: https://www.youtube.com/watch?v=J_QbfUqHyvI
-transmission_note: "[[008A - Unknown - Untitled 2]]"
+transmission_note: "[[Projects/Cosmic Raven Records/Transmissions/008A - Unknown - Untitled 2|008A - Unknown - Untitled 2]]"
 ---
 
 # 008A - Pinned Comment

@@ -7,4 +7,8 @@ publish: true
 ---
 Hi.
 
-[[VR Lightsaber Trainer]]
+[[Projects/Hermes/VR Lightsaber Trainer/VR Lightsaber Trainer|VR Lightsaber Trainer]]
+
+## Related notes
+
+[[Wiki/Hermes Agent|Hermes Agent]] · [[Projects/Hermes/ChatBot/ChatBot Home|ChatBot]]

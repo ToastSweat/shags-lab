@@ -15,3 +15,7 @@ Text.
 
 ## Specs
 Text.
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]]

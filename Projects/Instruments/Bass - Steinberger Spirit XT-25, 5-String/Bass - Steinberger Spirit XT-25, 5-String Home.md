@@ -11,9 +11,9 @@ publish: true
 I did buy this try this body shape, and have a 5 string, and it occurred to me I could probably use it to make my custom body shape at some point in the future. Top secret of course.
 
 ## Marketing
-Steinberger presents the Spirit XT-25 Standard 5-string bass, the ultimate travel bass featuring the revolutionary Steinberger body design, a Low B-5th string, patented DoubleBall Bass Bridge, patented 40:1 Ratio Direct-Pull tuning system, powerful Steinberger HB pickups, plus a deluxe gig bag. The Steinberger XT-25 Standard 5-string Bass Outfit is part of the Spirit Series.
+Steinberger presents the Spirit XT-25 Standard 5-string bass, the ultimate travel bass featuring the revolutionary Steinberger body design, a Low B-5th string, patented DoubleBall Bass [[Wiki/Bridge|Bridge]], patented 40:1 Ratio Direct-Pull [[Wiki/Tuning|tuning]] system, powerful Steinberger HB pickups, plus a deluxe gig bag. The Steinberger XT-25 Standard 5-string Bass Outfit is part of the Spirit Series.
 ### Revolutionary Steinberger Bass Design
-There was nothing like Ned Steinberger's guitars and basses when they were first introduced in 1979. Today, with their lightweight and headless design, Steinberger basses are still bold, modern instruments that offer players both a smooth tonal response and rock solid intonation at any position on the neck.
+There was nothing like Ned Steinberger's guitars and basses when they were first introduced in 1979. Today, with their lightweight and headless design, Steinberger basses are still bold, modern instruments that offer players both a smooth tonal response and rock solid [[Wiki/Intonation|intonation]] at any position on the neck.
 
 The XT-25 Standard 5-string Bass features the revolutionary Steinberger Bass design with a 5th string tuned to Low B, a Poplar body, and a 3-piece Hard Maple neck that combined resonate as a single piece of wood. For traveling musicians, the XT-25 5-string is the Ultimate Travel Bass. At 38.5" long and only 8.2lbs, its ergonomic design makes it easy to take anywhere including overhead airline compartments. And thanks to its headless construction and 3-piece Hard Maple neck, the XT-25 isn't as sensitive to temperature changes, which makes it virtually indestructible! The neck has a comfortable 1960's style SlimTaper-D profile with a basswood composite fingerboard, 24 medium jumbo frets, a 34" scale length, and a 14" radius. A folding leg rest sits compactly on the lower bout of the body. A deluxe padded gig bag is included. An optional hard case is also available.
 ### Patented Double Ball Bass Bridge
@@ -50,3 +50,7 @@ The Steinberger XT-25 Standard 5-string Bass is powered by Steinberger full tone
 **- Length:** 38.5"  
 **- Optional:** Single Ball String Adaptor (#STADB05)  
 **- Hard Case:** (#ST-A0188-BL), Case UPC = 711106371450
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]]

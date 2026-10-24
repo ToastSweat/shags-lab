@@ -85,3 +85,7 @@ Placeholder![[checkpoint-axial-glance.png]]
 ![[checkpoint-smoke 2.png]]
 
 ![[checkpoint-stable-steering 2.png]]
+
+## Related notes
+
+[[Projects/Hermes/Hermes Home|Hermes projects]] · [[Wiki/VR|VR]] · [[Wiki/Hermes Agent|Hermes Agent]]

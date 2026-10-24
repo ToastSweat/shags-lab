@@ -7,7 +7,7 @@ transmission: 009A
 artist: Unknown
 track: Untitled 3
 youtube: https://www.youtube.com/watch?v=-CHCGF7ZNCA
-transmission_note: "[[009A - Unknown - Untitled 3]]"
+transmission_note: "[[Projects/Cosmic Raven Records/Transmissions/009A - Unknown - Untitled 3|009A - Unknown - Untitled 3]]"
 ---
 
 # 009A - Pinned Comment

@@ -6,14 +6,14 @@ publish: true
 # Rule34 Tag Watcher 2.0
 
 A small Windows downloader that checks Rule34.xxx for selected **Copyright**,
-**Character**, **Artist**, and **General** tags. It uses the site's JSON API,
-keeps resumable SQLite history, and has no third-party Python dependencies.
+**Character**, **Artist**, and **General** tags. It uses the site's [[Wiki/JSON|JSON]] [[Wiki/API|API]],
+keeps resumable [[Wiki/SQLite|SQLite]] history, and has no third-party [[Wiki/Python|Python]] dependencies.
 
 ## One file, every matching folder
 
 Version 2 stores each post's bytes exactly once. If the same post matches a
 watched character, artist, and general tag, it still appears as a normal file
-inside all three folders, but those paths are NTFS **hard links** to one file.
+inside all three folders, but those paths are [[Wiki/NTFS|NTFS]] **[[Wiki/hard links|hard links]]** to one file.
 They do not consume three copies of the image.
 
 For example:
@@ -60,7 +60,7 @@ same selected archive root, so they remain on one volume.
 
 1. Extract this entire folder somewhere permanent. Do not run it from inside
    the ZIP or move the project folder after scheduling it.
-2. Open PowerShell in the extracted folder.
+2. Open [[Wiki/PowerShell|PowerShell]] in the extracted folder.
 3. Run:
 
    ```powershell
@@ -73,7 +73,7 @@ same selected archive root, so they remain on one volume.
    `user_id=`, `api_key=`, `&`, or other URL fragments. API-key input is hidden.
 6. Double-click `run_now.bat` to test the API and download the initial batch.
 
-Setup creates `config.json` and installs a Windows Scheduled Task named
+Setup creates `config.json` and installs a [[Wiki/Windows Task Scheduler|Windows Scheduled Task]] named
 `Rule34 Tag Watcher`. The default schedule checks once per hour while your
 Windows account is logged in.
 
@@ -168,3 +168,7 @@ archive, configuration, logs, or history database.
 - Filenames contain the post ID and file hash to prevent collisions.
 - Use the tool only for material you may lawfully access and retain, and follow
   the site's terms and rate limits.
+
+## Related notes
+
+[[Projects/Booru Image Downloader/Booru Image Downloader Home|Downloader project]] · [[Projects/Booru Image Downloader/Guides/Rule34 Tag Watcher - Doomsday Rebuild Guide|Disaster recovery]]

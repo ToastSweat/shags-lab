@@ -7,7 +7,7 @@ transmission: 004B
 artist: Jedicide
 track: The Seduction on the Darkside [2]
 youtube: https://www.youtube.com/watch?v=K2G7XC_31I8
-transmission_note: "[[004B - Jedicide - The Seduction on the Darkside 2]]"
+transmission_note: "[[Projects/Cosmic Raven Records/Transmissions/004B - Jedicide - The Seduction on the Darkside 2|004B - Jedicide - The Seduction on the Darkside 2]]"
 ---
 # 004B - Pinned Comment
 

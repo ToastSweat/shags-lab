@@ -7,7 +7,7 @@ publish: true
 
 # PGN Master Timeline
 
-This is the source-backed chronological spine of the deep history. Each entry points to the Discord channel and message ID where the event was found.
+This is the source-backed chronological spine of the deep history. Each entry points to the [[Wiki/Discord|Discord]] channel and message ID where the event was found.
 
 
 ## 2016
@@ -77,7 +77,7 @@ Posted on April 1 and immediately treated as a joke.
 
 > https://fivem.net/
 
-An early bridge from MTA instincts toward GTA V multiplayer modification.
+An early bridge from [[Wiki/Multi Theft Auto|MTA]] instincts toward GTA V multiplayer modification.
 
 ### 2017-05-01 — PUBG becomes a recurring group summons
 
@@ -270,7 +270,7 @@ Nostalgia becomes active play again.
 
 > https://saesrpg.uk/topic/16672/job-quarry-worker/5 finished script
 
-Part of a burst of SAES scripting suggestions and experiments.
+Part of a burst of [[Wiki/San Andreas Emergency Services|SAES]] scripting suggestions and experiments.
 
 ### 2020-04-12 — Hogwarts RP is proposed in MTA
 
@@ -729,4 +729,8 @@ The webhost becomes a public-facing project diary.
 > Welcome to Progeny Gaming Network, @PGN Archivist!
 
 The archive closes with the tool created to preserve the archive.
+
+## Related notes
+
+[[Progeny Gaming Network/PGN Discord Archive/PGN Discord Archive Home|Archive home]] · [[Progeny Gaming Network/PGN Discord Archive/PGN - The Epic History|Epic history]] · [[Progeny Gaming Network/PGN Discord Archive/PGN - Game Eras and Server Genealogy|Game eras and server genealogy]] · [[Projects/Safe Cracker Discord Activity/Safe Cracker Discord Activity Home|Safe Cracker Activity]] · [[Projects/Dune Awakening Private Server/Dune Awakening Private Server Home|Dune server project]] · [[Projects/Star Wars Battlefront II Dedicated Server/Star Wars Battlefront II Dedicated Server Home|Battlefront II project]]
 

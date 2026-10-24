@@ -7,7 +7,7 @@ transmission: 005B
 artist: Jedicide
 track: The Rule of Two
 youtube: https://www.youtube.com/watch?v=dUxBkdX4Ae0
-transmission_note: "[[005B - Jedicide - The Rule of Two]]"
+transmission_note: "[[Projects/Cosmic Raven Records/Transmissions/005B - Jedicide - The Rule of Two|005B - Jedicide - The Rule of Two]]"
 ---
 # 005B - Pinned Comment
 

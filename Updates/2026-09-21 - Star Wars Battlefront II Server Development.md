@@ -1,16 +1,16 @@
 ---
 type: update
 date: 2026-09-21
-project: Star Wars Battlefront II Dedicated Server
+project: Star Wars Battlefront II Dedicated Server, Progeny Gaming Network
 publish: true
 ---
 I Accidentally Built Modern Infrastructure For A 2005 Star Wars Game
 
-This started because I wanted to run a Battlefront II server.
+This started because I wanted to run a [[Projects/Star Wars Battlefront II Dedicated Server/Star Wars Battlefront II Dedicated Server Home|Battlefront II server]].
 
 The 2005 one. You know, the good one.
 
-I have been running game servers for [[PGN]] for years, so the basic idea did not seem especially complicated.
+I have been running game servers for [[Wiki/Progeny Gaming Network|PGN]] for years, so the basic idea did not seem especially complicated.
 
 Install the game.
 Pick some maps.
@@ -20,7 +20,7 @@ Classic PGN Style.
 
 So I brought **PGN - Ewok Around and Find Out** online.
 
-It is a private (for now) STAR WARS Battlefront II Classic server running the GOG server build through SWBF2Admin on a Windows dedicated server.
+It is a private (for now) [[Wiki/Star Wars Battlefront II|STAR WARS Battlefront II Classic]] server running the GOG server build through [[Wiki/SWBFIIAdmin|SWBF2Admin]] on a Windows dedicated server.
 
 Conquest only.
 No heroes. (usually)
@@ -32,7 +32,7 @@ Naturally, this became an infrastructure project.
 
 The first problem was simply keeping the damn thing online.
 
-Battlefront II is old enough to drink, and the software around its dedicated server is from a very different era of Windows administration.
+Battlefront II is old enough to drink, and the software around its [[Wiki/dedicated servers|dedicated server]] is from a very different era of Windows administration.
 
 The server would run.
 
@@ -44,7 +44,7 @@ Then sometimes it would disappear even though the process still looked alive.
 
 For a while I thought closing the remote desktop window was killing it.
 
-That turned into a long series of tests involving Chrome Remote Desktop, Windows Remote Desktop, GOG Galaxy, SWBF2Admin, automatic restarts, RCON timeouts, and me repeatedly asking:
+That turned into a long series of tests involving [[Wiki/Chrome Remote Desktop|Chrome Remote Desktop]], [[Wiki/Remote Desktop Connection|Windows Remote Desktop]], GOG Galaxy, SWBF2Admin, automatic restarts, RCON timeouts, and me repeatedly asking:
 
 > Okay, but is it actually still in the list?
 
@@ -102,7 +102,7 @@ Sometimes the result is just:
 
 Then I found the statistics system.
 
-SWBF2Admin was already capable of recording completed matches, player performance, kills, deaths, points, and map history into a SQLite database.
+SWBF2Admin was already capable of recording completed matches, player performance, kills, deaths, points, and map history into a [[Wiki/SQLite|SQLite]] [[Wiki/database|database]].
 
 The information was there, to my surprise and delight.
 
@@ -125,9 +125,9 @@ Season 1 currently includes all recorded matches because there was no reason to 
 That felt like enough.
 It was not enough.
 
-I wanted the game server and Discord to talk to each other. There were naysayers. Why? Is that it is cool not enough? Fine. Ou la laa you can enter commands between Discord and the game server and, yes, talk. To nay sayers I say nay.
+I wanted the game server and [[Wiki/Discord|Discord]] to talk to each other. There were naysayers. Why? Is that it is cool not enough? Fine. Ou la laa you can enter commands between Discord and the game server and, yes, talk. To nay sayers I say nay.
 
-So I built a Node.js bridge and named the bot **HK-47**.
+So I built a Node.js bridge and named the bot **[[Wiki/HK-47|HK-47]]**.
 
 QUERY: Why would I not?
 
@@ -177,7 +177,7 @@ Then I made HK-47 announce the battle automatically.
 
 It announces after it detects the first active match, announces again when the current or next map changes, and repeats the status every sixteen minutes without spamming the same message constantly.
 
-The bridge has fifteen automated tests covering chat handling, commands, map labels, announcement timing, authentication, WebAdmin parsing, message safety, and the client session itself.
+The bridge has fifteen automated tests covering chat handling, commands, map labels, announcement timing, [[Wiki/authentication|authentication]], WebAdmin parsing, message safety, and the client session itself.
 
 All fifteen pass.
 
@@ -197,9 +197,9 @@ There were a bunch of things I knew because I had just spent days figuring them 
 
 So I built a proper disaster-recovery system.
 
-The first half is a sanitized GitHub repository.
+The first half is a sanitized [[Wiki/GitHub|GitHub]] repository.
 
-I wrote a PowerShell exporter that copies the safe, irreplaceable parts of the live server into a clean repository structure:
+I wrote a [[Wiki/PowerShell|PowerShell]] exporter that copies the safe, irreplaceable parts of the live server into a clean repository structure:
 
 ```text
 discord-bridge
@@ -211,7 +211,7 @@ scripts
 
 It preserves the bridge source and tests, SWBF2Admin configuration, Lua commands, server rotation, editable website, exact live website deployment, and recovery scripts.
 
-It also sanitizes known password fields and refuses to include things that absolutely do not belong in Git:
+It also sanitizes known password fields and refuses to include things that absolutely do not belong in [[Wiki/Git|Git]]:
 
 ```text
 .env
@@ -242,9 +242,9 @@ The Discord token cannot go in GitHub.
 The live WebAdmin and server passwords cannot go in GitHub.
 Unfortunately, those are also the exact things I would need after a catastrophic failure.
 
-So the second half is a private encrypted backup.
+So the second half is a private encrypted [[Wiki/backups|backup]].
 
-I wrote another PowerShell script that refuses to run while Battlefront II or SWBF2Admin is active, because copying a live SQLite database and hoping for the best is how you create a backup that becomes exciting only when you desperately need it.
+I wrote another PowerShell [[Wiki/script|script]] that refuses to run while Battlefront II or SWBF2Admin is active, because copying a live SQLite database and hoping for the best is how you create a backup that becomes exciting only when you desperately need it.
 
 The script collects the database, Discord bridge environment, unsanitized private configuration, server rotation, and a recovery manifest containing the matching Git commit.
 
@@ -270,7 +270,7 @@ The server can access only its own backup area inside Dropbox.
 
 It cannot browse the rest of my account.
 
-An hourly Windows Scheduled Task runs as `SYSTEM`, looks for new encrypted archives, verifies their local checksums, uploads them, retries temporary failures, and confirms the remote files exist with matching sizes.
+An hourly [[Wiki/Windows Task Scheduler|Windows Scheduled Task]] runs as `SYSTEM`, looks for new encrypted archives, verifies their local checksums, uploads them, retries temporary failures, and confirms the remote files exist with matching sizes.
 
 It never overwrites a conflicting backup.
 It never deletes a local backup.
@@ -285,7 +285,7 @@ I also wrote the doomsday documentation.
 
 There is now a complete recovery README covering the folder layout, installation order, server settings, bridge setup, website deployment, secrets, validation, known landmines, and how to rebuild the entire stack from a blank Windows server.
 
-The wider project is documented as an Obsidian wiki too.
+The wider project is documented as an [[Wiki/Obsidian|Obsidian]] wiki too.
 
 It has pages for architecture, normal operation, Discord, SWBF2Admin, the website, statistics, recovery, security, experiments, failed approaches, research, current status, decisions, and the development roadmap.
 
@@ -325,4 +325,8 @@ For now, the important part is that the server works, the community layer works,
 
 Not bad for wanting to play an old Star Wars game.
 
-[[PGN Star Wars Battlefront II Dedicated Server Disaster Recovery]]
+[[Projects/Star Wars Battlefront II Dedicated Server/Guides/PGN Star Wars Battlefront II Dedicated Server Disaster Recovery|PGN Star Wars Battlefront II Dedicated Server Disaster Recovery]]
+
+## Related projects
+
+- [[Progeny Gaming Network/Progeny Gaming Network Home|Progeny Gaming Network]]

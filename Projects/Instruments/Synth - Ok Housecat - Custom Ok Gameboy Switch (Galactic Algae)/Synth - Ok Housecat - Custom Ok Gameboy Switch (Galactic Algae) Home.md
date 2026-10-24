@@ -31,3 +31,7 @@ Demos:
 https://youtu.be/xHg0mm0PPQ0  
 https://youtu.be/PrB8ABVH9Og  
 https://youtu.be/EXeaOoGQTEI
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]] · [[Wiki/Synthesizer|Synthesizer]]

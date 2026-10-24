@@ -13,9 +13,9 @@ I loved these when they came out, I saw them because they became a meme. Then wh
 Now I wish I would have gotten the black one too...
 
 ## Marketing
-Say hello to the vibrant world of Hello Kitty with the Fender x Hello Kitty collection, celebrating an iconic collaboration that transcends generations. This collection merges the bold and colorful aesthetic of Hello Kitty with the road-reliable excellence of Fender gear, delivering unparalleled performance and stylish flair. Rock out with your instrument in playful style and let Hello Kitty join you on your musical journey!  
+Say hello to the vibrant world of Hello Kitty with the [[Wiki/Fender|Fender]] x Hello Kitty collection, celebrating an iconic collaboration that transcends generations. This collection merges the bold and colorful aesthetic of Hello Kitty with the road-reliable excellence of Fender gear, delivering unparalleled performance and stylish flair. Rock out with your instrument in playful style and let Hello Kitty join you on your musical journey!  
   
-In celebration of the 50th anniversary of Hello Kitty, this limited edition Stratocaster represents a riff on the original Hello Kitty model that Squier introduced over 20 years ago, combining next-level quality and features with Hello Kitty design details for what is sure to become the next collectible cult classic. With an easy-playing "C"-shape neck and iconic contoured body, this Strat delivers impressive playability and incredibly versatile tone courtesy of the Fender Designed humbucking pickup. A deluxe Hello Kitty gig bag is included.
+In celebration of the 50th anniversary of Hello Kitty, this limited edition Stratocaster represents a riff on the original Hello Kitty model that [[Wiki/Squier|Squier]] introduced over 20 years ago, combining next-level quality and features with Hello Kitty design details for what is sure to become the next collectible cult classic. With an easy-playing "C"-shape neck and iconic contoured body, this Strat delivers impressive playability and incredibly versatile tone courtesy of the Fender Designed humbucking pickup. A deluxe Hello Kitty gig bag is included.
 ### Features:
 - Hello Kitty graphic pickguard, body and headstock  
 - Fender-designed humbucking pickup with volume control  
@@ -36,7 +36,7 @@ In celebration of the 50th anniversary of Hello Kitty, this limited edition Stra
 **Nut (Material/Width):** Synthetic Bone, 1.650" (42 mm)  
 **Tuning Machines:** Vintage-Style with White Buttons  
 **Scale Length:** 25.5"  
-**Bridge:** 6-Saddle Strings-Through-Body Hardtail  
+**[[Wiki/Bridge|Bridge]]:** 6-Saddle Strings-Through-Body Hardtail  
 **Pickguard:** 1-ply ABS with Custom Graphic  
 **Pickups:** Fender Designed Alnico Humbucking (Bridge)  
 **Pickup Switching:** None  
@@ -45,3 +45,7 @@ In celebration of the 50th anniversary of Hello Kitty, this limited edition Stra
 **Hardware Finish:** Chrome  
 **Strings:** Nickel Plated Steel (.009-.042 Gauges)  
 **Case/Gig Bag:** Deluxe Hello Kitty Gig Bag
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]] · [[Projects/Instruments/Guitar - Hello Kitty (White)/Guitar - Hello Kitty (White) Home|Hello Kitty (White)]]

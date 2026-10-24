@@ -16,7 +16,7 @@ I named it just Dean because maybe I will get a stingray bass one day and name i
 ![[Pasted image 20260926222008.png]]
 
 ## Marketing
-For low tunings and high shred-ability, the Dean Exile Select 7-string is a beast in tonal flexibility and ease of playability. A 3-piece maple neck with bound 24 fret ebony fretboard bolted onto a high access alder body brings all the tone and access to reach any note. A 25.5" scale length makes it a beautiful blend of low tunings and perfect intonation for speed and soulful playing. This axe also comes loaded with exclusive brushed chrome EMG 57tw / 66tw pickups which can be split into single coil mode with the push/pull volume and tone pots. The guitar's killer Floyd Rose 1000 tremolo system, breath taking burled poplar top and 5 ply body and headstock binding tie everything together with class and ferocity all in one guitar.
+For low tunings and high shred-ability, the Dean Exile Select 7-string is a beast in tonal flexibility and ease of playability. A 3-piece maple neck with bound 24 fret ebony fretboard bolted onto a high access alder body brings all the tone and access to reach any note. A 25.5" scale length makes it a beautiful blend of low tunings and perfect [[Wiki/Intonation|intonation]] for speed and soulful playing. This axe also comes loaded with exclusive brushed chrome EMG 57tw / 66tw pickups which can be split into single coil mode with the push/pull volume and tone pots. The guitar's killer Floyd Rose 1000 tremolo system, breath taking burled poplar top and 5 ply body and headstock binding tie everything together with class and ferocity all in one guitar.
 
 ## What's special about this item?
 
@@ -52,15 +52,19 @@ For low tunings and high shred-ability, the Dean Exile Select 7-string is a beas
 **Neck Shape:** Slim D  
 **Nut:** Floyd Rose 7 String (48mm)  
 **Nut Width:** 1 7/8" (48mm)  
-**Truss Rod:** Dual Action  
+**[[Wiki/Truss Rod|Truss Rod]]:** Dual Action  
 **Pickup Bridge:** EMG 57 TW7 Splitable Brush Chrome  
 **Pickup Neck:** EMG 66 TW7 Splitable Brush Chrome  
 **Control Layout:** One Volume / Tone / 5 Way Blade  
 **Pickup Switch Type:** 5 Way Blade  
 **Potentiometers:** 500k Audio Taper Volume 500k Tone  
 **Hardware Color:** Brushed Nickel  
-**Bridge:** Floyd Rose 1000 (Korean)  
+**[[Wiki/Bridge|Bridge]]:** Floyd Rose 1000 (Korean)  
 **Tuners:** Mini Grover  
 **Knobs:** Dome Brushed Nickel  
 **Strings:** D'Addario EXL120-7 (.009-.054)  
 **Case Options:** DHS EG, LL EG , DGB EG
+
+## Related notes
+
+[[Projects/Instruments/Instruments Home|Instrument collection]]
