@@ -4,7 +4,6 @@ date: 2026-10-08
 project: VR Lightsaber Trainer
 status: paused
 publish: true
-git: https://github.com/ToastSweat/cosmic-raven-records
 ---
 Placeholder![[checkpoint-axial-glance.png]]
 

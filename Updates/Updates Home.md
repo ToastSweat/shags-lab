@@ -8,6 +8,17 @@ publish: true
 
 ## Latest Updates
 
+- [[Updates/2026-11-1 - My Mini Update Television|2026-11-1 - My Mini Update Television]]
+- [[Updates/2026-10-31.2 - I Took the Image Ranker to My Phone|2026-10-31.2 - I Took the Image Ranker to My Phone]]
+- [[Updates/2026-10-31.1 - Pokémon. In This Economy.|2026-10-31.1 - Pokémon. In This Economy.]]
+- [[Updates/2026-10-30 - Hermes Un-Time|2026-10-30 - Hermes Un-Time]]
+- [[Updates/2026-10-29 - Hermes Time|2026-10-29 - Hermes Time]]
+- [[Updates/2026-10-28 - CN03 and CN04|2026-10-28 - CN03 and CN04]]
+- [[Updates/2026-10-27 - Cartoon Network Time! ... Again!|2026-10-27 - Cartoon Network Time! ... Again!]]
+- [[Updates/2026-10-26 - Cartoon Network Time!|2026-10-26 - Cartoon Network Time!]]
+- [[Updates/2026-10-25 - Garth's Game DMG II  - Electric Boogaloo|2026-10-25 - Garth's Game DMG II  - Electric Boogaloo]]
+- [[Updates/2026-10-24 - Garth's Game DMG|2026-10-24 - Garth's Game DMG]]
+- [[Updates/2026-10-23 - It's Gameboy Game Time, Again, At Last|2026-10-23 - It's Gameboy Game Time, Again, At Last]]
 - [[Updates/2026-10-22 - Finally Something I've Never Seen Before!|2026-10-22 - Finally Something I've Never Seen Before!]]
 - [[Updates/2026-10-21 - I Made Photoshop Build My Discord Activity|2026-10-21 - I Made Photoshop Build My Discord Activity]]
 - [[Updates/2026-10-20 - Companion AI Finally Escaped Localhost!|2026-10-20 - Companion AI Finally Escaped Localhost!]]
@@ -54,4 +65,4 @@ publish: true
 - [[Updates/2026-09-17 - I Built A Booru Librarian|2026-09-17 - I Built A Booru Librarian]]
 - [[Updates/2026-09-16 - I Made A Custom Driver|2026-09-16 - I Made A Custom Driver]]
 
-*Last Updated: 2026-10-22*
+*Last Updated: 2026-11-01*
