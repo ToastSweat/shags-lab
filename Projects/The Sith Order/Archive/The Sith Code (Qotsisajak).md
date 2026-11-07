@@ -1,0 +1,8 @@
+_version 0.1 - 11/2/2026_
+
+Peace is a lie, there is only **passion**.
+Through **passion**, I gain **strength**.
+Through **strength**, I gain **power**.
+Through **power**, I gain **victory**.
+Through **victory**, my **chains are broken**.
+The Force shall **free** me.

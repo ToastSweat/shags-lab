@@ -10,14 +10,15 @@ publish: true
 
 ### Active
 
-- [[Projects/My Mini Retro Television/My Mini Retro Television Home|My Mini Retro Television]] - last activity 2026-11-01
-  - **active** - [[Projects/My Mini Retro Television/My Mini Retro Television Channels/My Mini Retro Television Channels Home|My Mini Retro Television Channels]] - last activity 2026-11-01
+- [[Projects/My Mini Retro Television/My Mini Retro Television Home|My Mini Retro Television]] - last activity 2026-11-06
+  - **active** - [[Projects/My Mini Retro Television/My Mini Retro Television Channels/My Mini Retro Television Channels Home|My Mini Retro Television Channels]] - last activity 2026-11-06
+- [[Projects/Cosmic Raven Records/Cosmic Raven Records Home|Cosmic Raven Records]] - last activity 2026-11-03
+- [[Projects/The Sith Order/The Sith Order Home|The Sith Order]] - last activity 2026-11-02
 - [[Projects/Booru Image Downloader/Booru Image Downloader Home|Booru Image Downloader]] - last activity 2026-10-31
 - [[Projects/Corsair Xenon Edge/Corsair Xenon Edge Home|Corsair Xenon Edge]] - last activity 2026-10-31
   - **active** - [[Projects/Corsair Xenon Edge/iCue Image Ranker Widget/iCue Image Ranker Widget Home|iCue Image Ranker Widget]] - last activity 2026-10-31
   - **active** - [[Projects/Corsair Xenon Edge/iCue Binary Clock Widget/iCue Binary Clock Widget Home|iCue Binary Clock Widget]] - last activity 2026-10-05
 - [[Projects/Hermes/Vintage TCG Collector/Vintage TCG Collector Home|Vintage TCG Collector]] - last activity 2026-10-31
-- [[Projects/Cosmic Raven Records/Cosmic Raven Records Home|Cosmic Raven Records]] - last activity 2026-10-22
 - [[Projects/Safe Cracker Discord Activity/Safe Cracker Discord Activity Home|Safe Cracker Discord Activity]] - last activity 2026-10-21
 - [[Projects/Hermes/ChatBot/ChatBot Home|ChatBot]] - last activity 2026-10-20
 - [[Projects/Instruments/Bass VI - Penny/BASS VI - Penny Home|BASS VI - Penny]] - last activity 2026-10-16
@@ -63,4 +64,4 @@ publish: true
 
 - [[Projects/Reaper Drum Humanizer/Reaper Drum Humanizer Home|REAPER Drum Humanizer]] - last activity 2026-09-18
 
-*Last Updated: 2026-11-01*
+*Last Updated: 2026-11-06*

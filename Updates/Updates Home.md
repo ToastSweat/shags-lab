@@ -8,7 +8,12 @@ publish: true
 
 ## Latest Updates
 
-- [[Updates/2026-11-1 - My Mini Update Television|2026-11-1 - My Mini Update Television]]
+- [[Updates/2026-11-6-Boomerang-Two-and-the-Final-Four|2026-11-6-Boomerang-Two-and-the-Final-Four]]
+- [[Updates/2026-11-5-Boomerang-Has-an-Audience|2026-11-5-Boomerang-Has-an-Audience]]
+- [[Updates/2026-11-4 - My Mini Retro Carts BOOM1 & 2|2026-11-4 - My Mini Retro Carts BOOM1 & 2]]
+- [[Updates/2026-11-3 - Lazy Day|2026-11-3 - Lazy Day]]
+- [[Updates/2026-11-2 - The Sith Order|2026-11-2 - The Sith Order]]
+- [[Updates/2026-11-1 - My Mini Update Television 1|2026-11-1 - My Mini Update Television 1]]
 - [[Updates/2026-10-31.2 - I Took the Image Ranker to My Phone|2026-10-31.2 - I Took the Image Ranker to My Phone]]
 - [[Updates/2026-10-31.1 - Pokémon. In This Economy.|2026-10-31.1 - Pokémon. In This Economy.]]
 - [[Updates/2026-10-30 - Hermes Un-Time|2026-10-30 - Hermes Un-Time]]
@@ -65,4 +70,4 @@ publish: true
 - [[Updates/2026-09-17 - I Built A Booru Librarian|2026-09-17 - I Built A Booru Librarian]]
 - [[Updates/2026-09-16 - I Made A Custom Driver|2026-09-16 - I Made A Custom Driver]]
 
-*Last Updated: 2026-11-01*
+*Last Updated: 2026-11-06*
