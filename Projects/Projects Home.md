@@ -12,6 +12,7 @@ publish: true
 
 - [[Projects/My Mini Retro Television|My Mini Retro Television]] - last activity 2026-11-15
   - **active** - [[Projects/My Mini Retro Television/My Mini Retro Television Channels|My Mini Retro Television Channels]] - last activity 2026-11-09
+- [[Projects/Obsidian Vault to Website|Obsidian Vault to Website]] - last activity 2026-11-15
 - [[Projects/The Sith Order|The Sith Order]] - last activity 2026-11-13
 - [[Projects/ELEGOO Centauri Carbon|ELEGOO Centauri Carbon]] - last activity 2026-11-11
 - [[Projects/Cosmic Raven/Trailer Identification Grid|TIG: Trailer Identification Grid]] - last activity 2026-11-11
@@ -54,7 +55,6 @@ publish: true
 - [[Projects/Hermes|Hermes]] - last activity 2026-10-07
 - [[Progeny Gaming Network|Progeny Gaming Network]] - last activity 2026-10-05
   - **complete** - [[Progeny Gaming Network/PGN Discord Archive|PGN Discord Archive]] - last activity 2026-09-28
-- [[Projects/Obsidian Vault to Website|Obsidian Vault to Website]] - last activity 2026-10-04
 - [[Projects/Keychron C100|Keychron C100]] - last activity 2026-09-27
   - **active** - [[Projects/Keychron C100/Keychron C100 Custom Firmware|Keychron C100 Custom Firmware]] - last activity 2026-09-27
 ### Paused

@@ -8,6 +8,7 @@ publish: true
 
 ## Latest Updates
 
+- [[Updates/2026-11-15.3 - I Automated Shag's Lab|2026-11-15.3 - I Automated Shag's Lab]]
 - [[Updates/2026-11-15.2 - Tiny TV Firmware-Wrap Up|2026-11-15.2 - Tiny TV Firmware-Wrap Up]]
 - [[Updates/2026-11-15.1 - Retro TV Cart Builder V2|2026-11-15.1 - Retro TV Cart Builder V2]]
 - [[Updates/2026-11-14 - Phase 4 and the XML Goblin|2026-11-14 - Phase 4 and the XML Goblin]]

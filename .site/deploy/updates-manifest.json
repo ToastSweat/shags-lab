@@ -3,6 +3,15 @@
     "siteBase":  "https://helvete.pizza/lab",
     "updates":  [
                     {
+                        "id":  "updates/2026-11-15.3---i-automated-shag\u0027s-lab",
+                        "title":  "2026-11-15.3 - I Automated Shag\u0027s Lab",
+                        "date":  "2026-11-15",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-15.3---i-automated-shag\u0027s-lab",
+                        "projects":  [
+                                         "Obsidian Vault to Website"
+                                     ]
+                    },
+                    {
                         "id":  "updates/2026-11-15.2---tiny-tv-firmware-wrap-up",
                         "title":  "2026-11-15.2 - Tiny TV Firmware-Wrap Up",
                         "date":  "2026-11-15",
