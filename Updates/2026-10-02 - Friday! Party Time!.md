@@ -1,7 +1,11 @@
 ---
 type: update
 date: 2026-10-02
-project: Cosmic Raven Records, Guitar - Hello Kitty (White), Dune Awakening Private Server, Safe Cracker Discord Activity
+project:
+  - Cosmic Raven Records
+  - Guitar - Hello Kitty (White)
+  - Dune Awakening Private Server
+  - Safe Cracker Discord Activity
 publish: true
 ---
 What a long week, thank god its over.

@@ -4,8 +4,6 @@ date: 2026-11-05
 project: My Mini Retro Television Channels
 publish: true
 ---
-# Boomerang Has an Audience, and It Isn't Just Children
-
 I got BOOM1 built. Getting there involved a large pile of cartoons, another pile of channel branding, and a reminder that cartoons do not automatically mean toy commercials.
 
 ## The station between the shows

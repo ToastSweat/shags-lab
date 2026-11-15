@@ -4,7 +4,6 @@ date: 2026-10-21
 project: Safe Cracker Discord Activity
 publish: true
 ---
-
 ![[Pasted image 20261021200110.png]]
 
 Okay, that title is maybe a little dramatic.

@@ -1,7 +1,13 @@
 ---
 type: update
 date: 2026-09-24
-project: Cosmic Raven Records, Safe Cracker Discord Activity, Star Wars Battlefront II Dedicated Server, Garth's Game DMG, Obsidian Vault to Website, Dune Awakening Private Server
+project:
+  - Cosmic Raven Records
+  - Safe Cracker Discord Activity
+  - Star Wars Battlefront II Dedicated Server
+  - Garth's Game DMG
+  - Obsidian Vault to Website
+  - Dune Awakening Private Server
 publish: true
 ---
 ## Safe Cracker Discord Activity
@@ -21,7 +27,7 @@ In the meantime there are plenty of other projects on my mind.
 
 I need to work on [[Projects/Star Wars Battlefront II Dedicated Server/Star Wars Battlefront II Dedicated Server Home|Star Wars Battlefront II Dedicated Server Home]], I really want to start working on the SQL stats system so I can work towards the goal of our own sutom campaign, and, you know, open the server to the public.
 
-Also I need to actually get something on 'paper' for [[Queued Projects/Garths Game DMG/Garths Game DMG Home|Garths Game DMG Home]]. There is a lot to do still, and taking a breath, a little breather, was nice. I can't let it fall by the wayside, especially when so much good work has gone into it! Then of course I want to make more console games so I need to finish one before I start another!
+Also I need to actually get something on 'paper' for [[Garths Game DMG Home|Garths Game DMG Home]]. There is a lot to do still, and taking a breath, a little breather, was nice. I can't let it fall by the wayside, especially when so much good work has gone into it! Then of course I want to make more console games so I need to finish one before I start another!
 
 Also since I have been using this site/blog every day there is a small list of improvements I need to work on so [[Projects/Obsidian Vault to Website/Obsidian Vault to Website Home|Obsidian Vault to Website Home]] needs some attention in
 the near future.

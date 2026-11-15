@@ -1,7 +1,12 @@
 ---
 type: update
 date: 2026-09-25
-project: Cosmic Raven Records, Obsidian Vault to Website, Dune Awakening Private Server, Garth's Game DMG, Safe Cracker Discord Activity
+project:
+  - Cosmic Raven Records
+  - Obsidian Vault to Website
+  - Dune Awakening Private Server
+  - Garth's Game DMG
+  - Safe Cracker Discord Activity
 publish: true
 ---
 What a long week. I don't have a huge update today, I took my cat to the vet today to get neutered and to deal with his hernia.
@@ -21,7 +26,7 @@ Here's what I'm going to be working on soon.
 * There are some output warning in the Quartz builder I want to take a look at too.
 * A visitor counter on the site would be so cool.
 * [[Projects/Dune Awakening Private Server/Dune Awakening Private Server Home|Dune Awakening Private Server]]: documentation, [[Wiki/backups|backup]], investigate new server build?
-* Document [[Queued Projects/Garths Game DMG/Garths Game DMG Home|Garths Game]]
+* Document [[Garths Game DMG Home|Garths Game]]
 * Update all home pages with images
 * Use AI to help me make an [[Projects/Safe Cracker Discord Activity/Safe Cracker Discord Activity Home|exporter from Photoshop to SveltKit]]
 

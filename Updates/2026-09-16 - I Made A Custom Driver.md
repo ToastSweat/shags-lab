@@ -1,7 +1,10 @@
 ---
 type: update
 date: 2026-09-16
-project: Keychron C100 Custom Firmware, Keychron C100, Keychron C100 Custom Keycaps
+project:
+  - Keychron C100 Custom Firmware
+  - Keychron C100
+  - Keychron C100 Custom Keycaps
 publish: true
 ---
 I Made A Custom Driver?!

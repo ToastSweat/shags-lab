@@ -4,8 +4,6 @@ date: 2026-11-02
 project: The Sith Order
 publish: true
 ---
-# The Sith Order: Actually Beginning
-
 Apparently the next project in the lab is a religion.
 
 I've been fascinated by the Sith for years, especially Naga Sadow. Somewhere along the way, that fascination became a question I kept coming back to: what would it mean to take the passion, drive, and pursuit of mastery seriously in my own life?

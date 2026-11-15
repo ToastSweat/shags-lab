@@ -1,7 +1,11 @@
 ---
 type: update
 date: 2026-10-16
-project: Hurdy Gurdy - Nerdy Gurdy, Guitar Case Nameplates, Bass VI - Penny, Safe Cracker Discord Activity
+project:
+  - Hurdy Gurdy - Nerdy Gurdy
+  - Guitar Case Nameplates
+  - Bass VI - Penny
+  - Safe Cracker Discord Activity
 publish: true
 ---
 ![[Pasted image 20261017135224.png]]

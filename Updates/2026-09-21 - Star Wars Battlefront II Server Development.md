@@ -1,7 +1,9 @@
 ---
 type: update
 date: 2026-09-21
-project: Star Wars Battlefront II Dedicated Server, Progeny Gaming Network
+project:
+  - Star Wars Battlefront II Dedicated Server
+  - Progeny Gaming Network
 publish: true
 ---
 I Accidentally Built Modern Infrastructure For A 2005 Star Wars Game

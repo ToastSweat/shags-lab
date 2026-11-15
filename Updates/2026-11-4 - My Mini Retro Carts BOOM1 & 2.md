@@ -4,8 +4,6 @@ date: 2026-11-04
 project: My Mini Retro Television Channels
 publish: true
 ---
-# More Fake Television, Now With More Bears
-
 Last night's retro television work was mostly about getting my existing carts into Jellyfin properly and deciding what comes next. Apparently building a collection of pretend television stations also means becoming their scheduling department.
 
 ## Jellyfin needs normal filenames

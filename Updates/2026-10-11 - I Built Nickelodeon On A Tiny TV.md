@@ -1,7 +1,9 @@
 ---
 type: update
 date: 2026-10-11
-project: My Mini Retro Television Channels, My Mini Retro Television
+project:
+  - My Mini Retro Television Channels
+  - My Mini Retro Television
 publish: true
 ---
 I Built [[Wiki/Nickelodeon|Nickelodeon]] On A Tiny TV

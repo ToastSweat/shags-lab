@@ -1,7 +1,12 @@
 ---
 type: update
 date: 2026-10-12
-project: Cosmic Raven Records, My Mini Retro Television Channels, Safe Cracker Discord Activity, Star Wars Battlefront II Dedicated Server, iCue Image Ranker Widget
+project:
+  - Cosmic Raven Records
+  - My Mini Retro Television Channels
+  - Safe Cracker Discord Activity
+  - Star Wars Battlefront II Dedicated Server
+  - iCue Image Ranker Widget
 publish: true
 ---
 It was one of those days where I can't settle into just one project, so I just make a little progress in many instead of a lot in one.

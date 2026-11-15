@@ -4,8 +4,6 @@ date: 2026-10-20
 project: ChatBot
 publish: true
 ---
-# IT'S ALIIIIIIIIIIIIVE!
-
 I wanted to use my [[Projects/Hermes/ChatBot/ChatBot Home|character chat app]] on my phone.
 
 At home.

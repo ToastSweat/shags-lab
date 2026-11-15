@@ -8,8 +8,20 @@ publish: true
 
 ## Latest Updates
 
-- [[Updates/2026-11-6-Boomerang-Two-and-the-Final-Four|2026-11-6-Boomerang-Two-and-the-Final-Four]]
-- [[Updates/2026-11-5-Boomerang-Has-an-Audience|2026-11-5-Boomerang-Has-an-Audience]]
+- [[Updates/2026-11-15.2 - Tiny TV Firmware-Wrap Up|2026-11-15.2 - Tiny TV Firmware-Wrap Up]]
+- [[Updates/2026-11-15.1 - Retro TV Cart Builder V2|2026-11-15.1 - Retro TV Cart Builder V2]]
+- [[Updates/2026-11-14 - Phase 4 and the XML Goblin|2026-11-14 - Phase 4 and the XML Goblin]]
+- [[Updates/2026-11-13 - Sith Order Book|2026-11-13 - Sith Order Book]]
+- [[Updates/2026-11-12 - Phase 3 Is Live and Phase 4 Is Fighting Back 1|2026-11-12 - Phase 3 Is Live and Phase 4 Is Fighting Back 1]]
+- [[Updates/2026-11-11 - Four-Colors, Two-Missing Screws, Twelve-Shelves|2026-11-11 - Four-Colors, Two-Missing Screws, Twelve-Shelves]]
+- [[Updates/2026-11-10 - Seventeen-Thousand-Clips|2026-11-10 - Seventeen-Thousand-Clips]]
+- [[Updates/2026-11-9 - Moving Right Along|2026-11-9 - Moving Right Along]]
+- [[Updates/2026-11-8 - Giving Battlefront II Persistent Player Profiles|2026-11-8 - Giving Battlefront II Persistent Player Profiles]]
+- [[Updates/2026-11-7.2 - Twenty-Carts-and-a-Fresh-Start|2026-11-7.2 - Twenty-Carts-and-a-Fresh-Start]]
+- [[Updates/2026-11-7.1 - Time to Wrap Up SWBFII|2026-11-7.1 - Time to Wrap Up SWBFII]]
+- [[Updates/2026-11-6.2 - Spring Cleaning Game Ideas|2026-11-6.2 - Spring Cleaning Game Ideas]]
+- [[Updates/2026-11-6.1 - Boomerang-Two-and-the-Final-Four|2026-11-6.1 - Boomerang-Two-and-the-Final-Four]]
+- [[Updates/2026-11-5 - Boomerang-Has-an-Audience|2026-11-5 - Boomerang-Has-an-Audience]]
 - [[Updates/2026-11-4 - My Mini Retro Carts BOOM1 & 2|2026-11-4 - My Mini Retro Carts BOOM1 & 2]]
 - [[Updates/2026-11-3 - Lazy Day|2026-11-3 - Lazy Day]]
 - [[Updates/2026-11-2 - The Sith Order|2026-11-2 - The Sith Order]]
@@ -70,4 +82,4 @@ publish: true
 - [[Updates/2026-09-17 - I Built A Booru Librarian|2026-09-17 - I Built A Booru Librarian]]
 - [[Updates/2026-09-16 - I Made A Custom Driver|2026-09-16 - I Made A Custom Driver]]
 
-*Last Updated: 2026-11-06*
+*Last Updated: 2026-11-15*

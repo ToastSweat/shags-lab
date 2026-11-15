@@ -2,7 +2,9 @@
 title: 2026-10-07 - Steam Frame? So Lame...
 type: update
 date: 2026-10-07
-project: Hermes, VR Lightsaber Trainer
+project:
+  - Hermes
+  - VR Lightsaber Trainer
 publish: true
 ---
 I started using [[Wiki/Hermes Agent|Hermes]] to work with bigger AI based projects. Yes, yes, give me your hate.

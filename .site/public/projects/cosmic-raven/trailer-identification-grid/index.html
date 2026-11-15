@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>TIG: Trailer Identification Grid</title><meta charset="utf-8"/><link rel="preload" href="../../../index-b9b435bc.css" as="style"/><link rel="preload" href="../../../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Shag's Lab"/><meta property="og:title" content="TIG: Trailer Identification Grid"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="TIG: Trailer Identification Grid"/><meta name="twitter:description" content="TIG is my custom visual identification format: a strip of squares split diagonally into triangles, used to encode a trailer ID."/><meta property="og:description" content="TIG is my custom visual identification format: a strip of squares split diagonally into triangles, used to encode a trailer ID."/><meta property="og:image:alt" content="TIG is my custom visual identification format: a strip of squares split diagonally into triangles, used to encode a trailer ID."/><meta property="twitter:domain" content="helvete.pizza/lab"/><meta property="og:url" content="https://helvete.pizza/lab/projects/cosmic-raven/trailer-identification-grid/index"/><meta property="twitter:url" content="https://helvete.pizza/lab/projects/cosmic-raven/trailer-identification-grid/index"/><link rel="icon" href="../../../static/icon.png"/><meta name="description" content="TIG is my custom visual identification format: a strip of squares split diagonally into triangles, used to encode a trailer ID."/><meta name="generator" content="Quartz"/><link href="../../../index-b9b435bc.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-11d41004.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-26a99b87.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../../../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://helvete.pizza/lab/projects/cosmic-raven/trailer-identification-grid/index-og-image.webp"/><meta property="og:image:url" content="https://helvete.pizza/lab/projects/cosmic-raven/trailer-identification-grid/index-og-image.webp"/><meta name="twitter:image" content="https://helvete.pizza/lab/projects/cosmic-raven/trailer-identification-grid/index-og-image.webp"/><meta property="og:image:type" content="image/webp"/><link rel="stylesheet" href="/lab/static/shags-visitor-counter.css"></head><body data-slug="projects/cosmic-raven/trailer-identification-grid/index" data-basepath="/lab"><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../..">Shag's Lab</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="Search" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something..." placeholder="Search for something..."/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="Dark mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="Reader mode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a, b) => {\n  if (a.isFolder !== b.isFolder) return a.isFolder ? -1 : 1;\n  const inUpdates = (n) => n.slugSegments?.[0]?.toLowerCase() === \&quot;updates\&quot;;\n  if (!a.isFolder &amp;&amp; inUpdates(a) &amp;&amp; inUpdates(b)) {\n    const edition = (n) => /^(\\d{4}-\\d{2}-\\d{2})(?:\\.(\\d+))?(?=[^\\d]|$)/.exec(n.slugSegment || \&quot;\&quot;);\n    const left = edition(a), right = edition(b);\n    if (!!left !== !!right) return left ? -1 : 1;\n    if (left &amp;&amp; right) {\n      const dateOrder = right[1].localeCompare(left[1]);\n      const editionOrder = Number(right[2] || 0) - Number(left[2] || 0);\n      if (dateOrder || editionOrder) return dateOrder || editionOrder;\n    }\n  }\n  return (a.displayName || \&quot;\&quot;).localeCompare(b.displayName || \&quot;\&quot;, undefined, { numeric: true, sensitivity: \&quot;base\&quot; });\n}&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-63" aria-label="Explorer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-63" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../projects/">Projects Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../projects/cosmic-raven/">Cosmic Raven</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>TIG: Trailer Identification Grid</a></div></nav><h1 class="article-title">TIG: Trailer Identification Grid</h1><p show-comma="true" class="content-meta"><time datetime="2026-11-11T06:00:00.000Z">Nov 11, 2026</time><span>15 min read</span></p></div></div><div class="popover-hint"><article class><div class="markdown-preview-view markdown-rendered"><p>TIG is my custom visual identification format: a strip of squares split diagonally into triangles, used to encode a trailer ID. The working name stands for <strong>Trailer Identification Grid</strong>.</p>
+<p><img src="../../../projects/cosmic-raven/trailer-identification-grid/assets/{11ecd2f2-9211-4480-8bb4-bcc9f050b79a}.png" alt width="auto" height="auto"/></p>
+<p>The idea started with markings I put on the sides of trailers in an older piece of artwork. They looked like some unfamiliar industrial barcode. I wanted to give that visual design actual rules, then build something that could generate and read it. Apparently fictional space trailers need paperwork too.</p>
+<p>This page documents <strong>TIG 1.0 and the first TIG Studio implementation</strong>. It is both a design explanation and a reference for reproducing the format. The original artwork is the visual prototype; its markings were not generated under these rules and should not be expected to decode.</p>
+<h2 id="what-a-tig-plate-identifies">What a TIG plate identifies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-a-tig-plate-identifies" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>A plate stores a <strong>32-bit identifier</strong>, displayed as eight hexadecimal characters. For example:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>7A3F029C</span></span></code></pre></figure>
+<p>It works like a license plate. The identifier stays with the trailer; other information belongs in a separate registry.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Stored in the plate</th><th>Stored in a future registry</th></tr></thead><tbody><tr><td>Trailer ID</td><td>Owner or operator</td></tr><tr><td>Checksum for that ID</td><td>Manufacturer and model</td></tr><tr><td>Fixed orientation markers</td><td>Cargo, destination, maintenance, and other changing details</td></tr></tbody></table></div>
+<p>TIG Studio currently generates and reads plates. It does <strong>not</strong> include that registry, assign ownership, or track cargo.</p>
+<p>A 32-bit field has 4,294,967,296 possible values, including <code>00000000</code>. The current implementation does not reserve a special value. Eight hexadecimal characters are just the readable representation of those 32 bits, not eight stored text characters.</p>
+<h2 id="one-square-four-states">One square, four states<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#one-square-four-states" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Every cell is a square divided along a diagonal running from its <strong>top-left corner to its bottom-right corner</strong>. Each triangular half can be filled or empty.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Numeric state</th><th>Bit pair</th><th>Filled area</th></tr></thead><tbody><tr><td>0</td><td><code>00</code></td><td>Neither triangle; empty square</td></tr><tr><td>1</td><td><code>01</code></td><td>Upper-right triangle</td></tr><tr><td>2</td><td><code>10</code></td><td>Lower-left triangle</td></tr><tr><td>3</td><td><code>11</code></td><td>Both triangles; full square</td></tr></tbody></table></div>
+<p>Four states encode <strong>two bits per cell</strong>. In this mapping, the upper-right half contributes the low bit and the lower-left half contributes the high bit.</p>
+<p>â€œEmptyâ€ means the panel background shows through. The normal generated plate uses black marks on white. The reader also tries the opposite polarity, allowing light marks on a dark background when the whole design is inverted consistently.</p>
+<p>The diagonal is an encoding boundary, not a separate line drawn over every cell. Adjacent filled cells can merge into larger shapes. The reader uses the frame geometry to know where the invisible cell boundaries lie.</p>
+<h2 id="plate-layout">Plate layout<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#plate-layout" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The data area contains <strong>three rows and eight columns</strong>. That is 24 data cells:</p>
+<p><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord">24</span><span class="mord text"><span class="mord"> cells</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">2</span><span class="mord text"><span class="mord"> bits</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">48</span><span class="mord text"><span class="mord"> bits</span></span></span></span></span></p>
+<p>Those 48 bits hold a 32-bit ID and a 16-bit checksum.</p>
+<p>There is also one fixed marker column at each end, so the <strong>complete symbol contains three rows and ten columns</strong>, surrounded by a rectangular frame. The markers are separate from the 48-bit payload.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Row, top to bottom</th><th>Left marker</th><th>Eight data columns</th><th>Right marker</th></tr></thead><tbody><tr><td>Top</td><td>Full: <code>3</code></td><td>Data</td><td>Empty: <code>0</code></td></tr><tr><td>Middle</td><td>Upper-right: <code>1</code></td><td>Data</td><td>Lower-left: <code>2</code></td></tr><tr><td>Bottom</td><td>Empty: <code>0</code></td><td>Data</td><td>Full: <code>3</code></td></tr></tbody></table></div>
+<p>The frame gives the reader a candidate boundary and four corners. The marker pattern lets it test which corner is the start and which way the symbol should be read.</p>
+<p>The printed hexadecimal ID below the frame is for people. The reader does not perform text recognition and does not depend on that caption. The small <code>TIG / 1.0</code> caption is also a human-readable label.</p>
+<h2 id="reading-order-and-bit-packing">Reading order and bit packing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reading-order-and-bit-packing" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Read the data <strong>down each column, then move one column to the right</strong>. Do not read across each row.</p>
+<p>For a zero-based data column <code>c</code> and row <code>r</code>, the cell’s position in the encoded array is:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="javascript" data-theme="github-light github-dark"><code data-language="javascript" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> index</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal"> c </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">*</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 3</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> +</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal"> r;</span></span></code></pre></figure>
+<p>The marker columns are excluded from this array.</p>
+<p>The encoder first converts the ID into four bytes. For <code>7A3F029C</code>, those bytes are:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>7A 3F 02 9C</span></span></code></pre></figure>
+<p>It calculates the checksum over those four bytes, then appends the checksum’s high byte followed by its low byte. Each byte becomes four cells, taking the most significant pair of bits first:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="javascript" data-theme="github-light github-dark"><code data-language="javascript" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> cells</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> [</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal">  byte </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">>></span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 6</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal">  (byte </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">>></span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 4</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">&amp;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 3</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal">  (byte </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">>></span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 2</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">&amp;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 3</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal">  byte </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">&amp;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 3</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">];</span></span></code></pre></figure>
+<p>Because a physical column contains three cells while a byte occupies four cells, <strong>byte boundaries do not line up with column boundaries</strong>. The entire six-byte packet is a continuous stream of 24 two-bit values.</p>
+<h2 id="the-checksum">The checksum<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-checksum" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>TIG 1.0 uses <strong>CRC-16/CCITT-FALSE</strong> with these parameters:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Parameter</th><th>Value</th></tr></thead><tbody><tr><td>Width</td><td>16 bits</td></tr><tr><td>Polynomial</td><td><code>0x1021</code></td></tr><tr><td>Initial value</td><td><code>0xFFFF</code></td></tr><tr><td>Reflect input</td><td>No</td></tr><tr><td>Reflect output</td><td>No</td></tr><tr><td>Final XOR</td><td><code>0x0000</code></td></tr><tr><td>Input</td><td>The four binary ID bytes, in displayed order</td></tr><tr><td>Output order</td><td>High byte, then low byte</td></tr><tr><td>Standard check vector</td><td>ASCII <code>123456789</code> produces <code>0x29B1</code></td></tr></tbody></table></div>
+<p>The checksum is calculated over the <strong>binary ID</strong>, not the ASCII characters in its printed representation. Feeding the eight text characters into the CRC would produce a different result.</p>
+<p>Here is the algorithm used by the implementation:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="javascript" data-theme="github-light github-dark"><code data-language="javascript" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> crc</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;" data-token-type="important">bytes</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">) {</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">  let</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal"> c </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 0xFFFF</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">;</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">  for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> b</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword"> of</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal"> bytes) {</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal">    c </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">^=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal"> b </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">&lt;&lt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 8</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">;</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">    for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">let</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal"> i </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">; i </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">&lt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 8</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">; i</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">++</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">) {</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal">      c </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal"> ((c </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">&amp;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 0x8000</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">?</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal"> (c </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">&lt;&lt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">^</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 0x1021</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> :</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal"> c </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">&lt;&lt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">&amp;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 0xFFFF</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">;</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">    }</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">  }</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">  return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal"> c;</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">}</span></span></code></pre></figure>
+<p>The CRC detects errors; it does not repair them. It also does not prove that a plate is authentic. Someone who knows the format can generate a valid checksum for any ID, and some multi-bit corruptions can pass a CRC check.</p>
+<h2 id="worked-example-7a3f029c">Worked example: <code>7A3F029C</code><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#worked-example-7a3f029c" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>For this ID, the checksum is <strong><code>63DD</code></strong>. The complete packet is:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Field</th><th>Bytes</th></tr></thead><tbody><tr><td>Identifier</td><td><code>7A 3F 02 9C</code></td></tr><tr><td>Checksum</td><td><code>63 DD</code></td></tr><tr><td>Complete packet</td><td><code>7A 3F 02 9C 63 DD</code></td></tr></tbody></table></div>
+<p>Splitting each byte into four two-bit values gives:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Byte</th><th>Binary</th><th>Cell states</th></tr></thead><tbody><tr><td><code>7A</code></td><td><code>01111010</code></td><td><code>1, 3, 2, 2</code></td></tr><tr><td><code>3F</code></td><td><code>00111111</code></td><td><code>0, 3, 3, 3</code></td></tr><tr><td><code>02</code></td><td><code>00000010</code></td><td><code>0, 0, 0, 2</code></td></tr><tr><td><code>9C</code></td><td><code>10011100</code></td><td><code>2, 1, 3, 0</code></td></tr><tr><td><code>63</code></td><td><code>01100011</code></td><td><code>1, 2, 0, 3</code></td></tr><tr><td><code>DD</code></td><td><code>11011101</code></td><td><code>3, 1, 3, 1</code></td></tr></tbody></table></div>
+<p>Placing that stream down successive columns produces this layout. The numbers identify the cell shapes from the four-state table above.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Row</th><th>Left marker</th><th>D1</th><th>D2</th><th>D3</th><th>D4</th><th>D5</th><th>D6</th><th>D7</th><th>D8</th><th>Right marker</th></tr></thead><tbody><tr><td>Top</td><td>3</td><td>1</td><td>2</td><td>3</td><td>0</td><td>2</td><td>0</td><td>0</td><td>1</td><td>0</td></tr><tr><td>Middle</td><td>1</td><td>3</td><td>0</td><td>3</td><td>0</td><td>1</td><td>1</td><td>3</td><td>3</td><td>2</td></tr><tr><td>Bottom</td><td>0</td><td>2</td><td>3</td><td>0</td><td>2</td><td>3</td><td>2</td><td>3</td><td>1</td><td>3</td></tr></tbody></table></div>
+<p>This is a useful compatibility example: another TIG implementation should produce the same checksum and cell arrangement.</p>
+<h2 id="exact-reference-geometry">Exact reference geometry<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#exact-reference-geometry" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The generator uses an SVG coordinate system with a <strong>1200 Ã— 620</strong> canvas. These are design units; the entire plate can be scaled uniformly for export or printing.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Element</th><th>Geometry</th></tr></thead><tbody><tr><td>Background</td><td>White, covering the full canvas</td></tr><tr><td>Outer frame</td><td>Left <code>60</code>, top <code>60</code>, right <code>1140</code>, bottom <code>480</code></td></tr><tr><td>Frame thickness</td><td><code>20</code></td></tr><tr><td>Inner frame opening</td><td>Left <code>80</code>, top <code>80</code>, right <code>1120</code>, bottom <code>460</code></td></tr><tr><td>Cell dimensions</td><td><code>100 Ã— 100</code></td></tr><tr><td>Complete grid</td><td>Ten columns Ã— three rows, including markers</td></tr><tr><td>Grid origin</td><td><code>x = 100</code>, <code>y = 120</code></td></tr><tr><td>Grid extent</td><td><code>x = 100â€¦1100</code>, <code>y = 120â€¦420</code></td></tr><tr><td>ID caption</td><td>Horizontally centered at <code>x = 600</code>, baseline <code>y = 555</code></td></tr><tr><td>Version caption</td><td>Horizontally centered at <code>x = 600</code>, baseline <code>y = 592</code></td></tr></tbody></table></div>
+<p>For a complete-grid column <code>c</code> from 0 to 9 and row <code>r</code> from 0 to 2:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="javascript" data-theme="github-light github-dark"><code data-language="javascript" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> x</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 100</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> +</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal"> c </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">*</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 100</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">;</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> y</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 120</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> +</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal"> r </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">*</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 100</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">;</span></span></code></pre></figure>
+<p>Column 0 is the left marker. Columns 1 through 8 carry data. Column 9 is the right marker.</p>
+<p>Keep the internal margins clear. There are 20 units between the grid and the frame’s inner vertical edges, and 40 units above and below the grid inside the opening. Those gaps help prevent the frame and data from becoming one connected component.</p>
+<p>For placement in artwork or on a physical object, preserve the supplied white panel and leave at least 60 units of clear space outside the frame before unrelated surrounding graphics. The reference design places the human-readable captions below the frame; keep those in their supplied positions rather than moving text into the symbol’s detection area.</p>
+<p>Do not stretch the width and height independently, change individual cell sizes, add grid lines, or decorate the frame. Such changes alter the assumptions used by this reader.</p>
+<h2 id="how-the-generator-works">How the generator works<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#how-the-generator-works" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The generator validates that the ID contains exactly eight hexadecimal characters. It accepts lowercase or uppercase; the interface normalizes the displayed value to uppercase. Leading zeroes matter and are retained.</p>
+<p>The generator then converts the ID into bytes, calculates and appends the CRC, splits the packet into cells, and draws the frame, markers, data, and captions.</p>
+<p><strong>SVG export</strong> saves the vector plate. <strong>PNG export</strong> draws that SVG onto a browser canvas and saves a 1200 Ã— 620 raster image. Both exports represent the same ID and layout.</p>
+<p>The Random ID button uses the browser’s <code>crypto.getRandomValues()</code> to obtain four random bytes. That produces a candidate ID; it does not guarantee uniqueness. A future registry needs to check whether an ID is already assigned and retry or allocate another value when necessary. A large namespace does not remove the possibility of collisions.</p>
+<h2 id="how-the-image-reader-works">How the image reader works<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#how-the-image-reader-works" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The reader is ordinary JavaScript image processing. It does not need a neural network, an online decoding service, or a list of previously generated plates.</p>
+<pre><button class="expand-button" aria-label="Expand mermaid diagram" data-view-component="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M3.72 3.72a.75.75 0 011.06 1.06L2.56 7h10.88l-2.22-2.22a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 11-1.06-1.06l2.22-2.22H2.56l2.22 2.22a.75.75 0 11-1.06 1.06l-3.5-3.5a.75.75 0 010-1.06l3.5-3.5z"></path></svg></button><code class="mermaid" data-clipboard="&quot;flowchart TD\n    A[\&quot;Uploaded image\&quot;] --> B[\&quot;Resize and grayscale\&quot;]\n    B --> C[\&quot;Threshold and find connected regions\&quot;]\n    C --> D[\&quot;Estimate four frame corners\&quot;]\n    D --> E[\&quot;Try orientations and sample triangles\&quot;]\n    E --> F{\&quot;Markers and CRC valid?\&quot;}\n    F -->|Yes| G[\&quot;Return trailer ID\&quot;]\n    F -->|No| H[\&quot;Try remaining candidates\&quot;]\n    H -->|Candidates remain| D\n    H -->|None remain| I[\&quot;Report no valid TIG\&quot;]&quot;">flowchart TD
+    A[&quot;Uploaded image&quot;] --> B[&quot;Resize and grayscale&quot;]
+    B --> C[&quot;Threshold and find connected regions&quot;]
+    C --> D[&quot;Estimate four frame corners&quot;]
+    D --> E[&quot;Try orientations and sample triangles&quot;]
+    E --> F{&quot;Markers and CRC valid?&quot;}
+    F -->|Yes| G[&quot;Return trailer ID&quot;]
+    F -->|No| H[&quot;Try remaining candidates&quot;]
+    H -->|Candidates remain| D
+    H -->|None remain| I[&quot;Report no valid TIG&quot;]
+</code><div id="mermaid-container" role="dialog"><div id="mermaid-space"><div class="mermaid-content"></div></div></div></pre>
+<h3 id="image-preparation">Image preparation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#image-preparation" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The interface accepts PNG, JPEG, WebP, and SVG images. It rejects files larger than 20 MiB and scales decoded images down, when necessary, so their longest dimension is at most 1400 pixels. Smaller images are not enlarged.</p>
+<p>It draws the image onto a white canvas and reads RGBA pixels. The core reader converts them into grayscale using:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>gray = round(0.299 Ã— red + 0.587 Ã— green + 0.114 Ã— blue)</span></span></code></pre></figure>
+<p>It then selects a global threshold using the grayscale histogram and between-class variance: an Otsu-style threshold separating light and dark pixels. This is a single threshold for the image, so uneven lighting remains a weakness.</p>
+<h3 id="finding-a-frame">Finding a frame<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#finding-a-frame" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The reader searches for connected regions using four-neighbor connectivity: left, right, above, and below. For each sufficiently large candidate, it collects boundary points, builds a convex hull, and simplifies that hull to four corners.</p>
+<p>It tries both dark-on-light and light-on-dark interpretations. It does not simply accept the largest dark rectangle; the later marker and checksum checks decide whether a candidate actually contains a TIG code.</p>
+<p>The current thresholds discard regions with fewer than 100 foreground pixels or fewer than 20 boundary points. These are implementation heuristics, not a promise about the minimum readable printed size.</p>
+<h3 id="correcting-orientation-and-perspective">Correcting orientation and perspective<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#correcting-orientation-and-perspective" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>For each four-corner candidate, the reader tries four cyclic assignments of the starting corner. It maps the known rectangular frame into the candidate quadrilateral using a projective transformation, also called a homography.</p>
+<p>Instead of producing a fully straightened image, it projects the expected sampling points into the uploaded image. That lets it inspect the triangles even when the plate appears at an angle.</p>
+<p>This supports rotations and moderate perspective distortion. Mirrored images are not explicitly handled: the implementation does not try reversed corner order. Curved surfaces are also outside the flat-panel model.</p>
+<h3 id="reading-the-triangles">Reading the triangles<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reading-the-triangles" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The reader samples three points inside each triangular half, away from the dividing diagonal. At least two of those three samples must be foreground for the half to count as filled.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Half</th><th>Sample positions within its cell</th></tr></thead><tbody><tr><td>Upper-right</td><td><code>(0.70, 0.20)</code>, <code>(0.80, 0.30)</code>, <code>(0.65, 0.35)</code></td></tr><tr><td>Lower-left</td><td><code>(0.20, 0.70)</code>, <code>(0.30, 0.80)</code>, <code>(0.35, 0.65)</code></td></tr></tbody></table></div>
+<p>Coordinates are fractions of cell width and height, starting at the top-left corner. The two half results reconstruct the numeric state:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="javascript" data-theme="github-light github-dark"><code data-language="javascript" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> state</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal"> upperRightFilled </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">+</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 2</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> *</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal"> lowerLeftFilled;</span></span></code></pre></figure>
+<p>Voting over three points provides some tolerance to small local defects. It is not error correction and does not inspect every pixel of the triangle.</p>
+<h3 id="accepting-a-result">Accepting a result<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#accepting-a-result" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The reader requires both marker columns to match their fixed values. It then removes those columns, reconstructs the six payload bytes, and compares the stored CRC with a freshly calculated CRC over the first four bytes.</p>
+<p>If the CRC fails, it continues through other candidates and orientations. It returns the <strong>first valid plate</strong> it finds. This version does not enumerate every plate in a scene.</p>
+<p>A successful core result contains:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="javascript" data-theme="github-light github-dark"><code data-language="javascript" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">{</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function">  id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">'7A3F029C'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function">  corners</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;" data-token-type="comment">/* four detected frame-corner objects */</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function">  inverse</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;" data-token-type="comment">/* whether the inverse-polarity search matched */</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">}</span></span></code></pre></figure>
+<p>The <code>corners</code> are in the coordinates of the image passed to the core reader. If the interface resized an upload, these are coordinates in that resized image, not the original photograph.</p>
+<h2 id="running-tig-studio-yourself">Running TIG Studio yourself<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#running-tig-studio-yourself" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The standalone source package is named <code>TIG-Studio-Source-v1.zip</code>. Extract it and keep these two files together:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>File</th><th>Purpose</th></tr></thead><tbody><tr><td><code>index.html</code></td><td>Interface, styling, image upload, and downloads</td></tr><tr><td><code>tig.js</code></td><td>Codec, checksum, SVG generator, and image reader</td></tr></tbody></table></div>
+<p>Open <code>index.html</code> in a modern browser. The standalone application has no external runtime dependencies and can work offline. Uploaded images are processed in the browser; the application does not upload them to a decoding server.</p>
+<p>If local-file restrictions cause problems, open a terminal in the extracted folder and run:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="powershell" data-theme="github-light github-dark"><code data-language="powershell" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">python </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">-</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">m http.server </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">8080</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> --</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">bind </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">127.0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0.1</span></span></code></pre></figure>
+<p>Then visit <code>http://localhost:8080</code>. Python must be installed for this optional method. Press <code>Ctrl+C</code> to stop the server. Binding to <code>127.0.0.1</code> keeps this development server local to the computer.</p>
+<p>To host it, copy <code>index.html</code> and <code>tig.js</code> into the same directory on a static web server. There is no build step, database, account system, or application backend to configure.</p>
+<h3 id="basic-workflow">Basic workflow<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#basic-workflow" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>Enter an eight-character ID or click <strong>Random ID</strong>.</li>
+<li>Click <strong>Generate plate</strong> after manually editing the ID.</li>
+<li>Save PNG or SVG.</li>
+<li>Click <strong>Read generated plate</strong> for a quick round trip, or upload a saved image.</li>
+<li>Confirm that the reader reports the expected ID and a verified checksum.</li>
+</ol>
+<p>Downloads and the demonstration reader use the last successfully generated plate. Editing the input alone does not replace it until generation succeeds.</p>
+<h2 id="using-the-javascript-api">Using the JavaScript API<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#using-the-javascript-api" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>In a browser, load <code>tig.js</code> and use the global <code>TIG</code> object. In Node.js, load the same file with CommonJS:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="javascript" data-theme="github-light github-dark"><code data-language="javascript" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> TIG</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">'./tig.js'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">);</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> cells</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> TIG</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function">encode</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">'7A3F029C'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">);</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal">console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal">(cells.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="normal">length</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">);             </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;" data-token-type="comment">// 24</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal">console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">TIG</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function">decode</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal">(cells));        </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;" data-token-type="comment">// 7A3F029C</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="normal">console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">TIG</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function">crc</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">([</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0x7A</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0x3F</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0x02</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">0x9C</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">])); </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;" data-token-type="comment">// 25565, or 0x63DD</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="keyword">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> svgText</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> TIG</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function">svg</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">'7A3F029C'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">);</span></span></code></pre></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Function</th><th>Input</th><th>Output</th></tr></thead><tbody><tr><td><code>TIG.crc(bytes)</code></td><td>Byte values</td><td>16-bit CRC as a number</td></tr><tr><td><code>TIG.encode(id)</code></td><td>Eight hexadecimal characters</td><td>24 numeric cell states</td></tr><tr><td><code>TIG.decode(states)</code></td><td>24 numeric cell states</td><td>Uppercase eight-character ID, or an error</td></tr><tr><td><code>TIG.svg(id)</code></td><td>Eight hexadecimal characters</td><td>Complete SVG document as text</td></tr><tr><td><code>TIG.readImage(imageData)</code></td><td>Width, height, and RGBA pixel data</td><td>Validated ID, corners, and polarity, or an error</td></tr></tbody></table></div>
+<p><code>readImage()</code> expects decoded pixels, such as browser <code>ImageData</code>, rather than PNG or JPEG file bytes. Node callers need their own image-decoding step. The supplied tests demonstrate passing raw RGBA buffers.</p>
+<p>The core <code>decode()</code> function assumes correctly shaped input. An integration accepting untrusted cell arrays should validate that there are exactly 24 integer values, each between 0 and 3, before calling it. The browser reader creates that array internally.</p>
+<h2 id="what-has-been-tested">What has been tested<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-has-been-tested" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>During the initial build, codec checks passed for the standard CRC check vector, 10,000 generated ID round trips, and rejection of all 48 individual single-bit flips in the example packet. Browser checks also recovered <code>7A3F029C</code> and <code>00000000</code> from generated images.</p>
+<p>The included image regression tests use synthetic plates and transformations:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Fixture</th><th>Observed result in the initial tests</th></tr></thead><tbody><tr><td>Clean plate</td><td>Decoded</td></tr><tr><td>Reduced to 360 Ã— 186 pixels</td><td>Decoded</td></tr><tr><td>Rotated 27 degrees</td><td>Decoded</td></tr><tr><td>Rotated 90 degrees</td><td>Decoded</td></tr><tr><td>Rotated 180 degrees</td><td>Decoded</td></tr><tr><td>Inverted colors</td><td>Decoded</td></tr><tr><td>Gaussian blur, radius 1.5</td><td>Decoded</td></tr><tr><td>Synthetic perspective transformation</td><td>Decoded</td></tr><tr><td>One altered data cell</td><td>Rejected</td></tr><tr><td>Blank image</td><td>Rejected</td></tr></tbody></table></div>
+<p>These are individual successful fixtures, not universal operating limits. They do not establish reliable performance at every size, angle, blur level, or lighting condition. Printed labels photographed in actual surroundings still need field testing.</p>
+<p>The optional test scripts require Node.js, Python, and Pillow. Run them from the extracted source folder:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="text" data-theme="github-light github-dark"><code data-language="text" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>python tests/image-fixtures.py</span></span>
+<span data-line><span>node tests/reader.cjs</span></span></code></pre></figure>
+<p>The scripts use <code>/tmp/tig-fixtures</code> as their fixture directory. They were written for the initial Linux test environment. Windows users can run them through WSL or adapt both scripts to use the same writable temporary directory. The application itself does not require Python, Pillow, or Node.js.</p>
+<h2 id="troubleshooting">Troubleshooting<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#troubleshooting" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Symptom</th><th>Likely issue and next check</th></tr></thead><tbody><tr><td>No valid TIG found</td><td>Confirm the entire rectangular frame is visible, with clear margins and no overlapping artwork.</td></tr><tr><td>A small label fails</td><td>Use a larger or closer image. Avoid enlarging a tiny screenshot and expecting missing detail to return.</td></tr><tr><td>A photo fails but the original PNG reads</td><td>Check glare, uneven shadows, blur, steep angles, and whether the frame merges with dark surrounding graphics.</td></tr><tr><td>A reflected image fails</td><td>Use an unmirrored image; reflection handling is not implemented.</td></tr><tr><td>Changing the ID seems to do nothing</td><td>Click Generate plate, then save or read the newly generated result.</td></tr><tr><td>A standalone page does not work</td><td>Keep <code>tig.js</code> beside <code>index.html</code>; try the optional local HTTP server.</td></tr><tr><td>An old trailer-art marking fails</td><td>The original artwork predates the encoding specification and is not a valid TIG 1.0 test plate.</td></tr></tbody></table></div>
+<p>The image reader usually reports a general â€œNo valid TIG foundâ€ message after exhausting candidates. That can mean frame detection, marker recognition, or payload validation failed; the current interface does not expose a detailed diagnostic for each attempt.</p>
+<h2 id="limits-and-future-development">Limits and future development<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#limits-and-future-development" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>TIG 1.0 is a working prototype with a deliberately small payload. It has no error-correcting code, no registry, no live camera mode, and no batch or multi-plate results. Severe damage, broken frames, poor contrast, strong shadows, extreme perspective, reflections, or curved surfaces can prevent a read.</p>
+<p>The visual version caption is <strong>not a version field inside the payload</strong>, and the reader does not inspect it. The current marker pattern and geometry effectively identify this one layout. If a later format changes the bit mapping, payload, or geometry, it will need an explicit way to distinguish versions without silently reinterpreting existing plates.</p>
+<p>Potential next steps include better diagnostics, real printed-label tests, an ID registry with collision checks, live camera input, and a separately versioned layout with genuine error correction. Those are future extensions, not features hidden in the present build.</p>
+<p>For now, TIG does the thing I originally wanted: it turns the strange triangle markings on my trailers into a reproducible identifier, with a generator that draws it and a reader that can recover it.</p></div></article><div class="page-listing"><p>0 items under this folder.</p><div><ul class="section-ul"></ul></div></div></div><hr/><div class="page-footer"></div></div><div class="right sidebar"></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul><div class="shags-lab-visitor-counter"><strong>Shag&#39;s Lab</strong> &middot; <span data-shags-visitor-count>...</span><span>visitors</span></div></footer></div></div><script src="/lab/static/shags-visitor-counter.js" defer></script></body><script src="../../../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../../../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../../../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../../../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../../postscript-04f7d8cb.js" type="module" data-persist="true"></script></html>

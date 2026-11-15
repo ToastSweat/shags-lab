@@ -5,8 +5,6 @@ project: My Mini Retro Television Channels
 publish: true
 git: https://github.com/ToastSweat/retro-tv-cart-builder
 ---
-# Fake Television, Real Commercial Breaks
-
 I have spent a slightly unreasonable amount of time making television worse on purpose.
 
 I have the episodes. I can pick something and watch it whenever I want. Apparently that isn't enough, because what I actually want is a few hours of cartoons interrupted by old commercials, network bumpers, and someone telling me the show will be right back.

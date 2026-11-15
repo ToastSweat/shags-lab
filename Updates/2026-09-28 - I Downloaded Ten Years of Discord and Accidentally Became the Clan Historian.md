@@ -1,7 +1,12 @@
 ---
 type: update
 date: 2026-09-28
-project: PGN Discord Archive, Progeny Gaming Network, Safe Cracker Discord Activity, Star Wars Battlefront II Dedicated Server, Dune Awakening Private Server
+project:
+  - PGN Discord Archive
+  - Progeny Gaming Network
+  - Safe Cracker Discord Activity
+  - Star Wars Battlefront II Dedicated Server
+  - Dune Awakening Private Server
 publish: true
 ---
 # I Downloaded Ten Years of Discord and Accidentally Became the Clan Historian

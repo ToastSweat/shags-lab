@@ -1,0 +1,729 @@
+{
+    "schema":  1,
+    "siteBase":  "https://helvete.pizza/lab",
+    "updates":  [
+                    {
+                        "id":  "updates/2026-11-15.2---tiny-tv-firmware-wrap-up",
+                        "title":  "2026-11-15.2 - Tiny TV Firmware-Wrap Up",
+                        "date":  "2026-11-15",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-15.2---tiny-tv-firmware-wrap-up",
+                        "projects":  [
+                                         "My Mini Retro Television"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-11-15.1---retro-tv-cart-builder-v2",
+                        "title":  "2026-11-15.1 - Retro TV Cart Builder V2",
+                        "date":  "2026-11-15",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-15.1---retro-tv-cart-builder-v2",
+                        "projects":  [
+                                         "My Mini Retro Television"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-11-14---phase-4-and-the-xml-goblin",
+                        "title":  "2026-11-14 - Phase 4 and the XML Goblin",
+                        "date":  "2026-11-14",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-14---phase-4-and-the-xml-goblin",
+                        "projects":  [
+                                         "Star Wars Battlefront II Dedicated Server"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-11-13---sith-order-book",
+                        "title":  "2026-11-13 - Sith Order Book",
+                        "date":  "2026-11-13",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-13---sith-order-book",
+                        "projects":  [
+                                         "The Sith Order"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-11-12---phase-3-is-live-and-phase-4-is-fighting-back-1",
+                        "title":  "2026-11-12 - Phase 3 Is Live and Phase 4 Is Fighting Back 1",
+                        "date":  "2026-11-12",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-12---phase-3-is-live-and-phase-4-is-fighting-back-1",
+                        "projects":  [
+                                         "Star Wars Battlefront II Dedicated Server"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-11-11---four-colors,-two-missing-screws,-twelve-shelves",
+                        "title":  "2026-11-11 - Four-Colors, Two-Missing Screws, Twelve-Shelves",
+                        "date":  "2026-11-11",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-11---four-colors,-two-missing-screws,-twelve-shelves",
+                        "projects":  [
+                                         "ELEGOO Centauri Carbon"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-11-10---seventeen-thousand-clips",
+                        "title":  "2026-11-10 - Seventeen-Thousand-Clips",
+                        "date":  "2026-11-10",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-10---seventeen-thousand-clips",
+                        "projects":  [
+                                         "My Mini Retro Television"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-11-9---moving-right-along",
+                        "title":  "2026-11-9 - Moving Right Along",
+                        "date":  "2026-11-09",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-9---moving-right-along",
+                        "projects":  [
+                                         "My Mini Retro Television Channels",
+                                         "Star Wars Battlefront II Dedicated Server"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-11-8---giving-battlefront-ii-persistent-player-profiles",
+                        "title":  "2026-11-8 - Giving Battlefront II Persistent Player Profiles",
+                        "date":  "2026-11-08",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-8---giving-battlefront-ii-persistent-player-profiles",
+                        "projects":  [
+                                         "Star Wars Battlefront II Dedicated Server"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-11-7.2---twenty-carts-and-a-fresh-start",
+                        "title":  "2026-11-7.2 - Twenty-Carts-and-a-Fresh-Start",
+                        "date":  "2026-11-07",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-7.2---twenty-carts-and-a-fresh-start",
+                        "projects":  [
+                                         "My Mini Retro Television"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-11-7.1---time-to-wrap-up-swbfii",
+                        "title":  "2026-11-7.1 - Time to Wrap Up SWBFII",
+                        "date":  "2026-11-06",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-7.1---time-to-wrap-up-swbfii",
+                        "projects":  [
+                                         "Star Wars Battlefront II Dedicated Server"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-11-6.2---spring-cleaning-game-ideas",
+                        "title":  "2026-11-6.2 - Spring Cleaning Game Ideas",
+                        "date":  "2026-11-06",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-6.2---spring-cleaning-game-ideas",
+                        "projects":  [
+
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-11-6.1---boomerang-two-and-the-final-four",
+                        "title":  "2026-11-6.1 - Boomerang-Two-and-the-Final-Four",
+                        "date":  "2026-11-06",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-6.1---boomerang-two-and-the-final-four",
+                        "projects":  [
+                                         "My Mini Retro Television Channels"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-11-5---boomerang-has-an-audience",
+                        "title":  "2026-11-5 - Boomerang-Has-an-Audience",
+                        "date":  "2026-11-05",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-5---boomerang-has-an-audience",
+                        "projects":  [
+                                         "My Mini Retro Television Channels"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-11-4---my-mini-retro-carts-boom1--and--2",
+                        "title":  "2026-11-4 - My Mini Retro Carts BOOM1 \u0026 2",
+                        "date":  "2026-11-04",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-4---my-mini-retro-carts-boom1--and--2",
+                        "projects":  [
+                                         "My Mini Retro Television Channels"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-11-3---lazy-day",
+                        "title":  "2026-11-3 - Lazy Day",
+                        "date":  "2026-11-03",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-3---lazy-day",
+                        "projects":  [
+                                         "My Mini Retro Television Channels",
+                                         "Cosmic Raven Records"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-11-2---the-sith-order",
+                        "title":  "2026-11-2 - The Sith Order",
+                        "date":  "2026-11-02",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-2---the-sith-order",
+                        "projects":  [
+                                         "The Sith Order"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-11-1---my-mini-update-television-1",
+                        "title":  "2026-11-1 - My Mini Update Television 1",
+                        "date":  "2026-11-01",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-1---my-mini-update-television-1",
+                        "projects":  [
+                                         "My Mini Retro Television Channels"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-31.2---i-took-the-image-ranker-to-my-phone",
+                        "title":  "I Took the Image Ranker to My Phone. Windows Made It Weird.",
+                        "date":  "2026-10-31",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-31.2---i-took-the-image-ranker-to-my-phone",
+                        "projects":  [
+                                         "iCue Image Ranker Widget",
+                                         "Booru Image Downloader",
+                                         "Corsair Xenon Edge"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-31.1---pokémon.-in-this-economy.",
+                        "title":  "2026-10-31.1 - Pokémon?! In This Economy?!",
+                        "date":  "2026-10-31",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-31.1---pokémon.-in-this-economy.",
+                        "projects":  [
+                                         "Vintage TCG Collector"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-30---hermes-un-time",
+                        "title":  "2026-10-30 - Hermes Un-Time",
+                        "date":  "2026-10-30",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-30---hermes-un-time",
+                        "projects":  [
+                                         "My Mini Retro Television Channels"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-29---hermes-time",
+                        "title":  "2026-10-29 - Hermes Time",
+                        "date":  "2026-10-29",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-29---hermes-time",
+                        "projects":  [
+                                         "My Mini Retro Television Channels"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-28---cn03-and-cn04",
+                        "title":  "2026-10-28 - CN03 and CN04",
+                        "date":  "2026-10-28",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-28---cn03-and-cn04",
+                        "projects":  [
+                                         "My Mini Retro Television Channels"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-27---cartoon-network-time!-...-again!",
+                        "title":  "2026-10-27 - Cartoon Network Time! ... Again!",
+                        "date":  "2026-10-27",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-27---cartoon-network-time!-...-again!",
+                        "projects":  [
+                                         "My Mini Retro Television Channels"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-26---cartoon-network-time!",
+                        "title":  "2026-10-26 - Cartoon Network Time!",
+                        "date":  "2026-10-26",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-26---cartoon-network-time!",
+                        "projects":  [
+                                         "My Mini Retro Television Channels"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-25---garth\u0027s-game-dmg-ii----electric-boogaloo",
+                        "title":  "2026-10-25 - Garth\u0027s Game DMG II  - Electric Boogaloo",
+                        "date":  "2026-10-25",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-25---garth\u0027s-game-dmg-ii----electric-boogaloo",
+                        "projects":  [
+                                         "Garth\u0027s Game DMG"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-24---garth\u0027s-game-dmg",
+                        "title":  "2026-10-24 - Garth\u0027s Game DMG",
+                        "date":  "2026-10-24",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-24---garth\u0027s-game-dmg",
+                        "projects":  [
+                                         "Garth\u0027s Game DMG"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-23---it\u0027s-gameboy-game-time,-again,-at-last",
+                        "title":  "2026-10-23 - It\u0027s Gameboy Game Time, Again, At Last",
+                        "date":  "2026-10-23",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-23---it\u0027s-gameboy-game-time,-again,-at-last",
+                        "projects":  [
+                                         "Garth\u0027s Game DMG"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-22---finally-something-i\u0027ve-never-seen-before!",
+                        "title":  "2026-10-22 - Finally Something I\u0027ve Never Seen Before!",
+                        "date":  "2026-10-22",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-22---finally-something-i\u0027ve-never-seen-before!",
+                        "projects":  [
+                                         "Cosmic Raven Records"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-21---i-made-photoshop-build-my-discord-activity",
+                        "title":  "2026-10-21 - I Made Photoshop Build My Discord Activity",
+                        "date":  "2026-10-21",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-21---i-made-photoshop-build-my-discord-activity",
+                        "projects":  [
+                                         "Safe Cracker Discord Activity"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-20---companion-ai-finally-escaped-localhost!",
+                        "title":  "2026-10-20 - Companion AI Finally Escaped Localhost!",
+                        "date":  "2026-10-20",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-20---companion-ai-finally-escaped-localhost!",
+                        "projects":  [
+                                         "ChatBot"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-19---well,-shit.",
+                        "title":  "2026-10-19 - Well, Shit.",
+                        "date":  "2026-10-19",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-19---well,-shit.",
+                        "projects":  [
+                                         "ChatBot"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-18---man,-still-going...",
+                        "title":  "2026-10-18 - Man, Still Going...",
+                        "date":  "2026-10-18",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-18---man,-still-going...",
+                        "projects":  [
+                                         "ChatBot"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-17---i-wanted-a-chatbot.-hermes-built-me-a-platform",
+                        "title":  "2026-10-17 - I Wanted a Chatbot. Hermes Built Me a Platform",
+                        "date":  "2026-10-17",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-17---i-wanted-a-chatbot.-hermes-built-me-a-platform",
+                        "projects":  [
+                                         "ChatBot"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-16---nerdy-gurdy-and-guitar-cases",
+                        "title":  "2026-10-16 - Nerdy Gurdy and Guitar Cases",
+                        "date":  "2026-10-16",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-16---nerdy-gurdy-and-guitar-cases",
+                        "projects":  [
+                                         "Hurdy Gurdy - Nerdy Gurdy",
+                                         "Guitar Case Nameplates",
+                                         "Bass VI - Penny",
+                                         "Safe Cracker Discord Activity"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-15---chatbot",
+                        "title":  "2026-10-15 - ChatBot",
+                        "date":  "2026-10-15",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-15---chatbot",
+                        "projects":  [
+                                         "ChatBot"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-14---zzzzzzz",
+                        "title":  "2026-10-14 - Zzzzzzz",
+                        "date":  "2026-10-14",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-14---zzzzzzz",
+                        "projects":  [
+                                         "Safe Cracker Discord Activity",
+                                         "Instruments"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-13---oh-hell,-did-i-miss-one",
+                        "title":  "2026-10-13 - Oh Hell, Did I Miss One",
+                        "date":  "2026-10-13",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-13---oh-hell,-did-i-miss-one",
+                        "projects":  [
+                                         "ChatBot"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-12---one-of-those-all-over-the-place-type-days",
+                        "title":  "2026-10-12 - One of Those All-Over-The-Place Type Days",
+                        "date":  "2026-10-12",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-12---one-of-those-all-over-the-place-type-days",
+                        "projects":  [
+                                         "Cosmic Raven Records",
+                                         "My Mini Retro Television Channels",
+                                         "Safe Cracker Discord Activity",
+                                         "Star Wars Battlefront II Dedicated Server",
+                                         "iCue Image Ranker Widget"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-11---i-built-nickelodeon-on-a-tiny-tv",
+                        "title":  "2026-10-11 - I Built Nickelodeon On A Tiny TV",
+                        "date":  "2026-10-11",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-11---i-built-nickelodeon-on-a-tiny-tv",
+                        "projects":  [
+                                         "My Mini Retro Television Channels",
+                                         "My Mini Retro Television"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-10---the-tiny-tv-cart-builder-actually-works",
+                        "title":  "2026-10-10 - The Tiny TV Cart Builder Actually Works!",
+                        "date":  "2026-10-10",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-10---the-tiny-tv-cart-builder-actually-works",
+                        "projects":  [
+                                         "My Mini Retro Television Channels"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-09---i-built-a-tiny-tv-station-factory",
+                        "title":  "2026-10-09 - I Built A Tiny TV Station Factory!",
+                        "date":  "2026-10-09",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-09---i-built-a-tiny-tv-station-factory",
+                        "projects":  [
+                                         "My Mini Retro Television Channels"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-08---slow-day",
+                        "title":  "2026-10-08 - Slow Day",
+                        "date":  "2026-10-08",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-08---slow-day",
+                        "projects":  [
+                                         "My Mini Retro Television Channels",
+                                         "Cosmic Raven Records"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-07---steam-frame.-so-lame.",
+                        "title":  "2026-10-07 - Steam Frame? So Lame...",
+                        "date":  "2026-10-07",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-07---steam-frame.-so-lame.",
+                        "projects":  [
+                                         "Hermes",
+                                         "VR Lightsaber Trainer"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-06---i-made-hk-47-assign-the-teams",
+                        "title":  "2026-10-06 - I Made HK-47 Assign The Teams",
+                        "date":  "2026-10-06",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-06---i-made-hk-47-assign-the-teams",
+                        "projects":  [
+                                         "Star Wars Battlefront II Dedicated Server"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-05.3---i-put-a-binary-clock-on-my-monitor",
+                        "title":  "2026-10-05.3 - I Put a Binary Clock on My Monitor",
+                        "date":  "2026-10-05",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-05.3---i-put-a-binary-clock-on-my-monitor",
+                        "projects":  [
+                                         "iCue Binary Clock Widget",
+                                         "Corsair Xenon Edge"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-05.2---i-taught-my-monitor-to-rank-my-images",
+                        "title":  "2026-10-05.2 - I Taught My Monitor to Rank My Images",
+                        "date":  "2026-10-05",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-05.2---i-taught-my-monitor-to-rank-my-images",
+                        "projects":  [
+                                         "iCue Image Ranker Widget",
+                                         "iCue Binary Clock Widget",
+                                         "Booru Image Downloader",
+                                         "Corsair Xenon Edge"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-05.1---safe-cracker-is-live",
+                        "title":  "2026-10-05.1 - Safe Cracker Is Live",
+                        "date":  "2026-10-05",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-05.1---safe-cracker-is-live",
+                        "projects":  [
+                                         "Safe Cracker Discord Activity",
+                                         "Progeny Gaming Network"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-04.1---mixed-bag-again",
+                        "title":  "2026-10-04.1 - Mixed Bag Again",
+                        "date":  "2026-10-04",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-04.1---mixed-bag-again",
+                        "projects":  [
+                                         "Star Wars Battlefront II Dedicated Server",
+                                         "Corsair Xenon Edge",
+                                         "iCue Binary Clock Widget",
+                                         "iCue Image Ranker Widget",
+                                         "Booru Image Downloader",
+                                         "My Mini Retro Television",
+                                         "My Mini Retro Television Channels",
+                                         "Safe Cracker Discord Activity",
+                                         "Garth\u0027s Game DMG",
+                                         "Cosmic Raven Records",
+                                         "Obsidian Vault to Website",
+                                         "Instruments",
+                                         "Vinyl"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-03.2---cosmic-raven-gets-some-traction",
+                        "title":  "2026-10-03.2 - Cosmic Raven Gets Some Traction",
+                        "date":  "2026-10-03",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-03.2---cosmic-raven-gets-some-traction",
+                        "projects":  [
+                                         "Cosmic Raven Records"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-03.1---dune-awakening-server-finally-backed-up!",
+                        "title":  "2026-10-03.1 - Dune Awakening Server Finally Backed Up!",
+                        "date":  "2026-10-03",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-03.1---dune-awakening-server-finally-backed-up!",
+                        "projects":  [
+                                         "Dune Awakening Private Server"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-02---friday!-party-time!",
+                        "title":  "2026-10-02 - Friday! Party Time!",
+                        "date":  "2026-10-02",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-02---friday!-party-time!",
+                        "projects":  [
+                                         "Cosmic Raven Records",
+                                         "Guitar - Hello Kitty (White)",
+                                         "Dune Awakening Private Server",
+                                         "Safe Cracker Discord Activity"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-10-01---nope-3",
+                        "title":  "2026-10-01 - Nope 3",
+                        "date":  "2026-10-01",
+                        "url":  "https://helvete.pizza/lab/updates/2026-10-01---nope-3",
+                        "projects":  [
+                                         "Cosmic Raven Records"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-30---nope-2",
+                        "title":  "2026-09-30 - Nope 2",
+                        "date":  "2026-09-30",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-30---nope-2",
+                        "projects":  [
+
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-29---nope",
+                        "title":  "2026-09-29 - Nope",
+                        "date":  "2026-09-29",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-29---nope",
+                        "projects":  [
+                                         "Cosmic Raven Records",
+                                         "Safe Cracker Discord Activity",
+                                         "Star Wars Battlefront II Dedicated Server"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-28---i-downloaded-ten-years-of-discord-and-accidentally-became-the-clan-historian",
+                        "title":  "2026-09-28 - I Downloaded Ten Years of Discord and Accidentally Became the Clan Historian",
+                        "date":  "2026-09-28",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-28---i-downloaded-ten-years-of-discord-and-accidentally-became-the-clan-historian",
+                        "projects":  [
+                                         "PGN Discord Archive",
+                                         "Progeny Gaming Network",
+                                         "Safe Cracker Discord Activity",
+                                         "Star Wars Battlefront II Dedicated Server",
+                                         "Dune Awakening Private Server"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-27.2---i-accidentally-downloaded-131gb-of-television",
+                        "title":  "2026-09-27.2 - I Accidentally Downloaded 131GB of Television",
+                        "date":  "2026-09-27",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-27.2---i-accidentally-downloaded-131gb-of-television",
+                        "projects":  [
+                                         "My Mini Retro Television Channels"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-27.1---i-gave-shag\u0027s-lab-a-tune-up",
+                        "title":  "2026-09-27.1 - I Gave Shag\u0027s Lab a Tune-Up",
+                        "date":  "2026-09-27",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-27.1---i-gave-shag\u0027s-lab-a-tune-up",
+                        "projects":  [
+                                         "Obsidian Vault to Website",
+                                         "Keychron C100",
+                                         "Keychron C100 Custom Firmware",
+                                         "Keychron C100 Custom Keycaps",
+                                         "Instruments",
+                                         "My Mini Retro Television"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-26.3---i-swear-i\u0027m-going-to-finish-this-game!",
+                        "title":  "2026-09-26.3 - I Swear I\u0027m Going to Finish This Game!",
+                        "date":  "2026-09-26",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-26.3---i-swear-i\u0027m-going-to-finish-this-game!",
+                        "projects":  [
+                                         "Garth\u0027s Game DMG"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-26.2---i-accidentally-became-a-dune-server-goblin",
+                        "title":  "2026-09-26 - I Accidentally Became A Dune Server Goblin",
+                        "date":  "2026-09-26",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-26.2---i-accidentally-became-a-dune-server-goblin",
+                        "projects":  [
+                                         "Dune Awakening Private Server"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-26.1---weekend-working",
+                        "title":  "2026-09-26.1 - Weekend Working",
+                        "date":  "2026-09-26",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-26.1---weekend-working",
+                        "projects":  [
+                                         "Obsidian Vault to Website",
+                                         "Keychron C100",
+                                         "My Mini Retro Television",
+                                         "Dune Awakening Private Server",
+                                         "Garth\u0027s Game DMG",
+                                         "Safe Cracker Discord Activity"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-25---holy-cow,-i\u0027m-pooped",
+                        "title":  "2026-09-25 - Holy Cow, I\u0027m Pooped",
+                        "date":  "2026-09-25",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-25---holy-cow,-i\u0027m-pooped",
+                        "projects":  [
+                                         "Cosmic Raven Records",
+                                         "Obsidian Vault to Website",
+                                         "Dune Awakening Private Server",
+                                         "Garth\u0027s Game DMG",
+                                         "Safe Cracker Discord Activity"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-24---another-mix-bag-sort-of-day",
+                        "title":  "2026-09-24 - Another Mix-Bag Sort of Day",
+                        "date":  "2026-09-24",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-24---another-mix-bag-sort-of-day",
+                        "projects":  [
+                                         "Cosmic Raven Records",
+                                         "Safe Cracker Discord Activity",
+                                         "Star Wars Battlefront II Dedicated Server",
+                                         "Garth\u0027s Game DMG",
+                                         "Obsidian Vault to Website",
+                                         "Dune Awakening Private Server"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-23---a-little-bit-of-this-and-that",
+                        "title":  "2026-09-23 - A Little Bit of This and That",
+                        "date":  "2026-09-23",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-23---a-little-bit-of-this-and-that",
+                        "projects":  [
+                                         "Cosmic Raven Records",
+                                         "Safe Cracker Discord Activity"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-22---i-made-a-discord-activity-and-accidentally-built-an-api",
+                        "title":  "2026-09-22 - I Made A Discord Activity and Accidentally Built An API!",
+                        "date":  "2026-09-22",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-22---i-made-a-discord-activity-and-accidentally-built-an-api",
+                        "projects":  [
+                                         "Safe Cracker Discord Activity"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-21---star-wars-battlefront-ii-server-development",
+                        "title":  "2026-09-21 - Star Wars Battlefront II Server Development",
+                        "date":  "2026-09-21",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-21---star-wars-battlefront-ii-server-development",
+                        "projects":  [
+                                         "Star Wars Battlefront II Dedicated Server",
+                                         "Progeny Gaming Network"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-20---cosmic-raven-records",
+                        "title":  "2026-09-20 - Cosmic Raven Records",
+                        "date":  "2026-09-20",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-20---cosmic-raven-records",
+                        "projects":  [
+                                         "Cosmic Raven Records"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-19.2---obsidian-vault,-wiki,-or-blog.-yes",
+                        "title":  "2026-09-19.2 - Obsidian Vault, Wiki, or Blog? Yes.",
+                        "date":  "2026-09-19",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-19.2---obsidian-vault,-wiki,-or-blog.-yes",
+                        "projects":  [
+                                         "Obsidian Vault to Website",
+                                         "Keychron C100 Custom Firmware"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-19.1---my-mini-retro-television-channels",
+                        "title":  "2026-09-19.1 - My Mini Retro Television Channels",
+                        "date":  "2026-09-19",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-19.1---my-mini-retro-television-channels",
+                        "projects":  [
+                                         "My Mini Retro Television Channels",
+                                         "My Mini Retro Television"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-18.2---i-made-my-midi-drummer-worse-on-purpose",
+                        "title":  "2026-09-18.2 - I Made My MIDI Drummer Worse on Purpose",
+                        "date":  "2026-09-18",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-18.2---i-made-my-midi-drummer-worse-on-purpose",
+                        "projects":  [
+                                         "REAPER Drum Humanizer"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-18.1---a-mixed-bag-sort-of-day",
+                        "title":  "2026-09-18.1 - A Mixed Bag Sort of Day",
+                        "date":  "2026-09-18",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-18.1---a-mixed-bag-sort-of-day",
+                        "projects":  [
+                                         "Bass VI - Penny"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-17---i-built-a-booru-librarian",
+                        "title":  "2026-09-17 - I Built A Booru Librarian?!",
+                        "date":  "2026-09-17",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-17---i-built-a-booru-librarian",
+                        "projects":  [
+                                         "Booru Image Downloader"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-09-16---i-made-a-custom-driver",
+                        "title":  "2026-09-16 - I Made A Custom Driver",
+                        "date":  "2026-09-16",
+                        "url":  "https://helvete.pizza/lab/updates/2026-09-16---i-made-a-custom-driver",
+                        "projects":  [
+                                         "Keychron C100 Custom Firmware",
+                                         "Keychron C100",
+                                         "Keychron C100 Custom Keycaps"
+                                     ]
+                    }
+                ]
+}
