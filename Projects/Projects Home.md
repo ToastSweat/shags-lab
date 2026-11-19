@@ -10,7 +10,7 @@ publish: true
 
 ### Active
 
-- [[Projects/The Sith Order|The Sith Order]] - last activity 2026-11-17
+- [[Projects/The Sith Order|The Sith Order]] - last activity 2026-11-19
 - [[Projects/My Mini Retro Television|My Mini Retro Television]] - last activity 2026-11-15
   - **active** - [[Projects/My Mini Retro Television/My Mini Retro Television Channels|My Mini Retro Television Channels]] - last activity 2026-11-09
 - [[Projects/Obsidian Vault to Website|Obsidian Vault to Website]] - last activity 2026-11-15
@@ -66,4 +66,4 @@ publish: true
 
 - [[Projects/Reaper Drum Humanizer|REAPER Drum Humanizer]] - last activity 2026-09-18
 
-*Last Updated: 2026-11-18*
+*Last Updated: 2026-11-19*

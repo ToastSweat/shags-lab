@@ -8,6 +8,7 @@ publish: true
 
 ## Latest Updates
 
+- [[Updates/2026-11-19 - The Cron - From Conversation to First Edition|2026-11-19 - The Cron - From Conversation to First Edition]]
 - [[Updates/2026-11-18 - First Phase 4 Successful Test!|2026-11-18 - First Phase 4 Successful Test!]]
 - [[Updates/2026-11-17 - The Sith Order|2026-11-17 - The Sith Order]]
 - [[Updates/2026-11-16 - Battlefront - The Project from Hell|2026-11-16 - Battlefront - The Project from Hell]]
@@ -87,4 +88,4 @@ publish: true
 - [[Updates/2026-09-17 - I Built A Booru Librarian|2026-09-17 - I Built A Booru Librarian]]
 - [[Updates/2026-09-16 - I Made A Custom Driver|2026-09-16 - I Made A Custom Driver]]
 
-*Last Updated: 2026-11-18*
+*Last Updated: 2026-11-19*
