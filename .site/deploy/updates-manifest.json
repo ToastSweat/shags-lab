@@ -3,6 +3,33 @@
     "siteBase":  "https://helvete.pizza/lab",
     "updates":  [
                     {
+                        "id":  "updates/2026-11-17---the-sith-order",
+                        "title":  "2026-11-17 - The Sith Order",
+                        "date":  "2026-11-17",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-17---the-sith-order",
+                        "projects":  [
+                                         "The Sith Order"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-11-16---battlefront---the-project-from-hell",
+                        "title":  "2026-11-16 - Battlefront - The Project from Hell",
+                        "date":  "2026-11-16",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-16---battlefront---the-project-from-hell",
+                        "projects":  [
+                                         "Star Wars Battlefront II Dedicated Server"
+                                     ]
+                    },
+                    {
+                        "id":  "updates/2026-11-15.4---my-oath-1",
+                        "title":  "2026-11-15.4 - My Oath 1",
+                        "date":  "2026-11-15",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-15.4---my-oath-1",
+                        "projects":  [
+                                         "The Sith Order"
+                                     ]
+                    },
+                    {
                         "id":  "updates/2026-11-15.3---i-automated-shag\u0027s-lab",
                         "title":  "2026-11-15.3 - I Automated Shag\u0027s Lab",
                         "date":  "2026-11-15",

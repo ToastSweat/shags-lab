@@ -10,10 +10,10 @@ publish: true
 
 ### Active
 
+- [[Projects/The Sith Order|The Sith Order]] - last activity 2026-11-17
 - [[Projects/My Mini Retro Television|My Mini Retro Television]] - last activity 2026-11-15
   - **active** - [[Projects/My Mini Retro Television/My Mini Retro Television Channels|My Mini Retro Television Channels]] - last activity 2026-11-09
 - [[Projects/Obsidian Vault to Website|Obsidian Vault to Website]] - last activity 2026-11-15
-- [[Projects/The Sith Order|The Sith Order]] - last activity 2026-11-13
 - [[Projects/ELEGOO Centauri Carbon|ELEGOO Centauri Carbon]] - last activity 2026-11-11
 - [[Projects/Cosmic Raven/Trailer Identification Grid|TIG: Trailer Identification Grid]] - last activity 2026-11-11
 - [[Projects/Cosmic Raven Records|Cosmic Raven Records]] - last activity 2026-11-03
@@ -59,11 +59,11 @@ publish: true
   - **active** - [[Projects/Keychron C100/Keychron C100 Custom Firmware|Keychron C100 Custom Firmware]] - last activity 2026-09-27
 ### Paused
 
-- [[Projects/Star Wars Battlefront II Dedicated Server|Star Wars Battlefront II Dedicated Server]] - last activity 2026-11-14
+- [[Projects/Star Wars Battlefront II Dedicated Server|Star Wars Battlefront II Dedicated Server]] - last activity 2026-11-16
 - [[Projects/Hermes/VR Lightsaber Trainer/VR Lightsaber Trainer|VR Lightsaber Trainer]] - last activity 2026-10-07
 - [[Projects/Dune Awakening Private Server|Dune Awakening Private Server]] - last activity 2026-10-03
 ### Complete
 
 - [[Projects/Reaper Drum Humanizer|REAPER Drum Humanizer]] - last activity 2026-09-18
 
-*Last Updated: 2026-11-15*
+*Last Updated: 2026-11-17*

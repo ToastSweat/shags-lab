@@ -8,6 +8,9 @@ publish: true
 
 ## Latest Updates
 
+- [[Updates/2026-11-17 - The Sith Order|2026-11-17 - The Sith Order]]
+- [[Updates/2026-11-16 - Battlefront - The Project from Hell|2026-11-16 - Battlefront - The Project from Hell]]
+- [[Updates/2026-11-15.4 - My Oath 1|2026-11-15.4 - My Oath 1]]
 - [[Updates/2026-11-15.3 - I Automated Shag's Lab|2026-11-15.3 - I Automated Shag's Lab]]
 - [[Updates/2026-11-15.2 - Tiny TV Firmware-Wrap Up|2026-11-15.2 - Tiny TV Firmware-Wrap Up]]
 - [[Updates/2026-11-15.1 - Retro TV Cart Builder V2|2026-11-15.1 - Retro TV Cart Builder V2]]
@@ -83,4 +86,4 @@ publish: true
 - [[Updates/2026-09-17 - I Built A Booru Librarian|2026-09-17 - I Built A Booru Librarian]]
 - [[Updates/2026-09-16 - I Made A Custom Driver|2026-09-16 - I Made A Custom Driver]]
 
-*Last Updated: 2026-11-15*
+*Last Updated: 2026-11-17*
