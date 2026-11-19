@@ -3,6 +3,15 @@
     "siteBase":  "https://helvete.pizza/lab",
     "updates":  [
                     {
+                        "id":  "updates/2026-11-18---first-phase-4-successful-test!",
+                        "title":  "2026-11-18 - First Phase 4 Successful Test!",
+                        "date":  "2026-11-18",
+                        "url":  "https://helvete.pizza/lab/updates/2026-11-18---first-phase-4-successful-test!",
+                        "projects":  [
+                                         "Star Wars Battlefront II Dedicated Server"
+                                     ]
+                    },
+                    {
                         "id":  "updates/2026-11-17---the-sith-order",
                         "title":  "2026-11-17 - The Sith Order",
                         "date":  "2026-11-17",

@@ -59,11 +59,11 @@ publish: true
   - **active** - [[Projects/Keychron C100/Keychron C100 Custom Firmware|Keychron C100 Custom Firmware]] - last activity 2026-09-27
 ### Paused
 
-- [[Projects/Star Wars Battlefront II Dedicated Server|Star Wars Battlefront II Dedicated Server]] - last activity 2026-11-16
+- [[Projects/Star Wars Battlefront II Dedicated Server|Star Wars Battlefront II Dedicated Server]] - last activity 2026-11-18
 - [[Projects/Hermes/VR Lightsaber Trainer/VR Lightsaber Trainer|VR Lightsaber Trainer]] - last activity 2026-10-07
 - [[Projects/Dune Awakening Private Server|Dune Awakening Private Server]] - last activity 2026-10-03
 ### Complete
 
 - [[Projects/Reaper Drum Humanizer|REAPER Drum Humanizer]] - last activity 2026-09-18
 
-*Last Updated: 2026-11-17*
+*Last Updated: 2026-11-18*
